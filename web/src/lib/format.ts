@@ -18,3 +18,11 @@ export function formatYearMonthLabel(yearMonth: string): string {
   if (!y || !m) return yearMonth;
   return `${y}年${Number(m)}月`;
 }
+
+export function shiftYearMonth(yearMonth: string, deltaMonths: number): string {
+  const [y, m] = yearMonth.split("-").map(Number);
+  const date = new Date(y, m - 1 + deltaMonths, 1);
+  const yy = date.getFullYear();
+  const mm = String(date.getMonth() + 1).padStart(2, "0");
+  return `${yy}-${mm}`;
+}

@@ -22,6 +22,7 @@
   --border: #e1e0d9;
   --input: #e1e0d9;
   --ring: #2a78d6;
+  --success-text: #006300;
 
   /* dataviz: chart chrome & ink (references/palette.md) */
   --chart-surface: #fcfcfb;
@@ -59,6 +60,7 @@
     --border: #2c2c2a;
     --input: #2c2c2a;
     --ring: #3987e5;
+    --success-text: #0ca30c;
 
     --chart-surface: #1a1a19;
     --chart-text-primary: #ffffff;
@@ -94,6 +96,7 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-success-text: var(--success-text);
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);

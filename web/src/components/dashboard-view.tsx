@@ -1,3 +1,4 @@
+import { AccountDetailTable } from "@/components/account-detail-table";
 import { AssetBreakdownChart } from "@/components/asset-breakdown-chart";
 import { CardBreakdownChart } from "@/components/card-breakdown-chart";
 import { StatCard } from "@/components/stat-card";
@@ -11,10 +12,19 @@ interface DashboardViewProps {
   yearMonthOptions: string[];
   selectedYearMonth: string;
   entries: MonthlyEntry[];
+  previousEntries: MonthlyEntry[];
+  previousYearMonth: string;
   trend: TrendPoint[];
 }
 
-export function DashboardView({ yearMonthOptions, selectedYearMonth, entries, trend }: DashboardViewProps) {
+export function DashboardView({
+  yearMonthOptions,
+  selectedYearMonth,
+  entries,
+  previousEntries,
+  previousYearMonth,
+  trend,
+}: DashboardViewProps) {
   const isAsset = (e: MonthlyEntry) => e.category !== "カード";
   const totalAssets = entries.filter(isAsset).reduce((s, e) => s + e.amount, 0);
   const masakazuTotal = entries
@@ -67,6 +77,19 @@ export function DashboardView({ yearMonthOptions, selectedYearMonth, entries, tr
         </CardHeader>
         <CardContent>
           <TrendChart trend={trend} />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader className="pb-2">
+          <CardTitle className="text-base text-foreground">口座別 明細</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <AccountDetailTable
+            entries={entries}
+            previousEntries={previousEntries}
+            previousYearMonth={previousYearMonth}
+          />
         </CardContent>
       </Card>
     </div>

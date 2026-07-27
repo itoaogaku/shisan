@@ -1,7 +1,7 @@
 import { DashboardView } from "@/components/dashboard-view";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { fetchMonthlyData, fetchTrend, fetchYearMonths } from "@/lib/gas";
-import { currentYearMonth } from "@/lib/format";
+import { currentYearMonth, shiftYearMonth } from "@/lib/format";
 import type { MonthlyEntry, TrendPoint } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
@@ -10,6 +10,8 @@ interface DashboardData {
   yearMonthOptions: string[];
   selectedYearMonth: string;
   entries: MonthlyEntry[];
+  previousEntries: MonthlyEntry[];
+  previousYearMonth: string;
   trend: TrendPoint[];
 }
 
@@ -18,10 +20,15 @@ async function loadDashboardData(requestedYearMonth?: string): Promise<Dashboard
   const latest = yearMonths.length > 0 ? yearMonths[yearMonths.length - 1] : currentYearMonth();
   const selectedYearMonth = requestedYearMonth ?? latest;
   const yearMonthOptions = Array.from(new Set([...yearMonths, selectedYearMonth])).sort().reverse();
+  const previousYearMonth = shiftYearMonth(selectedYearMonth, -1);
 
-  const [trend, entries] = await Promise.all([fetchTrend(), fetchMonthlyData(selectedYearMonth)]);
+  const [trend, entries, previousEntries] = await Promise.all([
+    fetchTrend(),
+    fetchMonthlyData(selectedYearMonth),
+    fetchMonthlyData(previousYearMonth),
+  ]);
 
-  return { yearMonthOptions, selectedYearMonth, entries, trend };
+  return { yearMonthOptions, selectedYearMonth, entries, previousEntries, previousYearMonth, trend };
 }
 
 export default async function DashboardPage({
@@ -61,6 +68,8 @@ export default async function DashboardPage({
       yearMonthOptions={data.yearMonthOptions}
       selectedYearMonth={data.selectedYearMonth}
       entries={data.entries}
+      previousEntries={data.previousEntries}
+      previousYearMonth={data.previousYearMonth}
       trend={data.trend}
     />
   );
