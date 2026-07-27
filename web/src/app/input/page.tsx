@@ -6,8 +6,13 @@ import type { MonthlyEntry } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
-export default async function InputPage() {
-  const yearMonth = currentYearMonth();
+export default async function InputPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ ym?: string }>;
+}) {
+  const { ym } = await searchParams;
+  const yearMonth = ym ?? currentYearMonth();
 
   let initialEntries: MonthlyEntry[] = [];
   let error: unknown = null;
@@ -40,6 +45,9 @@ export default async function InputPage() {
         <h1 className="text-2xl font-semibold">月次データ入力</h1>
         <p className="text-sm text-muted-foreground">
           年月を選び、口座ごとの月末残高・カードの月次支払額を入力してください。空欄の項目は保存されません。
+        </p>
+        <p className="mt-1 text-sm text-muted-foreground">
+          過去の月を選ぶと、その月に保存済みのデータが読み込まれます。金額を修正して保存すれば上書きされます。
         </p>
         <p className="mt-1 text-sm text-muted-foreground">毎月1〜5日ごろに更新してください。</p>
       </div>

@@ -59,6 +59,8 @@ function setupSpreadsheet() {
   monthly.getRange(1, 1, 1, HEADER.length).setValues([HEADER]);
   monthly.setFrozenRows(1);
   monthly.getRange(1, 1, 1, HEADER.length).setFontWeight('bold');
+  // year_month（A列）が日付として自動変換されないよう、プレーンテキスト書式にしておく
+  monthly.getRange('A:A').setNumberFormat('@');
 
   var accounts = ss.getSheetByName(SHEET_ACCOUNTS);
   if (!accounts) accounts = ss.insertSheet(SHEET_ACCOUNTS);
@@ -117,6 +119,20 @@ function jsonOutput_(obj) {
   return ContentService.createTextOutput(JSON.stringify(obj)).setMimeType(ContentService.MimeType.JSON);
 }
 
+/**
+ * year_month セルの値を "YYYY-MM" 形式の文字列に正規化する。
+ * スプレッドシートは "2026-07" のような文字列を日付として自動変換してしまうことがあり、
+ * その場合 getValues() で Date オブジェクトが返ってくる。文字列の完全一致フィルタが
+ * 効かなくなる（＝月次データが取得できない）事故を防ぐため、常にここで文字列化する。
+ */
+function normalizeYearMonth_(value) {
+  if (Object.prototype.toString.call(value) === '[object Date]') {
+    var tz = SpreadsheetApp.getActiveSpreadsheet().getSpreadsheetTimeZone();
+    return Utilities.formatDate(value, tz, 'yyyy-MM');
+  }
+  return String(value).trim();
+}
+
 function getAllRows_() {
   var sheet = getSheet_(SHEET_MONTHLY);
   var lastRow = sheet.getLastRow();
@@ -124,7 +140,7 @@ function getAllRows_() {
   var values = sheet.getRange(2, 1, lastRow - 1, HEADER.length).getValues();
   return values.map(function (row) {
     return {
-      year_month: row[0],
+      year_month: normalizeYearMonth_(row[0]),
       person: row[1],
       category: row[2],
       account_name: row[3],
@@ -204,11 +220,15 @@ function saveMonthlyData_(yearMonth, entries) {
   var lastRow = sheet.getLastRow();
   var now = new Date();
 
+  // year_month 列（A列）がスプレッドシートによって日付型へ自動変換されるのを防ぐため、
+  // 常にプレーンテキスト書式を強制してから書き込む。
+  sheet.getRange('A:A').setNumberFormat('@');
+
   var existingMap = {};
   if (lastRow > 1) {
     var values = sheet.getRange(2, 1, lastRow - 1, HEADER.length).getValues();
     values.forEach(function (row, i) {
-      var key = [row[0], row[1], row[2], row[3]].join('|');
+      var key = [normalizeYearMonth_(row[0]), row[1], row[2], row[3]].join('|');
       existingMap[key] = i + 2; // 実シート行番号
     });
   }
@@ -217,7 +237,7 @@ function saveMonthlyData_(yearMonth, entries) {
   entries.forEach(function (entry) {
     var key = [yearMonth, entry.person, entry.category, entry.account_name].join('|');
     var rowValues = [
-      yearMonth,
+      String(yearMonth),
       entry.person,
       entry.category,
       entry.account_name,

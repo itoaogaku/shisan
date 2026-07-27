@@ -1,8 +1,11 @@
+import Link from "next/link";
+
 import { AccountDetailTable } from "@/components/account-detail-table";
 import { AssetBreakdownChart } from "@/components/asset-breakdown-chart";
 import { CardBreakdownChart } from "@/components/card-breakdown-chart";
 import { StatCard } from "@/components/stat-card";
 import { TrendChart } from "@/components/trend-chart";
+import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { YearMonthSelect } from "@/components/year-month-select";
 import { formatYearMonthLabel, formatYen } from "@/lib/format";
@@ -42,7 +45,15 @@ export function DashboardView({
           <h1 className="text-2xl font-semibold">ダッシュボード</h1>
           <p className="text-sm text-muted-foreground">{formatYearMonthLabel(selectedYearMonth)} 時点</p>
         </div>
-        <YearMonthSelect value={selectedYearMonth} options={yearMonthOptions} />
+        <div className="flex items-center gap-2">
+          <YearMonthSelect value={selectedYearMonth} options={yearMonthOptions} />
+          <Link
+            href={`/input?ym=${encodeURIComponent(selectedYearMonth)}`}
+            className={buttonVariants({ variant: "outline" })}
+          >
+            この月のデータを編集
+          </Link>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
