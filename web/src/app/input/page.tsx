@@ -41,6 +41,7 @@ export default async function InputPage() {
         <p className="text-sm text-muted-foreground">
           年月を選び、口座ごとの月末残高・カードの月次支払額を入力してください。空欄の項目は保存されません。
         </p>
+        <p className="mt-1 text-sm text-muted-foreground">毎月1〜5日ごろに更新してください。</p>
       </div>
       <MonthlyForm initialYearMonth={yearMonth} initialEntries={initialEntries} />
     </div>
