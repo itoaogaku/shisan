@@ -4,7 +4,7 @@
 
 ## 構成
 
-- **フロントエンド**: Next.js (App Router), Tailwind CSS, Shadcn UI（実装予定）
+- **フロントエンド**: Next.js (App Router), Tailwind CSS, shadcn/ui 相当のコンポーネント（[`web/`](./web)）
 - **ホスティング**: Vercel（予定）
 - **データベース / バックエンド**: Google Apps Script (GAS) + Google スプレッドシート
 
@@ -12,11 +12,12 @@
 
 - [`gas/Code.gs`](./gas/Code.gs): GAS バックエンド本体（`doGet` / `doPost`）
 - [`docs/spreadsheet-setup.md`](./docs/spreadsheet-setup.md): スプレッドシート & GAS の初期設定手順
+- [`web/`](./web): Next.js フロントエンド（入力フォーム・ダッシュボード）。詳細は [`web/README.md`](./web/README.md)
 
 ## 現在の進捗
 
 1. ✅ GAS コード（`doGet` / `doPost`）
-2. ⏳ Next.js の入力フォーム & ダッシュボード UI
+2. ✅ Next.js の入力フォーム & ダッシュボード UI
 3. ✅ スプレッドシートの初期設定手順
 
-まずはバックエンド（GAS + スプレッドシート）を先行して用意しています。`docs/spreadsheet-setup.md` の手順に沿ってセットアップを行った後、フロントエンド実装に進みます。
+セットアップは `docs/spreadsheet-setup.md`（GAS・スプレッドシート側）→ `web/README.md`（Next.js側）の順に進めてください。

@@ -1,0 +1,30 @@
+export type Person = "雅一" | "穂夏" | "共通";
+export type Category = "銀行" | "証券" | "暗号資産" | "カード";
+
+export interface AccountDef {
+  person: Person;
+  category: Category;
+  account_name: string;
+}
+
+export interface MonthlyEntry {
+  year_month: string;
+  person: Person;
+  category: Category;
+  account_name: string;
+  amount: number;
+  updated_at?: string;
+}
+
+export interface PersonTotals {
+  雅一: number;
+  穂夏: number;
+}
+
+export interface TrendPoint {
+  year_month: string;
+  total_assets: number;
+  person_totals: PersonTotals;
+  card_total: number;
+}
+
