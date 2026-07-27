@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import { Toaster } from "sonner";
 
+import { NavLinks } from "@/components/nav-links";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -33,14 +35,7 @@ export default function RootLayout({
             <Link href="/" className="text-lg font-semibold">
               資産管理
             </Link>
-            <nav className="flex gap-4 text-sm font-medium text-muted-foreground">
-              <Link href="/" className="transition-colors hover:text-foreground">
-                ダッシュボード
-              </Link>
-              <Link href="/input" className="transition-colors hover:text-foreground">
-                データ入力
-              </Link>
-            </nav>
+            <NavLinks />
           </div>
         </header>
         <main className="mx-auto w-full max-w-5xl flex-1 px-6 py-8">{children}</main>
