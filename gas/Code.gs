@@ -43,6 +43,7 @@ function onOpen() {
     .createMenu('資産管理')
     .addItem('初期設定（シート作成）', 'setupSpreadsheet')
     .addItem('APIトークン設定', 'setApiToken')
+    .addItem('年月データの修復（テキスト化）', 'repairYearMonthColumn')
     .addToUi();
 }
 
@@ -99,6 +100,37 @@ function setApiToken() {
   var token = res.getResponseText().trim();
   PropertiesService.getScriptProperties().setProperty('API_TOKEN', token);
   ui.alert(token ? 'トークンを設定しました。' : 'トークンをクリアしました（認証なし）。');
+}
+
+/**
+ * MonthlyBalances の year_month 列（A列）が過去にスプレッドシートによって
+ * 日付型へ自動変換されてしまった行を、"YYYY-MM" のプレーンテキストに一括修復する。
+ * 「資産管理 > 年月データの修復（テキスト化）」から手動実行する。
+ * （通常はコード修正後の再デプロイのみで解消するが、既存行を即座に直したい場合に使う）
+ */
+function repairYearMonthColumn() {
+  var ui = SpreadsheetApp.getUi();
+  var sheet = getSheet_(SHEET_MONTHLY);
+  var lastRow = sheet.getLastRow();
+  if (lastRow < 2) {
+    ui.alert('修復対象のデータがありません。');
+    return;
+  }
+
+  var range = sheet.getRange(2, 1, lastRow - 1, 1);
+  var values = range.getValues();
+  var fixedCount = 0;
+  var normalized = values.map(function (row) {
+    var original = row[0];
+    if (Object.prototype.toString.call(original) === '[object Date]') fixedCount++;
+    return [normalizeYearMonth_(original)];
+  });
+
+  // 先にプレーンテキスト書式にしてから書き込むことで、再度日付化されるのを防ぐ
+  sheet.getRange('A:A').setNumberFormat('@');
+  range.setValues(normalized);
+
+  ui.alert('修復が完了しました。（' + fixedCount + ' 件のセルを日付形式からテキストに変換しました）');
 }
 
 // ==== 共通ヘルパー ====
