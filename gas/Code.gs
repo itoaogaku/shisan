@@ -32,9 +32,11 @@ var ACCOUNTS = [
   { person: '穂夏', category: '銀行', account_name: '埼玉りそな銀行' },
 
   // クレジットカード（世帯共通・月次支払額を管理）
-  { person: '共通', category: 'カード', account_name: 'JCBカード' },
-  { person: '共通', category: 'カード', account_name: '三菱UFJカード' },
-  { person: '共通', category: 'カード', account_name: '楽天カード' }
+  // closingDay: 締め日。対象月の1〜5日ごろに入力する金額は「2か月前の(closingDay+1)日〜
+  // 1か月前のclosingDay日」の利用分になる（参考情報。集計ロジックでは未使用）。
+  { person: '共通', category: 'カード', account_name: 'JCBカード', closingDay: 15 },
+  { person: '共通', category: 'カード', account_name: '三菱UFJカード', closingDay: 15 },
+  { person: '共通', category: 'カード', account_name: '楽天カード', closingDay: 25 }
 ];
 
 // ==== メニュー（スプレッドシートを開いたときに表示） ====
@@ -66,12 +68,12 @@ function setupSpreadsheet() {
   var accounts = ss.getSheetByName(SHEET_ACCOUNTS);
   if (!accounts) accounts = ss.insertSheet(SHEET_ACCOUNTS);
   accounts.clear();
-  var accHeader = ['person', 'category', 'account_name'];
+  var accHeader = ['person', 'category', 'account_name', 'closing_day'];
   accounts.getRange(1, 1, 1, accHeader.length).setValues([accHeader]);
   accounts.setFrozenRows(1);
   accounts.getRange(1, 1, 1, accHeader.length).setFontWeight('bold');
   var accRows = ACCOUNTS.map(function (a) {
-    return [a.person, a.category, a.account_name];
+    return [a.person, a.category, a.account_name, a.closingDay || ''];
   });
   accounts.getRange(2, 1, accRows.length, accHeader.length).setValues(accRows);
 

@@ -5,6 +5,8 @@ export interface AccountDef {
   person: Person;
   category: Category;
   account_name: string;
+  /** カードの締め日（例: 15 なら毎月15日締め）。カテゴリ「カード」の口座のみ使用。 */
+  closingDay?: number;
 }
 
 export interface MonthlyEntry {
