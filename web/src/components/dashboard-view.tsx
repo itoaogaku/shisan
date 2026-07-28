@@ -28,15 +28,15 @@ export function DashboardView({
   previousYearMonth,
   trend,
 }: DashboardViewProps) {
-  const isAsset = (e: MonthlyEntry) => e.category !== "カード";
-  const totalAssets = entries.filter(isAsset).reduce((s, e) => s + e.amount, 0);
-  const masakazuTotal = entries
-    .filter((e) => isAsset(e) && e.person === "雅一")
-    .reduce((s, e) => s + e.amount, 0);
-  const honokaTotal = entries
-    .filter((e) => isAsset(e) && e.person === "穂夏")
-    .reduce((s, e) => s + e.amount, 0);
-  const cardTotal = entries.filter((e) => e.category === "カード").reduce((s, e) => s + e.amount, 0);
+  const sumByCategory = (category: MonthlyEntry["category"]) =>
+    entries.filter((e) => e.category === category).reduce((s, e) => s + e.amount, 0);
+
+  const bankTotal = sumByCategory("銀行");
+  const securitiesTotal = sumByCategory("証券");
+  const cryptoTotal = sumByCategory("暗号資産");
+  const cardTotal = sumByCategory("カード");
+  const totalAssets = bankTotal + securitiesTotal + cryptoTotal;
+  const estimatedNetWorth = totalAssets - cardTotal;
 
   return (
     <div className="space-y-8">
@@ -56,10 +56,13 @@ export function DashboardView({
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <StatCard label="世帯全体の総資産額" value={totalAssets} emphasis className="lg:col-span-2" />
-        <StatCard label="雅一 合計" value={masakazuTotal} />
-        <StatCard label="穂夏 合計" value={honokaTotal} />
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <StatCard label="推定資産（資産合計 − カード合計）" value={estimatedNetWorth} emphasis />
+        <StatCard label="資産合計" value={totalAssets} />
+        <StatCard label="クレジットカード合計" value={cardTotal} />
+        <StatCard label="銀行合計" value={bankTotal} />
+        <StatCard label="証券合計" value={securitiesTotal} />
+        <StatCard label="暗号資産合計" value={cryptoTotal} />
       </div>
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
