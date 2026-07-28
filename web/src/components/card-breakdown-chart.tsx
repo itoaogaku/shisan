@@ -2,6 +2,7 @@
 
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
+import { CATEGORY_COLORS } from "@/lib/accounts";
 import { formatYen } from "@/lib/format";
 import type { MonthlyEntry } from "@/lib/types";
 
@@ -52,7 +53,7 @@ export function CardBreakdownChart({ entries }: CardBreakdownChartProps) {
           tick={{ fill: "var(--chart-text-secondary)", fontSize: 12 }}
         />
         <Tooltip content={<ChartTooltip />} cursor={{ fill: "var(--muted)" }} />
-        <Bar dataKey="amount" radius={[0, 4, 4, 0]} maxBarSize={24} fill="var(--chart-1)" />
+        <Bar dataKey="amount" radius={[0, 4, 4, 0]} maxBarSize={24} fill={CATEGORY_COLORS.カード} />
       </BarChart>
     </ResponsiveContainer>
   );

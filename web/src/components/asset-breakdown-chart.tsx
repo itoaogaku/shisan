@@ -2,16 +2,9 @@
 
 import { Bar, BarChart, CartesianGrid, Cell, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
-import { CATEGORY_LABELS } from "@/lib/accounts";
+import { CATEGORY_COLORS, CATEGORY_LABELS } from "@/lib/accounts";
 import { formatYen } from "@/lib/format";
 import type { Category, MonthlyEntry, Person } from "@/lib/types";
-
-const CATEGORY_COLOR: Record<Category, string> = {
-  銀行: "var(--chart-1)",
-  証券: "var(--chart-2)",
-  暗号資産: "var(--chart-3)",
-  カード: "var(--chart-1)",
-};
 
 const ASSET_CATEGORIES: Category[] = ["銀行", "証券", "暗号資産"];
 
@@ -89,7 +82,7 @@ export function AssetBreakdownChart({ entries }: AssetBreakdownChartProps) {
           <Tooltip content={<ChartTooltip />} cursor={{ fill: "var(--muted)" }} />
           <Bar dataKey="amount" radius={[0, 4, 4, 0]} maxBarSize={24}>
             {data.map((d) => (
-              <Cell key={d.key} fill={CATEGORY_COLOR[d.category]} />
+              <Cell key={d.key} fill={CATEGORY_COLORS[d.category]} />
             ))}
           </Bar>
         </BarChart>
@@ -99,7 +92,7 @@ export function AssetBreakdownChart({ entries }: AssetBreakdownChartProps) {
           <div key={c} className="flex items-center gap-1.5 text-xs text-muted-foreground">
             <span
               className="inline-block h-2.5 w-2.5 rounded-full"
-              style={{ backgroundColor: CATEGORY_COLOR[c] }}
+              style={{ backgroundColor: CATEGORY_COLORS[c] }}
             />
             {CATEGORY_LABELS[c]}
           </div>

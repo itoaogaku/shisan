@@ -41,6 +41,14 @@ export const CATEGORY_LABELS: Record<Category, string> = {
   カード: "クレジットカード",
 };
 
+// カテゴリの識別色（固定順・アプリ全体で使い回す。カテゴリごとに色を変えないこと）
+export const CATEGORY_COLORS: Record<Category, string> = {
+  銀行: "var(--chart-1)",
+  証券: "var(--chart-2)",
+  暗号資産: "var(--chart-3)",
+  カード: "var(--chart-4)",
+};
+
 export function accountsFor(person: Person): AccountDef[] {
   return ACCOUNTS.filter((a) => a.person === person);
 }
