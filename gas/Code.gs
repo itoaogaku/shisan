@@ -25,11 +25,12 @@ var ACCOUNTS = [
   { person: '雅一', category: '暗号資産', account_name: 'GMOコイン' },
   { person: '雅一', category: '暗号資産', account_name: 'Bybit' },
 
-  // 穂夏 名義 - 銀行・信用金庫
+  // 穂夏 名義 - 銀行・信用金庫・証券
   { person: '穂夏', category: '銀行', account_name: 'りそな銀行' },
   { person: '穂夏', category: '銀行', account_name: '多摩信用金庫' },
   { person: '穂夏', category: '銀行', account_name: '住信SBIネット銀行' },
   { person: '穂夏', category: '銀行', account_name: '埼玉りそな銀行' },
+  { person: '穂夏', category: '証券', account_name: 'SBI証券' },
 
   // クレジットカード（世帯共通・月次支払額を管理）
   // closingDay: 締め日。対象月の1〜5日ごろに入力する金額は「2か月前の(closingDay+1)日〜
