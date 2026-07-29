@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { formatYearMonthLabel } from "@/lib/format";
+import { formatKwh, formatYearMonthLabel } from "@/lib/format";
 import { cn } from "@/lib/utils";
 import type { ElectricityRecord, ElectricityTrendPoint } from "@/lib/types";
 
@@ -24,6 +24,14 @@ export function ElectricityView({ initialYearMonth, initialData, trend: initialT
   const [yearMonth, setYearMonth] = useState(initialYearMonth);
   const [income, setIncome] = useState(initialData ? String(initialData.income) : "");
   const [expense, setExpense] = useState(initialData ? String(initialData.expense) : "");
+  const [incomeKwh, setIncomeKwh] = useState(
+    initialData?.income_kwh !== null && initialData?.income_kwh !== undefined ? String(initialData.income_kwh) : ""
+  );
+  const [expenseKwh, setExpenseKwh] = useState(
+    initialData?.expense_kwh !== null && initialData?.expense_kwh !== undefined
+      ? String(initialData.expense_kwh)
+      : ""
+  );
   const [trend, setTrend] = useState(initialTrend);
   const [loading, setLoading] = useState(false);
   const [saving, setSaving] = useState(false);
@@ -41,18 +49,22 @@ export function ElectricityView({ initialYearMonth, initialData, trend: initialT
       const data = json.data as ElectricityRecord | null;
       setIncome(data ? String(data.income) : "");
       setExpense(data ? String(data.expense) : "");
+      setIncomeKwh(data?.income_kwh !== null && data?.income_kwh !== undefined ? String(data.income_kwh) : "");
+      setExpenseKwh(data?.expense_kwh !== null && data?.expense_kwh !== undefined ? String(data.expense_kwh) : "");
     } catch (error) {
       toast.error(`${nextYearMonth} のデータ読み込みに失敗しました: ${String(error)}`);
       setIncome("");
       setExpense("");
+      setIncomeKwh("");
+      setExpenseKwh("");
     } finally {
       setLoading(false);
     }
   }
 
   async function handleSubmit() {
-    if (income === "" && expense === "") {
-      toast.warning("入力された金額がありません。");
+    if (income === "" && expense === "" && incomeKwh === "" && expenseKwh === "") {
+      toast.warning("入力された値がありません。");
       return;
     }
 
@@ -61,6 +73,8 @@ export function ElectricityView({ initialYearMonth, initialData, trend: initialT
       const body: Record<string, unknown> = { year_month: yearMonth };
       if (income !== "") body.income = Number(income);
       if (expense !== "") body.expense = Number(expense);
+      if (incomeKwh !== "") body.income_kwh = Number(incomeKwh);
+      if (expenseKwh !== "") body.expense_kwh = Number(expenseKwh);
 
       const res = await fetch("/api/gas/electricity", {
         method: "POST",
@@ -88,8 +102,12 @@ export function ElectricityView({ initialYearMonth, initialData, trend: initialT
   return (
     <div className="space-y-8">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-        <StatCard label="売電収入" value={incomeNum} />
-        <StatCard label="買電支出" value={expenseNum} />
+        <StatCard label="売電収入" value={incomeNum} hint={incomeKwh !== "" ? formatKwh(Number(incomeKwh)) : undefined} />
+        <StatCard
+          label="買電支出"
+          value={expenseNum}
+          hint={expenseKwh !== "" ? formatKwh(Number(expenseKwh)) : undefined}
+        />
         <StatCard
           label="収支（売電収入 − 買電支出）"
           value={net}
@@ -128,6 +146,18 @@ export function ElectricityView({ initialYearMonth, initialData, trend: initialT
               />
             </div>
             <div className="flex flex-col gap-1.5">
+              <Label htmlFor="income-kwh">売電量（任意）</Label>
+              <Input
+                id="income-kwh"
+                type="number"
+                inputMode="decimal"
+                step="0.1"
+                placeholder="電力量（kWh）"
+                value={incomeKwh}
+                onChange={(e) => setIncomeKwh(e.target.value)}
+              />
+            </div>
+            <div className="flex flex-col gap-1.5">
               <Label htmlFor="expense">買電支出</Label>
               <Input
                 id="expense"
@@ -136,6 +166,18 @@ export function ElectricityView({ initialYearMonth, initialData, trend: initialT
                 placeholder="金額（円）"
                 value={expense}
                 onChange={(e) => setExpense(e.target.value)}
+              />
+            </div>
+            <div className="flex flex-col gap-1.5">
+              <Label htmlFor="expense-kwh">買電量（任意）</Label>
+              <Input
+                id="expense-kwh"
+                type="number"
+                inputMode="decimal"
+                step="0.1"
+                placeholder="電力量（kWh）"
+                value={expenseKwh}
+                onChange={(e) => setExpenseKwh(e.target.value)}
               />
             </div>
           </div>

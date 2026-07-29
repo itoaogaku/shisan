@@ -73,3 +73,7 @@ export function formatDateLabel(date: string): string {
   if (!y || !m || !d) return date;
   return `${y}年${Number(m)}月${Number(d)}日`;
 }
+
+export function formatKwh(value: number): string {
+  return `${new Intl.NumberFormat("ja-JP", { maximumFractionDigits: 1 }).format(value)}kWh`;
+}

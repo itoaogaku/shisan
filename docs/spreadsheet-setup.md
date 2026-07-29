@@ -24,7 +24,7 @@ GAS のコード本体は [`gas/Code.gs`](../gas/Code.gs) を参照してくだ�
    - 実行が完了すると `MonthlyBalances` `Accounts` `ElectricityRecords` `Memos` の4シートが作成される。
      - `MonthlyBalances`: 列 `year_month`, `person`, `category`, `account_name`, `amount`, `updated_at`（資産・カードの実データ本体）
      - `Accounts`: 口座・カードのマスタ一覧（参照用。編集は `gas/Code.gs` 内の `ACCOUNTS` 定数で行う）
-     - `ElectricityRecords`: 列 `year_month`, `income`, `expense`, `updated_at`（売電収入・買電支出。資産管理とは別集計）
+     - `ElectricityRecords`: 列 `year_month`, `income`, `expense`, `updated_at`, `income_kwh`, `expense_kwh`（売電収入・買電支出・売電量/買電量[kWh、任意]。資産管理とは別集計）
      - `Memos`: 列 `id`, `date`, `account`, `amount`, `memo`, `created_at`（奨学金の引き落とし口座・日付など、資産管理とは別枠の自由記述メモ）
    - 既定で残っていた空の「シート1」は自動的に削除される。
 
@@ -131,9 +131,13 @@ Web アプリとして公開すると URL を知っていれば誰でもアク�
   "token": "xxxx",
   "year_month": "2026-07",
   "income": 9500,
-  "expense": 6800
+  "expense": 6800,
+  "income_kwh": 105.5,
+  "expense_kwh": 80.2
 }
 ```
+
+`income_kwh` / `expense_kwh`（売電量・買電量、任意）は既存の `ElectricityRecords` シートの末尾列として追加されており、`gas/Code.gs` を再デプロイするだけで反映されます（既存データの列がずれることはありません）。ヘッダー行（1行目）が古いままの場合は E1・F1 セルに手動で `income_kwh` / `expense_kwh` と入力するか、メニューの「初期設定（シート作成）」を再実行してください（再実行すると中身が消えるので既存データがある場合は注意）。
 
 `income` / `expense` は片方だけ送ってもよく、未指定の側は既存値が保持されます（同一 `year_month` の行が既にあれば上書き更新、無ければ新規追加）。
 

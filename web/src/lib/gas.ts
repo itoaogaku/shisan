@@ -103,10 +103,18 @@ export async function fetchElectricityTrend(): Promise<ElectricityTrendPoint[]> 
   return (json.trend as ElectricityTrendPoint[]) ?? [];
 }
 
-export async function saveElectricity(yearMonth: string, income?: number, expense?: number): Promise<void> {
+export async function saveElectricity(
+  yearMonth: string,
+  income?: number,
+  expense?: number,
+  incomeKwh?: number,
+  expenseKwh?: number
+): Promise<void> {
   const body: Record<string, unknown> = { action: "saveElectricity", year_month: yearMonth };
   if (income !== undefined) body.income = income;
   if (expense !== undefined) body.expense = expense;
+  if (incomeKwh !== undefined) body.income_kwh = incomeKwh;
+  if (expenseKwh !== undefined) body.expense_kwh = expenseKwh;
   await gasPost(body);
 }
 

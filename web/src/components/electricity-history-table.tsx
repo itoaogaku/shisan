@@ -1,4 +1,4 @@
-import { formatYearMonthLabel, formatYen } from "@/lib/format";
+import { formatKwh, formatYearMonthLabel, formatYen } from "@/lib/format";
 import { cn } from "@/lib/utils";
 import type { ElectricityTrendPoint } from "@/lib/types";
 
@@ -20,7 +20,9 @@ export function ElectricityHistoryTable({ trend }: ElectricityHistoryTableProps)
           <tr className="border-b border-border text-left text-xs text-muted-foreground">
             <th className="py-2 pr-4 font-medium">年月</th>
             <th className="py-2 pr-4 text-right font-medium">売電収入</th>
+            <th className="py-2 pr-4 text-right font-medium">売電量</th>
             <th className="py-2 pr-4 text-right font-medium">買電支出</th>
+            <th className="py-2 pr-4 text-right font-medium">買電量</th>
             <th className="py-2 pl-4 text-right font-medium">収支</th>
           </tr>
         </thead>
@@ -29,7 +31,13 @@ export function ElectricityHistoryTable({ trend }: ElectricityHistoryTableProps)
             <tr key={r.year_month} className="border-b border-border/60 last:border-0">
               <td className="py-2 pr-4">{formatYearMonthLabel(r.year_month)}</td>
               <td className="py-2 pr-4 text-right tabular-nums">{formatYen(r.income)}</td>
+              <td className="py-2 pr-4 text-right tabular-nums text-muted-foreground">
+                {r.income_kwh !== null ? formatKwh(r.income_kwh) : "—"}
+              </td>
               <td className="py-2 pr-4 text-right tabular-nums">{formatYen(r.expense)}</td>
+              <td className="py-2 pr-4 text-right tabular-nums text-muted-foreground">
+                {r.expense_kwh !== null ? formatKwh(r.expense_kwh) : "—"}
+              </td>
               <td
                 className={cn(
                   "py-2 pl-4 text-right tabular-nums font-medium",

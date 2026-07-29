@@ -16,7 +16,9 @@ var SHEET_ACCOUNTS = 'Accounts';
 var SHEET_ELECTRICITY = 'ElectricityRecords';
 var SHEET_MEMOS = 'Memos';
 var HEADER = ['year_month', 'person', 'category', 'account_name', 'amount', 'updated_at'];
-var HEADER_ELECTRICITY = ['year_month', 'income', 'expense', 'updated_at'];
+// income_kwh / expense_kwh は末尾に追加した列。既存シートの列順（year_month, income,
+// expense, updated_at）を崩さないよう、後方互換のため末尾に配置している。
+var HEADER_ELECTRICITY = ['year_month', 'income', 'expense', 'updated_at', 'income_kwh', 'expense_kwh'];
 var HEADER_MEMOS = ['id', 'date', 'account', 'amount', 'memo', 'created_at'];
 
 // 口座・カードのマスタ定義。フロントエンドの入力フォームと内容を一致させること。
@@ -333,7 +335,9 @@ function getElectricityRows_() {
       year_month: normalizeYearMonth_(row[0]),
       income: Number(row[1]) || 0,
       expense: Number(row[2]) || 0,
-      updated_at: row[3]
+      updated_at: row[3],
+      income_kwh: row[4] === '' ? null : Number(row[4]),
+      expense_kwh: row[5] === '' ? null : Number(row[5])
     };
   });
 }
@@ -362,7 +366,7 @@ function getElectricityYearMonths_() {
 }
 
 /**
- * 月ごとの売電収入・買電支出・収支（income - expense）の一覧を昇順で返す。
+ * 月ごとの売電収入・買電支出・収支（income - expense）・売電量/買電量(kWh)の一覧を昇順で返す。
  */
 function getElectricityTrend_() {
   return getElectricityRows_()
@@ -371,18 +375,26 @@ function getElectricityTrend_() {
       return a.year_month < b.year_month ? -1 : a.year_month > b.year_month ? 1 : 0;
     })
     .map(function (r) {
-      return { year_month: r.year_month, income: r.income, expense: r.expense, net: r.income - r.expense };
+      return {
+        year_month: r.year_month,
+        income: r.income,
+        expense: r.expense,
+        net: r.income - r.expense,
+        income_kwh: r.income_kwh,
+        expense_kwh: r.expense_kwh,
+        net_kwh: r.income_kwh !== null && r.expense_kwh !== null ? r.income_kwh - r.expense_kwh : null
+      };
     });
 }
 
 /**
- * 指定年月の売電収入・買電支出を保存（Upsert）する。
- * income / expense は片方だけ渡した場合、もう片方は既存値を保持する（未指定 = 上書きしない）。
+ * 指定年月の売電収入・買電支出・売電量/買電量(kWh)を保存（Upsert）する。
+ * 各項目は未指定の場合、既存値を保持する（未指定 = 上書きしない）。
  */
-function saveElectricity_(yearMonth, income, expense) {
+function saveElectricity_(yearMonth, income, expense, incomeKwh, expenseKwh) {
   if (!yearMonth) throw new Error('year_month は必須です');
-  if (income === undefined && expense === undefined) {
-    throw new Error('income または expense のいずれかは必須です');
+  if (income === undefined && expense === undefined && incomeKwh === undefined && expenseKwh === undefined) {
+    throw new Error('income, expense, income_kwh, expense_kwh のいずれかは必須です');
   }
 
   var sheet = getSheet_(SHEET_ELECTRICITY);
@@ -393,6 +405,8 @@ function saveElectricity_(yearMonth, income, expense) {
   var rowIndex = -1;
   var existingIncome = 0;
   var existingExpense = 0;
+  var existingIncomeKwh = '';
+  var existingExpenseKwh = '';
 
   if (lastRow > 1) {
     var values = sheet.getRange(2, 1, lastRow - 1, HEADER_ELECTRICITY.length).getValues();
@@ -401,6 +415,8 @@ function saveElectricity_(yearMonth, income, expense) {
         rowIndex = i + 2;
         existingIncome = Number(values[i][1]) || 0;
         existingExpense = Number(values[i][2]) || 0;
+        existingIncomeKwh = values[i][4];
+        existingExpenseKwh = values[i][5];
         break;
       }
     }
@@ -408,7 +424,9 @@ function saveElectricity_(yearMonth, income, expense) {
 
   var newIncome = income !== undefined && income !== null ? Number(income) || 0 : existingIncome;
   var newExpense = expense !== undefined && expense !== null ? Number(expense) || 0 : existingExpense;
-  var rowValues = [String(yearMonth), newIncome, newExpense, now];
+  var newIncomeKwh = incomeKwh !== undefined && incomeKwh !== null ? Number(incomeKwh) || 0 : existingIncomeKwh;
+  var newExpenseKwh = expenseKwh !== undefined && expenseKwh !== null ? Number(expenseKwh) || 0 : existingExpenseKwh;
+  var rowValues = [String(yearMonth), newIncome, newExpense, now, newIncomeKwh, newExpenseKwh];
 
   if (rowIndex > 0) {
     sheet.getRange(rowIndex, 1, 1, HEADER_ELECTRICITY.length).setValues([rowValues]);
@@ -570,9 +588,11 @@ function doGet(e) {
  *   "token": "xxx",
  *   "year_month": "2026-07",
  *   "income": 12000,
- *   "expense": 8000
+ *   "expense": 8000,
+ *   "income_kwh": 120,
+ *   "expense_kwh": 95
  * }
- * income / expense は片方だけ送ってもよい（未指定の側は既存値を保持）。
+ * income / expense / income_kwh / expense_kwh はいずれも任意で、未指定の項目は既存値を保持する。
  *
  * メモの追加:
  * {
@@ -606,7 +626,7 @@ function doPost(e) {
         saveMonthlyData_(body.year_month, body.entries);
         return jsonOutput_({ ok: true, saved: body.entries.length });
       case 'saveElectricity':
-        saveElectricity_(body.year_month, body.income, body.expense);
+        saveElectricity_(body.year_month, body.income, body.expense, body.income_kwh, body.expense_kwh);
         return jsonOutput_({ ok: true });
       case 'addMemo':
         var newId = addMemo_(body.date, body.account, body.amount, body.memo);

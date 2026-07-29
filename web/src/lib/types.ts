@@ -36,6 +36,8 @@ export interface ElectricityRecord {
   year_month: string;
   income: number;
   expense: number;
+  income_kwh: number | null;
+  expense_kwh: number | null;
   updated_at?: string;
 }
 
@@ -44,6 +46,9 @@ export interface ElectricityTrendPoint {
   income: number;
   expense: number;
   net: number;
+  income_kwh: number | null;
+  expense_kwh: number | null;
+  net_kwh: number | null;
 }
 
 export interface MemoRecord {

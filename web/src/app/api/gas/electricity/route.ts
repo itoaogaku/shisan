@@ -19,6 +19,12 @@ interface SaveElectricityBody {
   year_month?: string;
   income?: number;
   expense?: number;
+  income_kwh?: number;
+  expense_kwh?: number;
+}
+
+function isValidOptionalNumber(value: unknown): boolean {
+  return value === undefined || (typeof value === "number" && !Number.isNaN(value));
 }
 
 export async function POST(request: NextRequest) {
@@ -29,22 +35,30 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ ok: false, error: "invalid JSON body" }, { status: 400 });
   }
 
-  const { year_month, income, expense } = body;
+  const { year_month, income, expense, income_kwh, expense_kwh } = body;
   if (!year_month || !/^\d{4}-\d{2}$/.test(year_month)) {
     return NextResponse.json({ ok: false, error: "year_month must be in YYYY-MM format" }, { status: 400 });
   }
-  if (income === undefined && expense === undefined) {
-    return NextResponse.json({ ok: false, error: "income or expense is required" }, { status: 400 });
+  if (income === undefined && expense === undefined && income_kwh === undefined && expense_kwh === undefined) {
+    return NextResponse.json(
+      { ok: false, error: "income, expense, income_kwh or expense_kwh is required" },
+      { status: 400 }
+    );
   }
-  if (income !== undefined && (typeof income !== "number" || Number.isNaN(income))) {
-    return NextResponse.json({ ok: false, error: "income must be a number" }, { status: 400 });
-  }
-  if (expense !== undefined && (typeof expense !== "number" || Number.isNaN(expense))) {
-    return NextResponse.json({ ok: false, error: "expense must be a number" }, { status: 400 });
+  if (
+    !isValidOptionalNumber(income) ||
+    !isValidOptionalNumber(expense) ||
+    !isValidOptionalNumber(income_kwh) ||
+    !isValidOptionalNumber(expense_kwh)
+  ) {
+    return NextResponse.json(
+      { ok: false, error: "income, expense, income_kwh and expense_kwh must be numbers" },
+      { status: 400 }
+    );
   }
 
   try {
-    await saveElectricity(year_month, income, expense);
+    await saveElectricity(year_month, income, expense, income_kwh, expense_kwh);
     return NextResponse.json({ ok: true });
   } catch (error) {
     return NextResponse.json({ ok: false, error: String(error) }, { status: 500 });
