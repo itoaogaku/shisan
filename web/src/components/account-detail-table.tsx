@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
 import { ACCOUNTS, CATEGORY_COLORS, CATEGORY_LABELS } from "@/lib/accounts";
-import { formatYearMonthLabel, formatYen } from "@/lib/format";
+import { formatCardBillingInfo, formatYearMonthLabel, formatYen } from "@/lib/format";
 import { cn } from "@/lib/utils";
 import type { Category, MonthlyEntry } from "@/lib/types";
 
@@ -11,6 +11,7 @@ interface AccountDetailTableProps {
   entries: MonthlyEntry[];
   previousEntries: MonthlyEntry[];
   previousYearMonth: string;
+  selectedYearMonth: string;
 }
 
 function buildAmountMap(entries: MonthlyEntry[]): Map<string, number> {
@@ -23,7 +24,12 @@ function rowTint(category: Category): string {
   return `color-mix(in srgb, ${CATEGORY_COLORS[category]} 8%, var(--card))`;
 }
 
-export function AccountDetailTable({ entries, previousEntries, previousYearMonth }: AccountDetailTableProps) {
+export function AccountDetailTable({
+  entries,
+  previousEntries,
+  previousYearMonth,
+  selectedYearMonth,
+}: AccountDetailTableProps) {
   const currentMap = buildAmountMap(entries);
   const previousMap = buildAmountMap(previousEntries);
 
@@ -68,6 +74,10 @@ export function AccountDetailTable({ entries, previousEntries, previousYearMonth
                   const isCard = a.category === "カード";
                   const isGoodDirection = diff !== null && diff !== 0 && (isCard ? diff < 0 : diff > 0);
                   const isBadDirection = diff !== null && diff !== 0 && !isGoodDirection;
+                  const billingInfo =
+                    a.closingDay !== undefined && a.withdrawalDay !== undefined
+                      ? formatCardBillingInfo(selectedYearMonth, a.closingDay, a.withdrawalDay)
+                      : null;
 
                   return (
                     <tr
@@ -81,7 +91,10 @@ export function AccountDetailTable({ entries, previousEntries, previousYearMonth
                       >
                         {a.person}
                       </td>
-                      <td className="py-2 pr-4">{a.account_name}</td>
+                      <td className="py-2 pr-4">
+                        {a.account_name}
+                        {billingInfo && <p className="text-xs text-muted-foreground">{billingInfo}</p>}
+                      </td>
                       <td className="py-2 pr-4 text-right tabular-nums">
                         {amount !== undefined ? (
                           formatYen(amount)

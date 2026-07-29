@@ -21,9 +21,11 @@ export const ACCOUNTS: AccountDef[] = [
   // クレジットカード（世帯共通・月次支払額）
   // closingDay: 締め日。例えば closingDay=15 の場合、対象月に入力する金額は
   // 「2か月前の16日 〜 1か月前の15日」の利用分になる（formatCardBillingPeriod 参照）。
-  { person: "共通", category: "カード", account_name: "JCBカード", closingDay: 15 },
-  { person: "共通", category: "カード", account_name: "三菱UFJカード", closingDay: 15 },
-  { person: "共通", category: "カード", account_name: "楽天カード", closingDay: 25 },
+  // withdrawalDay: 引き落とし日。対象月の withdrawalDay 日ごろに、上記の利用分が
+  // 口座から引き落とされる（formatCardWithdrawalDate 参照）。
+  { person: "共通", category: "カード", account_name: "JCBカード", closingDay: 15, withdrawalDay: 10 },
+  { person: "共通", category: "カード", account_name: "三菱UFJカード", closingDay: 15, withdrawalDay: 10 },
+  { person: "共通", category: "カード", account_name: "楽天カード", closingDay: 25, withdrawalDay: 25 },
 ];
 
 export const PEOPLE: Person[] = ["雅一", "穂夏", "共通"];

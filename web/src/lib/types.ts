@@ -7,6 +7,8 @@ export interface AccountDef {
   account_name: string;
   /** カードの締め日（例: 15 なら毎月15日締め）。カテゴリ「カード」の口座のみ使用。 */
   closingDay?: number;
+  /** カードの引き落とし日（例: 10 なら毎月10日ごろ引き落とし）。カテゴリ「カード」の口座のみ使用。 */
+  withdrawalDay?: number;
 }
 
 export interface MonthlyEntry {

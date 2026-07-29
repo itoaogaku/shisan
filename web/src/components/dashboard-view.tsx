@@ -103,6 +103,7 @@ export function DashboardView({
             entries={entries}
             previousEntries={previousEntries}
             previousYearMonth={previousYearMonth}
+            selectedYearMonth={selectedYearMonth}
           />
         </CardContent>
       </Card>

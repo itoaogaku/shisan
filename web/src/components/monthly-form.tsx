@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ACCOUNTS, CATEGORY_LABELS, PERSON_LABELS, accountsFor, categoriesFor, entryKey } from "@/lib/accounts";
-import { formatCardBillingPeriod, formatYearMonthLabel } from "@/lib/format";
+import { formatCardBillingInfo, formatYearMonthLabel } from "@/lib/format";
 import type { MonthlyEntry, Person } from "@/lib/types";
 
 const PERSON_TABS: Person[] = ["雅一", "穂夏", "共通"];
@@ -127,14 +127,16 @@ export function MonthlyForm({ initialYearMonth, initialEntries }: MonthlyFormPro
                     .filter((a) => a.category === category)
                     .map((a) => {
                       const key = entryKey(a.person, a.category, a.account_name);
-                      const billingPeriod =
-                        a.closingDay !== undefined ? formatCardBillingPeriod(yearMonth, a.closingDay) : null;
+                      const billingInfo =
+                        a.closingDay !== undefined && a.withdrawalDay !== undefined
+                          ? formatCardBillingInfo(yearMonth, a.closingDay, a.withdrawalDay)
+                          : null;
                       return (
                         <div key={key} className="flex flex-col gap-1.5">
                           <div>
                             <Label htmlFor={key}>{a.account_name}</Label>
-                            {billingPeriod && (
-                              <p className="text-xs text-muted-foreground">対象期間: {billingPeriod}利用分</p>
+                            {billingInfo && (
+                              <p className="text-xs text-muted-foreground">対象期間: {billingInfo}</p>
                             )}
                           </div>
                           <Input
