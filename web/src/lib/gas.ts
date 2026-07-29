@@ -1,6 +1,13 @@
 import "server-only";
 
-import type { AccountDef, ElectricityRecord, ElectricityTrendPoint, MonthlyEntry, TrendPoint } from "./types";
+import type {
+  AccountDef,
+  ElectricityRecord,
+  ElectricityTrendPoint,
+  MemoRecord,
+  MonthlyEntry,
+  TrendPoint,
+} from "./types";
 
 function requireEnv(name: string): string {
   const value = process.env[name];
@@ -101,4 +108,26 @@ export async function saveElectricity(yearMonth: string, income?: number, expens
   if (income !== undefined) body.income = income;
   if (expense !== undefined) body.expense = expense;
   await gasPost(body);
+}
+
+export async function fetchMemos(): Promise<MemoRecord[]> {
+  const json = await gasGet("getMemos");
+  return (json.memos as MemoRecord[]) ?? [];
+}
+
+export async function addMemo(
+  date: string,
+  memo: string,
+  account?: string,
+  amount?: number
+): Promise<string> {
+  const body: Record<string, unknown> = { action: "addMemo", date, memo };
+  if (account) body.account = account;
+  if (amount !== undefined) body.amount = amount;
+  const json = await gasPost(body);
+  return json.id as string;
+}
+
+export async function deleteMemo(id: string): Promise<void> {
+  await gasPost({ action: "deleteMemo", id });
 }

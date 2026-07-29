@@ -59,3 +59,17 @@ export function formatCardBillingInfo(yearMonth: string, closingDay: number, wit
   const withdrawal = formatCardWithdrawalDate(yearMonth, withdrawalDay);
   return `${period}利用分（${withdrawal}ごろ引き落とし）`;
 }
+
+export function currentDate(): string {
+  const now = new Date();
+  const y = now.getFullYear();
+  const m = String(now.getMonth() + 1).padStart(2, "0");
+  const d = String(now.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+}
+
+export function formatDateLabel(date: string): string {
+  const [y, m, d] = date.split("-");
+  if (!y || !m || !d) return date;
+  return `${y}年${Number(m)}月${Number(d)}日`;
+}

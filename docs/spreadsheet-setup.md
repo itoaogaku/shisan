@@ -21,10 +21,11 @@ GAS のコード本体は [`gas/Code.gs`](../gas/Code.gs) を参照してくだ�
 2. メニューバーに **「資産管理」** メニューが追加されていることを確認する。
 3. **資産管理 > 初期設定（シート作成）** を実行する。
    - 初回実行時は Google から権限確認のダイアログが表示されるので、対象アカウント（世帯で使うGoogleアカウント）を選択し、「許可」する。
-   - 実行が完了すると `MonthlyBalances` `Accounts` `ElectricityRecords` の3シートが作成される。
+   - 実行が完了すると `MonthlyBalances` `Accounts` `ElectricityRecords` `Memos` の4シートが作成される。
      - `MonthlyBalances`: 列 `year_month`, `person`, `category`, `account_name`, `amount`, `updated_at`（資産・カードの実データ本体）
      - `Accounts`: 口座・カードのマスタ一覧（参照用。編集は `gas/Code.gs` 内の `ACCOUNTS` 定数で行う）
      - `ElectricityRecords`: 列 `year_month`, `income`, `expense`, `updated_at`（売電収入・買電支出。資産管理とは別集計）
+     - `Memos`: 列 `id`, `date`, `account`, `amount`, `memo`, `created_at`（奨学金の引き落とし口座・日付など、資産管理とは別枠の自由記述メモ）
    - 既定で残っていた空の「シート1」は自動的に削除される。
 
 ## 4. APIトークンを設定する（推奨）
@@ -100,6 +101,7 @@ Web アプリとして公開すると URL を知っていれば誰でもアク�
 | `getElectricityData` | `year_month` | 指定年月の売電収入・買電支出を返す（データが無ければ `data: null`） |
 | `getElectricityYearMonths` | - | 売電・買電データが存在する年月の一覧（昇順）を返す |
 | `getElectricityTrend` | - | 月ごとの売電収入・買電支出・収支（income − expense）の一覧を返す |
+| `getMemos` | - | メモの一覧を日付の新しい順で返す |
 
 ### POST（データ保存・一括Upsert）
 
@@ -134,6 +136,18 @@ Web アプリとして公開すると URL を知っていれば誰でもアク�
 ```
 
 `income` / `expense` は片方だけ送ってもよく、未指定の側は既存値が保持されます（同一 `year_month` の行が既にあれば上書き更新、無ければ新規追加）。
+
+メモ（資産管理とは別集計）の追加・削除:
+
+```json
+{ "action": "addMemo", "token": "xxxx", "date": "2026-07-27", "account": "りそな銀行（雅一）", "amount": 15000, "memo": "奨学金の引き落とし。毎月27日ごろ。" }
+```
+
+```json
+{ "action": "deleteMemo", "token": "xxxx", "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" }
+```
+
+`account` / `amount` は任意。`addMemo` は常に新規行を追加する（upsertしない）。
 
 ## トラブルシューティング: 入力したのに総資産推移にしか反映されない
 

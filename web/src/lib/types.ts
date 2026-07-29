@@ -46,3 +46,12 @@ export interface ElectricityTrendPoint {
   net: number;
 }
 
+export interface MemoRecord {
+  id: string;
+  date: string;
+  account: string;
+  amount: number | null;
+  memo: string;
+  created_at?: string;
+}
+
