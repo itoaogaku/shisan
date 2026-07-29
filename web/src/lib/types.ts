@@ -32,3 +32,17 @@ export interface TrendPoint {
   card_total: number;
 }
 
+export interface ElectricityRecord {
+  year_month: string;
+  income: number;
+  expense: number;
+  updated_at?: string;
+}
+
+export interface ElectricityTrendPoint {
+  year_month: string;
+  income: number;
+  expense: number;
+  net: number;
+}
+

@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 const LINKS = [
   { href: "/", label: "ダッシュボード" },
   { href: "/input", label: "データ入力" },
+  { href: "/electricity", label: "売電・買電" },
 ];
 
 export function NavLinks() {

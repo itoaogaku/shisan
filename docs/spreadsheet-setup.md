@@ -21,9 +21,10 @@ GAS のコード本体は [`gas/Code.gs`](../gas/Code.gs) を参照してくだ�
 2. メニューバーに **「資産管理」** メニューが追加されていることを確認する。
 3. **資産管理 > 初期設定（シート作成）** を実行する。
    - 初回実行時は Google から権限確認のダイアログが表示されるので、対象アカウント（世帯で使うGoogleアカウント）を選択し、「許可」する。
-   - 実行が完了すると `MonthlyBalances` と `Accounts` の2シートが作成される。
-     - `MonthlyBalances`: 列 `year_month`, `person`, `category`, `account_name`, `amount`, `updated_at`（実データ本体）
+   - 実行が完了すると `MonthlyBalances` `Accounts` `ElectricityRecords` の3シートが作成される。
+     - `MonthlyBalances`: 列 `year_month`, `person`, `category`, `account_name`, `amount`, `updated_at`（資産・カードの実データ本体）
      - `Accounts`: 口座・カードのマスタ一覧（参照用。編集は `gas/Code.gs` 内の `ACCOUNTS` 定数で行う）
+     - `ElectricityRecords`: 列 `year_month`, `income`, `expense`, `updated_at`（売電収入・買電支出。資産管理とは別集計）
    - 既定で残っていた空の「シート1」は自動的に削除される。
 
 ## 4. APIトークンを設定する（推奨）
@@ -96,6 +97,9 @@ Web アプリとして公開すると URL を知っていれば誰でもアク�
 | `getMonthlyData` | `year_month` (例: `2026-07`) | 指定年月の全データを返す |
 | `getYearMonths` | - | データが存在する年月の一覧（昇順）を返す |
 | `getTrend` | - | 月次推移データ（総資産・名義別合計・カード合計）を返す |
+| `getElectricityData` | `year_month` | 指定年月の売電収入・買電支出を返す（データが無ければ `data: null`） |
+| `getElectricityYearMonths` | - | 売電・買電データが存在する年月の一覧（昇順）を返す |
+| `getElectricityTrend` | - | 月ごとの売電収入・買電支出・収支（income − expense）の一覧を返す |
 
 ### POST（データ保存・一括Upsert）
 
@@ -116,6 +120,20 @@ Web アプリとして公開すると URL を知っていれば誰でもアク�
 ```
 
 同一の `year_month` + `person` + `category` + `account_name` の組み合わせが既に存在する場合は上書き更新、存在しない場合は新規行として追加されます（`updated_at` は保存時のタイムスタンプに更新）。
+
+売電・買電（資産管理とは別集計）の保存:
+
+```json
+{
+  "action": "saveElectricity",
+  "token": "xxxx",
+  "year_month": "2026-07",
+  "income": 9500,
+  "expense": 6800
+}
+```
+
+`income` / `expense` は片方だけ送ってもよく、未指定の側は既存値が保持されます（同一 `year_month` の行が既にあれば上書き更新、無ければ新規追加）。
 
 ## トラブルシューティング: 入力したのに総資産推移にしか反映されない
 

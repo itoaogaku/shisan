@@ -2,8 +2,9 @@
  * 家計資産管理アプリ - GAS バックエンド (Google スプレッドシートをDBとして利用)
  *
  * シート構成:
- *  - MonthlyBalances : 月次の残高/支払額データ本体
- *  - Accounts        : 口座・カードのマスタ（参照用。編集は下記 ACCOUNTS 定数側で行う）
+ *  - MonthlyBalances   : 月次の残高/支払額データ本体
+ *  - Accounts          : 口座・カードのマスタ（参照用。編集は下記 ACCOUNTS 定数側で行う）
+ *  - ElectricityRecords: 資産管理とは別枠の、月次の売電収入・買電支出データ
  *
  * デプロイ方法・初期設定手順は docs/spreadsheet-setup.md を参照。
  */
@@ -11,7 +12,9 @@
 // ==== 基本設定 ====
 var SHEET_MONTHLY = 'MonthlyBalances';
 var SHEET_ACCOUNTS = 'Accounts';
+var SHEET_ELECTRICITY = 'ElectricityRecords';
 var HEADER = ['year_month', 'person', 'category', 'account_name', 'amount', 'updated_at'];
+var HEADER_ELECTRICITY = ['year_month', 'income', 'expense', 'updated_at'];
 
 // 口座・カードのマスタ定義。フロントエンドの入力フォームと内容を一致させること。
 // person は「雅一」「穂夏」「共通」のいずれか。カードは世帯共通の支払いとして「共通」で管理する。
@@ -79,13 +82,21 @@ function setupSpreadsheet() {
   });
   accounts.getRange(2, 1, accRows.length, accHeader.length).setValues(accRows);
 
+  var electricity = ss.getSheetByName(SHEET_ELECTRICITY);
+  if (!electricity) electricity = ss.insertSheet(SHEET_ELECTRICITY);
+  electricity.clear();
+  electricity.getRange(1, 1, 1, HEADER_ELECTRICITY.length).setValues([HEADER_ELECTRICITY]);
+  electricity.setFrozenRows(1);
+  electricity.getRange(1, 1, 1, HEADER_ELECTRICITY.length).setFontWeight('bold');
+  electricity.getRange('A:A').setNumberFormat('@');
+
   var defaultSheet = ss.getSheetByName('シート1') || ss.getSheetByName('Sheet1');
-  if (defaultSheet && ss.getSheets().length > 2) {
+  if (defaultSheet && ss.getSheets().length > 3) {
     ss.deleteSheet(defaultSheet);
   }
 
   SpreadsheetApp.getUi().alert(
-    '初期設定が完了しました。\n「MonthlyBalances」「Accounts」シートを作成しました。'
+    '初期設定が完了しました。\n「MonthlyBalances」「Accounts」「ElectricityRecords」シートを作成しました。'
   );
 }
 
@@ -107,34 +118,42 @@ function setApiToken() {
 }
 
 /**
- * MonthlyBalances の year_month 列（A列）が過去にスプレッドシートによって
- * 日付型へ自動変換されてしまった行を、"YYYY-MM" のプレーンテキストに一括修復する。
+ * MonthlyBalances / ElectricityRecords の year_month 列（A列）が過去にスプレッドシートに
+ * よって日付型へ自動変換されてしまった行を、"YYYY-MM" のプレーンテキストに一括修復する。
  * 「資産管理 > 年月データの修復（テキスト化）」から手動実行する。
  * （通常はコード修正後の再デプロイのみで解消するが、既存行を即座に直したい場合に使う）
  */
 function repairYearMonthColumn() {
   var ui = SpreadsheetApp.getUi();
-  var sheet = getSheet_(SHEET_MONTHLY);
-  var lastRow = sheet.getLastRow();
-  if (lastRow < 2) {
+  var sheetNames = [SHEET_MONTHLY, SHEET_ELECTRICITY];
+  var totalFixed = 0;
+  var totalRows = 0;
+
+  sheetNames.forEach(function (name) {
+    var sheet = getSheet_(name);
+    var lastRow = sheet.getLastRow();
+    if (lastRow < 2) return;
+
+    var range = sheet.getRange(2, 1, lastRow - 1, 1);
+    var values = range.getValues();
+    totalRows += values.length;
+    var normalized = values.map(function (row) {
+      var original = row[0];
+      if (Object.prototype.toString.call(original) === '[object Date]') totalFixed++;
+      return [normalizeYearMonth_(original)];
+    });
+
+    // 先にプレーンテキスト書式にしてから書き込むことで、再度日付化されるのを防ぐ
+    sheet.getRange('A:A').setNumberFormat('@');
+    range.setValues(normalized);
+  });
+
+  if (totalRows === 0) {
     ui.alert('修復対象のデータがありません。');
     return;
   }
 
-  var range = sheet.getRange(2, 1, lastRow - 1, 1);
-  var values = range.getValues();
-  var fixedCount = 0;
-  var normalized = values.map(function (row) {
-    var original = row[0];
-    if (Object.prototype.toString.call(original) === '[object Date]') fixedCount++;
-    return [normalizeYearMonth_(original)];
-  });
-
-  // 先にプレーンテキスト書式にしてから書き込むことで、再度日付化されるのを防ぐ
-  sheet.getRange('A:A').setNumberFormat('@');
-  range.setValues(normalized);
-
-  ui.alert('修復が完了しました。（' + fixedCount + ' 件のセルを日付形式からテキストに変換しました）');
+  ui.alert('修復が完了しました。（' + totalFixed + ' 件のセルを日付形式からテキストに変換しました）');
 }
 
 // ==== 共通ヘルパー ====
@@ -292,6 +311,102 @@ function saveMonthlyData_(yearMonth, entries) {
   }
 }
 
+// ==== 売電・買電（資産管理とは別集計） ====
+
+function getElectricityRows_() {
+  var sheet = getSheet_(SHEET_ELECTRICITY);
+  var lastRow = sheet.getLastRow();
+  if (lastRow < 2) return [];
+  var values = sheet.getRange(2, 1, lastRow - 1, HEADER_ELECTRICITY.length).getValues();
+  return values.map(function (row) {
+    return {
+      year_month: normalizeYearMonth_(row[0]),
+      income: Number(row[1]) || 0,
+      expense: Number(row[2]) || 0,
+      updated_at: row[3]
+    };
+  });
+}
+
+/**
+ * 指定年月の売電収入・買電支出を取得する。データが無い場合は null を返す。
+ */
+function getElectricityData_(yearMonth) {
+  if (!yearMonth) return null;
+  var rows = getElectricityRows_();
+  for (var i = 0; i < rows.length; i++) {
+    if (rows[i].year_month === yearMonth) return rows[i];
+  }
+  return null;
+}
+
+/**
+ * データが存在する年月の一覧（昇順）を取得する。
+ */
+function getElectricityYearMonths_() {
+  var set = {};
+  getElectricityRows_().forEach(function (r) {
+    set[r.year_month] = true;
+  });
+  return Object.keys(set).sort();
+}
+
+/**
+ * 月ごとの売電収入・買電支出・収支（income - expense）の一覧を昇順で返す。
+ */
+function getElectricityTrend_() {
+  return getElectricityRows_()
+    .slice()
+    .sort(function (a, b) {
+      return a.year_month < b.year_month ? -1 : a.year_month > b.year_month ? 1 : 0;
+    })
+    .map(function (r) {
+      return { year_month: r.year_month, income: r.income, expense: r.expense, net: r.income - r.expense };
+    });
+}
+
+/**
+ * 指定年月の売電収入・買電支出を保存（Upsert）する。
+ * income / expense は片方だけ渡した場合、もう片方は既存値を保持する（未指定 = 上書きしない）。
+ */
+function saveElectricity_(yearMonth, income, expense) {
+  if (!yearMonth) throw new Error('year_month は必須です');
+  if (income === undefined && expense === undefined) {
+    throw new Error('income または expense のいずれかは必須です');
+  }
+
+  var sheet = getSheet_(SHEET_ELECTRICITY);
+  sheet.getRange('A:A').setNumberFormat('@');
+
+  var lastRow = sheet.getLastRow();
+  var now = new Date();
+  var rowIndex = -1;
+  var existingIncome = 0;
+  var existingExpense = 0;
+
+  if (lastRow > 1) {
+    var values = sheet.getRange(2, 1, lastRow - 1, HEADER_ELECTRICITY.length).getValues();
+    for (var i = 0; i < values.length; i++) {
+      if (normalizeYearMonth_(values[i][0]) === yearMonth) {
+        rowIndex = i + 2;
+        existingIncome = Number(values[i][1]) || 0;
+        existingExpense = Number(values[i][2]) || 0;
+        break;
+      }
+    }
+  }
+
+  var newIncome = income !== undefined && income !== null ? Number(income) || 0 : existingIncome;
+  var newExpense = expense !== undefined && expense !== null ? Number(expense) || 0 : existingExpense;
+  var rowValues = [String(yearMonth), newIncome, newExpense, now];
+
+  if (rowIndex > 0) {
+    sheet.getRange(rowIndex, 1, 1, HEADER_ELECTRICITY.length).setValues([rowValues]);
+  } else {
+    sheet.getRange(sheet.getLastRow() + 1, 1, 1, HEADER_ELECTRICITY.length).setValues([rowValues]);
+  }
+}
+
 // ==== エンドポイント ====
 
 /**
@@ -299,6 +414,9 @@ function saveMonthlyData_(yearMonth, entries) {
  * GET /exec?action=getMonthlyData&year_month=2026-07
  * GET /exec?action=getYearMonths
  * GET /exec?action=getTrend
+ * GET /exec?action=getElectricityData&year_month=2026-07
+ * GET /exec?action=getElectricityYearMonths
+ * GET /exec?action=getElectricityTrend
  * 全て &token=xxx を付与可能（APIトークン設定時は必須）
  */
 function doGet(e) {
@@ -321,6 +439,16 @@ function doGet(e) {
         return jsonOutput_({ ok: true, year_months: getYearMonths_() });
       case 'getTrend':
         return jsonOutput_({ ok: true, trend: getTrend_() });
+      case 'getElectricityData':
+        return jsonOutput_({
+          ok: true,
+          year_month: params.year_month,
+          data: getElectricityData_(params.year_month)
+        });
+      case 'getElectricityYearMonths':
+        return jsonOutput_({ ok: true, year_months: getElectricityYearMonths_() });
+      case 'getElectricityTrend':
+        return jsonOutput_({ ok: true, trend: getElectricityTrend_() });
       default:
         return jsonOutput_({ ok: false, error: 'unknown action: ' + action });
     }
@@ -341,6 +469,16 @@ function doGet(e) {
  *     ...
  *   ]
  * }
+ *
+ * 売電・買電の保存:
+ * {
+ *   "action": "saveElectricity",
+ *   "token": "xxx",
+ *   "year_month": "2026-07",
+ *   "income": 12000,
+ *   "expense": 8000
+ * }
+ * income / expense は片方だけ送ってもよい（未指定の側は既存値を保持）。
  */
 function doPost(e) {
   try {
@@ -355,6 +493,9 @@ function doPost(e) {
       case 'saveMonthlyData':
         saveMonthlyData_(body.year_month, body.entries);
         return jsonOutput_({ ok: true, saved: body.entries.length });
+      case 'saveElectricity':
+        saveElectricity_(body.year_month, body.income, body.expense);
+        return jsonOutput_({ ok: true });
       default:
         return jsonOutput_({ ok: false, error: 'unknown action: ' + action });
     }

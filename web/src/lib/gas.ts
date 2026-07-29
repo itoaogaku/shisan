@@ -1,6 +1,6 @@
 import "server-only";
 
-import type { AccountDef, MonthlyEntry, TrendPoint } from "./types";
+import type { AccountDef, ElectricityRecord, ElectricityTrendPoint, MonthlyEntry, TrendPoint } from "./types";
 
 function requireEnv(name: string): string {
   const value = process.env[name];
@@ -84,4 +84,21 @@ export async function saveMonthlyData(
 ): Promise<number> {
   const json = await gasPost({ action: "saveMonthlyData", year_month: yearMonth, entries });
   return (json.saved as number) ?? entries.length;
+}
+
+export async function fetchElectricityData(yearMonth: string): Promise<ElectricityRecord | null> {
+  const json = await gasGet("getElectricityData", { year_month: yearMonth });
+  return (json.data as ElectricityRecord | null) ?? null;
+}
+
+export async function fetchElectricityTrend(): Promise<ElectricityTrendPoint[]> {
+  const json = await gasGet("getElectricityTrend");
+  return (json.trend as ElectricityTrendPoint[]) ?? [];
+}
+
+export async function saveElectricity(yearMonth: string, income?: number, expense?: number): Promise<void> {
+  const body: Record<string, unknown> = { action: "saveElectricity", year_month: yearMonth };
+  if (income !== undefined) body.income = income;
+  if (expense !== undefined) body.expense = expense;
+  await gasPost(body);
 }
