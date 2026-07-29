@@ -1,4 +1,4 @@
-import { formatKwh, formatYearMonthLabel, formatYen } from "@/lib/format";
+import { formatElectricitySettlementSummary, formatKwh, formatYearMonthLabel, formatYen } from "@/lib/format";
 import { cn } from "@/lib/utils";
 import type { ElectricityTrendPoint } from "@/lib/types";
 
@@ -29,7 +29,12 @@ export function ElectricityHistoryTable({ trend }: ElectricityHistoryTableProps)
         <tbody>
           {rows.map((r) => (
             <tr key={r.year_month} className="border-b border-border/60 last:border-0">
-              <td className="py-2 pr-4">{formatYearMonthLabel(r.year_month)}</td>
+              <td className="py-2 pr-4">
+                {formatYearMonthLabel(r.year_month)}
+                <p className="whitespace-nowrap text-xs font-normal text-muted-foreground">
+                  {formatElectricitySettlementSummary(r.year_month)}
+                </p>
+              </td>
               <td className="py-2 pr-4 text-right tabular-nums">{formatYen(r.income)}</td>
               <td className="py-2 pr-4 text-right tabular-nums text-muted-foreground">
                 {r.income_kwh !== null ? formatKwh(r.income_kwh) : "—"}

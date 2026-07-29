@@ -10,7 +10,12 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { formatKwh, formatYearMonthLabel } from "@/lib/format";
+import {
+  formatElectricityExpenseInfo,
+  formatElectricityIncomeInfo,
+  formatKwh,
+  formatYearMonthLabel,
+} from "@/lib/format";
 import { cn } from "@/lib/utils";
 import type { ElectricityRecord, ElectricityTrendPoint } from "@/lib/types";
 
@@ -135,7 +140,10 @@ export function ElectricityView({ initialYearMonth, initialData, trend: initialT
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div className="flex flex-col gap-1.5">
-              <Label htmlFor="income">売電収入</Label>
+              <div>
+                <Label htmlFor="income">売電収入</Label>
+                <p className="text-xs text-muted-foreground">{formatElectricityIncomeInfo(yearMonth)}</p>
+              </div>
               <Input
                 id="income"
                 type="number"
@@ -158,7 +166,10 @@ export function ElectricityView({ initialYearMonth, initialData, trend: initialT
               />
             </div>
             <div className="flex flex-col gap-1.5">
-              <Label htmlFor="expense">買電支出</Label>
+              <div>
+                <Label htmlFor="expense">買電支出</Label>
+                <p className="text-xs text-muted-foreground">{formatElectricityExpenseInfo(yearMonth)}</p>
+              </div>
               <Input
                 id="expense"
                 type="number"
