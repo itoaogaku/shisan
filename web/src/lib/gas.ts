@@ -105,10 +105,10 @@ export async function fetchElectricityTrend(): Promise<ElectricityTrendPoint[]> 
 
 export async function saveElectricity(
   yearMonth: string,
-  income?: number,
-  expense?: number,
-  incomeKwh?: number,
-  expenseKwh?: number
+  income?: number | null,
+  expense?: number | null,
+  incomeKwh?: number | null,
+  expenseKwh?: number | null
 ): Promise<void> {
   const body: Record<string, unknown> = { action: "saveElectricity", year_month: yearMonth };
   if (income !== undefined) body.income = income;

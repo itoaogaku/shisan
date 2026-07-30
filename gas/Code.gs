@@ -333,8 +333,8 @@ function getElectricityRows_() {
   return values.map(function (row) {
     return {
       year_month: normalizeYearMonth_(row[0]),
-      income: Number(row[1]) || 0,
-      expense: Number(row[2]) || 0,
+      income: row[1] === '' ? null : Number(row[1]),
+      expense: row[2] === '' ? null : Number(row[2]),
       updated_at: row[3],
       income_kwh: row[4] === '' ? null : Number(row[4]),
       expense_kwh: row[5] === '' ? null : Number(row[5])
@@ -379,7 +379,7 @@ function getElectricityTrend_() {
         year_month: r.year_month,
         income: r.income,
         expense: r.expense,
-        net: r.income - r.expense,
+        net: r.income !== null && r.expense !== null ? r.income - r.expense : null,
         income_kwh: r.income_kwh,
         expense_kwh: r.expense_kwh,
         net_kwh: r.income_kwh !== null && r.expense_kwh !== null ? r.income_kwh - r.expense_kwh : null
@@ -388,8 +388,25 @@ function getElectricityTrend_() {
 }
 
 /**
+ * income/expense/income_kwh/expense_kwh の1項目分の新しい保存値を決める。
+ *   - undefined（未指定） → 既存値をそのまま保持
+ *   - null（明示的なリセット） → 空欄にする
+ *   - 数値 → その値を保存
+ */
+function resolveElectricityField_(newValue, existingValue) {
+  if (newValue === undefined) return existingValue;
+  if (newValue === null) return '';
+  var num = Number(newValue);
+  return isNaN(num) ? existingValue : num;
+}
+
+/**
  * 指定年月の売電収入・買電支出・売電量/買電量(kWh)を保存（Upsert）する。
- * 各項目は未指定の場合、既存値を保持する（未指定 = 上書きしない）。
+ * 各項目は
+ *   - 未指定（キー自体が無い）: 既存値を保持
+ *   - null: 明示的に空欄へリセット（間違えて入力した値の取り消し用）
+ *   - 数値: その値で更新
+ * を区別して扱う。
  */
 function saveElectricity_(yearMonth, income, expense, incomeKwh, expenseKwh) {
   if (!yearMonth) throw new Error('year_month は必須です');
@@ -403,8 +420,8 @@ function saveElectricity_(yearMonth, income, expense, incomeKwh, expenseKwh) {
   var lastRow = sheet.getLastRow();
   var now = new Date();
   var rowIndex = -1;
-  var existingIncome = 0;
-  var existingExpense = 0;
+  var existingIncome = '';
+  var existingExpense = '';
   var existingIncomeKwh = '';
   var existingExpenseKwh = '';
 
@@ -413,8 +430,8 @@ function saveElectricity_(yearMonth, income, expense, incomeKwh, expenseKwh) {
     for (var i = 0; i < values.length; i++) {
       if (normalizeYearMonth_(values[i][0]) === yearMonth) {
         rowIndex = i + 2;
-        existingIncome = Number(values[i][1]) || 0;
-        existingExpense = Number(values[i][2]) || 0;
+        existingIncome = values[i][1];
+        existingExpense = values[i][2];
         existingIncomeKwh = values[i][4];
         existingExpenseKwh = values[i][5];
         break;
@@ -422,10 +439,10 @@ function saveElectricity_(yearMonth, income, expense, incomeKwh, expenseKwh) {
     }
   }
 
-  var newIncome = income !== undefined && income !== null ? Number(income) || 0 : existingIncome;
-  var newExpense = expense !== undefined && expense !== null ? Number(expense) || 0 : existingExpense;
-  var newIncomeKwh = incomeKwh !== undefined && incomeKwh !== null ? Number(incomeKwh) || 0 : existingIncomeKwh;
-  var newExpenseKwh = expenseKwh !== undefined && expenseKwh !== null ? Number(expenseKwh) || 0 : existingExpenseKwh;
+  var newIncome = resolveElectricityField_(income, existingIncome);
+  var newExpense = resolveElectricityField_(expense, existingExpense);
+  var newIncomeKwh = resolveElectricityField_(incomeKwh, existingIncomeKwh);
+  var newExpenseKwh = resolveElectricityField_(expenseKwh, existingExpenseKwh);
   var rowValues = [String(yearMonth), newIncome, newExpense, now, newIncomeKwh, newExpenseKwh];
 
   if (rowIndex > 0) {
@@ -592,7 +609,8 @@ function doGet(e) {
  *   "income_kwh": 120,
  *   "expense_kwh": 95
  * }
- * income / expense / income_kwh / expense_kwh はいずれも任意で、未指定の項目は既存値を保持する。
+ * income / expense / income_kwh / expense_kwh はいずれも任意。キー自体を送らなければ既存値を保持し、
+ * 明示的に null を送るとその項目だけ空欄にリセットできる（間違えて入力した値の取り消し用）。
  *
  * メモの追加:
  * {

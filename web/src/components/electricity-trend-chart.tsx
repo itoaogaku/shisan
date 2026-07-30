@@ -17,7 +17,7 @@ const SERIES = [
 
 interface TooltipPayloadItem {
   dataKey: string;
-  value: number;
+  value: number | null;
   color: string;
 }
 
@@ -41,7 +41,7 @@ function ChartTooltip({
             <div key={p.dataKey} className="flex items-center gap-1.5">
               <span className="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: p.color }} />
               <span className="text-muted-foreground">{series?.label ?? p.dataKey}</span>
-              <span className="ml-auto font-medium">{formatYen(p.value)}</span>
+              <span className="ml-auto font-medium">{p.value !== null ? formatYen(p.value) : "—"}</span>
             </div>
           );
         })}

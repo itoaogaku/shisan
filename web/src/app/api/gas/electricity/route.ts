@@ -17,14 +17,15 @@ export async function GET(request: NextRequest) {
 
 interface SaveElectricityBody {
   year_month?: string;
-  income?: number;
-  expense?: number;
-  income_kwh?: number;
-  expense_kwh?: number;
+  income?: number | null;
+  expense?: number | null;
+  income_kwh?: number | null;
+  expense_kwh?: number | null;
 }
 
+// undefined = 未指定（既存値を保持）, null = 明示的なリセット（空欄に戻す）, どちらも許可する。
 function isValidOptionalNumber(value: unknown): boolean {
-  return value === undefined || (typeof value === "number" && !Number.isNaN(value));
+  return value === undefined || value === null || (typeof value === "number" && !Number.isNaN(value));
 }
 
 export async function POST(request: NextRequest) {

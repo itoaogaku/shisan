@@ -35,22 +35,26 @@ export function ElectricityHistoryTable({ trend }: ElectricityHistoryTableProps)
                   {formatElectricitySettlementSummary(r.year_month)}
                 </p>
               </td>
-              <td className="py-2 pr-4 text-right tabular-nums">{formatYen(r.income)}</td>
+              <td className="py-2 pr-4 text-right tabular-nums">
+                {r.income !== null ? formatYen(r.income) : <span className="text-muted-foreground">—</span>}
+              </td>
               <td className="py-2 pr-4 text-right tabular-nums text-muted-foreground">
                 {r.income_kwh !== null ? formatKwh(r.income_kwh) : "—"}
               </td>
-              <td className="py-2 pr-4 text-right tabular-nums">{formatYen(r.expense)}</td>
+              <td className="py-2 pr-4 text-right tabular-nums">
+                {r.expense !== null ? formatYen(r.expense) : <span className="text-muted-foreground">—</span>}
+              </td>
               <td className="py-2 pr-4 text-right tabular-nums text-muted-foreground">
                 {r.expense_kwh !== null ? formatKwh(r.expense_kwh) : "—"}
               </td>
               <td
                 className={cn(
                   "py-2 pl-4 text-right tabular-nums font-medium",
-                  r.net > 0 && "text-success-text",
-                  r.net < 0 && "text-destructive"
+                  r.net !== null && r.net > 0 && "text-success-text",
+                  r.net !== null && r.net < 0 && "text-destructive"
                 )}
               >
-                {formatYen(r.net)}
+                {r.net !== null ? formatYen(r.net) : <span className="font-normal text-muted-foreground">—</span>}
               </td>
             </tr>
           ))}

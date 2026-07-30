@@ -34,8 +34,8 @@ export interface TrendPoint {
 
 export interface ElectricityRecord {
   year_month: string;
-  income: number;
-  expense: number;
+  income: number | null;
+  expense: number | null;
   income_kwh: number | null;
   expense_kwh: number | null;
   updated_at?: string;
@@ -43,9 +43,9 @@ export interface ElectricityRecord {
 
 export interface ElectricityTrendPoint {
   year_month: string;
-  income: number;
-  expense: number;
-  net: number;
+  income: number | null;
+  expense: number | null;
+  net: number | null;
   income_kwh: number | null;
   expense_kwh: number | null;
   net_kwh: number | null;
