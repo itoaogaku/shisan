@@ -103,12 +103,12 @@ export function ElectricityView({ initialYearMonth, initialData, trend: initialT
   return (
     <div className="space-y-8">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-        <StatCard label="売電収入" value={incomeNum} hint={incomeKwh !== "" ? formatKwh(Number(incomeKwh)) : undefined} />
         <StatCard
           label="買電支出"
           value={expenseNum}
           hint={expenseKwh !== "" ? formatKwh(Number(expenseKwh)) : undefined}
         />
+        <StatCard label="売電収入" value={incomeNum} hint={incomeKwh !== "" ? formatKwh(Number(incomeKwh)) : undefined} />
         <StatCard
           label="収支（売電収入 − 買電支出）"
           value={net}
@@ -135,52 +135,6 @@ export function ElectricityView({ initialYearMonth, initialData, trend: initialT
           </div>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div className="flex flex-col gap-1.5">
-              <div className="flex items-center justify-between">
-                <Label htmlFor="income-kwh">売電量（任意）</Label>
-                <Button
-                  type="button"
-                  variant="ghost"
-                  size="sm"
-                  className="h-auto px-2 py-0.5 text-xs text-muted-foreground"
-                  onClick={() => setIncomeKwh("")}
-                >
-                  クリア
-                </Button>
-              </div>
-              <Input
-                id="income-kwh"
-                type="number"
-                inputMode="decimal"
-                step="0.1"
-                placeholder="電力量（kWh）"
-                value={incomeKwh}
-                onChange={(e) => setIncomeKwh(e.target.value)}
-              />
-            </div>
-            <div className="flex flex-col gap-1.5">
-              <div className="flex items-center justify-between">
-                <Label htmlFor="income">売電収入</Label>
-                <Button
-                  type="button"
-                  variant="ghost"
-                  size="sm"
-                  className="h-auto px-2 py-0.5 text-xs text-muted-foreground"
-                  onClick={() => setIncome("")}
-                >
-                  クリア
-                </Button>
-              </div>
-              <p className="-mt-1 text-xs text-muted-foreground">{formatElectricityIncomeInfo(yearMonth)}</p>
-              <Input
-                id="income"
-                type="number"
-                inputMode="numeric"
-                placeholder="金額（円）"
-                value={income}
-                onChange={(e) => setIncome(e.target.value)}
-              />
-            </div>
             <div className="flex flex-col gap-1.5">
               <div className="flex items-center justify-between">
                 <Label htmlFor="expense-kwh">買電量（任意）</Label>
@@ -225,6 +179,52 @@ export function ElectricityView({ initialYearMonth, initialData, trend: initialT
                 placeholder="金額（円）"
                 value={expense}
                 onChange={(e) => setExpense(e.target.value)}
+              />
+            </div>
+            <div className="flex flex-col gap-1.5">
+              <div className="flex items-center justify-between">
+                <Label htmlFor="income-kwh">売電量（任意）</Label>
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="sm"
+                  className="h-auto px-2 py-0.5 text-xs text-muted-foreground"
+                  onClick={() => setIncomeKwh("")}
+                >
+                  クリア
+                </Button>
+              </div>
+              <Input
+                id="income-kwh"
+                type="number"
+                inputMode="decimal"
+                step="0.1"
+                placeholder="電力量（kWh）"
+                value={incomeKwh}
+                onChange={(e) => setIncomeKwh(e.target.value)}
+              />
+            </div>
+            <div className="flex flex-col gap-1.5">
+              <div className="flex items-center justify-between">
+                <Label htmlFor="income">売電収入</Label>
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="sm"
+                  className="h-auto px-2 py-0.5 text-xs text-muted-foreground"
+                  onClick={() => setIncome("")}
+                >
+                  クリア
+                </Button>
+              </div>
+              <p className="-mt-1 text-xs text-muted-foreground">{formatElectricityIncomeInfo(yearMonth)}</p>
+              <Input
+                id="income"
+                type="number"
+                inputMode="numeric"
+                placeholder="金額（円）"
+                value={income}
+                onChange={(e) => setIncome(e.target.value)}
               />
             </div>
           </div>

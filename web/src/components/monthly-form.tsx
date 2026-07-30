@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ACCOUNTS, CATEGORY_LABELS, PERSON_LABELS, accountsFor, categoriesFor, entryKey } from "@/lib/accounts";
 import { formatCardBillingInfo, formatYearMonthLabel } from "@/lib/format";
 import type { MonthlyEntry, Person } from "@/lib/types";
@@ -106,19 +105,12 @@ export function MonthlyForm({ initialYearMonth, initialEntries }: MonthlyFormPro
         {loading && <p className="text-sm text-muted-foreground">読み込み中...</p>}
       </div>
 
-      <Tabs defaultValue="雅一">
-        <TabsList>
-          {PERSON_TABS.map((p) => (
-            <TabsTrigger key={p} value={p}>
-              {PERSON_LABELS[p]}
-            </TabsTrigger>
-          ))}
-        </TabsList>
-
+      <div className="space-y-8">
         {PERSON_TABS.map((person) => (
-          <TabsContent key={person} value={person} className="space-y-4">
+          <div key={person} className="space-y-4">
+            <h2 className="text-lg font-semibold text-brand">{PERSON_LABELS[person]}</h2>
             {categoriesFor(person).map((category) => (
-              <Card key={category}>
+              <Card key={`${person}-${category}`}>
                 <CardHeader className="pb-2">
                   <CardTitle className="text-base text-foreground">{CATEGORY_LABELS[category]}</CardTitle>
                 </CardHeader>
@@ -153,9 +145,9 @@ export function MonthlyForm({ initialYearMonth, initialEntries }: MonthlyFormPro
                 </CardContent>
               </Card>
             ))}
-          </TabsContent>
+          </div>
         ))}
-      </Tabs>
+      </div>
 
       <Button onClick={handleSubmit} disabled={saving || loading} size="lg">
         {saving ? "保存中..." : `${formatYearMonthLabel(yearMonth)} のデータを保存`}

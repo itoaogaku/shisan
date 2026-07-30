@@ -2,25 +2,25 @@
 
 import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
+import { CATEGORY_COLORS, CATEGORY_LABELS } from "@/lib/accounts";
 import { formatYearMonthLabel, formatYen } from "@/lib/format";
-import type { TrendPoint } from "@/lib/types";
+import type { Category, TrendPoint } from "@/lib/types";
 
 interface TrendChartProps {
   trend: TrendPoint[];
 }
 
+const CATEGORIES: Category[] = ["銀行", "証券", "暗号資産", "カード"];
+
 const SERIES = [
-  { key: "total_assets", label: "世帯総資産", color: "var(--chart-1)" },
-  { key: "person_totals.雅一", label: "雅一", color: "var(--chart-2)" },
-  { key: "person_totals.穂夏", label: "穂夏", color: "var(--chart-3)" },
+  { key: "total_assets", label: "世帯総資産", color: "var(--chart-text-primary)" },
+  ...CATEGORIES.map((c) => ({ key: c, label: CATEGORY_LABELS[c], color: CATEGORY_COLORS[c] })),
 ] as const;
 
-interface ChartRow {
+type ChartRow = {
   year_month: string;
   total_assets: number;
-  雅一: number;
-  穂夏: number;
-}
+} & Record<Category, number>;
 
 interface TooltipPayloadItem {
   dataKey: string;
@@ -43,7 +43,7 @@ function ChartTooltip({
       <p className="font-medium">{formatYearMonthLabel(label ?? "")}</p>
       <div className="mt-1 space-y-0.5">
         {payload.map((p) => {
-          const series = SERIES.find((s) => s.key.replace("person_totals.", "") === p.dataKey);
+          const series = SERIES.find((s) => s.key === p.dataKey);
           return (
             <div key={p.dataKey} className="flex items-center gap-1.5">
               <span className="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: p.color }} />
@@ -65,8 +65,10 @@ export function TrendChart({ trend }: TrendChartProps) {
   const data: ChartRow[] = trend.map((t) => ({
     year_month: t.year_month,
     total_assets: t.total_assets,
-    雅一: t.person_totals["雅一"] ?? 0,
-    穂夏: t.person_totals["穂夏"] ?? 0,
+    銀行: t.category_totals?.銀行 ?? 0,
+    証券: t.category_totals?.証券 ?? 0,
+    暗号資産: t.category_totals?.暗号資産 ?? 0,
+    カード: t.category_totals?.カード ?? t.card_total ?? 0,
   }));
 
   return (
@@ -87,30 +89,18 @@ export function TrendChart({ trend }: TrendChartProps) {
             width={90}
           />
           <Tooltip content={<ChartTooltip />} />
-          <Line
-            type="monotone"
-            dataKey="total_assets"
-            name="世帯総資産"
-            stroke="var(--chart-1)"
-            strokeWidth={2}
-            dot={{ r: 4, fill: "var(--chart-1)", stroke: "var(--chart-surface)", strokeWidth: 2 }}
-          />
-          <Line
-            type="monotone"
-            dataKey="雅一"
-            name="雅一"
-            stroke="var(--chart-2)"
-            strokeWidth={2}
-            dot={{ r: 4, fill: "var(--chart-2)", stroke: "var(--chart-surface)", strokeWidth: 2 }}
-          />
-          <Line
-            type="monotone"
-            dataKey="穂夏"
-            name="穂夏"
-            stroke="var(--chart-3)"
-            strokeWidth={2}
-            dot={{ r: 4, fill: "var(--chart-3)", stroke: "var(--chart-surface)", strokeWidth: 2 }}
-          />
+          {SERIES.map((s) => (
+            <Line
+              key={s.key}
+              type="monotone"
+              dataKey={s.key}
+              name={s.label}
+              stroke={s.color}
+              strokeWidth={s.key === "total_assets" ? 2.5 : 2}
+              strokeDasharray={s.key === "total_assets" ? "5 3" : undefined}
+              dot={{ r: 4, fill: s.color, stroke: "var(--chart-surface)", strokeWidth: 2 }}
+            />
+          ))}
         </LineChart>
       </ResponsiveContainer>
       <div className="mt-2 flex flex-wrap gap-4">

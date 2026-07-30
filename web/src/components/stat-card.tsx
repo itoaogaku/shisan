@@ -19,7 +19,7 @@ export function StatCard({ label, value, emphasis, className, valueClassName, hi
         <CardTitle>{label}</CardTitle>
       </CardHeader>
       <CardContent>
-        <p className={cn("font-semibold", emphasis ? "text-3xl" : "text-2xl", valueClassName)}>
+        <p className={cn("font-semibold", emphasis ? "text-3xl text-brand" : "text-2xl", valueClassName)}>
           {formatYen(value)}
         </p>
         {hint && <p className="mt-0.5 text-xs text-muted-foreground">{hint}</p>}

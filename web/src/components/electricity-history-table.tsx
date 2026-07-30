@@ -19,10 +19,10 @@ export function ElectricityHistoryTable({ trend }: ElectricityHistoryTableProps)
         <thead>
           <tr className="border-b border-border text-left text-xs text-muted-foreground">
             <th className="py-2 pr-4 font-medium">年月</th>
-            <th className="py-2 pr-4 text-right font-medium">売電収入</th>
-            <th className="py-2 pr-4 text-right font-medium">売電量</th>
             <th className="py-2 pr-4 text-right font-medium">買電支出</th>
             <th className="py-2 pr-4 text-right font-medium">買電量</th>
+            <th className="py-2 pr-4 text-right font-medium">売電収入</th>
+            <th className="py-2 pr-4 text-right font-medium">売電量</th>
             <th className="py-2 pl-4 text-right font-medium">収支</th>
           </tr>
         </thead>
@@ -36,16 +36,16 @@ export function ElectricityHistoryTable({ trend }: ElectricityHistoryTableProps)
                 </p>
               </td>
               <td className="py-2 pr-4 text-right tabular-nums">
-                {r.income !== null ? formatYen(r.income) : <span className="text-muted-foreground">—</span>}
-              </td>
-              <td className="py-2 pr-4 text-right tabular-nums text-muted-foreground">
-                {r.income_kwh !== null ? formatKwh(r.income_kwh) : "—"}
-              </td>
-              <td className="py-2 pr-4 text-right tabular-nums">
                 {r.expense !== null ? formatYen(r.expense) : <span className="text-muted-foreground">—</span>}
               </td>
               <td className="py-2 pr-4 text-right tabular-nums text-muted-foreground">
                 {r.expense_kwh !== null ? formatKwh(r.expense_kwh) : "—"}
+              </td>
+              <td className="py-2 pr-4 text-right tabular-nums">
+                {r.income !== null ? formatYen(r.income) : <span className="text-muted-foreground">—</span>}
+              </td>
+              <td className="py-2 pr-4 text-right tabular-nums text-muted-foreground">
+                {r.income_kwh !== null ? formatKwh(r.income_kwh) : "—"}
               </td>
               <td
                 className={cn(

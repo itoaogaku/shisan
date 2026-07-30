@@ -49,8 +49,8 @@ export function ElectricitySummary({ trend }: ElectricitySummaryProps) {
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-          <StatCard label="売電収入 合計" value={income.sum} hint={`月平均 ${formatYen(income.avg)}`} />
           <StatCard label="買電支出 合計" value={expense.sum} hint={`月平均 ${formatYen(expense.avg)}`} />
+          <StatCard label="売電収入 合計" value={income.sum} hint={`月平均 ${formatYen(income.avg)}`} />
           <StatCard
             label="収支 合計"
             value={net.sum}
@@ -62,14 +62,14 @@ export function ElectricitySummary({ trend }: ElectricitySummaryProps) {
         {(incomeKwh.count > 0 || expenseKwh.count > 0) && (
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div className="rounded-lg border border-border p-3">
-              <p className="text-sm text-muted-foreground">売電量 合計</p>
-              <p className="text-xl font-semibold">{formatKwh(incomeKwh.sum)}</p>
-              <p className="text-xs text-muted-foreground">月平均 {formatKwh(incomeKwh.avg)}</p>
-            </div>
-            <div className="rounded-lg border border-border p-3">
               <p className="text-sm text-muted-foreground">買電量 合計</p>
               <p className="text-xl font-semibold">{formatKwh(expenseKwh.sum)}</p>
               <p className="text-xs text-muted-foreground">月平均 {formatKwh(expenseKwh.avg)}</p>
+            </div>
+            <div className="rounded-lg border border-border p-3">
+              <p className="text-sm text-muted-foreground">売電量 合計</p>
+              <p className="text-xl font-semibold">{formatKwh(incomeKwh.sum)}</p>
+              <p className="text-xs text-muted-foreground">月平均 {formatKwh(incomeKwh.avg)}</p>
             </div>
           </div>
         )}

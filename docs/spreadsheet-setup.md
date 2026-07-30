@@ -21,11 +21,12 @@ GAS のコード本体は [`gas/Code.gs`](../gas/Code.gs) を参照してくだ�
 2. メニューバーに **「資産管理」** メニューが追加されていることを確認する。
 3. **資産管理 > 初期設定（シート作成）** を実行する。
    - 初回実行時は Google から権限確認のダイアログが表示されるので、対象アカウント（世帯で使うGoogleアカウント）を選択し、「許可」する。
-   - 実行が完了すると `MonthlyBalances` `Accounts` `ElectricityRecords` `Memos` の4シートが作成される。
+   - 実行が完了すると `MonthlyBalances` `Accounts` `ElectricityRecords` `Memos` `AnnualMemos` の5シートが作成される。
      - `MonthlyBalances`: 列 `year_month`, `person`, `category`, `account_name`, `amount`, `updated_at`（資産・カードの実データ本体）
      - `Accounts`: 口座・カードのマスタ一覧（参照用。編集は `gas/Code.gs` 内の `ACCOUNTS` 定数で行う）
      - `ElectricityRecords`: 列 `year_month`, `income`, `expense`, `updated_at`, `income_kwh`, `expense_kwh`（売電収入・買電支出・売電量/買電量[kWh、任意]。資産管理とは別集計）
      - `Memos`: 列 `id`, `date`（未使用・後方互換のため残置）, `account`, `amount`, `memo`, `created_at`, `type`, `frequency`, `day_of_month`, `amount_type`（奨学金の引き落とし口座など、資産管理とは別枠の定期/都度の入出金メモ。`amount_type` は `固定`（金額を指定）/`変動`（利用料に応じて引落など、金額を確定できない場合）のいずれか）
+     - `AnnualMemos`: 列 `id`, `item_name`, `payment_date`, `amount`, `note`, `created_at`（自動車税・固定資産税の振込など、毎年決まった時期に発生する支払いのメモ。既存ユーザーが「初期設定」を再実行しなくても、初回アクセス時に自動的にシートが作成される）
    - 既定で残っていた空の「シート1」は自動的に削除される。
 
 ## 4. APIトークンを設定する（推奨）
@@ -97,11 +98,12 @@ Web アプリとして公開すると URL を知っていれば誰でもアク�
 | `getAccounts` | - | 口座・カードのマスタ一覧を返す |
 | `getMonthlyData` | `year_month` (例: `2026-07`) | 指定年月の全データを返す |
 | `getYearMonths` | - | データが存在する年月の一覧（昇順）を返す |
-| `getTrend` | - | 月次推移データ（総資産・名義別合計・カード合計）を返す |
+| `getTrend` | - | 月次推移データ（総資産・カテゴリ別合計・名義別合計・カード合計）を返す |
 | `getElectricityData` | `year_month` | 指定年月の売電収入・買電支出を返す（データが無ければ `data: null`） |
 | `getElectricityYearMonths` | - | 売電・買電データが存在する年月の一覧（昇順）を返す |
 | `getElectricityTrend` | - | 月ごとの売電収入・買電支出・収支（income − expense）の一覧を返す |
 | `getMemos` | - | メモの一覧を「定期（日付が早い順）→都度（登録が新しい順）」で返す |
+| `getAnnualMemos` | - | 年間メモ（自動車税・固定資産税の振込など）の一覧を登録が新しい順で返す |
 
 ### POST（データ保存・一括Upsert）
 
@@ -162,6 +164,25 @@ Web アプリとして公開すると URL を知っていれば誰でもアク�
 ```
 
 `account` は銀行口座名（例: `りそな銀行（雅一）`）、`type` は `入金` / `出金`、`frequency` は `定期` / `都度`、`amount_type` は `固定` / `変動` のいずれも必須。`frequency` が `定期` の場合のみ `day_of_month`（1〜31）が必須。`amount_type` が `変動`（例: JCBカードの「利用料に応じて引落」のように金額が確定しない場合）のときは `amount` を送っても無視され、常に空欄で保存される。`amount_type` が `固定` の場合のみ `amount`（任意）が使われる。`memo` は任意。`addMemo` は常に新規行を追加する（upsertしない）。旧バージョンのデータ（`amount_type` 列が空欄）は読み込み時に自動的に `固定` として扱われる。
+
+年間メモ（自動車税・固定資産税の振込など、毎年決まった時期に発生する支払い）の追加・削除:
+
+```json
+{
+  "action": "addAnnualMemo",
+  "token": "xxxx",
+  "item_name": "自動車税",
+  "payment_date": "5月31日ごろ",
+  "amount": 34500,
+  "note": "普通車・軽自動車の2台分"
+}
+```
+
+```json
+{ "action": "deleteAnnualMemo", "token": "xxxx", "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" }
+```
+
+`item_name`（項目名）と `payment_date`（支払い日。自由記述。例: `5月31日ごろ`）は必須。`amount` / `note` は任意。`addAnnualMemo` は常に新規行を追加する（upsertしない）。
 
 ## トラブルシューティング: 既存の「Memos」データが新しいメモ一覧に表示されない
 

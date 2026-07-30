@@ -2,39 +2,44 @@
 
 :root {
   color-scheme: light;
-  --radius: 0.65rem;
+  --radius: 0.85rem;
 
-  --background: #f9f9f7;
-  --foreground: #0b0b0b;
-  --card: #fcfcfb;
-  --card-foreground: #0b0b0b;
-  --popover: #fcfcfb;
-  --popover-foreground: #0b0b0b;
-  --primary: #0b0b0b;
-  --primary-foreground: #fcfcfb;
-  --secondary: #eeede8;
-  --secondary-foreground: #0b0b0b;
-  --muted: #eeede8;
-  --muted-foreground: #52514e;
-  --accent: #eeede8;
-  --accent-foreground: #0b0b0b;
+  --background: #eef3fa;
+  --foreground: #16233e;
+  --card: #ffffff;
+  --card-foreground: #16233e;
+  --popover: #ffffff;
+  --popover-foreground: #16233e;
+  --primary: #e58e12;
+  --primary-foreground: #ffffff;
+  --secondary: #e3edfb;
+  --secondary-foreground: #17439b;
+  --muted: #eaf0f9;
+  --muted-foreground: #5c6b85;
+  --accent: #e3edfb;
+  --accent-foreground: #123a8c;
   --destructive: #d03b3b;
-  --destructive-foreground: #fcfcfb;
-  --border: #e1e0d9;
-  --input: #e1e0d9;
-  --ring: #2a78d6;
-  --success-text: #006300;
+  --destructive-foreground: #ffffff;
+  --border: #dbe4f0;
+  --input: #dbe4f0;
+  --ring: #1a56c4;
+  --success-text: #0a7a3d;
+
+  /* ブランドカラー: Money Forward 系の紺碧ブルー（ヘッダー・ナビ・見出し数値等） */
+  --brand: #1a56c4;
+  --brand-dark: #123a8c;
+  --brand-foreground: #ffffff;
 
   /* dataviz: chart chrome & ink (references/palette.md) */
-  --chart-surface: #fcfcfb;
-  --chart-text-primary: #0b0b0b;
-  --chart-text-secondary: #52514e;
-  --chart-text-muted: #898781;
-  --chart-grid: #e1e0d9;
-  --chart-axis: #c3c2b7;
+  --chart-surface: #ffffff;
+  --chart-text-primary: #16233e;
+  --chart-text-secondary: #5c6b85;
+  --chart-text-muted: #93a1ba;
+  --chart-grid: #e3e9f3;
+  --chart-axis: #c1cbdf;
 
   /* dataviz: categorical slots, fixed order (never cycled/reassigned) */
-  --chart-1: #2a78d6; /* blue */
+  --chart-1: #1a56c4; /* blue */
   --chart-2: #eb6834; /* orange */
   --chart-3: #1baf7a; /* aqua */
   --chart-4: #eda100; /* yellow */
@@ -61,6 +66,9 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-success-text: var(--success-text);
+  --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-foreground: var(--brand-foreground);
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);

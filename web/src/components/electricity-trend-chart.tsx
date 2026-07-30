@@ -10,8 +10,8 @@ interface ElectricityTrendChartProps {
 }
 
 const SERIES = [
-  { key: "income", label: "売電収入", color: "var(--chart-1)" },
   { key: "expense", label: "買電支出", color: "var(--chart-2)" },
+  { key: "income", label: "売電収入", color: "var(--chart-1)" },
   { key: "net", label: "収支", color: "var(--chart-3)" },
 ] as const;
 

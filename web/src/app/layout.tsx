@@ -30,15 +30,21 @@ export default function RootLayout({
   return (
     <html lang="ja" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-background text-foreground">
-        <header className="border-b border-border">
-          <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-            <Link href="/" className="text-lg font-semibold">
-              資産管理
+        <header className="sticky top-0 z-10 border-b border-border bg-card/95 shadow-sm backdrop-blur">
+          <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3 sm:px-6 sm:py-4">
+            <Link href="/" className="flex items-center gap-2 text-lg font-bold text-brand">
+              <span
+                className="inline-flex h-7 w-7 items-center justify-center rounded-lg text-sm font-bold text-brand-foreground"
+                style={{ background: "linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%)" }}
+              >
+                資
+              </span>
+              <span className="hidden sm:inline">資産管理</span>
             </Link>
             <NavLinks />
           </div>
         </header>
-        <main className="mx-auto w-full max-w-5xl flex-1 px-6 py-8">{children}</main>
+        <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-6 sm:px-6 sm:py-8">{children}</main>
         <Toaster richColors position="top-right" />
       </body>
     </html>

@@ -25,10 +25,18 @@ export interface PersonTotals {
   穂夏: number;
 }
 
+export interface CategoryTotals {
+  銀行: number;
+  証券: number;
+  暗号資産: number;
+  カード: number;
+}
+
 export interface TrendPoint {
   year_month: string;
   total_assets: number;
   person_totals: PersonTotals;
+  category_totals: CategoryTotals;
   card_total: number;
 }
 
@@ -66,6 +74,17 @@ export interface MemoRecord {
   amount_type: MemoAmountType;
   amount: number | null;
   memo: string;
+  created_at?: string;
+}
+
+/** 自動車税・固定資産税の振込など、毎年決まった時期に発生する支払いのメモ。 */
+export interface AnnualMemoRecord {
+  id: string;
+  item_name: string;
+  /** 自由記述の支払い時期（例: "5月31日ごろ"）。 */
+  payment_date: string;
+  amount: number | null;
+  note: string;
   created_at?: string;
 }
 

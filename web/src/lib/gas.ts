@@ -2,6 +2,7 @@ import "server-only";
 
 import type {
   AccountDef,
+  AnnualMemoRecord,
   ElectricityRecord,
   ElectricityTrendPoint,
   MemoAmountType,
@@ -145,4 +146,26 @@ export async function addMemo(
 
 export async function deleteMemo(id: string): Promise<void> {
   await gasPost({ action: "deleteMemo", id });
+}
+
+export async function fetchAnnualMemos(): Promise<AnnualMemoRecord[]> {
+  const json = await gasGet("getAnnualMemos");
+  return (json.annual_memos as AnnualMemoRecord[]) ?? [];
+}
+
+export async function addAnnualMemo(
+  itemName: string,
+  paymentDate: string,
+  amount?: number,
+  note?: string
+): Promise<string> {
+  const body: Record<string, unknown> = { action: "addAnnualMemo", item_name: itemName, payment_date: paymentDate };
+  if (amount !== undefined) body.amount = amount;
+  if (note) body.note = note;
+  const json = await gasPost(body);
+  return json.id as string;
+}
+
+export async function deleteAnnualMemo(id: string): Promise<void> {
+  await gasPost({ action: "deleteAnnualMemo", id });
 }

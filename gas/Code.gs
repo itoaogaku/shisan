@@ -6,6 +6,7 @@
  *  - Accounts          : 口座・カードのマスタ（参照用。編集は下記 ACCOUNTS 定数側で行う）
  *  - ElectricityRecords: 資産管理とは別枠の、月次の売電収入・買電支出データ
  *  - Memos             : 奨学金の引き落とし口座など、資産管理とは別枠の定期/都度の入出金メモ
+ *  - AnnualMemos       : 自動車税・固定資産税の振込など、毎年決まった時期に発生する支払いのメモ
  *
  * デプロイ方法・初期設定手順は docs/spreadsheet-setup.md を参照。
  */
@@ -15,6 +16,7 @@ var SHEET_MONTHLY = 'MonthlyBalances';
 var SHEET_ACCOUNTS = 'Accounts';
 var SHEET_ELECTRICITY = 'ElectricityRecords';
 var SHEET_MEMOS = 'Memos';
+var SHEET_ANNUAL_MEMOS = 'AnnualMemos';
 var HEADER = ['year_month', 'person', 'category', 'account_name', 'amount', 'updated_at'];
 // income_kwh / expense_kwh は末尾に追加した列。既存シートの列順（year_month, income,
 // expense, updated_at）を崩さないよう、後方互換のため末尾に配置している。
@@ -26,6 +28,8 @@ var HEADER_MEMOS = [
   'id', 'date', 'account', 'amount', 'memo', 'created_at',
   'type', 'frequency', 'day_of_month', 'amount_type'
 ];
+// 自動車税・固定資産税の振込など、毎年決まった時期に発生する支払いのメモ（Memosとは別シート）。
+var HEADER_ANNUAL_MEMOS = ['id', 'item_name', 'payment_date', 'amount', 'note', 'created_at'];
 
 // 口座・カードのマスタ定義。フロントエンドの入力フォームと内容を一致させること。
 // person は「雅一」「穂夏」「共通」のいずれか。カードは世帯共通の支払いとして「共通」で管理する。
@@ -108,13 +112,20 @@ function setupSpreadsheet() {
   memos.setFrozenRows(1);
   memos.getRange(1, 1, 1, HEADER_MEMOS.length).setFontWeight('bold');
 
+  var annualMemos = ss.getSheetByName(SHEET_ANNUAL_MEMOS);
+  if (!annualMemos) annualMemos = ss.insertSheet(SHEET_ANNUAL_MEMOS);
+  annualMemos.clear();
+  annualMemos.getRange(1, 1, 1, HEADER_ANNUAL_MEMOS.length).setValues([HEADER_ANNUAL_MEMOS]);
+  annualMemos.setFrozenRows(1);
+  annualMemos.getRange(1, 1, 1, HEADER_ANNUAL_MEMOS.length).setFontWeight('bold');
+
   var defaultSheet = ss.getSheetByName('シート1') || ss.getSheetByName('Sheet1');
-  if (defaultSheet && ss.getSheets().length > 4) {
+  if (defaultSheet && ss.getSheets().length > 5) {
     ss.deleteSheet(defaultSheet);
   }
 
   SpreadsheetApp.getUi().alert(
-    '初期設定が完了しました。\n「MonthlyBalances」「Accounts」「ElectricityRecords」「Memos」シートを作成しました。'
+    '初期設定が完了しました。\n「MonthlyBalances」「Accounts」「ElectricityRecords」「Memos」「AnnualMemos」シートを作成しました。'
   );
 }
 
@@ -179,6 +190,22 @@ function getSheet_(name) {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getSheetByName(name);
   if (!sheet) throw new Error('シートが見つかりません: ' + name + '。先に「資産管理 > 初期設定」を実行してください。');
+  return sheet;
+}
+
+/**
+ * AnnualMemos シートを返す。既存ユーザーが「初期設定」を再実行せず（＝既存データを消さずに）
+ * この機能を使えるよう、無ければここで自動的に作成する。
+ */
+function getAnnualMemosSheet_() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName(SHEET_ANNUAL_MEMOS);
+  if (!sheet) {
+    sheet = ss.insertSheet(SHEET_ANNUAL_MEMOS);
+    sheet.getRange(1, 1, 1, HEADER_ANNUAL_MEMOS.length).setValues([HEADER_ANNUAL_MEMOS]);
+    sheet.setFrozenRows(1);
+    sheet.getRange(1, 1, 1, HEADER_ANNUAL_MEMOS.length).setFontWeight('bold');
+  }
   return sheet;
 }
 
@@ -249,8 +276,9 @@ function getYearMonths_() {
 /**
  * 月ごとの推移データを集計する。
  * total_assets: カードを除く全資産の合計（世帯全体の総資産額）
- * person_totals: 雅一 / 穂夏 それぞれの合計（カードを除く）
- * card_total: クレジットカードの当月請求額合計
+ * person_totals: 雅一 / 穂夏 それぞれの合計（カードを除く。後方互換のため残置）
+ * category_totals: 銀行 / 証券 / 暗号資産 / カード それぞれの合計
+ * card_total: クレジットカードの当月請求額合計（category_totals.カード と同値。後方互換のため残置）
  */
 function getTrend_() {
   var rows = getAllRows_();
@@ -261,10 +289,14 @@ function getTrend_() {
         year_month: r.year_month,
         total_assets: 0,
         person_totals: { 雅一: 0, 穂夏: 0 },
+        category_totals: { 銀行: 0, 証券: 0, 暗号資産: 0, カード: 0 },
         card_total: 0
       };
     }
     var m = map[r.year_month];
+    if (m.category_totals[r.category] !== undefined) {
+      m.category_totals[r.category] += r.amount;
+    }
     if (r.category === 'カード') {
       m.card_total += r.amount;
     } else {
@@ -548,6 +580,75 @@ function deleteMemo_(id) {
   return false;
 }
 
+// ==== 年間メモ（自動車税・固定資産税の振込など、毎年決まった時期に発生する支払いのメモ） ====
+
+/**
+ * 年間メモの一覧を、登録が新しい順で取得する。
+ */
+function listAnnualMemos_() {
+  var sheet = getAnnualMemosSheet_();
+  var lastRow = sheet.getLastRow();
+  if (lastRow < 2) return [];
+  var values = sheet.getRange(2, 1, lastRow - 1, HEADER_ANNUAL_MEMOS.length).getValues();
+  var memos = values.map(function (row) {
+    return {
+      id: String(row[0]),
+      item_name: row[1],
+      payment_date: row[2],
+      amount: row[3] === '' ? null : Number(row[3]),
+      note: row[4],
+      created_at: row[5]
+    };
+  });
+  memos.sort(function (a, b) {
+    return String(b.created_at) < String(a.created_at) ? -1 : 1;
+  });
+  return memos;
+}
+
+/**
+ * 年間メモを1件追加する。
+ * itemName（項目名）, paymentDate（支払い日。自由記述。例: "5月31日ごろ"）は必須。amount, note は任意。
+ */
+function addAnnualMemo_(itemName, paymentDate, amount, note) {
+  if (!itemName) throw new Error('itemName は必須です');
+  if (!paymentDate) throw new Error('paymentDate は必須です');
+
+  var sheet = getAnnualMemosSheet_();
+
+  var id = Utilities.getUuid();
+  var now = new Date();
+  var rowValues = [
+    id,
+    itemName,
+    paymentDate,
+    amount !== undefined && amount !== null && amount !== '' ? Number(amount) : '',
+    note || '',
+    now
+  ];
+  sheet.getRange(sheet.getLastRow() + 1, 1, 1, HEADER_ANNUAL_MEMOS.length).setValues([rowValues]);
+  return id;
+}
+
+/**
+ * 指定 id の年間メモを1件削除する。
+ */
+function deleteAnnualMemo_(id) {
+  if (!id) throw new Error('id は必須です');
+  var sheet = getAnnualMemosSheet_();
+  var lastRow = sheet.getLastRow();
+  if (lastRow < 2) return false;
+
+  var ids = sheet.getRange(2, 1, lastRow - 1, 1).getValues();
+  for (var i = 0; i < ids.length; i++) {
+    if (String(ids[i][0]) === String(id)) {
+      sheet.deleteRow(i + 2);
+      return true;
+    }
+  }
+  return false;
+}
+
 // ==== エンドポイント ====
 
 /**
@@ -559,6 +660,7 @@ function deleteMemo_(id) {
  * GET /exec?action=getElectricityYearMonths
  * GET /exec?action=getElectricityTrend
  * GET /exec?action=getMemos
+ * GET /exec?action=getAnnualMemos
  * 全て &token=xxx を付与可能（APIトークン設定時は必須）
  */
 function doGet(e) {
@@ -593,6 +695,8 @@ function doGet(e) {
         return jsonOutput_({ ok: true, trend: getElectricityTrend_() });
       case 'getMemos':
         return jsonOutput_({ ok: true, memos: listMemos_() });
+      case 'getAnnualMemos':
+        return jsonOutput_({ ok: true, annual_memos: listAnnualMemos_() });
       default:
         return jsonOutput_({ ok: false, error: 'unknown action: ' + action });
     }
@@ -649,6 +753,24 @@ function doGet(e) {
  *   "token": "xxx",
  *   "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
  * }
+ *
+ * 年間メモ（自動車税・固定資産税の振込など）の追加:
+ * {
+ *   "action": "addAnnualMemo",
+ *   "token": "xxx",
+ *   "item_name": "自動車税",
+ *   "payment_date": "5月31日ごろ",
+ *   "amount": 34500,
+ *   "note": "普通車・軽自動車の2台分"
+ * }
+ * item_name, payment_date は必須。amount, note は任意。
+ *
+ * 年間メモの削除:
+ * {
+ *   "action": "deleteAnnualMemo",
+ *   "token": "xxx",
+ *   "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+ * }
  */
 function doPost(e) {
   try {
@@ -674,6 +796,12 @@ function doPost(e) {
       case 'deleteMemo':
         var deleted = deleteMemo_(body.id);
         return jsonOutput_({ ok: true, deleted: deleted });
+      case 'addAnnualMemo':
+        var newAnnualId = addAnnualMemo_(body.item_name, body.payment_date, body.amount, body.note);
+        return jsonOutput_({ ok: true, id: newAnnualId });
+      case 'deleteAnnualMemo':
+        var deletedAnnual = deleteAnnualMemo_(body.id);
+        return jsonOutput_({ ok: true, deleted: deletedAnnual });
       default:
         return jsonOutput_({ ok: false, error: 'unknown action: ' + action });
     }
