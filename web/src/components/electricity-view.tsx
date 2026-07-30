@@ -140,6 +140,18 @@ export function ElectricityView({ initialYearMonth, initialData, trend: initialT
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div className="flex flex-col gap-1.5">
+              <Label htmlFor="income-kwh">売電量（任意）</Label>
+              <Input
+                id="income-kwh"
+                type="number"
+                inputMode="decimal"
+                step="0.1"
+                placeholder="電力量（kWh）"
+                value={incomeKwh}
+                onChange={(e) => setIncomeKwh(e.target.value)}
+              />
+            </div>
+            <div className="flex flex-col gap-1.5">
               <div>
                 <Label htmlFor="income">売電収入</Label>
                 <p className="text-xs text-muted-foreground">{formatElectricityIncomeInfo(yearMonth)}</p>
@@ -154,15 +166,15 @@ export function ElectricityView({ initialYearMonth, initialData, trend: initialT
               />
             </div>
             <div className="flex flex-col gap-1.5">
-              <Label htmlFor="income-kwh">売電量（任意）</Label>
+              <Label htmlFor="expense-kwh">買電量（任意）</Label>
               <Input
-                id="income-kwh"
+                id="expense-kwh"
                 type="number"
                 inputMode="decimal"
                 step="0.1"
                 placeholder="電力量（kWh）"
-                value={incomeKwh}
-                onChange={(e) => setIncomeKwh(e.target.value)}
+                value={expenseKwh}
+                onChange={(e) => setExpenseKwh(e.target.value)}
               />
             </div>
             <div className="flex flex-col gap-1.5">
@@ -177,18 +189,6 @@ export function ElectricityView({ initialYearMonth, initialData, trend: initialT
                 placeholder="金額（円）"
                 value={expense}
                 onChange={(e) => setExpense(e.target.value)}
-              />
-            </div>
-            <div className="flex flex-col gap-1.5">
-              <Label htmlFor="expense-kwh">買電量（任意）</Label>
-              <Input
-                id="expense-kwh"
-                type="number"
-                inputMode="decimal"
-                step="0.1"
-                placeholder="電力量（kWh）"
-                value={expenseKwh}
-                onChange={(e) => setExpenseKwh(e.target.value)}
               />
             </div>
           </div>
