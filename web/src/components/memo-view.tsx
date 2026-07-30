@@ -11,7 +11,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { bankAccountLabels } from "@/lib/accounts";
 import { formatYen } from "@/lib/format";
 import { cn } from "@/lib/utils";
-import type { MemoFrequency, MemoRecord, MemoType } from "@/lib/types";
+import type { MemoAmountType, MemoFrequency, MemoRecord, MemoType } from "@/lib/types";
 
 interface MemoViewProps {
   initialMemos: MemoRecord[];
@@ -54,6 +54,7 @@ export function MemoView({ initialMemos }: MemoViewProps) {
   const [type, setType] = useState<MemoType>("出金");
   const [frequency, setFrequency] = useState<MemoFrequency>("定期");
   const [dayOfMonth, setDayOfMonth] = useState("");
+  const [amountType, setAmountType] = useState<MemoAmountType>("固定");
   const [amount, setAmount] = useState("");
   const [memoText, setMemoText] = useState("");
   const [saving, setSaving] = useState(false);
@@ -77,9 +78,9 @@ export function MemoView({ initialMemos }: MemoViewProps) {
 
     setSaving(true);
     try {
-      const body: Record<string, unknown> = { account, type, frequency };
+      const body: Record<string, unknown> = { account, type, frequency, amount_type: amountType };
       if (frequency === "定期") body.day_of_month = Number(dayOfMonth);
-      if (amount !== "") body.amount = Number(amount);
+      if (amountType === "固定" && amount !== "") body.amount = Number(amount);
       if (memoText.trim()) body.memo = memoText.trim();
 
       const res = await fetch("/api/gas/memos", {
@@ -200,16 +201,37 @@ export function MemoView({ initialMemos }: MemoViewProps) {
             )}
 
             <div className="flex flex-col gap-1.5">
-              <Label htmlFor="memo-amount">金額（任意）</Label>
-              <Input
-                id="memo-amount"
-                type="number"
-                inputMode="numeric"
-                placeholder="金額（円）"
-                value={amount}
-                onChange={(e) => setAmount(e.target.value)}
-              />
+              <Label>金額の種類</Label>
+              <div className="inline-flex h-10 items-center rounded-lg bg-muted p-1">
+                {(["固定", "変動"] as MemoAmountType[]).map((a) => (
+                  <button
+                    key={a}
+                    type="button"
+                    onClick={() => setAmountType(a)}
+                    className={cn(
+                      "h-8 flex-1 rounded-md px-4 text-sm font-medium transition-colors",
+                      amountType === a ? "bg-card text-foreground shadow-sm" : "text-muted-foreground"
+                    )}
+                  >
+                    {a === "固定" ? "固定額" : "利用料に応じて"}
+                  </button>
+                ))}
+              </div>
             </div>
+
+            {amountType === "固定" && (
+              <div className="flex flex-col gap-1.5">
+                <Label htmlFor="memo-amount">金額（任意）</Label>
+                <Input
+                  id="memo-amount"
+                  type="number"
+                  inputMode="numeric"
+                  placeholder="金額（円）"
+                  value={amount}
+                  onChange={(e) => setAmount(e.target.value)}
+                />
+              </div>
+            )}
           </div>
 
           <div className="flex flex-col gap-1.5">
@@ -288,7 +310,11 @@ function MemoCard({
           {deleting ? "削除中..." : "削除"}
         </Button>
       </div>
-      {memo.amount !== null && <p className="mt-2 font-semibold tabular-nums">{formatYen(memo.amount)}</p>}
+      {memo.amount_type === "変動" ? (
+        <p className="mt-2 text-sm font-medium text-muted-foreground">利用料に応じて</p>
+      ) : (
+        memo.amount !== null && <p className="mt-2 font-semibold tabular-nums">{formatYen(memo.amount)}</p>
+      )}
       {memo.memo && <p className="mt-1 whitespace-pre-wrap text-sm text-muted-foreground">{memo.memo}</p>}
     </div>
   );

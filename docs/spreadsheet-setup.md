@@ -25,7 +25,7 @@ GAS のコード本体は [`gas/Code.gs`](../gas/Code.gs) を参照してくだ�
      - `MonthlyBalances`: 列 `year_month`, `person`, `category`, `account_name`, `amount`, `updated_at`（資産・カードの実データ本体）
      - `Accounts`: 口座・カードのマスタ一覧（参照用。編集は `gas/Code.gs` 内の `ACCOUNTS` 定数で行う）
      - `ElectricityRecords`: 列 `year_month`, `income`, `expense`, `updated_at`, `income_kwh`, `expense_kwh`（売電収入・買電支出・売電量/買電量[kWh、任意]。資産管理とは別集計）
-     - `Memos`: 列 `id`, `date`（未使用・後方互換のため残置）, `account`, `amount`, `memo`, `created_at`, `type`, `frequency`, `day_of_month`（奨学金の引き落とし口座など、資産管理とは別枠の定期/都度の入出金メモ）
+     - `Memos`: 列 `id`, `date`（未使用・後方互換のため残置）, `account`, `amount`, `memo`, `created_at`, `type`, `frequency`, `day_of_month`, `amount_type`（奨学金の引き落とし口座など、資産管理とは別枠の定期/都度の入出金メモ。`amount_type` は `固定`（金額を指定）/`変動`（利用料に応じて引落など、金額を確定できない場合）のいずれか）
    - 既定で残っていた空の「シート1」は自動的に削除される。
 
 ## 4. APIトークンを設定する（推奨）
@@ -151,6 +151,7 @@ Web アプリとして公開すると URL を知っていれば誰でもアク�
   "type": "出金",
   "frequency": "定期",
   "day_of_month": 27,
+  "amount_type": "固定",
   "amount": 14222,
   "memo": "奨学金引落"
 }
@@ -160,7 +161,7 @@ Web アプリとして公開すると URL を知っていれば誰でもアク�
 { "action": "deleteMemo", "token": "xxxx", "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" }
 ```
 
-`account` は銀行口座名（例: `りそな銀行（雅一）`）、`type` は `入金` / `出金`、`frequency` は `定期` / `都度` のいずれか必須。`frequency` が `定期` の場合のみ `day_of_month`（1〜31）が必須。`amount` / `memo` は任意。`addMemo` は常に新規行を追加する（upsertしない）。
+`account` は銀行口座名（例: `りそな銀行（雅一）`）、`type` は `入金` / `出金`、`frequency` は `定期` / `都度`、`amount_type` は `固定` / `変動` のいずれも必須。`frequency` が `定期` の場合のみ `day_of_month`（1〜31）が必須。`amount_type` が `変動`（例: JCBカードの「利用料に応じて引落」のように金額が確定しない場合）のときは `amount` を送っても無視され、常に空欄で保存される。`amount_type` が `固定` の場合のみ `amount`（任意）が使われる。`memo` は任意。`addMemo` は常に新規行を追加する（upsertしない）。旧バージョンのデータ（`amount_type` 列が空欄）は読み込み時に自動的に `固定` として扱われる。
 
 ## トラブルシューティング: 既存の「Memos」データが新しいメモ一覧に表示されない
 

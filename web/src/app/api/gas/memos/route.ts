@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 import { addMemo, deleteMemo, fetchMemos } from "@/lib/gas";
-import type { MemoFrequency, MemoType } from "@/lib/types";
+import type { MemoAmountType, MemoFrequency, MemoType } from "@/lib/types";
 
 export async function GET() {
   try {
@@ -17,6 +17,7 @@ interface AddMemoBody {
   type?: MemoType;
   frequency?: MemoFrequency;
   day_of_month?: number;
+  amount_type?: MemoAmountType;
   amount?: number;
   memo?: string;
 }
@@ -29,7 +30,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ ok: false, error: "invalid JSON body" }, { status: 400 });
   }
 
-  const { account, type, frequency, day_of_month, amount, memo } = body;
+  const { account, type, frequency, day_of_month, amount_type, amount, memo } = body;
   if (!account || !account.trim()) {
     return NextResponse.json({ ok: false, error: "account is required" }, { status: 400 });
   }
@@ -45,12 +46,23 @@ export async function POST(request: NextRequest) {
       { status: 400 }
     );
   }
+  if (amount_type !== "固定" && amount_type !== "変動") {
+    return NextResponse.json({ ok: false, error: 'amount_type must be "固定" or "変動"' }, { status: 400 });
+  }
   if (amount !== undefined && (typeof amount !== "number" || Number.isNaN(amount))) {
     return NextResponse.json({ ok: false, error: "amount must be a number" }, { status: 400 });
   }
 
   try {
-    const id = await addMemo(account, type, frequency, frequency === "定期" ? day_of_month : undefined, amount, memo);
+    const id = await addMemo(
+      account,
+      type,
+      frequency,
+      amount_type,
+      frequency === "定期" ? day_of_month : undefined,
+      amount_type === "固定" ? amount : undefined,
+      memo
+    );
     return NextResponse.json({ ok: true, id });
   } catch (error) {
     return NextResponse.json({ ok: false, error: String(error) }, { status: 500 });

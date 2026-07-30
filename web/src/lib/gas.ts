@@ -4,6 +4,7 @@ import type {
   AccountDef,
   ElectricityRecord,
   ElectricityTrendPoint,
+  MemoAmountType,
   MemoFrequency,
   MemoRecord,
   MemoType,
@@ -129,11 +130,12 @@ export async function addMemo(
   account: string,
   type: MemoType,
   frequency: MemoFrequency,
+  amountType: MemoAmountType,
   dayOfMonth?: number,
   amount?: number,
   memo?: string
 ): Promise<string> {
-  const body: Record<string, unknown> = { action: "addMemo", account, type, frequency };
+  const body: Record<string, unknown> = { action: "addMemo", account, type, frequency, amount_type: amountType };
   if (dayOfMonth !== undefined) body.day_of_month = dayOfMonth;
   if (amount !== undefined) body.amount = amount;
   if (memo) body.memo = memo;

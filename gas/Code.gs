@@ -20,9 +20,12 @@ var HEADER = ['year_month', 'person', 'category', 'account_name', 'amount', 'upd
 // expense, updated_at）を崩さないよう、後方互換のため末尾に配置している。
 var HEADER_ELECTRICITY = ['year_month', 'income', 'expense', 'updated_at', 'income_kwh', 'expense_kwh'];
 // date（B列）は初期バージョンの名残りで、後方互換のため列として残しているが
-// 現在のUIでは使用しない（常に空欄で書き込む）。type/frequency/day_of_month は
+// 現在のUIでは使用しない（常に空欄で書き込む）。type/frequency/day_of_month/amount_type は
 // 既存データの列がずれないよう末尾に追加している。
-var HEADER_MEMOS = ['id', 'date', 'account', 'amount', 'memo', 'created_at', 'type', 'frequency', 'day_of_month'];
+var HEADER_MEMOS = [
+  'id', 'date', 'account', 'amount', 'memo', 'created_at',
+  'type', 'frequency', 'day_of_month', 'amount_type'
+];
 
 // 口座・カードのマスタ定義。フロントエンドの入力フォームと内容を一致させること。
 // person は「雅一」「穂夏」「共通」のいずれか。カードは世帯共通の支払いとして「共通」で管理する。
@@ -475,7 +478,8 @@ function listMemos_() {
       created_at: row[5],
       type: row[6] || '',
       frequency: row[7] || '',
-      day_of_month: row[8] === '' ? null : Number(row[8])
+      day_of_month: row[8] === '' ? null : Number(row[8]),
+      amount_type: row[9] || '固定'
     };
   });
   memos.sort(function (a, b) {
@@ -488,15 +492,21 @@ function listMemos_() {
 
 /**
  * メモを1件追加する。
- * account, type（入金/出金）, frequency（定期/都度）は必須。
- * frequency が「定期」の場合のみ dayOfMonth（1〜31）が必須。amount, memo は任意。
+ * account, type（入金/出金）, frequency（定期/都度）, amountType（固定/変動）は必須。
+ * frequency が「定期」の場合のみ dayOfMonth（1〜31）が必須。
+ * amountType が「固定」の場合のみ amount（任意の金額）を使う。「変動」の場合、amount は
+ * 「利用料に応じて」等の意味になるため、渡された値に関わらず空欄で保存する。
+ * memo は任意。
  */
-function addMemo_(account, type, frequency, dayOfMonth, amount, memo) {
+function addMemo_(account, type, frequency, dayOfMonth, amountType, amount, memo) {
   if (!account) throw new Error('account は必須です');
   if (type !== '入金' && type !== '出金') throw new Error('type は "入金" または "出金" である必要があります');
   if (frequency !== '定期' && frequency !== '都度') throw new Error('frequency は "定期" または "都度" である必要があります');
   if (frequency === '定期' && (!dayOfMonth || dayOfMonth < 1 || dayOfMonth > 31)) {
     throw new Error('定期の場合、day_of_month は1〜31の範囲で必須です');
+  }
+  if (amountType !== '固定' && amountType !== '変動') {
+    throw new Error('amountType は "固定" または "変動" である必要があります');
   }
 
   var sheet = getSheet_(SHEET_MEMOS);
@@ -507,12 +517,13 @@ function addMemo_(account, type, frequency, dayOfMonth, amount, memo) {
     id,
     '', // date列（後方互換のため残置。新規行では未使用）
     account,
-    amount !== undefined && amount !== null && amount !== '' ? Number(amount) : '',
+    amountType === '固定' && amount !== undefined && amount !== null && amount !== '' ? Number(amount) : '',
     memo || '',
     now,
     type,
     frequency,
-    frequency === '定期' ? Number(dayOfMonth) : ''
+    frequency === '定期' ? Number(dayOfMonth) : '',
+    amountType
   ];
   sheet.getRange(sheet.getLastRow() + 1, 1, 1, HEADER_MEMOS.length).setValues([rowValues]);
   return id;
@@ -624,11 +635,13 @@ function doGet(e) {
  *   "type": "出金",
  *   "frequency": "定期",
  *   "day_of_month": 27,
+ *   "amount_type": "固定",
  *   "amount": 15000,
  *   "memo": "奨学金の引き落とし"
  * }
- * account / type（入金・出金） / frequency（定期・都度） は必須。frequency が「定期」の場合のみ
- * day_of_month（1〜31）が必須。amount, memo は任意。
+ * account / type（入金・出金） / frequency（定期・都度） / amount_type（固定・変動） は必須。
+ * frequency が「定期」の場合のみ day_of_month（1〜31）が必須。amount_type が「変動」の場合、
+ * amount は「利用料に応じて」等の意味になるため無視され、常に空欄で保存される。memo は任意。
  *
  * メモの削除:
  * {
@@ -654,7 +667,9 @@ function doPost(e) {
         saveElectricity_(body.year_month, body.income, body.expense, body.income_kwh, body.expense_kwh);
         return jsonOutput_({ ok: true });
       case 'addMemo':
-        var newId = addMemo_(body.account, body.type, body.frequency, body.day_of_month, body.amount, body.memo);
+        var newId = addMemo_(
+          body.account, body.type, body.frequency, body.day_of_month, body.amount_type, body.amount, body.memo
+        );
         return jsonOutput_({ ok: true, id: newId });
       case 'deleteMemo':
         var deleted = deleteMemo_(body.id);
