@@ -8,17 +8,52 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { currentDate, formatDateLabel, formatYen } from "@/lib/format";
-import type { MemoRecord } from "@/lib/types";
+import { bankAccountLabels } from "@/lib/accounts";
+import { formatYen } from "@/lib/format";
+import { cn } from "@/lib/utils";
+import type { MemoFrequency, MemoRecord, MemoType } from "@/lib/types";
 
 interface MemoViewProps {
   initialMemos: MemoRecord[];
 }
 
+const BANK_OPTIONS = bankAccountLabels();
+
+function sortMemos(memos: MemoRecord[]): MemoRecord[] {
+  return [...memos].sort((a, b) => {
+    if (a.frequency !== b.frequency) return a.frequency === "定期" ? -1 : 1;
+    if (a.frequency === "定期") return (a.day_of_month ?? 99) - (b.day_of_month ?? 99);
+    return (b.created_at ?? "").localeCompare(a.created_at ?? "");
+  });
+}
+
+function TypeBadge({ type }: { type: MemoType }) {
+  return (
+    <span
+      className={cn(
+        "inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium",
+        type === "入金" ? "bg-success-text/10 text-success-text" : "bg-destructive/10 text-destructive"
+      )}
+    >
+      {type}
+    </span>
+  );
+}
+
+function FrequencyBadge({ frequency, dayOfMonth }: { frequency: MemoFrequency; dayOfMonth: number | null }) {
+  return (
+    <span className="inline-flex items-center rounded-full bg-muted px-2 py-0.5 text-xs font-medium text-muted-foreground">
+      {frequency === "定期" ? `定期・毎月${dayOfMonth}日` : "都度"}
+    </span>
+  );
+}
+
 export function MemoView({ initialMemos }: MemoViewProps) {
   const [memos, setMemos] = useState(initialMemos);
-  const [date, setDate] = useState(currentDate());
-  const [account, setAccount] = useState("");
+  const [account, setAccount] = useState(BANK_OPTIONS[0] ?? "");
+  const [type, setType] = useState<MemoType>("出金");
+  const [frequency, setFrequency] = useState<MemoFrequency>("定期");
+  const [dayOfMonth, setDayOfMonth] = useState("");
   const [amount, setAmount] = useState("");
   const [memoText, setMemoText] = useState("");
   const [saving, setSaving] = useState(false);
@@ -31,20 +66,21 @@ export function MemoView({ initialMemos }: MemoViewProps) {
   }
 
   async function handleSubmit() {
-    if (!date) {
-      toast.warning("日付を入力してください。");
+    if (!account) {
+      toast.warning("口座を選択してください。");
       return;
     }
-    if (!memoText.trim()) {
-      toast.warning("メモの内容を入力してください。");
+    if (frequency === "定期" && (dayOfMonth === "" || Number(dayOfMonth) < 1 || Number(dayOfMonth) > 31)) {
+      toast.warning("定期の場合、日（1〜31）を入力してください。");
       return;
     }
 
     setSaving(true);
     try {
-      const body: Record<string, unknown> = { date, memo: memoText.trim() };
-      if (account.trim()) body.account = account.trim();
+      const body: Record<string, unknown> = { account, type, frequency };
+      if (frequency === "定期") body.day_of_month = Number(dayOfMonth);
       if (amount !== "") body.amount = Number(amount);
+      if (memoText.trim()) body.memo = memoText.trim();
 
       const res = await fetch("/api/gas/memos", {
         method: "POST",
@@ -55,7 +91,7 @@ export function MemoView({ initialMemos }: MemoViewProps) {
       if (!json.ok) throw new Error(json.error ?? "保存に失敗しました");
 
       toast.success("メモを追加しました");
-      setAccount("");
+      setDayOfMonth("");
       setAmount("");
       setMemoText("");
       await refreshMemos();
@@ -81,6 +117,10 @@ export function MemoView({ initialMemos }: MemoViewProps) {
     }
   }
 
+  const sorted = sortMemos(memos);
+  const recurring = sorted.filter((m) => m.frequency === "定期");
+  const irregular = sorted.filter((m) => m.frequency === "都度");
+
   return (
     <div className="space-y-8">
       <Card>
@@ -88,21 +128,77 @@ export function MemoView({ initialMemos }: MemoViewProps) {
           <CardTitle className="text-base text-foreground">メモを追加</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div className="flex flex-col gap-1.5">
-              <Label htmlFor="memo-date">日付</Label>
-              <Input id="memo-date" type="date" value={date} onChange={(e) => setDate(e.target.value)} />
-            </div>
-            <div className="flex flex-col gap-1.5">
-              <Label htmlFor="memo-account">口座・引き落とし先（任意）</Label>
-              <Input
+              <Label htmlFor="memo-account">口座</Label>
+              <select
                 id="memo-account"
-                type="text"
-                placeholder="例: りそな銀行（雅一）"
                 value={account}
                 onChange={(e) => setAccount(e.target.value)}
-              />
+                className="h-10 rounded-md border border-input bg-card px-3 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              >
+                {BANK_OPTIONS.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
             </div>
+
+            <div className="flex flex-col gap-1.5">
+              <Label>種別</Label>
+              <div className="inline-flex h-10 items-center rounded-lg bg-muted p-1">
+                {(["出金", "入金"] as MemoType[]).map((t) => (
+                  <button
+                    key={t}
+                    type="button"
+                    onClick={() => setType(t)}
+                    className={cn(
+                      "h-8 flex-1 rounded-md px-4 text-sm font-medium transition-colors",
+                      type === t ? "bg-card text-foreground shadow-sm" : "text-muted-foreground"
+                    )}
+                  >
+                    {t}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-1.5">
+              <Label>頻度</Label>
+              <div className="inline-flex h-10 items-center rounded-lg bg-muted p-1">
+                {(["定期", "都度"] as MemoFrequency[]).map((f) => (
+                  <button
+                    key={f}
+                    type="button"
+                    onClick={() => setFrequency(f)}
+                    className={cn(
+                      "h-8 flex-1 rounded-md px-4 text-sm font-medium transition-colors",
+                      frequency === f ? "bg-card text-foreground shadow-sm" : "text-muted-foreground"
+                    )}
+                  >
+                    {f}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {frequency === "定期" && (
+              <div className="flex flex-col gap-1.5">
+                <Label htmlFor="memo-day">毎月何日</Label>
+                <Input
+                  id="memo-day"
+                  type="number"
+                  inputMode="numeric"
+                  min={1}
+                  max={31}
+                  placeholder="例: 27"
+                  value={dayOfMonth}
+                  onChange={(e) => setDayOfMonth(e.target.value)}
+                />
+              </div>
+            )}
+
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="memo-amount">金額（任意）</Label>
               <Input
@@ -115,15 +211,17 @@ export function MemoView({ initialMemos }: MemoViewProps) {
               />
             </div>
           </div>
+
           <div className="flex flex-col gap-1.5">
-            <Label htmlFor="memo-text">内容</Label>
+            <Label htmlFor="memo-text">内容（任意）</Label>
             <Textarea
               id="memo-text"
-              placeholder="例: 奨学金の引き落とし。毎月27日ごろ。"
+              placeholder="例: 利用料に応じて請求"
               value={memoText}
               onChange={(e) => setMemoText(e.target.value)}
             />
           </div>
+
           <Button onClick={handleSubmit} disabled={saving} size="lg">
             {saving ? "保存中..." : "メモを追加"}
           </Button>
@@ -134,48 +232,64 @@ export function MemoView({ initialMemos }: MemoViewProps) {
         <CardHeader className="pb-2">
           <CardTitle className="text-base text-foreground">メモ一覧</CardTitle>
         </CardHeader>
-        <CardContent>
-          {memos.length === 0 ? (
+        <CardContent className="space-y-6">
+          {sorted.length === 0 ? (
             <p className="text-sm text-muted-foreground">まだメモがありません。</p>
           ) : (
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-border text-left text-xs text-muted-foreground">
-                    <th className="py-2 pr-4 font-medium">日付</th>
-                    <th className="py-2 pr-4 font-medium">口座・引き落とし先</th>
-                    <th className="py-2 pr-4 text-right font-medium">金額</th>
-                    <th className="py-2 pr-4 font-medium">内容</th>
-                    <th className="py-2 pl-4 font-medium" />
-                  </tr>
-                </thead>
-                <tbody>
-                  {memos.map((m) => (
-                    <tr key={m.id} className="border-b border-border/60 align-top last:border-0">
-                      <td className="whitespace-nowrap py-2 pr-4">{formatDateLabel(m.date)}</td>
-                      <td className="py-2 pr-4 text-muted-foreground">{m.account || "—"}</td>
-                      <td className="py-2 pr-4 text-right tabular-nums">
-                        {m.amount !== null ? formatYen(m.amount) : "—"}
-                      </td>
-                      <td className="py-2 pr-4 whitespace-pre-wrap">{m.memo}</td>
-                      <td className="py-2 pl-4 text-right">
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          onClick={() => handleDelete(m.id)}
-                          disabled={deletingId === m.id}
-                        >
-                          {deletingId === m.id ? "削除中..." : "削除"}
-                        </Button>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            <>
+              {recurring.length > 0 && (
+                <div className="space-y-3">
+                  <h3 className="text-sm font-semibold text-foreground">定期</h3>
+                  <div className="space-y-3">
+                    {recurring.map((m) => (
+                      <MemoCard key={m.id} memo={m} deleting={deletingId === m.id} onDelete={handleDelete} />
+                    ))}
+                  </div>
+                </div>
+              )}
+              {irregular.length > 0 && (
+                <div className="space-y-3">
+                  <h3 className="text-sm font-semibold text-foreground">都度</h3>
+                  <div className="space-y-3">
+                    {irregular.map((m) => (
+                      <MemoCard key={m.id} memo={m} deleting={deletingId === m.id} onDelete={handleDelete} />
+                    ))}
+                  </div>
+                </div>
+              )}
+            </>
           )}
         </CardContent>
       </Card>
+    </div>
+  );
+}
+
+function MemoCard({
+  memo,
+  deleting,
+  onDelete,
+}: {
+  memo: MemoRecord;
+  deleting: boolean;
+  onDelete: (id: string) => void;
+}) {
+  return (
+    <div className="rounded-lg border border-border p-3">
+      <div className="flex items-start justify-between gap-2">
+        <div className="space-y-1.5">
+          <p className="font-medium">{memo.account}</p>
+          <div className="flex flex-wrap items-center gap-1.5">
+            <TypeBadge type={memo.type} />
+            <FrequencyBadge frequency={memo.frequency} dayOfMonth={memo.day_of_month} />
+          </div>
+        </div>
+        <Button variant="ghost" size="sm" onClick={() => onDelete(memo.id)} disabled={deleting}>
+          {deleting ? "削除中..." : "削除"}
+        </Button>
+      </div>
+      {memo.amount !== null && <p className="mt-2 font-semibold tabular-nums">{formatYen(memo.amount)}</p>}
+      {memo.memo && <p className="mt-1 whitespace-pre-wrap text-sm text-muted-foreground">{memo.memo}</p>}
     </div>
   );
 }

@@ -5,7 +5,7 @@
  *  - MonthlyBalances   : 月次の残高/支払額データ本体
  *  - Accounts          : 口座・カードのマスタ（参照用。編集は下記 ACCOUNTS 定数側で行う）
  *  - ElectricityRecords: 資産管理とは別枠の、月次の売電収入・買電支出データ
- *  - Memos             : 奨学金の引き落とし口座・日付など、資産管理とは別枠の自由記述メモ
+ *  - Memos             : 奨学金の引き落とし口座など、資産管理とは別枠の定期/都度の入出金メモ
  *
  * デプロイ方法・初期設定手順は docs/spreadsheet-setup.md を参照。
  */
@@ -19,7 +19,10 @@ var HEADER = ['year_month', 'person', 'category', 'account_name', 'amount', 'upd
 // income_kwh / expense_kwh は末尾に追加した列。既存シートの列順（year_month, income,
 // expense, updated_at）を崩さないよう、後方互換のため末尾に配置している。
 var HEADER_ELECTRICITY = ['year_month', 'income', 'expense', 'updated_at', 'income_kwh', 'expense_kwh'];
-var HEADER_MEMOS = ['id', 'date', 'account', 'amount', 'memo', 'created_at'];
+// date（B列）は初期バージョンの名残りで、後方互換のため列として残しているが
+// 現在のUIでは使用しない（常に空欄で書き込む）。type/frequency/day_of_month は
+// 既存データの列がずれないよう末尾に追加している。
+var HEADER_MEMOS = ['id', 'date', 'account', 'amount', 'memo', 'created_at', 'type', 'frequency', 'day_of_month'];
 
 // 口座・カードのマスタ定義。フロントエンドの入力フォームと内容を一致させること。
 // person は「雅一」「穂夏」「共通」のいずれか。カードは世帯共通の支払いとして「共通」で管理する。
@@ -452,21 +455,11 @@ function saveElectricity_(yearMonth, income, expense, incomeKwh, expenseKwh) {
   }
 }
 
-// ==== メモ（奨学金の引き落とし口座・日付など、資産管理とは別枠の自由記述） ====
+// ==== メモ（奨学金の引き落とし口座など、資産管理とは別枠の定期/都度の入出金メモ） ====
 
 /**
- * 日付セルの値を "YYYY-MM-DD" 形式の文字列に正規化する（normalizeYearMonth_ の日付版）。
- */
-function normalizeDate_(value) {
-  if (Object.prototype.toString.call(value) === '[object Date]') {
-    var tz = SpreadsheetApp.getActiveSpreadsheet().getSpreadsheetTimeZone();
-    return Utilities.formatDate(value, tz, 'yyyy-MM-dd');
-  }
-  return String(value).trim();
-}
-
-/**
- * メモの一覧を、日付の新しい順（同日なら登録が新しい順）で取得する。
+ * メモの一覧を、定期（日付が早い順）→都度（登録が新しい順）の順で取得する。
+ * 並び替えは呼び出し側（フロントエンド）でも行うが、API単体で見ても意味のある順序にしておく。
  */
 function listMemos_() {
   var sheet = getSheet_(SHEET_MEMOS);
@@ -476,39 +469,50 @@ function listMemos_() {
   var memos = values.map(function (row) {
     return {
       id: String(row[0]),
-      date: normalizeDate_(row[1]),
       account: row[2],
       amount: row[3] === '' ? null : Number(row[3]),
       memo: row[4],
-      created_at: row[5]
+      created_at: row[5],
+      type: row[6] || '',
+      frequency: row[7] || '',
+      day_of_month: row[8] === '' ? null : Number(row[8])
     };
   });
   memos.sort(function (a, b) {
-    if (a.date !== b.date) return a.date < b.date ? 1 : -1;
+    if (a.frequency !== b.frequency) return a.frequency === '定期' ? -1 : 1;
+    if (a.frequency === '定期') return (a.day_of_month || 99) - (b.day_of_month || 99);
     return String(b.created_at) < String(a.created_at) ? -1 : 1;
   });
   return memos;
 }
 
 /**
- * メモを1件追加する。date, memo は必須。account, amount は任意。
+ * メモを1件追加する。
+ * account, type（入金/出金）, frequency（定期/都度）は必須。
+ * frequency が「定期」の場合のみ dayOfMonth（1〜31）が必須。amount, memo は任意。
  */
-function addMemo_(date, account, amount, memo) {
-  if (!date) throw new Error('date は必須です');
-  if (!memo) throw new Error('memo は必須です');
+function addMemo_(account, type, frequency, dayOfMonth, amount, memo) {
+  if (!account) throw new Error('account は必須です');
+  if (type !== '入金' && type !== '出金') throw new Error('type は "入金" または "出金" である必要があります');
+  if (frequency !== '定期' && frequency !== '都度') throw new Error('frequency は "定期" または "都度" である必要があります');
+  if (frequency === '定期' && (!dayOfMonth || dayOfMonth < 1 || dayOfMonth > 31)) {
+    throw new Error('定期の場合、day_of_month は1〜31の範囲で必須です');
+  }
 
   var sheet = getSheet_(SHEET_MEMOS);
-  sheet.getRange('B:B').setNumberFormat('@'); // date 列も年月と同様の日付自動変換を防ぐ
 
   var id = Utilities.getUuid();
   var now = new Date();
   var rowValues = [
     id,
-    String(date),
-    account || '',
+    '', // date列（後方互換のため残置。新規行では未使用）
+    account,
     amount !== undefined && amount !== null && amount !== '' ? Number(amount) : '',
-    memo,
-    now
+    memo || '',
+    now,
+    type,
+    frequency,
+    frequency === '定期' ? Number(dayOfMonth) : ''
   ];
   sheet.getRange(sheet.getLastRow() + 1, 1, 1, HEADER_MEMOS.length).setValues([rowValues]);
   return id;
@@ -616,12 +620,15 @@ function doGet(e) {
  * {
  *   "action": "addMemo",
  *   "token": "xxx",
- *   "date": "2026-07-27",
  *   "account": "りそな銀行（雅一）",
+ *   "type": "出金",
+ *   "frequency": "定期",
+ *   "day_of_month": 27,
  *   "amount": 15000,
- *   "memo": "奨学金の引き落とし。毎月27日ごろ。"
+ *   "memo": "奨学金の引き落とし"
  * }
- * account, amount は任意。
+ * account / type（入金・出金） / frequency（定期・都度） は必須。frequency が「定期」の場合のみ
+ * day_of_month（1〜31）が必須。amount, memo は任意。
  *
  * メモの削除:
  * {
@@ -647,7 +654,7 @@ function doPost(e) {
         saveElectricity_(body.year_month, body.income, body.expense, body.income_kwh, body.expense_kwh);
         return jsonOutput_({ ok: true });
       case 'addMemo':
-        var newId = addMemo_(body.date, body.account, body.amount, body.memo);
+        var newId = addMemo_(body.account, body.type, body.frequency, body.day_of_month, body.amount, body.memo);
         return jsonOutput_({ ok: true, id: newId });
       case 'deleteMemo':
         var deleted = deleteMemo_(body.id);

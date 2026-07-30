@@ -4,7 +4,9 @@ import type {
   AccountDef,
   ElectricityRecord,
   ElectricityTrendPoint,
+  MemoFrequency,
   MemoRecord,
+  MemoType,
   MonthlyEntry,
   TrendPoint,
 } from "./types";
@@ -124,14 +126,17 @@ export async function fetchMemos(): Promise<MemoRecord[]> {
 }
 
 export async function addMemo(
-  date: string,
-  memo: string,
-  account?: string,
-  amount?: number
+  account: string,
+  type: MemoType,
+  frequency: MemoFrequency,
+  dayOfMonth?: number,
+  amount?: number,
+  memo?: string
 ): Promise<string> {
-  const body: Record<string, unknown> = { action: "addMemo", date, memo };
-  if (account) body.account = account;
+  const body: Record<string, unknown> = { action: "addMemo", account, type, frequency };
+  if (dayOfMonth !== undefined) body.day_of_month = dayOfMonth;
   if (amount !== undefined) body.amount = amount;
+  if (memo) body.memo = memo;
   const json = await gasPost(body);
   return json.id as string;
 }

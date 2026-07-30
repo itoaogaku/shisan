@@ -51,10 +51,16 @@ export interface ElectricityTrendPoint {
   net_kwh: number | null;
 }
 
+export type MemoType = "入金" | "出金";
+export type MemoFrequency = "定期" | "都度";
+
 export interface MemoRecord {
   id: string;
-  date: string;
   account: string;
+  type: MemoType;
+  frequency: MemoFrequency;
+  /** frequency が「定期」の場合のみ 1〜31。「都度」の場合は null。 */
+  day_of_month: number | null;
   amount: number | null;
   memo: string;
   created_at?: string;

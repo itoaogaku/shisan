@@ -25,7 +25,7 @@ GAS のコード本体は [`gas/Code.gs`](../gas/Code.gs) を参照してくだ�
      - `MonthlyBalances`: 列 `year_month`, `person`, `category`, `account_name`, `amount`, `updated_at`（資産・カードの実データ本体）
      - `Accounts`: 口座・カードのマスタ一覧（参照用。編集は `gas/Code.gs` 内の `ACCOUNTS` 定数で行う）
      - `ElectricityRecords`: 列 `year_month`, `income`, `expense`, `updated_at`, `income_kwh`, `expense_kwh`（売電収入・買電支出・売電量/買電量[kWh、任意]。資産管理とは別集計）
-     - `Memos`: 列 `id`, `date`, `account`, `amount`, `memo`, `created_at`（奨学金の引き落とし口座・日付など、資産管理とは別枠の自由記述メモ）
+     - `Memos`: 列 `id`, `date`（未使用・後方互換のため残置）, `account`, `amount`, `memo`, `created_at`, `type`, `frequency`, `day_of_month`（奨学金の引き落とし口座など、資産管理とは別枠の定期/都度の入出金メモ）
    - 既定で残っていた空の「シート1」は自動的に削除される。
 
 ## 4. APIトークンを設定する（推奨）
@@ -101,7 +101,7 @@ Web アプリとして公開すると URL を知っていれば誰でもアク�
 | `getElectricityData` | `year_month` | 指定年月の売電収入・買電支出を返す（データが無ければ `data: null`） |
 | `getElectricityYearMonths` | - | 売電・買電データが存在する年月の一覧（昇順）を返す |
 | `getElectricityTrend` | - | 月ごとの売電収入・買電支出・収支（income − expense）の一覧を返す |
-| `getMemos` | - | メモの一覧を日付の新しい順で返す |
+| `getMemos` | - | メモの一覧を「定期（日付が早い順）→都度（登録が新しい順）」で返す |
 
 ### POST（データ保存・一括Upsert）
 
@@ -144,14 +144,27 @@ Web アプリとして公開すると URL を知っていれば誰でもアク�
 メモ（資産管理とは別集計）の追加・削除:
 
 ```json
-{ "action": "addMemo", "token": "xxxx", "date": "2026-07-27", "account": "りそな銀行（雅一）", "amount": 15000, "memo": "奨学金の引き落とし。毎月27日ごろ。" }
+{
+  "action": "addMemo",
+  "token": "xxxx",
+  "account": "りそな銀行（雅一）",
+  "type": "出金",
+  "frequency": "定期",
+  "day_of_month": 27,
+  "amount": 14222,
+  "memo": "奨学金引落"
+}
 ```
 
 ```json
 { "action": "deleteMemo", "token": "xxxx", "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" }
 ```
 
-`account` / `amount` は任意。`addMemo` は常に新規行を追加する（upsertしない）。
+`account` は銀行口座名（例: `りそな銀行（雅一）`）、`type` は `入金` / `出金`、`frequency` は `定期` / `都度` のいずれか必須。`frequency` が `定期` の場合のみ `day_of_month`（1〜31）が必須。`amount` / `memo` は任意。`addMemo` は常に新規行を追加する（upsertしない）。
+
+## トラブルシューティング: 既存の「Memos」データが新しいメモ一覧に表示されない
+
+メモ機能を旧バージョン（日付・口座・金額・内容のみの自由記述）で既に使っていた場合、`type`（入金/出金）・`frequency`（定期/都度）・`day_of_month` の列が空欄のため、新しい一覧（定期/都度に分類して表示）には出てきません。既存行の `G`〜`I` 列（`type`, `frequency`, `day_of_month`）に手動で値を入力すれば表示されるようになります。`date` 列（B列）は今後使用しないため、そのまま残しておいて問題ありません。
 
 ## トラブルシューティング: 入力したのに総資産推移にしか反映されない
 

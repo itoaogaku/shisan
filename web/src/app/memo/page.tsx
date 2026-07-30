@@ -36,7 +36,7 @@ export default async function MemoPage() {
       <div>
         <h1 className="text-2xl font-semibold">メモ</h1>
         <p className="text-sm text-muted-foreground">
-          奨学金がどの口座から何日に引き落としか、といった家計まわりのメモを自由に記録できます（資産管理とは別枠です）。
+          奨学金の引き落としなど、口座ごとの定期・都度の入出金を記録できます（資産管理とは別枠です）。
         </p>
       </div>
       <MemoView initialMemos={memos} />

@@ -64,3 +64,16 @@ export function categoriesFor(person: Person): Category[] {
 export function entryKey(person: Person, category: Category, accountName: string): string {
   return [person, category, accountName].join("|");
 }
+
+/**
+ * 銀行口座の選択肢（プルダウン用）。同名の銀行が複数人にある場合は
+ * 「りそな銀行（雅一）」のように名義を付けて区別する。
+ */
+export function bankAccountLabels(): string[] {
+  const banks = ACCOUNTS.filter((a) => a.category === "銀行");
+  const nameCounts = new Map<string, number>();
+  banks.forEach((a) => nameCounts.set(a.account_name, (nameCounts.get(a.account_name) ?? 0) + 1));
+  return banks.map((a) =>
+    (nameCounts.get(a.account_name) ?? 0) > 1 ? `${a.account_name}（${a.person}）` : a.account_name
+  );
+}
