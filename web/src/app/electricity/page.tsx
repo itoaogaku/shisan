@@ -1,13 +1,15 @@
 import { ElectricityView } from "@/components/electricity-view";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { currentYearMonth } from "@/lib/format";
+import { currentYearMonth, shiftYearMonth } from "@/lib/format";
 import { fetchElectricityData, fetchElectricityTrend } from "@/lib/gas";
 import type { ElectricityRecord, ElectricityTrendPoint } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
 export default async function ElectricityPage() {
-  const yearMonth = currentYearMonth();
+  // 検針・請求が翌月以降にずれ込むことが多いため、既定では前月分の入力画面を開く
+  // （例: 7月中にアクセスすると、既定で6月の入力ページが開かれる）。
+  const yearMonth = shiftYearMonth(currentYearMonth(), -1);
 
   let initialData: ElectricityRecord | null = null;
   let trend: ElectricityTrendPoint[] = [];

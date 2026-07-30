@@ -1,6 +1,6 @@
 import { MonthlyForm } from "@/components/monthly-form";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { currentYearMonth, shiftYearMonth } from "@/lib/format";
+import { currentYearMonth } from "@/lib/format";
 import { fetchMonthlyData } from "@/lib/gas";
 import type { MonthlyEntry } from "@/lib/types";
 
@@ -12,9 +12,7 @@ export default async function InputPage({
   searchParams: Promise<{ ym?: string }>;
 }) {
   const { ym } = await searchParams;
-  // 月末残高の確定・記帳は翌月にずれ込むことが多いため、既定では前月分の入力画面を開く
-  // （例: 7月中にアクセスすると、既定で6月の入力ページが開かれる）。
-  const yearMonth = ym ?? shiftYearMonth(currentYearMonth(), -1);
+  const yearMonth = ym ?? currentYearMonth();
 
   let initialEntries: MonthlyEntry[] = [];
   let error: unknown = null;
