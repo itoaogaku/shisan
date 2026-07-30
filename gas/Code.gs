@@ -562,6 +562,46 @@ function addMemo_(account, type, frequency, dayOfMonth, amountType, amount, memo
 }
 
 /**
+ * 指定 id のメモを1件更新する（内容の編集）。
+ * バリデーション内容は addMemo_ と同じ。id列・date列・created_at列は変更しない。
+ */
+function updateMemo_(id, account, type, frequency, dayOfMonth, amountType, amount, memo) {
+  if (!id) throw new Error('id は必須です');
+  if (!account) throw new Error('account は必須です');
+  if (type !== '入金' && type !== '出金') throw new Error('type は "入金" または "出金" である必要があります');
+  if (frequency !== '定期' && frequency !== '都度') throw new Error('frequency は "定期" または "都度" である必要があります');
+  if (frequency === '定期' && (!dayOfMonth || dayOfMonth < 1 || dayOfMonth > 31)) {
+    throw new Error('定期の場合、day_of_month は1〜31の範囲で必須です');
+  }
+  if (amountType !== '固定' && amountType !== '変動') {
+    throw new Error('amountType は "固定" または "変動" である必要があります');
+  }
+
+  var sheet = getSheet_(SHEET_MEMOS);
+  var lastRow = sheet.getLastRow();
+  if (lastRow < 2) throw new Error('指定された id のメモが見つかりません: ' + id);
+
+  var ids = sheet.getRange(2, 1, lastRow - 1, 1).getValues();
+  for (var i = 0; i < ids.length; i++) {
+    if (String(ids[i][0]) === String(id)) {
+      var rowIndex = i + 2;
+      sheet.getRange(rowIndex, 3, 1, 8).setValues([[
+        account,
+        amountType === '固定' && amount !== undefined && amount !== null && amount !== '' ? Number(amount) : '',
+        memo || '',
+        sheet.getRange(rowIndex, 6).getValue(), // created_at は変更しない
+        type,
+        frequency,
+        frequency === '定期' ? Number(dayOfMonth) : '',
+        amountType
+      ]]);
+      return true;
+    }
+  }
+  throw new Error('指定された id のメモが見つかりません: ' + id);
+}
+
+/**
  * 指定 id のメモを1件削除する。
  */
 function deleteMemo_(id) {
@@ -628,6 +668,34 @@ function addAnnualMemo_(itemName, paymentDate, amount, note) {
   ];
   sheet.getRange(sheet.getLastRow() + 1, 1, 1, HEADER_ANNUAL_MEMOS.length).setValues([rowValues]);
   return id;
+}
+
+/**
+ * 指定 id の年間メモを1件更新する（内容の編集）。id列・created_at列は変更しない。
+ */
+function updateAnnualMemo_(id, itemName, paymentDate, amount, note) {
+  if (!id) throw new Error('id は必須です');
+  if (!itemName) throw new Error('itemName は必須です');
+  if (!paymentDate) throw new Error('paymentDate は必須です');
+
+  var sheet = getAnnualMemosSheet_();
+  var lastRow = sheet.getLastRow();
+  if (lastRow < 2) throw new Error('指定された id の年間メモが見つかりません: ' + id);
+
+  var ids = sheet.getRange(2, 1, lastRow - 1, 1).getValues();
+  for (var i = 0; i < ids.length; i++) {
+    if (String(ids[i][0]) === String(id)) {
+      var rowIndex = i + 2;
+      sheet.getRange(rowIndex, 2, 1, 3).setValues([[
+        itemName,
+        paymentDate,
+        amount !== undefined && amount !== null && amount !== '' ? Number(amount) : ''
+      ]]);
+      sheet.getRange(rowIndex, 5).setValue(note || '');
+      return true;
+    }
+  }
+  throw new Error('指定された id の年間メモが見つかりません: ' + id);
 }
 
 /**
@@ -754,6 +822,20 @@ function doGet(e) {
  *   "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
  * }
  *
+ * メモの更新（内容の編集。id 以外は addMemo と同じ必須項目）:
+ * {
+ *   "action": "updateMemo",
+ *   "token": "xxx",
+ *   "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+ *   "account": "りそな銀行（雅一）",
+ *   "type": "出金",
+ *   "frequency": "定期",
+ *   "day_of_month": 27,
+ *   "amount_type": "固定",
+ *   "amount": 15000,
+ *   "memo": "奨学金の引き落とし"
+ * }
+ *
  * 年間メモ（自動車税・固定資産税の振込など）の追加:
  * {
  *   "action": "addAnnualMemo",
@@ -770,6 +852,17 @@ function doGet(e) {
  *   "action": "deleteAnnualMemo",
  *   "token": "xxx",
  *   "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+ * }
+ *
+ * 年間メモの更新（内容の編集。id 以外は addAnnualMemo と同じ必須項目）:
+ * {
+ *   "action": "updateAnnualMemo",
+ *   "token": "xxx",
+ *   "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+ *   "item_name": "自動車税",
+ *   "payment_date": "5月31日ごろ",
+ *   "amount": 34500,
+ *   "note": "普通車・軽自動車の2台分"
  * }
  */
 function doPost(e) {
@@ -796,12 +889,20 @@ function doPost(e) {
       case 'deleteMemo':
         var deleted = deleteMemo_(body.id);
         return jsonOutput_({ ok: true, deleted: deleted });
+      case 'updateMemo':
+        updateMemo_(
+          body.id, body.account, body.type, body.frequency, body.day_of_month, body.amount_type, body.amount, body.memo
+        );
+        return jsonOutput_({ ok: true });
       case 'addAnnualMemo':
         var newAnnualId = addAnnualMemo_(body.item_name, body.payment_date, body.amount, body.note);
         return jsonOutput_({ ok: true, id: newAnnualId });
       case 'deleteAnnualMemo':
         var deletedAnnual = deleteAnnualMemo_(body.id);
         return jsonOutput_({ ok: true, deleted: deletedAnnual });
+      case 'updateAnnualMemo':
+        updateAnnualMemo_(body.id, body.item_name, body.payment_date, body.amount, body.note);
+        return jsonOutput_({ ok: true });
       default:
         return jsonOutput_({ ok: false, error: 'unknown action: ' + action });
     }

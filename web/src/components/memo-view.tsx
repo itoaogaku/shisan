@@ -17,6 +17,16 @@ interface MemoViewProps {
   initialMemos: MemoRecord[];
 }
 
+interface MemoFormValues {
+  account: string;
+  type: MemoType;
+  frequency: MemoFrequency;
+  dayOfMonth: string;
+  amountType: MemoAmountType;
+  amount: string;
+  memoText: string;
+}
+
 const BANK_OPTIONS = bankAccountLabels();
 
 function sortMemos(memos: MemoRecord[]): MemoRecord[] {
@@ -59,6 +69,8 @@ export function MemoView({ initialMemos }: MemoViewProps) {
   const [memoText, setMemoText] = useState("");
   const [saving, setSaving] = useState(false);
   const [deletingId, setDeletingId] = useState<string | null>(null);
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [updatingId, setUpdatingId] = useState<string | null>(null);
 
   async function refreshMemos() {
     const res = await fetch("/api/gas/memos", { cache: "no-store" });
@@ -115,6 +127,47 @@ export function MemoView({ initialMemos }: MemoViewProps) {
       toast.error(`削除に失敗しました: ${String(error)}`);
     } finally {
       setDeletingId(null);
+    }
+  }
+
+  async function handleUpdate(id: string, values: MemoFormValues) {
+    if (!values.account) {
+      toast.warning("口座を選択してください。");
+      return;
+    }
+    if (values.frequency === "定期" && (values.dayOfMonth === "" || Number(values.dayOfMonth) < 1 || Number(values.dayOfMonth) > 31)) {
+      toast.warning("定期の場合、日（1〜31）を入力してください。");
+      return;
+    }
+
+    setUpdatingId(id);
+    try {
+      const body: Record<string, unknown> = {
+        id,
+        account: values.account,
+        type: values.type,
+        frequency: values.frequency,
+        amount_type: values.amountType,
+      };
+      if (values.frequency === "定期") body.day_of_month = Number(values.dayOfMonth);
+      if (values.amountType === "固定" && values.amount !== "") body.amount = Number(values.amount);
+      if (values.memoText.trim()) body.memo = values.memoText.trim();
+
+      const res = await fetch("/api/gas/memos", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      const json = await res.json();
+      if (!json.ok) throw new Error(json.error ?? "更新に失敗しました");
+
+      toast.success("メモを更新しました");
+      setEditingId(null);
+      await refreshMemos();
+    } catch (error) {
+      toast.error(`更新に失敗しました: ${String(error)}`);
+    } finally {
+      setUpdatingId(null);
     }
   }
 
@@ -264,7 +317,17 @@ export function MemoView({ initialMemos }: MemoViewProps) {
                   <h3 className="text-sm font-semibold text-foreground">定期</h3>
                   <div className="space-y-3">
                     {recurring.map((m) => (
-                      <MemoCard key={m.id} memo={m} deleting={deletingId === m.id} onDelete={handleDelete} />
+                      <MemoCard
+                        key={m.id}
+                        memo={m}
+                        deleting={deletingId === m.id}
+                        editing={editingId === m.id}
+                        updating={updatingId === m.id}
+                        onDelete={handleDelete}
+                        onStartEdit={() => setEditingId(m.id)}
+                        onCancelEdit={() => setEditingId(null)}
+                        onSave={(values) => handleUpdate(m.id, values)}
+                      />
                     ))}
                   </div>
                 </div>
@@ -274,7 +337,17 @@ export function MemoView({ initialMemos }: MemoViewProps) {
                   <h3 className="text-sm font-semibold text-foreground">都度</h3>
                   <div className="space-y-3">
                     {irregular.map((m) => (
-                      <MemoCard key={m.id} memo={m} deleting={deletingId === m.id} onDelete={handleDelete} />
+                      <MemoCard
+                        key={m.id}
+                        memo={m}
+                        deleting={deletingId === m.id}
+                        editing={editingId === m.id}
+                        updating={updatingId === m.id}
+                        onDelete={handleDelete}
+                        onStartEdit={() => setEditingId(m.id)}
+                        onCancelEdit={() => setEditingId(null)}
+                        onSave={(values) => handleUpdate(m.id, values)}
+                      />
                     ))}
                   </div>
                 </div>
@@ -287,15 +360,174 @@ export function MemoView({ initialMemos }: MemoViewProps) {
   );
 }
 
+function memoToFormValues(memo: MemoRecord): MemoFormValues {
+  return {
+    account: memo.account,
+    type: memo.type,
+    frequency: memo.frequency,
+    dayOfMonth: memo.day_of_month !== null ? String(memo.day_of_month) : "",
+    amountType: memo.amount_type,
+    amount: memo.amount !== null ? String(memo.amount) : "",
+    memoText: memo.memo ?? "",
+  };
+}
+
 function MemoCard({
   memo,
   deleting,
+  editing,
+  updating,
   onDelete,
+  onStartEdit,
+  onCancelEdit,
+  onSave,
 }: {
   memo: MemoRecord;
   deleting: boolean;
+  editing: boolean;
+  updating: boolean;
   onDelete: (id: string) => void;
+  onStartEdit: () => void;
+  onCancelEdit: () => void;
+  onSave: (values: MemoFormValues) => void;
 }) {
+  const [values, setValues] = useState<MemoFormValues>(() => memoToFormValues(memo));
+
+  function startEdit() {
+    setValues(memoToFormValues(memo));
+    onStartEdit();
+  }
+
+  if (editing) {
+    return (
+      <div className="rounded-lg border border-border p-3">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <div className="flex flex-col gap-1.5">
+            <Label htmlFor={`edit-account-${memo.id}`}>口座</Label>
+            <select
+              id={`edit-account-${memo.id}`}
+              value={values.account}
+              onChange={(e) => setValues((v) => ({ ...v, account: e.target.value }))}
+              className="h-10 rounded-md border border-input bg-card px-3 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            >
+              {BANK_OPTIONS.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div className="flex flex-col gap-1.5">
+            <Label>種別</Label>
+            <div className="inline-flex h-10 items-center rounded-lg bg-muted p-1">
+              {(["出金", "入金"] as MemoType[]).map((t) => (
+                <button
+                  key={t}
+                  type="button"
+                  onClick={() => setValues((v) => ({ ...v, type: t }))}
+                  className={cn(
+                    "h-8 flex-1 rounded-md px-4 text-sm font-medium transition-colors",
+                    values.type === t ? "bg-card text-foreground shadow-sm" : "text-muted-foreground"
+                  )}
+                >
+                  {t}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-1.5">
+            <Label>頻度</Label>
+            <div className="inline-flex h-10 items-center rounded-lg bg-muted p-1">
+              {(["定期", "都度"] as MemoFrequency[]).map((f) => (
+                <button
+                  key={f}
+                  type="button"
+                  onClick={() => setValues((v) => ({ ...v, frequency: f }))}
+                  className={cn(
+                    "h-8 flex-1 rounded-md px-4 text-sm font-medium transition-colors",
+                    values.frequency === f ? "bg-card text-foreground shadow-sm" : "text-muted-foreground"
+                  )}
+                >
+                  {f}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {values.frequency === "定期" && (
+            <div className="flex flex-col gap-1.5">
+              <Label htmlFor={`edit-day-${memo.id}`}>毎月何日</Label>
+              <Input
+                id={`edit-day-${memo.id}`}
+                type="number"
+                inputMode="numeric"
+                min={1}
+                max={31}
+                placeholder="例: 27"
+                value={values.dayOfMonth}
+                onChange={(e) => setValues((v) => ({ ...v, dayOfMonth: e.target.value }))}
+              />
+            </div>
+          )}
+
+          <div className="flex flex-col gap-1.5">
+            <Label>金額の種類</Label>
+            <div className="inline-flex h-10 items-center rounded-lg bg-muted p-1">
+              {(["固定", "変動"] as MemoAmountType[]).map((a) => (
+                <button
+                  key={a}
+                  type="button"
+                  onClick={() => setValues((v) => ({ ...v, amountType: a }))}
+                  className={cn(
+                    "h-8 flex-1 rounded-md px-4 text-sm font-medium transition-colors",
+                    values.amountType === a ? "bg-card text-foreground shadow-sm" : "text-muted-foreground"
+                  )}
+                >
+                  {a === "固定" ? "固定額" : "利用料に応じて"}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {values.amountType === "固定" && (
+            <div className="flex flex-col gap-1.5">
+              <Label htmlFor={`edit-amount-${memo.id}`}>金額（任意）</Label>
+              <Input
+                id={`edit-amount-${memo.id}`}
+                type="number"
+                inputMode="numeric"
+                placeholder="金額（円）"
+                value={values.amount}
+                onChange={(e) => setValues((v) => ({ ...v, amount: e.target.value }))}
+              />
+            </div>
+          )}
+        </div>
+
+        <div className="mt-3 flex flex-col gap-1.5">
+          <Label htmlFor={`edit-memo-${memo.id}`}>内容（任意）</Label>
+          <Textarea
+            id={`edit-memo-${memo.id}`}
+            placeholder="例: 利用料に応じて請求"
+            value={values.memoText}
+            onChange={(e) => setValues((v) => ({ ...v, memoText: e.target.value }))}
+          />
+        </div>
+
+        <div className="mt-3 flex gap-2">
+          <Button size="sm" onClick={() => onSave(values)} disabled={updating}>
+            {updating ? "保存中..." : "保存"}
+          </Button>
+          <Button variant="ghost" size="sm" onClick={onCancelEdit} disabled={updating}>
+            キャンセル
+          </Button>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="rounded-lg border border-border p-3">
       <div className="flex items-start justify-between gap-2">
@@ -306,9 +538,14 @@ function MemoCard({
             <FrequencyBadge frequency={memo.frequency} dayOfMonth={memo.day_of_month} />
           </div>
         </div>
-        <Button variant="ghost" size="sm" onClick={() => onDelete(memo.id)} disabled={deleting}>
-          {deleting ? "削除中..." : "削除"}
-        </Button>
+        <div className="flex shrink-0 gap-1">
+          <Button variant="ghost" size="sm" onClick={startEdit}>
+            編集
+          </Button>
+          <Button variant="ghost" size="sm" onClick={() => onDelete(memo.id)} disabled={deleting}>
+            {deleting ? "削除中..." : "削除"}
+          </Button>
+        </div>
       </div>
       {memo.amount_type === "変動" ? (
         <p className="mt-2 text-sm font-medium text-muted-foreground">利用料に応じて</p>

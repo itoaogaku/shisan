@@ -165,6 +165,25 @@ Web アプリとして公開すると URL を知っていれば誰でもアク�
 
 `account` は銀行口座名（例: `りそな銀行（雅一）`）、`type` は `入金` / `出金`、`frequency` は `定期` / `都度`、`amount_type` は `固定` / `変動` のいずれも必須。`frequency` が `定期` の場合のみ `day_of_month`（1〜31）が必須。`amount_type` が `変動`（例: JCBカードの「利用料に応じて引落」のように金額が確定しない場合）のときは `amount` を送っても無視され、常に空欄で保存される。`amount_type` が `固定` の場合のみ `amount`（任意）が使われる。`memo` は任意。`addMemo` は常に新規行を追加する（upsertしない）。旧バージョンのデータ（`amount_type` 列が空欄）は読み込み時に自動的に `固定` として扱われる。
 
+メモの更新（内容の編集）:
+
+```json
+{
+  "action": "updateMemo",
+  "token": "xxxx",
+  "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "account": "りそな銀行（雅一）",
+  "type": "出金",
+  "frequency": "定期",
+  "day_of_month": 27,
+  "amount_type": "固定",
+  "amount": 15000,
+  "memo": "奨学金引落"
+}
+```
+
+`id` に加えて、`addMemo` と同じ必須項目（account / type / frequency / amount_type、`frequency`が`定期`の場合は day_of_month）が必要。指定した `id` の行の内容を丸ごと上書きする（`id` と `created_at` は変更されない）。Next.js の「メモ」タブでは各カードの「編集」ボタンから、このAPIを使ってその場で内容を書き換えられる。
+
 年間メモ（自動車税・固定資産税の振込など、毎年決まった時期に発生する支払い）の追加・削除:
 
 ```json
@@ -183,6 +202,22 @@ Web アプリとして公開すると URL を知っていれば誰でもアク�
 ```
 
 `item_name`（項目名）と `payment_date`（支払い日。自由記述。例: `5月31日ごろ`）は必須。`amount` / `note` は任意。`addAnnualMemo` は常に新規行を追加する（upsertしない）。
+
+年間メモの更新（内容の編集）:
+
+```json
+{
+  "action": "updateAnnualMemo",
+  "token": "xxxx",
+  "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "item_name": "自動車税",
+  "payment_date": "5月31日ごろ",
+  "amount": 34500,
+  "note": "普通車・軽自動車の2台分"
+}
+```
+
+`id` に加えて、`addAnnualMemo` と同じ必須項目（item_name / payment_date）が必要。指定した `id` の行の内容を丸ごと上書きする（`id` と `created_at` は変更されない）。
 
 ## トラブルシューティング: 既存の「Memos」データが新しいメモ一覧に表示されない
 

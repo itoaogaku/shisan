@@ -148,6 +148,30 @@ export async function deleteMemo(id: string): Promise<void> {
   await gasPost({ action: "deleteMemo", id });
 }
 
+export async function updateMemo(
+  id: string,
+  account: string,
+  type: MemoType,
+  frequency: MemoFrequency,
+  amountType: MemoAmountType,
+  dayOfMonth?: number,
+  amount?: number,
+  memo?: string
+): Promise<void> {
+  const body: Record<string, unknown> = {
+    action: "updateMemo",
+    id,
+    account,
+    type,
+    frequency,
+    amount_type: amountType,
+  };
+  if (dayOfMonth !== undefined) body.day_of_month = dayOfMonth;
+  if (amount !== undefined) body.amount = amount;
+  if (memo) body.memo = memo;
+  await gasPost(body);
+}
+
 export async function fetchAnnualMemos(): Promise<AnnualMemoRecord[]> {
   const json = await gasGet("getAnnualMemos");
   return (json.annual_memos as AnnualMemoRecord[]) ?? [];
@@ -168,4 +192,22 @@ export async function addAnnualMemo(
 
 export async function deleteAnnualMemo(id: string): Promise<void> {
   await gasPost({ action: "deleteAnnualMemo", id });
+}
+
+export async function updateAnnualMemo(
+  id: string,
+  itemName: string,
+  paymentDate: string,
+  amount?: number,
+  note?: string
+): Promise<void> {
+  const body: Record<string, unknown> = {
+    action: "updateAnnualMemo",
+    id,
+    item_name: itemName,
+    payment_date: paymentDate,
+  };
+  if (amount !== undefined) body.amount = amount;
+  if (note) body.note = note;
+  await gasPost(body);
 }

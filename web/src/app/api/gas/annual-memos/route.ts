@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-import { addAnnualMemo, deleteAnnualMemo, fetchAnnualMemos } from "@/lib/gas";
+import { addAnnualMemo, deleteAnnualMemo, fetchAnnualMemos, updateAnnualMemo } from "@/lib/gas";
 
 export async function GET() {
   try {
@@ -11,35 +11,70 @@ export async function GET() {
   }
 }
 
-interface AddAnnualMemoBody {
+interface AnnualMemoBody {
   item_name?: string;
   payment_date?: string;
   amount?: number;
   note?: string;
 }
 
+function validateAnnualMemoBody(body: AnnualMemoBody): string | null {
+  const { item_name, payment_date, amount } = body;
+  if (!item_name || !item_name.trim()) return "item_name is required";
+  if (!payment_date || !payment_date.trim()) return "payment_date is required";
+  if (amount !== undefined && (typeof amount !== "number" || Number.isNaN(amount))) {
+    return "amount must be a number";
+  }
+  return null;
+}
+
 export async function POST(request: NextRequest) {
-  let body: AddAnnualMemoBody;
+  let body: AnnualMemoBody;
   try {
     body = await request.json();
   } catch {
     return NextResponse.json({ ok: false, error: "invalid JSON body" }, { status: 400 });
   }
 
+  const validationError = validateAnnualMemoBody(body);
+  if (validationError) {
+    return NextResponse.json({ ok: false, error: validationError }, { status: 400 });
+  }
   const { item_name, payment_date, amount, note } = body;
-  if (!item_name || !item_name.trim()) {
-    return NextResponse.json({ ok: false, error: "item_name is required" }, { status: 400 });
-  }
-  if (!payment_date || !payment_date.trim()) {
-    return NextResponse.json({ ok: false, error: "payment_date is required" }, { status: 400 });
-  }
-  if (amount !== undefined && (typeof amount !== "number" || Number.isNaN(amount))) {
-    return NextResponse.json({ ok: false, error: "amount must be a number" }, { status: 400 });
-  }
 
   try {
-    const id = await addAnnualMemo(item_name, payment_date, amount, note);
+    const id = await addAnnualMemo(item_name!, payment_date!, amount, note);
     return NextResponse.json({ ok: true, id });
+  } catch (error) {
+    return NextResponse.json({ ok: false, error: String(error) }, { status: 500 });
+  }
+}
+
+interface UpdateAnnualMemoBody extends AnnualMemoBody {
+  id?: string;
+}
+
+export async function PUT(request: NextRequest) {
+  let body: UpdateAnnualMemoBody;
+  try {
+    body = await request.json();
+  } catch {
+    return NextResponse.json({ ok: false, error: "invalid JSON body" }, { status: 400 });
+  }
+
+  const { id } = body;
+  if (!id) {
+    return NextResponse.json({ ok: false, error: "id is required" }, { status: 400 });
+  }
+  const validationError = validateAnnualMemoBody(body);
+  if (validationError) {
+    return NextResponse.json({ ok: false, error: validationError }, { status: 400 });
+  }
+  const { item_name, payment_date, amount, note } = body;
+
+  try {
+    await updateAnnualMemo(id, item_name!, payment_date!, amount, note);
+    return NextResponse.json({ ok: true });
   } catch (error) {
     return NextResponse.json({ ok: false, error: String(error) }, { status: 500 });
   }

@@ -15,8 +15,24 @@ interface AnnualMemoViewProps {
   initialAnnualMemos: AnnualMemoRecord[];
 }
 
+interface AnnualMemoFormValues {
+  itemName: string;
+  paymentDate: string;
+  amount: string;
+  note: string;
+}
+
 function sortAnnualMemos(memos: AnnualMemoRecord[]): AnnualMemoRecord[] {
   return [...memos].sort((a, b) => (b.created_at ?? "").localeCompare(a.created_at ?? ""));
+}
+
+function annualMemoToFormValues(memo: AnnualMemoRecord): AnnualMemoFormValues {
+  return {
+    itemName: memo.item_name,
+    paymentDate: memo.payment_date,
+    amount: memo.amount !== null ? String(memo.amount) : "",
+    note: memo.note ?? "",
+  };
 }
 
 export function AnnualMemoView({ initialAnnualMemos }: AnnualMemoViewProps) {
@@ -27,6 +43,8 @@ export function AnnualMemoView({ initialAnnualMemos }: AnnualMemoViewProps) {
   const [note, setNote] = useState("");
   const [saving, setSaving] = useState(false);
   const [deletingId, setDeletingId] = useState<string | null>(null);
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [updatingId, setUpdatingId] = useState<string | null>(null);
 
   async function refreshMemos() {
     const res = await fetch("/api/gas/annual-memos", { cache: "no-store" });
@@ -83,6 +101,44 @@ export function AnnualMemoView({ initialAnnualMemos }: AnnualMemoViewProps) {
       toast.error(`削除に失敗しました: ${String(error)}`);
     } finally {
       setDeletingId(null);
+    }
+  }
+
+  async function handleUpdate(id: string, values: AnnualMemoFormValues) {
+    if (!values.itemName.trim()) {
+      toast.warning("項目名を入力してください。");
+      return;
+    }
+    if (!values.paymentDate.trim()) {
+      toast.warning("支払い日を入力してください。");
+      return;
+    }
+
+    setUpdatingId(id);
+    try {
+      const body: Record<string, unknown> = {
+        id,
+        item_name: values.itemName.trim(),
+        payment_date: values.paymentDate.trim(),
+      };
+      if (values.amount !== "") body.amount = Number(values.amount);
+      if (values.note.trim()) body.note = values.note.trim();
+
+      const res = await fetch("/api/gas/annual-memos", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      const json = await res.json();
+      if (!json.ok) throw new Error(json.error ?? "更新に失敗しました");
+
+      toast.success("年間メモを更新しました");
+      setEditingId(null);
+      await refreshMemos();
+    } catch (error) {
+      toast.error(`更新に失敗しました: ${String(error)}`);
+    } finally {
+      setUpdatingId(null);
     }
   }
 
@@ -152,28 +208,126 @@ export function AnnualMemoView({ initialAnnualMemos }: AnnualMemoViewProps) {
             <p className="text-sm text-muted-foreground">まだ年間メモがありません。</p>
           ) : (
             sorted.map((m) => (
-              <div key={m.id} className="rounded-lg border border-border p-3">
-                <div className="flex items-start justify-between gap-2">
-                  <div className="space-y-1">
-                    <p className="font-medium">{m.item_name}</p>
-                    <p className="text-sm text-muted-foreground">{m.payment_date}</p>
-                  </div>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => handleDelete(m.id)}
-                    disabled={deletingId === m.id}
-                  >
-                    {deletingId === m.id ? "削除中..." : "削除"}
-                  </Button>
-                </div>
-                {m.amount !== null && <p className="mt-2 font-semibold tabular-nums">{formatYen(m.amount)}</p>}
-                {m.note && <p className="mt-1 whitespace-pre-wrap text-sm text-muted-foreground">{m.note}</p>}
-              </div>
+              <AnnualMemoCard
+                key={m.id}
+                memo={m}
+                deleting={deletingId === m.id}
+                editing={editingId === m.id}
+                updating={updatingId === m.id}
+                onDelete={handleDelete}
+                onStartEdit={() => setEditingId(m.id)}
+                onCancelEdit={() => setEditingId(null)}
+                onSave={(values) => handleUpdate(m.id, values)}
+              />
             ))
           )}
         </CardContent>
       </Card>
+    </div>
+  );
+}
+
+function AnnualMemoCard({
+  memo,
+  deleting,
+  editing,
+  updating,
+  onDelete,
+  onStartEdit,
+  onCancelEdit,
+  onSave,
+}: {
+  memo: AnnualMemoRecord;
+  deleting: boolean;
+  editing: boolean;
+  updating: boolean;
+  onDelete: (id: string) => void;
+  onStartEdit: () => void;
+  onCancelEdit: () => void;
+  onSave: (values: AnnualMemoFormValues) => void;
+}) {
+  const [values, setValues] = useState<AnnualMemoFormValues>(() => annualMemoToFormValues(memo));
+
+  function startEdit() {
+    setValues(annualMemoToFormValues(memo));
+    onStartEdit();
+  }
+
+  if (editing) {
+    return (
+      <div className="rounded-lg border border-border p-3">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <div className="flex flex-col gap-1.5">
+            <Label htmlFor={`edit-annual-item-name-${memo.id}`}>項目名</Label>
+            <Input
+              id={`edit-annual-item-name-${memo.id}`}
+              placeholder="例: 自動車税"
+              value={values.itemName}
+              onChange={(e) => setValues((v) => ({ ...v, itemName: e.target.value }))}
+            />
+          </div>
+          <div className="flex flex-col gap-1.5">
+            <Label htmlFor={`edit-annual-payment-date-${memo.id}`}>支払い日</Label>
+            <Input
+              id={`edit-annual-payment-date-${memo.id}`}
+              placeholder="例: 5月31日ごろ"
+              value={values.paymentDate}
+              onChange={(e) => setValues((v) => ({ ...v, paymentDate: e.target.value }))}
+            />
+          </div>
+          <div className="flex flex-col gap-1.5">
+            <Label htmlFor={`edit-annual-amount-${memo.id}`}>金額（任意）</Label>
+            <Input
+              id={`edit-annual-amount-${memo.id}`}
+              type="number"
+              inputMode="numeric"
+              placeholder="金額（円）"
+              value={values.amount}
+              onChange={(e) => setValues((v) => ({ ...v, amount: e.target.value }))}
+            />
+          </div>
+        </div>
+
+        <div className="mt-3 flex flex-col gap-1.5">
+          <Label htmlFor={`edit-annual-note-${memo.id}`}>備考（任意）</Label>
+          <Textarea
+            id={`edit-annual-note-${memo.id}`}
+            placeholder="例: 普通車・軽自動車の2台分"
+            value={values.note}
+            onChange={(e) => setValues((v) => ({ ...v, note: e.target.value }))}
+          />
+        </div>
+
+        <div className="mt-3 flex gap-2">
+          <Button size="sm" onClick={() => onSave(values)} disabled={updating}>
+            {updating ? "保存中..." : "保存"}
+          </Button>
+          <Button variant="ghost" size="sm" onClick={onCancelEdit} disabled={updating}>
+            キャンセル
+          </Button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="rounded-lg border border-border p-3">
+      <div className="flex items-start justify-between gap-2">
+        <div className="space-y-1">
+          <p className="font-medium">{memo.item_name}</p>
+          <p className="text-sm text-muted-foreground">{memo.payment_date}</p>
+        </div>
+        <div className="flex shrink-0 gap-1">
+          <Button variant="ghost" size="sm" onClick={startEdit}>
+            編集
+          </Button>
+          <Button variant="ghost" size="sm" onClick={() => onDelete(memo.id)} disabled={deleting}>
+            {deleting ? "削除中..." : "削除"}
+          </Button>
+        </div>
+      </div>
+      {memo.amount !== null && <p className="mt-2 font-semibold tabular-nums">{formatYen(memo.amount)}</p>}
+      {memo.note && <p className="mt-1 whitespace-pre-wrap text-sm text-muted-foreground">{memo.note}</p>}
     </div>
   );
 }
