@@ -118,6 +118,7 @@ function setupSpreadsheet() {
   annualMemos.getRange(1, 1, 1, HEADER_ANNUAL_MEMOS.length).setValues([HEADER_ANNUAL_MEMOS]);
   annualMemos.setFrozenRows(1);
   annualMemos.getRange(1, 1, 1, HEADER_ANNUAL_MEMOS.length).setFontWeight('bold');
+  annualMemos.getRange('C:C').setNumberFormat('@');
 
   var defaultSheet = ss.getSheetByName('シート1') || ss.getSheetByName('Sheet1');
   if (defaultSheet && ss.getSheets().length > 5) {
@@ -147,10 +148,11 @@ function setApiToken() {
 }
 
 /**
- * MonthlyBalances / ElectricityRecords の year_month 列（A列）が過去にスプレッドシートに
- * よって日付型へ自動変換されてしまった行を、"YYYY-MM" のプレーンテキストに一括修復する。
- * 「資産管理 > 年月データの修復（テキスト化）」から手動実行する。
- * （通常はコード修正後の再デプロイのみで解消するが、既存行を即座に直したい場合に使う）
+ * MonthlyBalances / ElectricityRecords の year_month 列（A列）と、AnnualMemos の
+ * payment_date 列（C列）が過去にスプレッドシートによって日付型へ自動変換されてしまった
+ * 行を、プレーンテキストに一括修復する。「資産管理 > 年月データの修復（テキスト化）」から
+ * 手動実行する。（通常はコード修正後の再デプロイのみで解消するが、既存行を即座に直したい
+ * 場合に使う）
  */
 function repairYearMonthColumn() {
   var ui = SpreadsheetApp.getUi();
@@ -176,6 +178,21 @@ function repairYearMonthColumn() {
     sheet.getRange('A:A').setNumberFormat('@');
     range.setValues(normalized);
   });
+
+  var annualMemosSheet = getAnnualMemosSheet_();
+  var annualLastRow = annualMemosSheet.getLastRow();
+  if (annualLastRow >= 2) {
+    var dateRange = annualMemosSheet.getRange(2, 3, annualLastRow - 1, 1);
+    var dateValues = dateRange.getValues();
+    totalRows += dateValues.length;
+    var normalizedDates = dateValues.map(function (row) {
+      var original = row[0];
+      if (Object.prototype.toString.call(original) === '[object Date]') totalFixed++;
+      return [normalizeFreeTextDate_(original)];
+    });
+    annualMemosSheet.getRange('C:C').setNumberFormat('@');
+    dateRange.setValues(normalizedDates);
+  }
 
   if (totalRows === 0) {
     ui.alert('修復対象のデータがありません。');
@@ -205,6 +222,7 @@ function getAnnualMemosSheet_() {
     sheet.getRange(1, 1, 1, HEADER_ANNUAL_MEMOS.length).setValues([HEADER_ANNUAL_MEMOS]);
     sheet.setFrozenRows(1);
     sheet.getRange(1, 1, 1, HEADER_ANNUAL_MEMOS.length).setFontWeight('bold');
+    sheet.getRange('C:C').setNumberFormat('@');
   }
   return sheet;
 }
@@ -229,6 +247,21 @@ function normalizeYearMonth_(value) {
   if (Object.prototype.toString.call(value) === '[object Date]') {
     var tz = SpreadsheetApp.getActiveSpreadsheet().getSpreadsheetTimeZone();
     return Utilities.formatDate(value, tz, 'yyyy-MM');
+  }
+  return String(value).trim();
+}
+
+/**
+ * 自由記述の日付っぽい文字列（例: "5月31日ごろ"、"2026-07-28"）を扱う列の値を正規化する。
+ * "2026-07-28" のように日付として解釈できる形で入力すると、スプレッドシートが自動的に
+ * 日付型に変換してしまうことがあり、その場合 getValues() で Date オブジェクトが返って
+ * くる（JSON化すると "2026-07-27T15:00:00.000Z" のような値になってしまう）。
+ * その場合は「M月D日」形式のテキストに変換して返す。
+ */
+function normalizeFreeTextDate_(value) {
+  if (Object.prototype.toString.call(value) === '[object Date]') {
+    var tz = SpreadsheetApp.getActiveSpreadsheet().getSpreadsheetTimeZone();
+    return Utilities.formatDate(value, tz, 'M月d日');
   }
   return String(value).trim();
 }
@@ -634,7 +667,7 @@ function listAnnualMemos_() {
     return {
       id: String(row[0]),
       item_name: row[1],
-      payment_date: row[2],
+      payment_date: normalizeFreeTextDate_(row[2]),
       amount: row[3] === '' ? null : Number(row[3]),
       note: row[4],
       created_at: row[5]
@@ -655,13 +688,16 @@ function addAnnualMemo_(itemName, paymentDate, amount, note) {
   if (!paymentDate) throw new Error('paymentDate は必須です');
 
   var sheet = getAnnualMemosSheet_();
+  // payment_date 列（C列）がスプレッドシートによって日付型へ自動変換されるのを防ぐため、
+  // 常にプレーンテキスト書式を強制してから書き込む。
+  sheet.getRange('C:C').setNumberFormat('@');
 
   var id = Utilities.getUuid();
   var now = new Date();
   var rowValues = [
     id,
     itemName,
-    paymentDate,
+    String(paymentDate),
     amount !== undefined && amount !== null && amount !== '' ? Number(amount) : '',
     note || '',
     now
@@ -679,6 +715,9 @@ function updateAnnualMemo_(id, itemName, paymentDate, amount, note) {
   if (!paymentDate) throw new Error('paymentDate は必須です');
 
   var sheet = getAnnualMemosSheet_();
+  // payment_date 列（C列）がスプレッドシートによって日付型へ自動変換されるのを防ぐため、
+  // 常にプレーンテキスト書式を強制してから書き込む。
+  sheet.getRange('C:C').setNumberFormat('@');
   var lastRow = sheet.getLastRow();
   if (lastRow < 2) throw new Error('指定された id の年間メモが見つかりません: ' + id);
 
@@ -688,7 +727,7 @@ function updateAnnualMemo_(id, itemName, paymentDate, amount, note) {
       var rowIndex = i + 2;
       sheet.getRange(rowIndex, 2, 1, 3).setValues([[
         itemName,
-        paymentDate,
+        String(paymentDate),
         amount !== undefined && amount !== null && amount !== '' ? Number(amount) : ''
       ]]);
       sheet.getRange(rowIndex, 5).setValue(note || '');
