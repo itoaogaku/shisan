@@ -530,22 +530,10 @@ function MemoCard({
 
   return (
     <div className="rounded-lg border border-border p-3">
-      <div className="flex items-start justify-between gap-2">
-        <div className="space-y-1.5">
-          <p className="font-medium">{memo.account}</p>
-          <div className="flex flex-wrap items-center gap-1.5">
-            <TypeBadge type={memo.type} />
-            <FrequencyBadge frequency={memo.frequency} dayOfMonth={memo.day_of_month} />
-          </div>
-        </div>
-        <div className="flex shrink-0 gap-1">
-          <Button variant="ghost" size="sm" onClick={startEdit}>
-            編集
-          </Button>
-          <Button variant="ghost" size="sm" onClick={() => onDelete(memo.id)} disabled={deleting}>
-            {deleting ? "削除中..." : "削除"}
-          </Button>
-        </div>
+      <p className="truncate font-medium">{memo.account}</p>
+      <div className="mt-1.5 flex flex-wrap items-center gap-1.5">
+        <TypeBadge type={memo.type} />
+        <FrequencyBadge frequency={memo.frequency} dayOfMonth={memo.day_of_month} />
       </div>
       {memo.amount_type === "変動" ? (
         <p className="mt-2 text-sm font-medium text-muted-foreground">利用料に応じて</p>
@@ -553,6 +541,14 @@ function MemoCard({
         memo.amount !== null && <p className="mt-2 font-semibold tabular-nums">{formatYen(memo.amount)}</p>
       )}
       {memo.memo && <p className="mt-1 whitespace-pre-wrap text-sm text-muted-foreground">{memo.memo}</p>}
+      <div className="mt-2 flex justify-end gap-1">
+        <Button variant="ghost" size="sm" onClick={startEdit}>
+          編集
+        </Button>
+        <Button variant="ghost" size="sm" onClick={() => onDelete(memo.id)} disabled={deleting}>
+          {deleting ? "削除中..." : "削除"}
+        </Button>
+      </div>
     </div>
   );
 }

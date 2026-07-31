@@ -312,22 +312,18 @@ function AnnualMemoCard({
 
   return (
     <div className="rounded-lg border border-border p-3">
-      <div className="flex items-start justify-between gap-2">
-        <div className="space-y-1">
-          <p className="font-medium">{memo.item_name}</p>
-          <p className="text-sm text-muted-foreground">{memo.payment_date}</p>
-        </div>
-        <div className="flex shrink-0 gap-1">
-          <Button variant="ghost" size="sm" onClick={startEdit}>
-            編集
-          </Button>
-          <Button variant="ghost" size="sm" onClick={() => onDelete(memo.id)} disabled={deleting}>
-            {deleting ? "削除中..." : "削除"}
-          </Button>
-        </div>
-      </div>
+      <p className="truncate font-medium">{memo.item_name}</p>
+      <p className="mt-1 text-sm text-muted-foreground">{memo.payment_date}</p>
       {memo.amount !== null && <p className="mt-2 font-semibold tabular-nums">{formatYen(memo.amount)}</p>}
       {memo.note && <p className="mt-1 whitespace-pre-wrap text-sm text-muted-foreground">{memo.note}</p>}
+      <div className="mt-2 flex justify-end gap-1">
+        <Button variant="ghost" size="sm" onClick={startEdit}>
+          編集
+        </Button>
+        <Button variant="ghost" size="sm" onClick={() => onDelete(memo.id)} disabled={deleting}>
+          {deleting ? "削除中..." : "削除"}
+        </Button>
+      </div>
     </div>
   );
 }
