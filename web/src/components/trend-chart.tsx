@@ -13,6 +13,7 @@ interface TrendChartProps {
 const CATEGORIES: Category[] = ["銀行", "証券", "暗号資産", "カード"];
 
 const SERIES = [
+  { key: "net_worth", label: "推定資産（資産合計－カード合計）", color: "var(--chart-5)" },
   { key: "total_assets", label: "世帯総資産", color: "var(--chart-text-primary)" },
   ...CATEGORIES.map((c) => ({ key: c, label: CATEGORY_LABELS[c], color: CATEGORY_COLORS[c] })),
 ] as const;
@@ -20,6 +21,7 @@ const SERIES = [
 type ChartRow = {
   year_month: string;
   total_assets: number;
+  net_worth: number;
 } & Record<Category, number>;
 
 interface TooltipPayloadItem {
@@ -62,14 +64,18 @@ export function TrendChart({ trend }: TrendChartProps) {
     return <p className="text-sm text-muted-foreground">推移データがまだありません。</p>;
   }
 
-  const data: ChartRow[] = trend.map((t) => ({
-    year_month: t.year_month,
-    total_assets: t.total_assets,
-    銀行: t.category_totals?.銀行 ?? 0,
-    証券: t.category_totals?.証券 ?? 0,
-    暗号資産: t.category_totals?.暗号資産 ?? 0,
-    カード: t.category_totals?.カード ?? t.card_total ?? 0,
-  }));
+  const data: ChartRow[] = trend.map((t) => {
+    const cardTotal = t.category_totals?.カード ?? t.card_total ?? 0;
+    return {
+      year_month: t.year_month,
+      total_assets: t.total_assets,
+      net_worth: t.total_assets - cardTotal,
+      銀行: t.category_totals?.銀行 ?? 0,
+      証券: t.category_totals?.証券 ?? 0,
+      暗号資産: t.category_totals?.暗号資産 ?? 0,
+      カード: cardTotal,
+    };
+  });
 
   return (
     <div>
@@ -96,7 +102,7 @@ export function TrendChart({ trend }: TrendChartProps) {
               dataKey={s.key}
               name={s.label}
               stroke={s.color}
-              strokeWidth={s.key === "total_assets" ? 2.5 : 2}
+              strokeWidth={s.key === "net_worth" ? 3 : s.key === "total_assets" ? 2.5 : 2}
               strokeDasharray={s.key === "total_assets" ? "5 3" : undefined}
               dot={{ r: 4, fill: s.color, stroke: "var(--chart-surface)", strokeWidth: 2 }}
             />
