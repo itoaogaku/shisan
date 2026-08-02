@@ -35,21 +35,21 @@ export function ElectricityHistoryTable({ trend }: ElectricityHistoryTableProps)
                   {formatElectricitySettlementSummary(r.year_month)}
                 </p>
               </td>
-              <td className="py-2 pr-4 text-right tabular-nums">
+              <td className="whitespace-nowrap py-2 pr-4 text-right tabular-nums">
                 {r.expense !== null ? formatYen(r.expense) : <span className="text-muted-foreground">—</span>}
               </td>
-              <td className="py-2 pr-4 text-right tabular-nums text-muted-foreground">
+              <td className="whitespace-nowrap py-2 pr-4 text-right tabular-nums text-muted-foreground">
                 {r.expense_kwh !== null ? formatKwh(r.expense_kwh) : "—"}
               </td>
-              <td className="py-2 pr-4 text-right tabular-nums">
+              <td className="whitespace-nowrap py-2 pr-4 text-right tabular-nums">
                 {r.income !== null ? formatYen(r.income) : <span className="text-muted-foreground">—</span>}
               </td>
-              <td className="py-2 pr-4 text-right tabular-nums text-muted-foreground">
+              <td className="whitespace-nowrap py-2 pr-4 text-right tabular-nums text-muted-foreground">
                 {r.income_kwh !== null ? formatKwh(r.income_kwh) : "—"}
               </td>
               <td
                 className={cn(
-                  "py-2 pl-4 text-right tabular-nums font-medium",
+                  "whitespace-nowrap py-2 pl-4 text-right tabular-nums font-medium",
                   r.net !== null && r.net > 0 && "text-success-text",
                   r.net !== null && r.net < 0 && "text-destructive"
                 )}

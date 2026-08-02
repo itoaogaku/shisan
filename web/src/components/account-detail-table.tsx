@@ -95,7 +95,7 @@ export function AccountDetailTable({
                         {a.account_name}
                         {billingInfo && <p className="text-xs text-muted-foreground">{billingInfo}</p>}
                       </td>
-                      <td className="py-2 pr-4 text-right tabular-nums">
+                      <td className="whitespace-nowrap py-2 pr-4 text-right tabular-nums">
                         {amount !== undefined ? (
                           formatYen(amount)
                         ) : (
@@ -104,7 +104,7 @@ export function AccountDetailTable({
                       </td>
                       <td
                         className={cn(
-                          "py-2 pl-4 text-right tabular-nums",
+                          "whitespace-nowrap py-2 pl-4 text-right tabular-nums",
                           diff === null && "text-muted-foreground",
                           isGoodDirection && "text-success-text",
                           isBadDirection && "text-destructive"

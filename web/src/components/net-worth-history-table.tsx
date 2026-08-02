@@ -41,10 +41,12 @@ export function NetWorthHistoryTable({ trend }: NetWorthHistoryTableProps) {
             return (
               <tr key={r.year_month} className="border-b border-border/60 last:border-0">
                 <td className="py-2 pr-4">{formatYearMonthLabel(r.year_month)}</td>
-                <td className="py-2 pr-4 text-right tabular-nums font-medium">{formatYen(r.net_worth)}</td>
+                <td className="whitespace-nowrap py-2 pr-4 text-right tabular-nums font-medium">
+                  {formatYen(r.net_worth)}
+                </td>
                 <td
                   className={cn(
-                    "py-2 pl-4 text-right tabular-nums",
+                    "whitespace-nowrap py-2 pl-4 text-right tabular-nums",
                     diff === null && "text-muted-foreground",
                     diff !== null && diff > 0 && "text-success-text",
                     diff !== null && diff < 0 && "text-destructive"
