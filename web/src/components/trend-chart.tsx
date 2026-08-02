@@ -13,7 +13,7 @@ interface TrendChartProps {
 const CATEGORIES: Category[] = ["銀行", "証券", "暗号資産", "カード"];
 
 const SERIES = [
-  { key: "net_worth", label: "推定資産（資産合計－カード合計）", color: "var(--chart-5)" },
+  { key: "net_worth", label: "推定資産", color: "var(--chart-5)" },
   { key: "total_assets", label: "世帯総資産", color: "var(--chart-text-primary)" },
   ...CATEGORIES.map((c) => ({ key: c, label: CATEGORY_LABELS[c], color: CATEGORY_COLORS[c] })),
 ] as const;

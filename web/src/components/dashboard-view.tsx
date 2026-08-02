@@ -3,6 +3,7 @@ import Link from "next/link";
 import { AccountDetailTable } from "@/components/account-detail-table";
 import { AssetBreakdownChart } from "@/components/asset-breakdown-chart";
 import { CardBreakdownChart } from "@/components/card-breakdown-chart";
+import { NetWorthHistoryTable } from "@/components/net-worth-history-table";
 import { StatCard } from "@/components/stat-card";
 import { TrendChart } from "@/components/trend-chart";
 import { buttonVariants } from "@/components/ui/button";
@@ -57,7 +58,7 @@ export function DashboardView({
       </div>
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        <StatCard label="推定資産（資産合計 − カード合計）" value={estimatedNetWorth} emphasis />
+        <StatCard label="推定資産" value={estimatedNetWorth} emphasis />
         <StatCard label="資産合計" value={totalAssets} />
         <StatCard label="クレジットカード合計" value={cardTotal} />
         <StatCard label="銀行合計" value={bankTotal} />
@@ -91,6 +92,15 @@ export function DashboardView({
         </CardHeader>
         <CardContent>
           <TrendChart trend={trend} />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader className="pb-2">
+          <CardTitle className="text-base text-foreground">推定資産 直近12ヶ月</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <NetWorthHistoryTable trend={trend} />
         </CardContent>
       </Card>
 
