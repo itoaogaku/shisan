@@ -29,12 +29,38 @@ interface MemoFormValues {
 
 const BANK_OPTIONS = bankAccountLabels();
 
-function sortMemos(memos: MemoRecord[]): MemoRecord[] {
-  return [...memos].sort((a, b) => {
-    if (a.frequency !== b.frequency) return a.frequency === "定期" ? -1 : 1;
-    if (a.frequency === "定期") return (a.day_of_month ?? 99) - (b.day_of_month ?? 99);
-    return (b.created_at ?? "").localeCompare(a.created_at ?? "");
-  });
+type SortOrder = "default" | "created_desc" | "created_asc" | "amount_desc" | "amount_asc" | "account";
+
+const SORT_OPTIONS: { value: SortOrder; label: string }[] = [
+  { value: "default", label: "デフォルト（定期→都度）" },
+  { value: "created_desc", label: "登録が新しい順" },
+  { value: "created_asc", label: "登録が古い順" },
+  { value: "amount_desc", label: "金額が高い順" },
+  { value: "amount_asc", label: "金額が低い順" },
+  { value: "account", label: "口座名順" },
+];
+
+function sortMemos(memos: MemoRecord[], order: SortOrder): MemoRecord[] {
+  const list = [...memos];
+  switch (order) {
+    case "created_desc":
+      return list.sort((a, b) => (b.created_at ?? "").localeCompare(a.created_at ?? ""));
+    case "created_asc":
+      return list.sort((a, b) => (a.created_at ?? "").localeCompare(b.created_at ?? ""));
+    case "amount_desc":
+      return list.sort((a, b) => (b.amount ?? -Infinity) - (a.amount ?? -Infinity));
+    case "amount_asc":
+      return list.sort((a, b) => (a.amount ?? Infinity) - (b.amount ?? Infinity));
+    case "account":
+      return list.sort((a, b) => a.account.localeCompare(b.account, "ja"));
+    case "default":
+    default:
+      return list.sort((a, b) => {
+        if (a.frequency !== b.frequency) return a.frequency === "定期" ? -1 : 1;
+        if (a.frequency === "定期") return (a.day_of_month ?? 99) - (b.day_of_month ?? 99);
+        return (b.created_at ?? "").localeCompare(a.created_at ?? "");
+      });
+  }
 }
 
 function TypeBadge({ type }: { type: MemoType }) {
@@ -71,6 +97,7 @@ export function MemoView({ initialMemos }: MemoViewProps) {
   const [deletingId, setDeletingId] = useState<string | null>(null);
   const [editingId, setEditingId] = useState<string | null>(null);
   const [updatingId, setUpdatingId] = useState<string | null>(null);
+  const [sortOrder, setSortOrder] = useState<SortOrder>("default");
 
   async function refreshMemos() {
     const res = await fetch("/api/gas/memos", { cache: "no-store" });
@@ -171,7 +198,7 @@ export function MemoView({ initialMemos }: MemoViewProps) {
     }
   }
 
-  const sorted = sortMemos(memos);
+  const sorted = sortMemos(memos, sortOrder);
   const recurring = sorted.filter((m) => m.frequency === "定期");
   const irregular = sorted.filter((m) => m.frequency === "都度");
 
@@ -304,13 +331,30 @@ export function MemoView({ initialMemos }: MemoViewProps) {
       </Card>
 
       <Card>
-        <CardHeader className="pb-2">
+        <CardHeader className="flex flex-row flex-wrap items-center justify-between gap-2 pb-2">
           <CardTitle className="text-base text-foreground">メモ一覧</CardTitle>
+          <div className="flex items-center gap-1.5">
+            <Label htmlFor="memo-sort-order" className="text-xs text-muted-foreground">
+              並び替え
+            </Label>
+            <select
+              id="memo-sort-order"
+              value={sortOrder}
+              onChange={(e) => setSortOrder(e.target.value as SortOrder)}
+              className="h-9 rounded-md border border-input bg-card px-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            >
+              {SORT_OPTIONS.map((o) => (
+                <option key={o.value} value={o.value}>
+                  {o.label}
+                </option>
+              ))}
+            </select>
+          </div>
         </CardHeader>
         <CardContent className="space-y-6">
           {sorted.length === 0 ? (
             <p className="text-sm text-muted-foreground">まだメモがありません。</p>
-          ) : (
+          ) : sortOrder === "default" ? (
             <>
               {recurring.length > 0 && (
                 <div className="space-y-3">
@@ -353,6 +397,22 @@ export function MemoView({ initialMemos }: MemoViewProps) {
                 </div>
               )}
             </>
+          ) : (
+            <div className="space-y-3">
+              {sorted.map((m) => (
+                <MemoCard
+                  key={m.id}
+                  memo={m}
+                  deleting={deletingId === m.id}
+                  editing={editingId === m.id}
+                  updating={updatingId === m.id}
+                  onDelete={handleDelete}
+                  onStartEdit={() => setEditingId(m.id)}
+                  onCancelEdit={() => setEditingId(null)}
+                  onSave={(values) => handleUpdate(m.id, values)}
+                />
+              ))}
+            </div>
           )}
         </CardContent>
       </Card>

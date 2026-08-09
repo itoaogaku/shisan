@@ -22,8 +22,31 @@ interface AnnualMemoFormValues {
   note: string;
 }
 
-function sortAnnualMemos(memos: AnnualMemoRecord[]): AnnualMemoRecord[] {
-  return [...memos].sort((a, b) => (b.created_at ?? "").localeCompare(a.created_at ?? ""));
+type AnnualSortOrder = "created_desc" | "created_asc" | "amount_desc" | "amount_asc" | "item_name";
+
+const ANNUAL_SORT_OPTIONS: { value: AnnualSortOrder; label: string }[] = [
+  { value: "created_desc", label: "登録が新しい順" },
+  { value: "created_asc", label: "登録が古い順" },
+  { value: "amount_desc", label: "金額が高い順" },
+  { value: "amount_asc", label: "金額が低い順" },
+  { value: "item_name", label: "項目名順" },
+];
+
+function sortAnnualMemos(memos: AnnualMemoRecord[], order: AnnualSortOrder): AnnualMemoRecord[] {
+  const list = [...memos];
+  switch (order) {
+    case "created_asc":
+      return list.sort((a, b) => (a.created_at ?? "").localeCompare(b.created_at ?? ""));
+    case "amount_desc":
+      return list.sort((a, b) => (b.amount ?? -Infinity) - (a.amount ?? -Infinity));
+    case "amount_asc":
+      return list.sort((a, b) => (a.amount ?? Infinity) - (b.amount ?? Infinity));
+    case "item_name":
+      return list.sort((a, b) => a.item_name.localeCompare(b.item_name, "ja"));
+    case "created_desc":
+    default:
+      return list.sort((a, b) => (b.created_at ?? "").localeCompare(a.created_at ?? ""));
+  }
 }
 
 function annualMemoToFormValues(memo: AnnualMemoRecord): AnnualMemoFormValues {
@@ -45,6 +68,7 @@ export function AnnualMemoView({ initialAnnualMemos }: AnnualMemoViewProps) {
   const [deletingId, setDeletingId] = useState<string | null>(null);
   const [editingId, setEditingId] = useState<string | null>(null);
   const [updatingId, setUpdatingId] = useState<string | null>(null);
+  const [sortOrder, setSortOrder] = useState<AnnualSortOrder>("created_desc");
 
   async function refreshMemos() {
     const res = await fetch("/api/gas/annual-memos", { cache: "no-store" });
@@ -142,7 +166,7 @@ export function AnnualMemoView({ initialAnnualMemos }: AnnualMemoViewProps) {
     }
   }
 
-  const sorted = sortAnnualMemos(memos);
+  const sorted = sortAnnualMemos(memos, sortOrder);
 
   return (
     <div className="space-y-8">
@@ -200,8 +224,25 @@ export function AnnualMemoView({ initialAnnualMemos }: AnnualMemoViewProps) {
       </Card>
 
       <Card>
-        <CardHeader className="pb-2">
+        <CardHeader className="flex flex-row flex-wrap items-center justify-between gap-2 pb-2">
           <CardTitle className="text-base text-foreground">年間の支払い一覧</CardTitle>
+          <div className="flex items-center gap-1.5">
+            <Label htmlFor="annual-sort-order" className="text-xs text-muted-foreground">
+              並び替え
+            </Label>
+            <select
+              id="annual-sort-order"
+              value={sortOrder}
+              onChange={(e) => setSortOrder(e.target.value as AnnualSortOrder)}
+              className="h-9 rounded-md border border-input bg-card px-2 text-sm shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            >
+              {ANNUAL_SORT_OPTIONS.map((o) => (
+                <option key={o.value} value={o.value}>
+                  {o.label}
+                </option>
+              ))}
+            </select>
+          </div>
         </CardHeader>
         <CardContent className="space-y-3">
           {sorted.length === 0 ? (
