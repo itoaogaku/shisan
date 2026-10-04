@@ -1,0 +1,21 @@
+{
+  "code": "0000",
+  "name": "銘柄名",
+  "source": "決算短信 2026年3月期 第2四半期（2025-11-xx 発表）",
+  "price": null,
+  "industry_per": null,
+  "annual": {
+    "prev":     {"sales": 0, "op": 0, "ord": 0, "net": 0, "eps": 0},
+    "forecast": {"sales": 0, "op": 0, "ord": 0, "net": 0, "eps": 0}
+  },
+  "quarter": {
+    "label": "2026年3月期 Q2（7-9月）単独",
+    "current":  {"sales": 0, "op": 0, "ord": 0, "net": 0},
+    "year_ago": {"sales": 0, "op": 0, "ord": 0, "net": 0},
+    "one_off": null
+  },
+  "progress": {
+    "quarter": 2,
+    "cumulative": {"sales": 0, "op": 0}
+  }
+}
