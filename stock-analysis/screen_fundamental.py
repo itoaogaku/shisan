@@ -93,13 +93,13 @@ def table_after(page, marker):
 
 def parse_cap(page):
     t = text(page)
-    m = re.search(r"時価総額\s*((?:[\d,]+\s*兆\s*)?(?:[\d,]+\s*億)?)\s*円", t)
+    m = re.search(r"時価総額\s*((?:[\d,.]+\s*兆\s*)?(?:[\d,.]+\s*億)?)\s*円", t)
     if not m or not m.group(1).strip():
         return None
     s = m.group(1).replace(",", "").replace(" ", "")
-    cho = re.search(r"(\d+)兆", s)
-    oku = re.search(r"(\d+)億", s)
-    return (int(cho.group(1)) * 1e12 if cho else 0) + (int(oku.group(1)) * 1e8 if oku else 0)
+    cho = re.search(r"([\d.]+)兆", s)
+    oku = re.search(r"([\d.]+)億", s)
+    return (float(cho.group(1)) * 1e12 if cho else 0) + (float(oku.group(1)) * 1e8 if oku else 0)
 
 
 def period(label, short=False):
@@ -241,7 +241,11 @@ def main():
 
     client = Client()
     ranked, excluded, unknown_count = [], [], {}
-    for n, s in enumerate(stage1, 1):
+    # 1回目で失敗した銘柄は最後に1回だけ再試行する
+    queue = [(n, s, 1) for n, s in enumerate(stage1, 1)]
+    retry = []
+    while queue:
+        n, s, attempt = queue.pop(0)
         code = s["コード"]
         url = FIN_URL.format(code=code)
         fetched = f"{datetime.now(JST):%Y-%m-%d %H:%M}"
@@ -251,9 +255,16 @@ def main():
             cap = parse_cap(page)
             gc, gc_hits = check_gc(client, code)
         except Exception as e:  # noqa: BLE001
-            excluded.append({"コード": code, "銘柄名": s["銘柄名"], "理由": f"取得失敗 {type(e).__name__}: {e}"})
-            print(f"  {code} 取得失敗 {e}", flush=True)
+            print(f"  {code} 取得失敗（{attempt}回目） {e}", flush=True)
+            if attempt == 1:
+                retry.append((n, s, 2))
+            else:
+                excluded.append({"コード": code, "銘柄名": s["銘柄名"], "理由": f"取得失敗 {type(e).__name__}: {e}"})
+            if not queue and retry:
+                queue, retry = retry, []
             continue
+        if not queue and retry:
+            queue, retry = retry, []
         if cap is None:
             missing.append("時価総額")
         if gc == "該当表題なし":

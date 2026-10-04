@@ -99,6 +99,8 @@ def main():
         code = r[ix["コード"]].strip()
         if code.endswith(".0"):  # xlrd は数値を 1301.0 で返す
             code = code[:-2]
+        if len(code) != 4:  # 5桁は優先株・社債型種類株式（普通株ではない）
+            continue
         as_of = r[ix["日付"]].strip()
         out.append([code, r[ix["銘柄名"]].strip(), KEEP[market], r[ix["33業種区分"]].strip()])
 
