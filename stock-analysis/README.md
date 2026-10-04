@@ -47,6 +47,22 @@ python3 stock-analysis/score.py --csv stock-analysis/data/7203.csv --fund stock-
 - 標準ライブラリのみで動きます。
 - `--json` を付けると、結果をJSONで出力します。
 
+## 全市場スクリーニング
+
+東証の全銘柄（プライム・スタンダード・グロースの国内普通株）を同じ採点基準で絞り込みます。設計は [`SCREENING_PLAN.md`](SCREENING_PLAN.md) にあります。
+
+```
+python3 stock-analysis/screen_universe.py      # ⓪ JPXの銘柄一覧 → screening/universe.csv
+python3 stock-analysis/screen_technical.py     # ① 全銘柄の日足取得・テクニカル採点 → screening/stage1_<日付>.csv
+python3 stock-analysis/screen_fundamental.py   # ② 上位150銘柄の決算取得・ファンダ採点 → screening/ranking_<日付>.csv
+```
+
+- ①は約3,700銘柄を1秒以上の間隔で取得するため、1時間強かかります。途中で止まっても、再実行すれば取得済みの銘柄を飛ばして再開します。動作確認は `--limit 10` で行えます。
+- ①の除外条件：25日平均売買代金1億円未満、日足250本未満。②の除外条件：時価総額50億円未満、今期赤字予想、継続企業の前提に関する注記あり。
+- ②の決算データは株探の決算ページ、継続企業の注記は株探の適時開示一覧（過去約15か月の表題）で確認します。取得できなかった項目は推定せず「評価不能」にします。
+- 日足（`data/prices/`、約90MB）はコミットしません。除外理由や取得失敗は `screening/*_log.json`、銘柄ごとの業績データは `screening/fund_<日付>/` に残ります。
+- ③上位10銘柄の詳細確認は Claude が行い、`reports/screening_<日付>.md` に書きます。
+
 ## 注意
 
 - 採点は機械的な計算結果です。売買を推奨するものではありません。
