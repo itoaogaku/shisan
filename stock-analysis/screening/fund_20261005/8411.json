@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": 1400000.0,
+   "eps": 579.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 9085438.0,
+   "op": null,
+   "ord": 1573159.0,
+   "net": 1248632.0,
+   "eps": 502.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 2520855.0,
+   "op": null,
+   "ord": 598973.0,
+   "net": 422909.0
+  },
+  "year_ago": {
+   "sales": 2130048.0,
+   "op": null,
+   "ord": 368583.0,
+   "net": 290521.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 2520855.0,
+   "op": null
+  }
+ },
+ "code": "8411",
+ "name": "みずほフィナンシャルグループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8411（取得 2026-10-05 22:03）。単位：百万円（EPSは円）",
+ "price": 8668.0,
+ "industry_per": null,
+ "market_cap": 21174500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

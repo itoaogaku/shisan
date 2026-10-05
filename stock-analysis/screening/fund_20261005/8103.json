@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 170000.0,
+   "op": 4200.0,
+   "ord": 4800.0,
+   "net": 3700.0,
+   "eps": 99.2
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 164927.0,
+   "op": 4132.0,
+   "ord": 4438.0,
+   "net": 3374.0,
+   "eps": 84.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 47353.0,
+   "op": 1395.0,
+   "ord": 1588.0,
+   "net": 1004.0
+  },
+  "year_ago": {
+   "sales": 38828.0,
+   "op": 1441.0,
+   "ord": 1401.0,
+   "net": 983.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 47353.0,
+   "op": 1395.0
+  }
+ },
+ "code": "8103",
+ "name": "明和産業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8103（取得 2026-10-05 21:50）。単位：百万円（EPSは円）",
+ "price": 1005.0,
+ "industry_per": null,
+ "market_cap": 40500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

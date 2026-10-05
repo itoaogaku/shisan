@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 95595.0,
+   "op": 18730.0,
+   "ord": 22867.0,
+   "net": 21360.0,
+   "eps": 106.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 31570.0,
+   "op": 10823.0,
+   "ord": 11525.0,
+   "net": 8001.0
+  },
+  "year_ago": {
+   "sales": 19145.0,
+   "op": 949.0,
+   "ord": 1139.0,
+   "net": 1717.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 31570.0,
+   "op": 10823.0
+  }
+ },
+ "code": "8609",
+ "name": "岡三証券グループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8609（取得 2026-10-05 21:37）。単位：百万円（EPSは円）",
+ "price": 1221.0,
+ "industry_per": null,
+ "market_cap": 282300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

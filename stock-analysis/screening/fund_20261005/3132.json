@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1300000.0,
+   "op": 52000.0,
+   "ord": 47000.0,
+   "net": 32000.0,
+   "eps": 179.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 1214196.0,
+   "op": 41950.0,
+   "ord": 37392.0,
+   "net": 27765.0,
+   "eps": 155.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 393443.0,
+   "op": 16509.0,
+   "ord": 16247.0,
+   "net": 10928.0
+  },
+  "year_ago": {
+   "sales": 281613.0,
+   "op": 8198.0,
+   "ord": 5082.0,
+   "net": 5091.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 393443.0,
+   "op": 16509.0
+  }
+ },
+ "code": "3132",
+ "name": "マクニカホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3132（取得 2026-10-05 21:20）。単位：百万円（EPSは円）",
+ "price": 4300.0,
+ "industry_per": null,
+ "market_cap": 770000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

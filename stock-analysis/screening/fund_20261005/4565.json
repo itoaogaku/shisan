@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 41300.0,
+   "op": 8200.0,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "I 予 2026.12",
+  "prev": {
+   "sales": 29615.0,
+   "op": -8462.0,
+   "ord": -14950.0,
+   "net": -12530.0,
+   "eps": -138.8
+  },
+  "prev_label": "I 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 7654.0,
+   "op": -1363.0,
+   "ord": -1644.0,
+   "net": -202.0
+  },
+  "year_ago": {
+   "sales": 8450.0,
+   "op": -563.0,
+   "ord": -1566.0,
+   "net": -2377.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 18910.0,
+   "op": 1881.0
+  }
+ },
+ "code": "4565",
+ "name": "ネクセラファーマ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4565（取得 2026-10-05 21:49）。単位：百万円（EPSは円）",
+ "price": 1234.0,
+ "industry_per": null,
+ "market_cap": 114300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

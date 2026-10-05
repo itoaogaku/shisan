@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": 380000.0,
+   "eps": 138.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 2983544.0,
+   "op": null,
+   "ord": 401499.0,
+   "net": 317566.0,
+   "eps": 113.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 786388.0,
+   "op": null,
+   "ord": 173469.0,
+   "net": 142223.0
+  },
+  "year_ago": {
+   "sales": 652599.0,
+   "op": null,
+   "ord": 83192.0,
+   "net": 90834.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 786388.0,
+   "op": null
+  }
+ },
+ "code": "8309",
+ "name": "三井住友トラストグループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8309（取得 2026-10-05 21:39）。単位：百万円（EPSは円）",
+ "price": 1755.0,
+ "industry_per": null,
+ "market_cap": 4905700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

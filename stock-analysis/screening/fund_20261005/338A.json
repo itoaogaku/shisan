@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1080.0,
+   "op": 161.0,
+   "ord": 180.0,
+   "net": 302.0,
+   "eps": 110.8
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 851.0,
+   "op": 144.0,
+   "ord": 160.0,
+   "net": 155.0,
+   "eps": 60.4
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 160.0,
+   "op": -44.0,
+   "ord": -45.0,
+   "net": -34.0
+  },
+  "year_ago": {
+   "sales": 143.0,
+   "op": -17.0,
+   "ord": -15.0,
+   "net": -11.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 305.0,
+   "op": -99.0
+  }
+ },
+ "code": "338A",
+ "name": "ＺｅｎｍｕＴｅｃｈ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=338A（取得 2026-10-05 21:55）。単位：百万円（EPSは円）",
+ "price": 4285.0,
+ "industry_per": null,
+ "market_cap": 11700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 82500.0,
+   "op": 2200.0,
+   "ord": 2000.0,
+   "net": 2200.0,
+   "eps": 161.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 81802.0,
+   "op": 2972.0,
+   "ord": 3919.0,
+   "net": 2116.0,
+   "eps": 154.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 21361.0,
+   "op": 1175.0,
+   "ord": 1528.0,
+   "net": 1022.0
+  },
+  "year_ago": {
+   "sales": 18378.0,
+   "op": 445.0,
+   "ord": 376.0,
+   "net": 246.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 21361.0,
+   "op": 1175.0
+  }
+ },
+ "code": "5142",
+ "name": "アキレス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5142（取得 2026-10-05 21:41）。単位：百万円（EPSは円）",
+ "price": 1936.0,
+ "industry_per": null,
+ "market_cap": 28200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

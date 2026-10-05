@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 24500.0,
+   "net": 17000.0,
+   "eps": 163.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 93787.0,
+   "op": null,
+   "ord": 16647.0,
+   "net": 12349.0,
+   "eps": 118.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 28485.0,
+   "op": null,
+   "ord": 3380.0,
+   "net": 2442.0
+  },
+  "year_ago": {
+   "sales": 21704.0,
+   "op": null,
+   "ord": 3763.0,
+   "net": 2789.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 28485.0,
+   "op": null
+  }
+ },
+ "code": "7322",
+ "name": "三十三フィナンシャルグループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7322（取得 2026-10-05 21:29）。単位：百万円（EPSは円）",
+ "price": 2262.0,
+ "industry_per": null,
+ "market_cap": 236800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

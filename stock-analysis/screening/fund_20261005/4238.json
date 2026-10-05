@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "連 予 2027.01",
+  "prev": {
+   "sales": 12572.0,
+   "op": 511.0,
+   "ord": 590.0,
+   "net": 606.0,
+   "eps": 67.1
+  },
+  "prev_label": "連 2026.01"
+ },
+ "quarter": {
+  "label": "26.05-07 単独（前年同期 25.05-07）",
+  "current": {
+   "sales": 4058.0,
+   "op": 320.0,
+   "ord": 302.0,
+   "net": 238.0
+  },
+  "year_ago": {
+   "sales": 3234.0,
+   "op": 226.0,
+   "ord": 245.0,
+   "net": 180.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.02-07",
+  "cumulative": {
+   "sales": 7983.0,
+   "op": 559.0
+  }
+ },
+ "code": "4238",
+ "name": "ミライアル",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4238（取得 2026-10-05 21:21）。単位：百万円（EPSは円）",
+ "price": 2059.0,
+ "industry_per": null,
+ "market_cap": 18800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

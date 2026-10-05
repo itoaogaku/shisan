@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 116500.0,
+   "op": null,
+   "ord": 33000.0,
+   "net": 21000.0,
+   "eps": 185.4
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 108556.0,
+   "op": null,
+   "ord": 29135.0,
+   "net": 18857.0,
+   "eps": 166.1
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 41221.0,
+   "op": null,
+   "ord": 9539.0,
+   "net": 6179.0
+  },
+  "year_ago": {
+   "sales": 24155.0,
+   "op": null,
+   "ord": 7378.0,
+   "net": 4811.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 41221.0,
+   "op": null
+  }
+ },
+ "code": "8386",
+ "name": "百十四銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8386（取得 2026-10-05 21:26）。単位：百万円（EPSは円）",
+ "price": 3250.0,
+ "industry_per": null,
+ "market_cap": 372200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

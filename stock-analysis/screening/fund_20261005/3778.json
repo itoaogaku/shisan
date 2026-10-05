@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 45500.0,
+   "op": 2500.0,
+   "ord": 2300.0,
+   "net": 1500.0,
+   "eps": 37.5
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 35301.0,
+   "op": -403.0,
+   "ord": 105.0,
+   "net": 216.0,
+   "eps": 5.4
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 11134.0,
+   "op": 1230.0,
+   "ord": 1258.0,
+   "net": 855.0
+  },
+  "year_ago": {
+   "sales": 7492.0,
+   "op": -457.0,
+   "ord": -438.0,
+   "net": -324.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 11134.0,
+   "op": 1230.0
+  }
+ },
+ "code": "3778",
+ "name": "さくらインターネット",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3778（取得 2026-10-05 21:59）。単位：百万円（EPSは円）",
+ "price": 3895.0,
+ "industry_per": null,
+ "market_cap": 163200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

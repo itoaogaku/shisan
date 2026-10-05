@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 4000.0,
+   "net": 3600.0,
+   "eps": 128.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 44080.0,
+   "op": null,
+   "ord": 3159.0,
+   "net": 2584.0,
+   "eps": 89.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 12097.0,
+   "op": null,
+   "ord": 1793.0,
+   "net": 1209.0
+  },
+  "year_ago": {
+   "sales": 10680.0,
+   "op": null,
+   "ord": 1292.0,
+   "net": 1053.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 12097.0,
+   "op": null
+  }
+ },
+ "code": "7161",
+ "name": "じもとホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7161（取得 2026-10-05 21:53）。単位：百万円（EPSは円）",
+ "price": 658.0,
+ "industry_per": null,
+ "market_cap": 17700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

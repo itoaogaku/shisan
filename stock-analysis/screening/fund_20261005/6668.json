@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 13600.0,
+   "op": 2500.0,
+   "ord": 2700.0,
+   "net": 1850.0,
+   "eps": 216.7
+  },
+  "forecast_label": "予 2026.08",
+  "prev": {
+   "sales": 12680.0,
+   "op": 1808.0,
+   "ord": 1897.0,
+   "net": 2007.0,
+   "eps": 234.4
+  },
+  "prev_label": "2025.08"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 3615.0,
+   "op": 784.0,
+   "ord": 802.0,
+   "net": 580.0
+  },
+  "year_ago": {
+   "sales": 3996.0,
+   "op": 897.0,
+   "ord": 561.0,
+   "net": 388.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.09-05",
+  "cumulative": {
+   "sales": 9075.0,
+   "op": 1424.0
+  }
+ },
+ "code": "6668",
+ "name": "アドテック　プラズマ　テクノロジー",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6668（取得 2026-10-05 21:20）。単位：百万円（EPSは円）",
+ "price": 5020.0,
+ "industry_per": null,
+ "market_cap": 43100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 40800.0,
+   "op": 2800.0,
+   "ord": 2700.0,
+   "net": 4500.0,
+   "eps": 519.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 40182.0,
+   "op": 2415.0,
+   "ord": 2375.0,
+   "net": 2894.0,
+   "eps": 331.4
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 11036.0,
+   "op": 1165.0,
+   "ord": 1232.0,
+   "net": 903.0
+  },
+  "year_ago": {
+   "sales": 10949.0,
+   "op": 1110.0,
+   "ord": 1134.0,
+   "net": 1203.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 11036.0,
+   "op": 1165.0
+  }
+ },
+ "code": "4092",
+ "name": "日本化学工業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4092（取得 2026-10-05 21:44）。単位：百万円（EPSは円）",
+ "price": 5750.0,
+ "industry_per": null,
+ "market_cap": 51300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

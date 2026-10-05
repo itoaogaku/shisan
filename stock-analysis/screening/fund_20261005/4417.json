@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 13778.0,
+   "op": 2939.0,
+   "ord": 2973.0,
+   "net": 1998.0,
+   "eps": 133.1
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 11022.0,
+   "op": 2238.0,
+   "ord": 2222.0,
+   "net": 1486.0,
+   "eps": 98.9
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 2772.0,
+   "op": 499.0,
+   "ord": 492.0,
+   "net": 321.0
+  },
+  "year_ago": {
+   "sales": 2237.0,
+   "op": 352.0,
+   "ord": 319.0,
+   "net": 200.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 2772.0,
+   "op": 499.0
+  }
+ },
+ "code": "4417",
+ "name": "グローバルセキュリティエキスパート",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4417（取得 2026-10-05 21:18）。単位：百万円（EPSは円）",
+ "price": 5930.0,
+ "industry_per": null,
+ "market_cap": 90800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 149500.0,
+   "net": 100000.0,
+   "eps": 529.2
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 621168.0,
+   "op": null,
+   "ord": 120610.0,
+   "net": 85428.0,
+   "eps": 452.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 151911.0,
+   "op": null,
+   "ord": 41518.0,
+   "net": 28708.0
+  },
+  "year_ago": {
+   "sales": 126442.0,
+   "op": null,
+   "ord": 32570.0,
+   "net": 22836.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 151911.0,
+   "op": null
+  }
+ },
+ "code": "8354",
+ "name": "ふくおかフィナンシャルグループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8354（取得 2026-10-05 21:44）。単位：百万円（EPSは円）",
+ "price": 7853.0,
+ "industry_per": null,
+ "market_cap": 1501000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 50000.0,
+   "op": 2800.0,
+   "ord": 3406.0,
+   "net": 5464.0,
+   "eps": 144.6
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 59093.0,
+   "op": 3962.0,
+   "ord": 4191.0,
+   "net": 2616.0,
+   "eps": 66.4
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 13314.0,
+   "op": 1468.0,
+   "ord": 1606.0,
+   "net": 4246.0
+  },
+  "year_ago": {
+   "sales": 14991.0,
+   "op": 1328.0,
+   "ord": 1384.0,
+   "net": 948.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 13314.0,
+   "op": 1468.0
+  }
+ },
+ "code": "4849",
+ "name": "エン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4849（取得 2026-10-05 21:26）。単位：百万円（EPSは円）",
+ "price": 1725.0,
+ "industry_per": null,
+ "market_cap": 85800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

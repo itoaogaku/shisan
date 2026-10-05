@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 190000.0,
+   "op": 64800.0,
+   "ord": 64900.0,
+   "net": 48100.0,
+   "eps": 327.2
+  },
+  "forecast_label": "I 予 2027.02",
+  "prev": {
+   "sales": 148332.0,
+   "op": 50931.0,
+   "ord": 50988.0,
+   "net": 37840.0,
+   "eps": 249.2
+  },
+  "prev_label": "I 2026.02"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 44576.0,
+   "op": 14481.0,
+   "ord": 14471.0,
+   "net": 10733.0
+  },
+  "year_ago": {
+   "sales": 34307.0,
+   "op": 12207.0,
+   "ord": 12190.0,
+   "net": 9016.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.03-05",
+  "cumulative": {
+   "sales": 44576.0,
+   "op": 14481.0
+  }
+ },
+ "code": "6532",
+ "name": "ベイカレント",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6532（取得 2026-10-05 21:54）。単位：百万円（EPSは円）",
+ "price": 8014.0,
+ "industry_per": null,
+ "market_cap": 1203900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

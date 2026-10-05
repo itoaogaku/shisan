@@ -1,0 +1,44 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 101000.0,
+   "op": 26500.0,
+   "ord": 26000.0,
+   "net": 17700.0,
+   "eps": 719.5
+  },
+  "forecast_label": "連 予 2027.06",
+  "prev": {
+   "sales": 100139.0,
+   "op": 24794.0,
+   "ord": 24664.0,
+   "net": 16034.0,
+   "eps": 652.0
+  },
+  "prev_label": "連 2026.06"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 25409.0,
+   "op": 7458.0,
+   "ord": 7729.0,
+   "net": 4347.0
+  },
+  "year_ago": {
+   "sales": 16571.0,
+   "op": 1257.0,
+   "ord": 1580.0,
+   "net": 1018.0
+  },
+  "one_off": null
+ },
+ "progress": {},
+ "code": "7826",
+ "name": "フルヤ金属",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7826（取得 2026-10-05 21:28）。単位：百万円（EPSは円）",
+ "price": 11710.0,
+ "industry_per": null,
+ "market_cap": 297300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

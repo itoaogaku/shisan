@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 17500.0,
+   "op": 1600.0,
+   "ord": 1550.0,
+   "net": 960.0,
+   "eps": 102.8
+  },
+  "forecast_label": "I 予 2026.12",
+  "prev": {
+   "sales": 15768.0,
+   "op": 1442.0,
+   "ord": 1385.0,
+   "net": 816.0,
+   "eps": 84.9
+  },
+  "prev_label": "I 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 3762.0,
+   "op": 283.0,
+   "ord": 262.0,
+   "net": 153.0
+  },
+  "year_ago": {
+   "sales": 3713.0,
+   "op": 196.0,
+   "ord": 180.0,
+   "net": 100.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 7798.0,
+   "op": 873.0
+  }
+ },
+ "code": "6533",
+ "name": "Ｏｒｃｈｅｓｔｒａ　Ｈｏｌｄｉｎｇｓ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6533（取得 2026-10-05 21:24）。単位：百万円（EPSは円）",
+ "price": 2042.0,
+ "industry_per": null,
+ "market_cap": 20500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

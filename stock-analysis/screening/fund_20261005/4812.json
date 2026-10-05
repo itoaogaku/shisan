@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 182000.0,
+   "op": 25500.0,
+   "ord": 26100.0,
+   "net": 18000.0,
+   "eps": 92.2
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 164865.0,
+   "op": 22888.0,
+   "ord": 23618.0,
+   "net": 16365.0,
+   "eps": 83.8
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 44829.0,
+   "op": 5754.0,
+   "ord": 6002.0,
+   "net": 4240.0
+  },
+  "year_ago": {
+   "sales": 39995.0,
+   "op": 4882.0,
+   "ord": 5114.0,
+   "net": 3575.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 88649.0,
+   "op": 12342.0
+  }
+ },
+ "code": "4812",
+ "name": "電通総研",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4812（取得 2026-10-05 21:31）。単位：百万円（EPSは円）",
+ "price": 2862.0,
+ "industry_per": null,
+ "market_cap": 559700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

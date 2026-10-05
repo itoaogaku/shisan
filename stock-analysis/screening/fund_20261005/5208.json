@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 64200.0,
+   "op": 6500.0,
+   "ord": 6400.0,
+   "net": 4500.0,
+   "eps": 137.2
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 56474.0,
+   "op": 5805.0,
+   "ord": 6157.0,
+   "net": 4995.0,
+   "eps": 150.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 15828.0,
+   "op": 1181.0,
+   "ord": 1378.0,
+   "net": 911.0
+  },
+  "year_ago": {
+   "sales": 12634.0,
+   "op": 902.0,
+   "ord": 972.0,
+   "net": 728.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 15828.0,
+   "op": 1181.0
+  }
+ },
+ "code": "5208",
+ "name": "有沢製作所",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5208（取得 2026-10-05 21:46）。単位：百万円（EPSは円）",
+ "price": 2925.0,
+ "industry_per": null,
+ "market_cap": 98300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

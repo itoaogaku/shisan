@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 4800.0,
+   "net": 3200.0,
+   "eps": 177.9
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 56055.0,
+   "op": null,
+   "ord": 5461.0,
+   "net": 4128.0,
+   "eps": 228.8
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 15254.0,
+   "op": null,
+   "ord": 2339.0,
+   "net": 1657.0
+  },
+  "year_ago": {
+   "sales": 13127.0,
+   "op": null,
+   "ord": 1089.0,
+   "net": 1163.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 15254.0,
+   "op": null
+  }
+ },
+ "code": "8713",
+ "name": "フィデアホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8713（取得 2026-10-05 21:38）。単位：百万円（EPSは円）",
+ "price": 2793.0,
+ "industry_per": null,
+ "market_cap": 50700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 263000.0,
+   "op": null,
+   "ord": 65000.0,
+   "net": 45000.0,
+   "eps": 253.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 249074.0,
+   "op": null,
+   "ord": 56038.0,
+   "net": 39705.0,
+   "eps": 223.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 109640.0,
+   "op": null,
+   "ord": 20269.0,
+   "net": 13880.0
+  },
+  "year_ago": {
+   "sales": 56606.0,
+   "op": null,
+   "ord": 14984.0,
+   "net": 9887.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 109640.0,
+   "op": null
+  }
+ },
+ "code": "5832",
+ "name": "ちゅうぎんフィナンシャルグループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5832（取得 2026-10-05 21:38）。単位：百万円（EPSは円）",
+ "price": 3753.0,
+ "industry_per": null,
+ "market_cap": 693400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

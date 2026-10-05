@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 133000.0,
+   "op": null,
+   "ord": 28500.0,
+   "net": 19100.0,
+   "eps": 68.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 117417.0,
+   "op": null,
+   "ord": 25233.0,
+   "net": 17336.0,
+   "eps": 62.3
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 32424.0,
+   "op": null,
+   "ord": 8586.0,
+   "net": 6312.0
+  },
+  "year_ago": {
+   "sales": 25606.0,
+   "op": null,
+   "ord": 5395.0,
+   "net": 3860.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 32424.0,
+   "op": null
+  }
+ },
+ "code": "8714",
+ "name": "池田泉州ホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8714（取得 2026-10-05 21:47）。単位：百万円（EPSは円）",
+ "price": 1126.0,
+ "industry_per": null,
+ "market_cap": 316400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

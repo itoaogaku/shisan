@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 880000.0,
+   "op": 80000.0,
+   "ord": 79000.0,
+   "net": 40500.0,
+   "eps": 206.0
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 767351.0,
+   "op": 59935.0,
+   "ord": 52571.0,
+   "net": 28487.0,
+   "eps": 144.8
+  },
+  "prev_label": "U 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 209864.0,
+   "op": 18857.0,
+   "ord": 18483.0,
+   "net": 10635.0
+  },
+  "year_ago": {
+   "sales": 166480.0,
+   "op": 5784.0,
+   "ord": 5816.0,
+   "net": 4601.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 209864.0,
+   "op": 18857.0
+  }
+ },
+ "code": "6645",
+ "name": "オムロン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6645（取得 2026-10-05 21:53）。単位：百万円（EPSは円）",
+ "price": 6597.0,
+ "industry_per": null,
+ "market_cap": 1360600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

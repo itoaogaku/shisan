@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 225200.0,
+   "op": null,
+   "ord": 44400.0,
+   "net": 29400.0,
+   "eps": 78.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 235927.0,
+   "op": null,
+   "ord": 37532.0,
+   "net": 25601.0,
+   "eps": 68.1
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 73688.0,
+   "op": null,
+   "ord": 11223.0,
+   "net": 8295.0
+  },
+  "year_ago": {
+   "sales": 43811.0,
+   "op": null,
+   "ord": 8115.0,
+   "net": 5909.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 73688.0,
+   "op": null
+  }
+ },
+ "code": "8524",
+ "name": "北洋銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8524（取得 2026-10-05 21:37）。単位：百万円（EPSは円）",
+ "price": 1351.0,
+ "industry_per": null,
+ "market_cap": 510800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

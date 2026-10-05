@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 14500.0,
+   "net": 10000.0,
+   "eps": 144.7
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 77495.0,
+   "op": null,
+   "ord": 12851.0,
+   "net": 8919.0,
+   "eps": 129.4
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 18465.0,
+   "op": null,
+   "ord": 5001.0,
+   "net": 3494.0
+  },
+  "year_ago": {
+   "sales": 14183.0,
+   "op": null,
+   "ord": 3133.0,
+   "net": 2199.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 18465.0,
+   "op": null
+  }
+ },
+ "code": "8345",
+ "name": "岩手銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8345（取得 2026-10-05 21:28）。単位：百万円（EPSは円）",
+ "price": 2791.0,
+ "industry_per": null,
+ "market_cap": 206500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

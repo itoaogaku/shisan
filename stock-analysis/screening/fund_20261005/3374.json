@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 50900.0,
+   "op": 2560.0,
+   "ord": 2540.0,
+   "net": 1680.0,
+   "eps": 479.5
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 32614.0,
+   "op": 1402.0,
+   "ord": 1389.0,
+   "net": 971.0,
+   "eps": 277.7
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 11536.0,
+   "op": 590.0,
+   "ord": 597.0,
+   "net": 363.0
+  },
+  "year_ago": {
+   "sales": 7212.0,
+   "op": 82.0,
+   "ord": 83.0,
+   "net": 46.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 11536.0,
+   "op": 590.0
+  }
+ },
+ "code": "3374",
+ "name": "内外テック",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3374（取得 2026-10-05 21:17）。単位：百万円（EPSは円）",
+ "price": 5250.0,
+ "industry_per": null,
+ "market_cap": 18700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

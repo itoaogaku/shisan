@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 110000.0,
+   "op": 5000.0,
+   "ord": 4700.0,
+   "net": 3000.0,
+   "eps": 42.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 100202.0,
+   "op": 2788.0,
+   "ord": 4136.0,
+   "net": 4026.0,
+   "eps": 56.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 27191.0,
+   "op": 385.0,
+   "ord": 127.0,
+   "net": -149.0
+  },
+  "year_ago": {
+   "sales": 22779.0,
+   "op": 160.0,
+   "ord": 223.0,
+   "net": 80.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 27191.0,
+   "op": 385.0
+  }
+ },
+ "code": "6958",
+ "name": "日本シイエムケイ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6958（取得 2026-10-05 21:40）。単位：百万円（EPSは円）",
+ "price": 789.0,
+ "industry_per": null,
+ "market_cap": 56300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 511000.0,
+   "op": 21000.0,
+   "ord": 21500.0,
+   "net": 14000.0,
+   "eps": 89.6
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 502339.0,
+   "op": 26401.0,
+   "ord": 29327.0,
+   "net": 13920.0,
+   "eps": 89.1
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 124770.0,
+   "op": 9958.0,
+   "ord": 11848.0,
+   "net": 8599.0
+  },
+  "year_ago": {
+   "sales": 103557.0,
+   "op": -2874.0,
+   "ord": -2434.0,
+   "net": -3795.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 272462.0,
+   "op": 30274.0
+  }
+ },
+ "code": "3105",
+ "name": "日清紡ホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3105（取得 2026-10-05 21:18）。単位：百万円（EPSは円）",
+ "price": 2790.0,
+ "industry_per": null,
+ "market_cap": 472500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

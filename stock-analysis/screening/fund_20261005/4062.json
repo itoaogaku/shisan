@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 550000.0,
+   "op": 127000.0,
+   "ord": 127000.0,
+   "net": 84000.0,
+   "eps": 148.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 416201.0,
+   "op": 62027.0,
+   "ord": 60822.0,
+   "net": 63713.0,
+   "eps": 114.1
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 123219.0,
+   "op": 26880.0,
+   "ord": 27466.0,
+   "net": 17918.0
+  },
+  "year_ago": {
+   "sales": 97464.0,
+   "op": 17636.0,
+   "ord": 17407.0,
+   "net": 12728.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 123219.0,
+   "op": 26880.0
+  }
+ },
+ "code": "4062",
+ "name": "イビデン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4062（取得 2026-10-05 21:45）。単位：百万円（EPSは円）",
+ "price": 12265.0,
+ "industry_per": null,
+ "market_cap": 6957500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

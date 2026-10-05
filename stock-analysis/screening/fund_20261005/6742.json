@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 90200.0,
+   "op": 5600.0,
+   "ord": 6000.0,
+   "net": 4200.0,
+   "eps": 68.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 93122.0,
+   "op": 4503.0,
+   "ord": 5203.0,
+   "net": 5042.0,
+   "eps": 81.4
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 14794.0,
+   "op": 97.0,
+   "ord": 490.0,
+   "net": 398.0
+  },
+  "year_ago": {
+   "sales": 12251.0,
+   "op": -1644.0,
+   "ord": -1218.0,
+   "net": -815.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 14794.0,
+   "op": 97.0
+  }
+ },
+ "code": "6742",
+ "name": "京三製作所",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6742（取得 2026-10-05 21:18）。単位：百万円（EPSは円）",
+ "price": 1174.0,
+ "industry_per": null,
+ "market_cap": 73800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

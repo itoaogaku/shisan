@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 170000.0,
+   "op": 10000.0,
+   "ord": 10000.0,
+   "net": 6100.0,
+   "eps": 10.7
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 166855.0,
+   "op": 10613.0,
+   "ord": 10831.0,
+   "net": 7117.0,
+   "eps": 12.4
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 42247.0,
+   "op": 3506.0,
+   "ord": 3519.0,
+   "net": 2238.0
+  },
+  "year_ago": {
+   "sales": 41756.0,
+   "op": 2462.0,
+   "ord": 2458.0,
+   "net": 1544.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 42247.0,
+   "op": 3506.0
+  }
+ },
+ "code": "2146",
+ "name": "ＵＴグループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2146（取得 2026-10-05 21:51）。単位：百万円（EPSは円）",
+ "price": 238.0,
+ "industry_per": null,
+ "market_cap": 144600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

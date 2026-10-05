@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 300000.0,
+   "op": 34000.0,
+   "ord": 34000.0,
+   "net": 23500.0,
+   "eps": 107.2
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 276267.0,
+   "op": 23071.0,
+   "ord": 25684.0,
+   "net": 18227.0,
+   "eps": 80.1
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 74511.0,
+   "op": 12811.0,
+   "ord": 13423.0,
+   "net": 9377.0
+  },
+  "year_ago": {
+   "sales": 62191.0,
+   "op": 3730.0,
+   "ord": 4377.0,
+   "net": 3721.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 74511.0,
+   "op": 12811.0
+  }
+ },
+ "code": "6952",
+ "name": "カシオ計算機",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6952（取得 2026-10-05 22:01）。単位：百万円（EPSは円）",
+ "price": 2240.5,
+ "industry_per": null,
+ "market_cap": 512800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

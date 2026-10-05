@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 41000.0,
+   "op": 2900.0,
+   "ord": 3000.0,
+   "net": 2050.0,
+   "eps": 74.2
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 40030.0,
+   "op": 3818.0,
+   "ord": 4060.0,
+   "net": 2724.0,
+   "eps": 98.7
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 10203.0,
+   "op": 1397.0,
+   "ord": 1450.0,
+   "net": 983.0
+  },
+  "year_ago": {
+   "sales": 10566.0,
+   "op": 1267.0,
+   "ord": 1239.0,
+   "net": 834.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 10203.0,
+   "op": 1397.0
+  }
+ },
+ "code": "2612",
+ "name": "かどや製油",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2612（取得 2026-10-05 21:22）。単位：百万円（EPSは円）",
+ "price": 2835.0,
+ "industry_per": null,
+ "market_cap": 79900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

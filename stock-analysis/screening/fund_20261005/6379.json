@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 175000.0,
+   "op": 13000.0,
+   "ord": 13250.0,
+   "net": 9000.0,
+   "eps": 55.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 174531.0,
+   "op": 14713.0,
+   "ord": 14920.0,
+   "net": 10459.0,
+   "eps": 64.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 38834.0,
+   "op": 1228.0,
+   "ord": 1373.0,
+   "net": 708.0
+  },
+  "year_ago": {
+   "sales": 35753.0,
+   "op": 1021.0,
+   "ord": 1155.0,
+   "net": 536.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 38834.0,
+   "op": 1228.0
+  }
+ },
+ "code": "6379",
+ "name": "レイズネクスト",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6379（取得 2026-10-05 22:00）。単位：百万円（EPSは円）",
+ "price": 992.0,
+ "industry_per": null,
+ "market_cap": 161200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

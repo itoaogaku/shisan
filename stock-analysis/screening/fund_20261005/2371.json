@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 114500.0,
+   "op": 30800.0,
+   "ord": 30700.0,
+   "net": 20700.0,
+   "eps": 104.6
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 94127.0,
+   "op": 27243.0,
+   "ord": 27347.0,
+   "net": 18803.0,
+   "eps": 95.1
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 25700.0,
+   "op": 6884.0,
+   "ord": 6919.0,
+   "net": 4689.0
+  },
+  "year_ago": {
+   "sales": 21958.0,
+   "op": 7288.0,
+   "ord": 7260.0,
+   "net": 5006.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 25700.0,
+   "op": 6884.0
+  }
+ },
+ "code": "2371",
+ "name": "カカクコム",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2371（取得 2026-10-05 21:19）。単位：百万円（EPSは円）",
+ "price": 3806.0,
+ "industry_per": null,
+ "market_cap": 755200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

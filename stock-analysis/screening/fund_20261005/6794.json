@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 140000.0,
+   "op": 8000.0,
+   "ord": 7500.0,
+   "net": 5000.0,
+   "eps": 222.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 134910.0,
+   "op": 7670.0,
+   "ord": 8002.0,
+   "net": 4951.0,
+   "eps": 221.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 35097.0,
+   "op": 585.0,
+   "ord": 1104.0,
+   "net": 128.0
+  },
+  "year_ago": {
+   "sales": 32136.0,
+   "op": 1767.0,
+   "ord": 1948.0,
+   "net": 1487.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 35097.0,
+   "op": 585.0
+  }
+ },
+ "code": "6794",
+ "name": "フォスター電機",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6794（取得 2026-10-05 22:03）。単位：百万円（EPSは円）",
+ "price": 3340.0,
+ "industry_per": null,
+ "market_cap": 83500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 28328.0,
+   "op": 10891.0,
+   "ord": 11089.0,
+   "net": 7677.0,
+   "eps": 241.6
+  },
+  "forecast_label": "I 予 2026.09",
+  "prev": {
+   "sales": 22448.0,
+   "op": 7126.0,
+   "ord": 7202.0,
+   "net": 5070.0,
+   "eps": 159.7
+  },
+  "prev_label": "I 2025.09"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 7194.0,
+   "op": 2909.0,
+   "ord": 2973.0,
+   "net": 2169.0
+  },
+  "year_ago": {
+   "sales": 4794.0,
+   "op": 1470.0,
+   "ord": 1476.0,
+   "net": 1127.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.10-06",
+  "cumulative": {
+   "sales": 20641.0,
+   "op": 8109.0
+  }
+ },
+ "code": "6080",
+ "name": "Ｍ＆Ａキャピタルパートナーズ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6080（取得 2026-10-05 21:32）。単位：百万円（EPSは円）",
+ "price": 4285.0,
+ "industry_per": null,
+ "market_cap": 136200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

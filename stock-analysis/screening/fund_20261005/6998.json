@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 15000.0,
+   "op": 730.0,
+   "ord": 1010.0,
+   "net": 720.0,
+   "eps": 147.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 12776.0,
+   "op": 713.0,
+   "ord": 1133.0,
+   "net": 270.0,
+   "eps": 55.8
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 4200.0,
+   "op": 632.0,
+   "ord": 794.0,
+   "net": 556.0
+  },
+  "year_ago": {
+   "sales": 3134.0,
+   "op": 205.0,
+   "ord": 268.0,
+   "net": 181.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 4200.0,
+   "op": 632.0
+  }
+ },
+ "code": "6998",
+ "name": "日本タングステン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6998（取得 2026-10-05 21:18）。単位：百万円（EPSは円）",
+ "price": 4270.0,
+ "industry_per": null,
+ "market_cap": 22000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

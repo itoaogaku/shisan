@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 242000.0,
+   "op": 26500.0,
+   "ord": 25300.0,
+   "net": 25000.0,
+   "eps": 1060.9
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 229784.0,
+   "op": 20529.0,
+   "ord": 21046.0,
+   "net": 24095.0,
+   "eps": 1022.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 67333.0,
+   "op": 7324.0,
+   "ord": 7201.0,
+   "net": 6111.0
+  },
+  "year_ago": {
+   "sales": 54833.0,
+   "op": 3725.0,
+   "ord": 2910.0,
+   "net": 5954.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 67333.0,
+   "op": 7324.0
+  }
+ },
+ "code": "9110",
+ "name": "ＮＳユナイテッド海運",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9110（取得 2026-10-05 21:29）。単位：百万円（EPSは円）",
+ "price": 10510.0,
+ "industry_per": null,
+ "market_cap": 251900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

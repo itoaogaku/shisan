@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 197600.0,
+   "op": null,
+   "ord": 37500.0,
+   "net": 25500.0,
+   "eps": 171.2
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 167078.0,
+   "op": null,
+   "ord": 32335.0,
+   "net": 22698.0,
+   "eps": 150.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 52357.0,
+   "op": null,
+   "ord": 9114.0,
+   "net": 6336.0
+  },
+  "year_ago": {
+   "sales": 36269.0,
+   "op": null,
+   "ord": 4185.0,
+   "net": 3222.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 52357.0,
+   "op": null
+  }
+ },
+ "code": "8381",
+ "name": "山陰合同銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8381（取得 2026-10-05 21:39）。単位：百万円（EPSは円）",
+ "price": 2575.0,
+ "industry_per": null,
+ "market_cap": 404200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

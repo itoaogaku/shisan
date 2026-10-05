@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 320000.0,
+   "op": 14000.0,
+   "ord": null,
+   "net": 10000.0,
+   "eps": 185.6
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 327894.0,
+   "op": 11624.0,
+   "ord": 13875.0,
+   "net": 8220.0,
+   "eps": 143.2
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 83252.0,
+   "op": 2191.0,
+   "ord": 3206.0,
+   "net": 1517.0
+  },
+  "year_ago": {
+   "sales": 76224.0,
+   "op": 1522.0,
+   "ord": 1875.0,
+   "net": 701.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 83252.0,
+   "op": 2191.0
+  }
+ },
+ "code": "7287",
+ "name": "日本精機",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7287（取得 2026-10-05 22:00）。単位：百万円（EPSは円）",
+ "price": 2785.0,
+ "industry_per": null,
+ "market_cap": 162800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

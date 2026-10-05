@@ -1,0 +1,44 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 26500.0,
+   "op": 3180.0,
+   "ord": 3180.0,
+   "net": 2067.0,
+   "eps": 296.7
+  },
+  "forecast_label": "予 2027.06",
+  "prev": {
+   "sales": 23238.0,
+   "op": 2649.0,
+   "ord": 2673.0,
+   "net": 1921.0,
+   "eps": 275.9
+  },
+  "prev_label": "2026.06"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 5788.0,
+   "op": 651.0,
+   "ord": 649.0,
+   "net": 521.0
+  },
+  "year_ago": {
+   "sales": 5181.0,
+   "op": 401.0,
+   "ord": 400.0,
+   "net": 275.0
+  },
+  "one_off": null
+ },
+ "progress": {},
+ "code": "2820",
+ "name": "やまみ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2820（取得 2026-10-05 21:58）。単位：百万円（EPSは円）",
+ "price": 6220.0,
+ "industry_per": null,
+ "market_cap": 43300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

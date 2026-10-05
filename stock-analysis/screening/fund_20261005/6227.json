@@ -1,0 +1,44 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 40003.0,
+   "op": 7610.0,
+   "ord": 7238.0,
+   "net": 4963.0,
+   "eps": 263.8
+  },
+  "forecast_label": "連 予 2027.06",
+  "prev": {
+   "sales": 35244.0,
+   "op": 5810.0,
+   "ord": 5636.0,
+   "net": 3560.0,
+   "eps": 189.6
+  },
+  "prev_label": "連 2026.06"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 10381.0,
+   "op": 1582.0,
+   "ord": 1541.0,
+   "net": 740.0
+  },
+  "year_ago": {
+   "sales": 10397.0,
+   "op": 1908.0,
+   "ord": 1862.0,
+   "net": 1108.0
+  },
+  "one_off": null
+ },
+ "progress": {},
+ "code": "6227",
+ "name": "ＡＩメカテック",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6227（取得 2026-10-05 21:57）。単位：百万円（EPSは円）",
+ "price": 8380.0,
+ "industry_per": null,
+ "market_cap": 158000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

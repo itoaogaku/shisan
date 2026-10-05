@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 386000.0,
+   "op": 35000.0,
+   "ord": 34300.0,
+   "net": 22000.0,
+   "eps": 108.7
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 322960.0,
+   "op": 25850.0,
+   "ord": 26312.0,
+   "net": 20078.0,
+   "eps": 94.1
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 92008.0,
+   "op": 8757.0,
+   "ord": 8664.0,
+   "net": 5679.0
+  },
+  "year_ago": {
+   "sales": 77730.0,
+   "op": 6703.0,
+   "ord": 7284.0,
+   "net": 5475.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 173728.0,
+   "op": 15102.0
+  }
+ },
+ "code": "5301",
+ "name": "東海カーボン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5301（取得 2026-10-05 21:17）。単位：百万円（EPSは円）",
+ "price": 2380.0,
+ "industry_per": null,
+ "market_cap": 514300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

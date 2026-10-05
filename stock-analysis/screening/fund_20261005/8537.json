@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 29030.0,
+   "op": null,
+   "ord": 4840.0,
+   "net": 3300.0,
+   "eps": 348.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 29344.0,
+   "op": null,
+   "ord": 4067.0,
+   "net": 2799.0,
+   "eps": 293.8
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 7572.0,
+   "op": null,
+   "ord": 503.0,
+   "net": 344.0
+  },
+  "year_ago": {
+   "sales": 6221.0,
+   "op": null,
+   "ord": 1242.0,
+   "net": 862.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 7572.0,
+   "op": null
+  }
+ },
+ "code": "8537",
+ "name": "大光銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8537（取得 2026-10-05 21:46）。単位：百万円（EPSは円）",
+ "price": 3335.0,
+ "industry_per": null,
+ "market_cap": 32300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

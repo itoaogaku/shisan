@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 10666000.0,
+   "op": null,
+   "ord": 869000.0,
+   "net": 513000.0,
+   "eps": 142.4
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 11308275.0,
+   "op": null,
+   "ord": 753688.0,
+   "net": 436597.0,
+   "eps": 119.8
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 2893002.0,
+   "op": null,
+   "ord": 251057.0,
+   "net": 160065.0
+  },
+  "year_ago": {
+   "sales": 2308294.0,
+   "op": null,
+   "ord": 84919.0,
+   "net": 34218.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 2893002.0,
+   "op": null
+  }
+ },
+ "code": "8750",
+ "name": "第一ライフグループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8750（取得 2026-10-05 22:02）。単位：百万円（EPSは円）",
+ "price": 1816.0,
+ "industry_per": null,
+ "market_cap": 6578700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

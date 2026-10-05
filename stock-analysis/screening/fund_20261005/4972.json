@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 51500.0,
+   "op": 6300.0,
+   "ord": 6200.0,
+   "net": 4300.0,
+   "eps": 259.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 47967.0,
+   "op": 6171.0,
+   "ord": 6239.0,
+   "net": 4046.0,
+   "eps": 243.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 12483.0,
+   "op": 1720.0,
+   "ord": 1765.0,
+   "net": 1378.0
+  },
+  "year_ago": {
+   "sales": 11379.0,
+   "op": 1429.0,
+   "ord": 1301.0,
+   "net": 958.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 12483.0,
+   "op": 1720.0
+  }
+ },
+ "code": "4972",
+ "name": "綜研化学",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4972（取得 2026-10-05 21:45）。単位：百万円（EPSは円）",
+ "price": 4425.0,
+ "industry_per": null,
+ "market_cap": 73500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

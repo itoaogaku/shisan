@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 84000.0,
+   "op": 6300.0,
+   "ord": 6500.0,
+   "net": 5400.0,
+   "eps": 180.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 78163.0,
+   "op": 5685.0,
+   "ord": 6261.0,
+   "net": 3975.0,
+   "eps": 130.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 18301.0,
+   "op": 989.0,
+   "ord": 1229.0,
+   "net": 1029.0
+  },
+  "year_ago": {
+   "sales": 16545.0,
+   "op": 602.0,
+   "ord": 761.0,
+   "net": 262.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 18301.0,
+   "op": 989.0
+  }
+ },
+ "code": "4212",
+ "name": "積水樹脂",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4212（取得 2026-10-05 21:49）。単位：百万円（EPSは円）",
+ "price": 2931.0,
+ "industry_per": null,
+ "market_cap": 90300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

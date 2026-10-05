@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 20080.0,
+   "op": 6100.0,
+   "ord": 6177.0,
+   "net": 4200.0,
+   "eps": 320.4
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 16999.0,
+   "op": 5370.0,
+   "ord": 5787.0,
+   "net": 4196.0,
+   "eps": 322.4
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 3930.0,
+   "op": 1198.0,
+   "ord": 1152.0,
+   "net": 831.0
+  },
+  "year_ago": {
+   "sales": 3422.0,
+   "op": 1048.0,
+   "ord": 973.0,
+   "net": 652.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 3930.0,
+   "op": 1198.0
+  }
+ },
+ "code": "4390",
+ "name": "ＩＰＳ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4390（取得 2026-10-05 22:00）。単位：百万円（EPSは円）",
+ "price": 3965.0,
+ "industry_per": null,
+ "market_cap": 52000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

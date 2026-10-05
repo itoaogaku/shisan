@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 26600.0,
+   "net": 17850.0,
+   "eps": 92.9
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 104775.0,
+   "op": null,
+   "ord": 24360.0,
+   "net": 16163.0,
+   "eps": 83.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 27666.0,
+   "op": null,
+   "ord": 9425.0,
+   "net": 6562.0
+  },
+  "year_ago": {
+   "sales": 23530.0,
+   "op": null,
+   "ord": 7210.0,
+   "net": 5244.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 27666.0,
+   "op": null
+  }
+ },
+ "code": "8600",
+ "name": "トモニホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8600（取得 2026-10-05 21:35）。単位：百万円（EPSは円）",
+ "price": 1188.0,
+ "industry_per": null,
+ "market_cap": 229900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

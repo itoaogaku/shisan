@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 30500.0,
+   "net": 20600.0,
+   "eps": 100.3
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 176576.0,
+   "op": null,
+   "ord": 22132.0,
+   "net": 19382.0,
+   "eps": 93.2
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 42730.0,
+   "op": null,
+   "ord": 8487.0,
+   "net": 5720.0
+  },
+  "year_ago": {
+   "sales": 34232.0,
+   "op": null,
+   "ord": 5845.0,
+   "net": 4121.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 42730.0,
+   "op": null
+  }
+ },
+ "code": "8361",
+ "name": "大垣共立銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8361（取得 2026-10-05 22:03）。単位：百万円（EPSは円）",
+ "price": 1859.0,
+ "industry_per": null,
+ "market_cap": 383700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

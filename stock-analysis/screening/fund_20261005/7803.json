@@ -1,0 +1,44 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 58000.0,
+   "op": 5300.0,
+   "ord": 6000.0,
+   "net": 4200.0,
+   "eps": 31.4
+  },
+  "forecast_label": "連 予 2027.06",
+  "prev": {
+   "sales": 57823.0,
+   "op": 4754.0,
+   "ord": 5930.0,
+   "net": 4565.0,
+   "eps": 33.6
+  },
+  "prev_label": "連 2026.06"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 15467.0,
+   "op": 752.0,
+   "ord": 911.0,
+   "net": 968.0
+  },
+  "year_ago": {
+   "sales": 16804.0,
+   "op": 1989.0,
+   "ord": 1945.0,
+   "net": 1724.0
+  },
+  "one_off": null
+ },
+ "progress": {},
+ "code": "7803",
+ "name": "ブシロード",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7803（取得 2026-10-05 21:43）。単位：百万円（EPSは円）",
+ "price": 459.0,
+ "industry_per": null,
+ "market_cap": 63200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

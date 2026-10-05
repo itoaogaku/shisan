@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 32260.0,
+   "op": 13007.0,
+   "ord": 13550.0,
+   "net": 10443.0,
+   "eps": 444.6
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 9496.0,
+   "op": 4369.0,
+   "ord": 4687.0,
+   "net": 3398.0
+  },
+  "year_ago": {
+   "sales": 6758.0,
+   "op": 2409.0,
+   "ord": 2693.0,
+   "net": 2185.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 9496.0,
+   "op": 4369.0
+  }
+ },
+ "code": "8707",
+ "name": "岩井コスモホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8707（取得 2026-10-05 21:52）。単位：百万円（EPSは円）",
+ "price": 4595.0,
+ "industry_per": null,
+ "market_cap": 114900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

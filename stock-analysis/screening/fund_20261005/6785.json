@@ -1,0 +1,44 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 43150.0,
+   "op": 6030.0,
+   "ord": 6070.0,
+   "net": 3980.0,
+   "eps": 277.2
+  },
+  "forecast_label": "連 予 2027.06",
+  "prev": {
+   "sales": 40445.0,
+   "op": 5559.0,
+   "ord": 5828.0,
+   "net": 3749.0,
+   "eps": 261.1
+  },
+  "prev_label": "連 2026.06"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 10829.0,
+   "op": 1115.0,
+   "ord": 1172.0,
+   "net": 763.0
+  },
+  "year_ago": {
+   "sales": 8787.0,
+   "op": 1099.0,
+   "ord": 1063.0,
+   "net": 716.0
+  },
+  "one_off": null
+ },
+ "progress": {},
+ "code": "6785",
+ "name": "鈴木",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6785（取得 2026-10-05 21:44）。単位：百万円（EPSは円）",
+ "price": 3480.0,
+ "industry_per": null,
+ "market_cap": 50100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 68000.0,
+   "op": 10000.0,
+   "ord": 9800.0,
+   "net": 5500.0,
+   "eps": 117.3
+  },
+  "forecast_label": "連 予 2027.02",
+  "prev": {
+   "sales": 63794.0,
+   "op": 9116.0,
+   "ord": 9144.0,
+   "net": 5109.0,
+   "eps": 108.9
+  },
+  "prev_label": "連 2026.02"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 16899.0,
+   "op": 3166.0,
+   "ord": 3210.0,
+   "net": 1984.0
+  },
+  "year_ago": {
+   "sales": 14802.0,
+   "op": 1689.0,
+   "ord": 1698.0,
+   "net": 767.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.03-05",
+  "cumulative": {
+   "sales": 16899.0,
+   "op": 3166.0
+  }
+ },
+ "code": "6058",
+ "name": "ベクトル",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6058（取得 2026-10-05 21:55）。単位：百万円（EPSは円）",
+ "price": 1988.0,
+ "industry_per": null,
+ "market_cap": 93300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

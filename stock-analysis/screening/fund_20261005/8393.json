@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 95400.0,
+   "op": null,
+   "ord": 21200.0,
+   "net": 14500.0,
+   "eps": 172.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 90159.0,
+   "op": null,
+   "ord": 19831.0,
+   "net": 14094.0,
+   "eps": 167.3
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 28395.0,
+   "op": null,
+   "ord": 6024.0,
+   "net": 4471.0
+  },
+  "year_ago": {
+   "sales": 21328.0,
+   "op": null,
+   "ord": 5074.0,
+   "net": 3571.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 28395.0,
+   "op": null
+  }
+ },
+ "code": "8393",
+ "name": "宮崎銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8393（取得 2026-10-05 21:25）。単位：百万円（EPSは円）",
+ "price": 2967.0,
+ "industry_per": null,
+ "market_cap": 254200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

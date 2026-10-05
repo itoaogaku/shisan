@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 28000.0,
+   "net": 23000.0,
+   "eps": 94.4
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 125137.0,
+   "op": null,
+   "ord": 30912.0,
+   "net": 21808.0,
+   "eps": 89.4
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 39911.0,
+   "op": null,
+   "ord": 14437.0,
+   "net": 14485.0
+  },
+  "year_ago": {
+   "sales": 26731.0,
+   "op": null,
+   "ord": 5286.0,
+   "net": 3803.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 39911.0,
+   "op": null
+  }
+ },
+ "code": "7389",
+ "name": "あいちフィナンシャルグループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7389（取得 2026-10-05 21:55）。単位：百万円（EPSは円）",
+ "price": 1993.0,
+ "industry_per": null,
+ "market_cap": 489500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

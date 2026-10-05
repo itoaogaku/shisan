@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 185000.0,
+   "op": 19500.0,
+   "ord": 20000.0,
+   "net": 25000.0,
+   "eps": 382.8
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 171369.0,
+   "op": 22256.0,
+   "ord": 24700.0,
+   "net": 17270.0,
+   "eps": 260.7
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 47073.0,
+   "op": 5428.0,
+   "ord": 5652.0,
+   "net": 5825.0
+  },
+  "year_ago": {
+   "sales": 31323.0,
+   "op": 2677.0,
+   "ord": 2023.0,
+   "net": 1414.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 47073.0,
+   "op": 5428.0
+  }
+ },
+ "code": "2121",
+ "name": "ＭＩＸＩ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2121（取得 2026-10-05 21:39）。単位：百万円（EPSは円）",
+ "price": 3695.0,
+ "industry_per": null,
+ "market_cap": 252900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 154300.0,
+   "net": 107000.0,
+   "eps": 155.3
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 445037.0,
+   "op": null,
+   "ord": 138815.0,
+   "net": 94063.0,
+   "eps": 133.8
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 145309.0,
+   "op": null,
+   "ord": 41814.0,
+   "net": 29905.0
+  },
+  "year_ago": {
+   "sales": 102755.0,
+   "op": null,
+   "ord": 31070.0,
+   "net": 21783.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 145309.0,
+   "op": null
+  }
+ },
+ "code": "8331",
+ "name": "千葉銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8331（取得 2026-10-05 21:38）。単位：百万円（EPSは円）",
+ "price": 2805.5,
+ "industry_per": null,
+ "market_cap": 2175700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

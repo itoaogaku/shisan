@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 6600.0,
+   "net": 4500.0,
+   "eps": 186.4
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 30308.0,
+   "op": null,
+   "ord": 6343.0,
+   "net": 4363.0,
+   "eps": 176.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 9066.0,
+   "op": null,
+   "ord": 2634.0,
+   "net": 1791.0
+  },
+  "year_ago": {
+   "sales": 7112.0,
+   "op": null,
+   "ord": 1665.0,
+   "net": 1129.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 9066.0,
+   "op": null
+  }
+ },
+ "code": "8551",
+ "name": "北日本銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8551（取得 2026-10-05 21:26）。単位：百万円（EPSは円）",
+ "price": 2938.0,
+ "industry_per": null,
+ "market_cap": 73500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 510000.0,
+   "op": 30000.0,
+   "ord": 36000.0,
+   "net": 29000.0,
+   "eps": 75.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 481148.0,
+   "op": 10864.0,
+   "ord": 19222.0,
+   "net": -158424.0,
+   "eps": -410.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 135739.0,
+   "op": 9635.0,
+   "ord": 11243.0,
+   "net": 9006.0
+  },
+  "year_ago": {
+   "sales": 116205.0,
+   "op": 195.0,
+   "ord": 2484.0,
+   "net": 2966.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 135739.0,
+   "op": 9635.0
+  }
+ },
+ "code": "6963",
+ "name": "ローム",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6963（取得 2026-10-05 21:58）。単位：百万円（EPSは円）",
+ "price": 5370.0,
+ "industry_per": null,
+ "market_cap": 2168200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

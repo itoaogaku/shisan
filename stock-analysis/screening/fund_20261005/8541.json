@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 9400.0,
+   "net": 6500.0,
+   "eps": 166.3
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 68517.0,
+   "op": null,
+   "ord": 10665.0,
+   "net": 7212.0,
+   "eps": 184.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 17625.0,
+   "op": null,
+   "ord": 2663.0,
+   "net": 1734.0
+  },
+  "year_ago": {
+   "sales": 15330.0,
+   "op": null,
+   "ord": 2494.0,
+   "net": 1742.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 17625.0,
+   "op": null
+  }
+ },
+ "code": "8541",
+ "name": "愛媛銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8541（取得 2026-10-05 21:23）。単位：百万円（EPSは円）",
+ "price": 3580.0,
+ "industry_per": null,
+ "market_cap": 141100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 485000.0,
+   "op": 23500.0,
+   "ord": 37500.0,
+   "net": 24500.0,
+   "eps": 252.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 462343.0,
+   "op": 18941.0,
+   "ord": 37506.0,
+   "net": 23872.0,
+   "eps": 245.8
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 121896.0,
+   "op": 5553.0,
+   "ord": 11254.0,
+   "net": 4192.0
+  },
+  "year_ago": {
+   "sales": 100459.0,
+   "op": 2945.0,
+   "ord": 6202.0,
+   "net": 4361.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 121896.0,
+   "op": 5553.0
+  }
+ },
+ "code": "4208",
+ "name": "ＵＢＥ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4208（取得 2026-10-05 22:02）。単位：百万円（EPSは円）",
+ "price": 3374.0,
+ "industry_per": null,
+ "market_cap": 358300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

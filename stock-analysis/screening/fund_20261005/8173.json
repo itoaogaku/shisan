@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 438000.0,
+   "op": 6000.0,
+   "ord": 5500.0,
+   "net": 3500.0,
+   "eps": 135.2
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 436650.0,
+   "op": 5422.0,
+   "ord": 5113.0,
+   "net": 3280.0,
+   "eps": 126.8
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 112704.0,
+   "op": 3164.0,
+   "ord": 3089.0,
+   "net": 2356.0
+  },
+  "year_ago": {
+   "sales": 99738.0,
+   "op": 564.0,
+   "ord": 481.0,
+   "net": 503.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 112704.0,
+   "op": 3164.0
+  }
+ },
+ "code": "8173",
+ "name": "Ｊｏｓｈｉｎ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8173（取得 2026-10-05 21:51）。単位：百万円（EPSは円）",
+ "price": 4265.0,
+ "industry_per": null,
+ "market_cap": 119400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

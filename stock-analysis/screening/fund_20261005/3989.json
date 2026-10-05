@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 9800.0,
+   "op": 3650.0,
+   "ord": null,
+   "net": 2500.0,
+   "eps": 104.5
+  },
+  "forecast_label": "I 予 2026.09",
+  "prev": {
+   "sales": 8579.0,
+   "op": 2074.0,
+   "ord": 2072.0,
+   "net": 1413.0,
+   "eps": 60.3
+  },
+  "prev_label": "I 2025.09"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 2523.0,
+   "op": 2020.0,
+   "ord": 2019.0,
+   "net": 1382.0
+  },
+  "year_ago": {
+   "sales": 2275.0,
+   "op": 552.0,
+   "ord": 551.0,
+   "net": 364.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.10-06",
+  "cumulative": {
+   "sales": 6851.0,
+   "op": 2993.0
+  }
+ },
+ "code": "3989",
+ "name": "シェアリングテクノロジー",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3989（取得 2026-10-05 21:54）。単位：百万円（EPSは円）",
+ "price": 1547.0,
+ "industry_per": null,
+ "market_cap": 37800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

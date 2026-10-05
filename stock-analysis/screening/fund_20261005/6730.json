@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 20400.0,
+   "op": 2290.0,
+   "ord": 2350.0,
+   "net": 1700.0,
+   "eps": 157.0
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 14656.0,
+   "op": 1664.0,
+   "ord": 1792.0,
+   "net": 1230.0,
+   "eps": 113.7
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 4679.0,
+   "op": 760.0,
+   "ord": 780.0,
+   "net": 546.0
+  },
+  "year_ago": {
+   "sales": 4027.0,
+   "op": 807.0,
+   "ord": 839.0,
+   "net": 585.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 4679.0,
+   "op": 760.0
+  }
+ },
+ "code": "6730",
+ "name": "アクセル",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6730（取得 2026-10-05 21:24）。単位：百万円（EPSは円）",
+ "price": 1690.0,
+ "industry_per": null,
+ "market_cap": 18900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

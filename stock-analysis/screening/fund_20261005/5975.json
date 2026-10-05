@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 392000.0,
+   "op": 23000.0,
+   "ord": 24000.0,
+   "net": 15000.0,
+   "eps": 310.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 378815.0,
+   "op": 28042.0,
+   "ord": 35780.0,
+   "net": 18561.0,
+   "eps": 374.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 100646.0,
+   "op": 6808.0,
+   "ord": 9038.0,
+   "net": 6562.0
+  },
+  "year_ago": {
+   "sales": 88120.0,
+   "op": 4873.0,
+   "ord": 2744.0,
+   "net": 2039.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 100646.0,
+   "op": 6808.0
+  }
+ },
+ "code": "5975",
+ "name": "東プレ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5975（取得 2026-10-05 21:56）。単位：百万円（EPSは円）",
+ "price": 3330.0,
+ "industry_per": null,
+ "market_cap": 179900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

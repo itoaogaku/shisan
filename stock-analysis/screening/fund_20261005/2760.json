@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 240000.0,
+   "op": null,
+   "ord": 13600.0,
+   "net": 9400.0,
+   "eps": 318.8
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 203748.0,
+   "op": 10253.0,
+   "ord": 9750.0,
+   "net": 7842.0,
+   "eps": 265.9
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 60322.0,
+   "op": 4066.0,
+   "ord": 3908.0,
+   "net": 2651.0
+  },
+  "year_ago": {
+   "sales": 45136.0,
+   "op": 1455.0,
+   "ord": 1715.0,
+   "net": 1217.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 60322.0,
+   "op": 4066.0
+  }
+ },
+ "code": "2760",
+ "name": "東京エレクトロン　デバイス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2760（取得 2026-10-05 21:26）。単位：百万円（EPSは円）",
+ "price": 4630.0,
+ "industry_per": null,
+ "market_cap": 145100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

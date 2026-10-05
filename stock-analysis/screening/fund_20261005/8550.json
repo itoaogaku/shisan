@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 60800.0,
+   "op": null,
+   "ord": 10800.0,
+   "net": 9000.0,
+   "eps": 86.4
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 54551.0,
+   "op": null,
+   "ord": 10019.0,
+   "net": 8289.0,
+   "eps": 79.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 15075.0,
+   "op": null,
+   "ord": 3035.0,
+   "net": 2116.0
+  },
+  "year_ago": {
+   "sales": 11877.0,
+   "op": null,
+   "ord": 2497.0,
+   "net": 1727.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 15075.0,
+   "op": null
+  }
+ },
+ "code": "8550",
+ "name": "栃木銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8550（取得 2026-10-05 21:33）。単位：百万円（EPSは円）",
+ "price": 1204.0,
+ "industry_per": null,
+ "market_cap": 132000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

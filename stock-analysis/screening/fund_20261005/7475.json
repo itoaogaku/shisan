@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 102147.0,
+   "op": 1970.0,
+   "ord": 2207.0,
+   "net": 1167.0,
+   "eps": 139.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 100952.0,
+   "op": 2155.0,
+   "ord": 2417.0,
+   "net": 1324.0,
+   "eps": 157.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 24773.0,
+   "op": 396.0,
+   "ord": 466.0,
+   "net": 292.0
+  },
+  "year_ago": {
+   "sales": 25003.0,
+   "op": 341.0,
+   "ord": 483.0,
+   "net": 256.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 24773.0,
+   "op": 396.0
+  }
+ },
+ "code": "7475",
+ "name": "アルビス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7475（取得 2026-10-05 21:24）。単位：百万円（EPSは円）",
+ "price": 3770.0,
+ "industry_per": null,
+ "market_cap": 34900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

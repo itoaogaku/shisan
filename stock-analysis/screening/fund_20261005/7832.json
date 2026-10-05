@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1350000.0,
+   "op": 185000.0,
+   "ord": 190000.0,
+   "net": 130000.0,
+   "eps": 202.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 1348246.0,
+   "op": 189517.0,
+   "ord": 201923.0,
+   "net": 140651.0,
+   "eps": 217.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 328494.0,
+   "op": 69204.0,
+   "ord": 74493.0,
+   "net": 51135.0
+  },
+  "year_ago": {
+   "sales": 300430.0,
+   "op": 51921.0,
+   "ord": 54658.0,
+   "net": 38329.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 328494.0,
+   "op": 69204.0
+  }
+ },
+ "code": "7832",
+ "name": "バンダイナムコホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7832（取得 2026-10-05 21:29）。単位：百万円（EPSは円）",
+ "price": 5710.0,
+ "industry_per": null,
+ "market_cap": 3683000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 461600.0,
+   "op": 38800.0,
+   "ord": 38400.0,
+   "net": 21400.0,
+   "eps": 67.4
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 444820.0,
+   "op": 36231.0,
+   "ord": 35107.0,
+   "net": 15097.0,
+   "eps": 45.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 115902.0,
+   "op": 12123.0,
+   "ord": 12279.0,
+   "net": 7034.0
+  },
+  "year_ago": {
+   "sales": 111717.0,
+   "op": 12253.0,
+   "ord": 11563.0,
+   "net": 555.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 115902.0,
+   "op": 12123.0
+  }
+ },
+ "code": "8848",
+ "name": "レオパレス２１",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8848（取得 2026-10-05 21:35）。単位：百万円（EPSは円）",
+ "price": 1005.0,
+ "industry_per": null,
+ "market_cap": 336100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

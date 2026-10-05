@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 95000.0,
+   "net": 65000.0,
+   "eps": 171.7
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 264965.0,
+   "op": null,
+   "ord": 84886.0,
+   "net": 58863.0,
+   "eps": 154.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 72962.0,
+   "op": null,
+   "ord": 25175.0,
+   "net": 17584.0
+  },
+  "year_ago": {
+   "sales": 66968.0,
+   "op": null,
+   "ord": 20010.0,
+   "net": 14060.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 72962.0,
+   "op": null
+  }
+ },
+ "code": "8334",
+ "name": "群馬銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8334（取得 2026-10-05 21:50）。単位：百万円（EPSは円）",
+ "price": 3032.0,
+ "industry_per": null,
+ "market_cap": 1200300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

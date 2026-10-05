@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": 430000.0,
+   "eps": 458.6
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 11561935.0,
+   "op": 545235.0,
+   "ord": 564938.0,
+   "net": 370516.0,
+   "eps": 351.0
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 3570117.0,
+   "op": 184379.0,
+   "ord": 204724.0,
+   "net": 135260.0
+  },
+  "year_ago": {
+   "sales": 2593820.0,
+   "op": 126595.0,
+   "ord": 145071.0,
+   "net": 98344.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 3570117.0,
+   "op": 184379.0
+  }
+ },
+ "code": "8015",
+ "name": "豊田通商",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8015（取得 2026-10-05 22:01）。単位：百万円（EPSは円）",
+ "price": 7387.0,
+ "industry_per": null,
+ "market_cap": 6973900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1120000.0,
+   "op": 68000.0,
+   "ord": 62000.0,
+   "net": 35000.0,
+   "eps": 295.4
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 1066881.0,
+   "op": 51482.0,
+   "ord": 47311.0,
+   "net": 30937.0,
+   "eps": 257.4
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 298610.0,
+   "op": 24072.0,
+   "ord": 23076.0,
+   "net": 14127.0
+  },
+  "year_ago": {
+   "sales": 253091.0,
+   "op": 10473.0,
+   "ord": 10187.0,
+   "net": 5905.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 554176.0,
+   "op": 37449.0
+  }
+ },
+ "code": "6302",
+ "name": "住友重機械工業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6302（取得 2026-10-05 21:40）。単位：百万円（EPSは円）",
+ "price": 6310.0,
+ "industry_per": null,
+ "market_cap": 775500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

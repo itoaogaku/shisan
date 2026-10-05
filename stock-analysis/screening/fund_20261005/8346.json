@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 147200.0,
+   "op": null,
+   "ord": 23800.0,
+   "net": 16000.0,
+   "eps": 64.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 92465.0,
+   "op": null,
+   "ord": 17090.0,
+   "net": 12353.0,
+   "eps": 49.4
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 30161.0,
+   "op": null,
+   "ord": 7575.0,
+   "net": 5191.0
+  },
+  "year_ago": {
+   "sales": 22453.0,
+   "op": null,
+   "ord": 4865.0,
+   "net": 3403.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 30161.0,
+   "op": null
+  }
+ },
+ "code": "8346",
+ "name": "東邦銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8346（取得 2026-10-05 21:21）。単位：百万円（EPSは円）",
+ "price": 1135.0,
+ "industry_per": null,
+ "market_cap": 286600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

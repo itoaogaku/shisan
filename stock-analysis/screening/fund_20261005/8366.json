@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 42100.0,
+   "net": 28500.0,
+   "eps": 124.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 159056.0,
+   "op": null,
+   "ord": 29031.0,
+   "net": 21293.0,
+   "eps": 92.3
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 45686.0,
+   "op": null,
+   "ord": 14301.0,
+   "net": 9937.0
+  },
+  "year_ago": {
+   "sales": 34984.0,
+   "op": null,
+   "ord": 9330.0,
+   "net": 6739.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 45686.0,
+   "op": null
+  }
+ },
+ "code": "8366",
+ "name": "滋賀銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8366（取得 2026-10-05 21:22）。単位：百万円（EPSは円）",
+ "price": 3075.0,
+ "industry_per": null,
+ "market_cap": 739400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

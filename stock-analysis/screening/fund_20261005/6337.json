@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 7000.0,
+   "op": 1100.0,
+   "ord": 1300.0,
+   "net": 1040.0,
+   "eps": 205.2
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 5567.0,
+   "op": 301.0,
+   "ord": 564.0,
+   "net": 463.0,
+   "eps": 86.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 1912.0,
+   "op": 413.0,
+   "ord": 517.0,
+   "net": 476.0
+  },
+  "year_ago": {
+   "sales": 1069.0,
+   "op": -11.0,
+   "ord": 19.0,
+   "net": 14.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 1912.0,
+   "op": 413.0
+  }
+ },
+ "code": "6337",
+ "name": "テセック",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6337（取得 2026-10-05 21:24）。単位：百万円（EPSは円）",
+ "price": 3950.0,
+ "industry_per": null,
+ "market_cap": 22000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

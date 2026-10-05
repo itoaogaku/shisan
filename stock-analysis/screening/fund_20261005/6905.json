@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 31800.0,
+   "op": 2300.0,
+   "ord": 2400.0,
+   "net": 2600.0,
+   "eps": 63.2
+  },
+  "forecast_label": "予 2027.05",
+  "prev": {
+   "sales": 25046.0,
+   "op": -695.0,
+   "ord": 267.0,
+   "net": -3406.0,
+   "eps": -82.8
+  },
+  "prev_label": "2026.05"
+ },
+ "quarter": {
+  "label": "26.06-08 単独（前年同期 25.06-08）",
+  "current": {
+   "sales": 7814.0,
+   "op": 545.0,
+   "ord": 580.0,
+   "net": 661.0
+  },
+  "year_ago": {
+   "sales": 5075.0,
+   "op": -389.0,
+   "ord": -79.0,
+   "net": -68.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.06-08",
+  "cumulative": {
+   "sales": 7814.0,
+   "op": 545.0
+  }
+ },
+ "code": "6905",
+ "name": "コーセル",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6905（取得 2026-10-05 22:01）。単位：百万円（EPSは円）",
+ "price": 1527.0,
+ "industry_per": null,
+ "market_cap": 62900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

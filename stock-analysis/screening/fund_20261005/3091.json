@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 34000.0,
+   "op": 3970.0,
+   "ord": 4020.0,
+   "net": 2600.0,
+   "eps": 87.3
+  },
+  "forecast_label": "連 予 2026.12",
+  "prev": {
+   "sales": 30219.0,
+   "op": 2930.0,
+   "ord": 3025.0,
+   "net": 1969.0,
+   "eps": 66.2
+  },
+  "prev_label": "連 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 8233.0,
+   "op": 898.0,
+   "ord": 904.0,
+   "net": 596.0
+  },
+  "year_ago": {
+   "sales": 7306.0,
+   "op": 692.0,
+   "ord": 705.0,
+   "net": 468.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 16474.0,
+   "op": 1929.0
+  }
+ },
+ "code": "3091",
+ "name": "ブロンコビリー",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3091（取得 2026-10-05 21:54）。単位：百万円（EPSは円）",
+ "price": 2821.0,
+ "industry_per": null,
+ "market_cap": 85100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

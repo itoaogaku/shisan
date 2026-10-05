@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 219090.0,
+   "op": 33050.0,
+   "ord": 27450.0,
+   "net": 18260.0,
+   "eps": 69.5
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 189548.0,
+   "op": 28773.0,
+   "ord": 25418.0,
+   "net": 16621.0,
+   "eps": 63.3
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 51377.0,
+   "op": 6339.0,
+   "ord": 5267.0,
+   "net": 3368.0
+  },
+  "year_ago": {
+   "sales": 43485.0,
+   "op": 6076.0,
+   "ord": 5157.0,
+   "net": 3405.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 51377.0,
+   "op": 6339.0
+  }
+ },
+ "code": "4680",
+ "name": "ラウンドワン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4680（取得 2026-10-05 22:00）。単位：百万円（EPSは円）",
+ "price": 1247.5,
+ "industry_per": null,
+ "market_cap": 360700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

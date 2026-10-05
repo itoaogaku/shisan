@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 36600.0,
+   "net": 25000.0,
+   "eps": 129.4
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 114870.0,
+   "op": null,
+   "ord": 32369.0,
+   "net": 21819.0,
+   "eps": 113.3
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 35718.0,
+   "op": null,
+   "ord": 10806.0,
+   "net": 7469.0
+  },
+  "year_ago": {
+   "sales": 27189.0,
+   "op": null,
+   "ord": 8830.0,
+   "net": 6304.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 35718.0,
+   "op": null
+  }
+ },
+ "code": "8370",
+ "name": "紀陽銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8370（取得 2026-10-05 21:44）。単位：百万円（EPSは円）",
+ "price": 1756.0,
+ "industry_per": null,
+ "market_cap": 354500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

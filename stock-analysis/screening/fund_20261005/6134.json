@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 244000.0,
+   "op": 60000.0,
+   "ord": 61100.0,
+   "net": 44000.0,
+   "eps": 500.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 180642.0,
+   "op": 29282.0,
+   "ord": 31291.0,
+   "net": 15733.0,
+   "eps": 178.8
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 60597.0,
+   "op": 15212.0,
+   "ord": 15883.0,
+   "net": 12622.0
+  },
+  "year_ago": {
+   "sales": 41521.0,
+   "op": 5199.0,
+   "ord": 5631.0,
+   "net": 5683.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 60597.0,
+   "op": 15212.0
+  }
+ },
+ "code": "6134",
+ "name": "ＦＵＪＩ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6134（取得 2026-10-05 21:31）。単位：百万円（EPSは円）",
+ "price": 8428.0,
+ "industry_per": null,
+ "market_cap": 824500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 2700000.0,
+   "op": 95000.0,
+   "ord": 95000.0,
+   "net": 62000.0,
+   "eps": 110.8
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 2608314.0,
+   "op": 90713.0,
+   "ord": 92273.0,
+   "net": 55669.0,
+   "eps": 97.8
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 629812.0,
+   "op": 47762.0,
+   "ord": 47481.0,
+   "net": 37088.0
+  },
+  "year_ago": {
+   "sales": 580798.0,
+   "op": 12642.0,
+   "ord": 14815.0,
+   "net": 9655.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 629812.0,
+   "op": 47762.0
+  }
+ },
+ "code": "7752",
+ "name": "リコー",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7752（取得 2026-10-05 21:58）。単位：百万円（EPSは円）",
+ "price": 1661.5,
+ "industry_per": null,
+ "market_cap": 946600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

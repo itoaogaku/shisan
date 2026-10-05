@@ -1,0 +1,44 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 5900.0,
+   "op": 250.0,
+   "ord": 210.0,
+   "net": 200.0,
+   "eps": 21.8
+  },
+  "forecast_label": "連 予 2027.06",
+  "prev": {
+   "sales": 3745.0,
+   "op": -74.0,
+   "ord": 17.0,
+   "net": 5.0,
+   "eps": 0.6
+  },
+  "prev_label": "連 2026.06"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 1037.0,
+   "op": 203.0,
+   "ord": 234.0,
+   "net": 226.0
+  },
+  "year_ago": {
+   "sales": 866.0,
+   "op": -650.0,
+   "ord": -729.0,
+   "net": -2052.0
+  },
+  "one_off": null
+ },
+ "progress": {},
+ "code": "2962",
+ "name": "テクニスコ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2962（取得 2026-10-05 21:23）。単位：百万円（EPSは円）",
+ "price": 2898.0,
+ "industry_per": null,
+ "market_cap": 26600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

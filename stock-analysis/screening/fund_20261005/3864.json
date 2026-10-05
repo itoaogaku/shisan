@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 175000.0,
+   "op": 6000.0,
+   "ord": 6000.0,
+   "net": 6500.0,
+   "eps": 148.2
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 157455.0,
+   "op": 264.0,
+   "ord": 1720.0,
+   "net": 1900.0,
+   "eps": 43.4
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 38620.0,
+   "op": 393.0,
+   "ord": 611.0,
+   "net": 2159.0
+  },
+  "year_ago": {
+   "sales": 39461.0,
+   "op": -1221.0,
+   "ord": -1093.0,
+   "net": -1316.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 38620.0,
+   "op": 393.0
+  }
+ },
+ "code": "3864",
+ "name": "三菱製紙",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3864（取得 2026-10-05 21:34）。単位：百万円（EPSは円）",
+ "price": 1208.0,
+ "industry_per": null,
+ "market_cap": 54000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

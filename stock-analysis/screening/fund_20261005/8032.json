@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": 15500.0,
+   "ord": 15000.0,
+   "net": 8000.0,
+   "eps": 73.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 606779.0,
+   "op": 10848.0,
+   "ord": 10887.0,
+   "net": 4720.0,
+   "eps": 39.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 156281.0,
+   "op": 3149.0,
+   "ord": 3524.0,
+   "net": 1814.0
+  },
+  "year_ago": {
+   "sales": 144739.0,
+   "op": 2428.0,
+   "ord": 2602.0,
+   "net": 1166.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 156281.0,
+   "op": 3149.0
+  }
+ },
+ "code": "8032",
+ "name": "日本紙パルプ商事",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8032（取得 2026-10-05 21:56）。単位：百万円（EPSは円）",
+ "price": 1246.0,
+ "industry_per": null,
+ "market_cap": 149800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

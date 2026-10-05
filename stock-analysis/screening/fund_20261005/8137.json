@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 173000.0,
+   "op": 6000.0,
+   "ord": 6200.0,
+   "net": 4200.0,
+   "eps": 268.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 148329.0,
+   "op": 4058.0,
+   "ord": 4776.0,
+   "net": 3265.0,
+   "eps": 212.4
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 40035.0,
+   "op": 1331.0,
+   "ord": 1403.0,
+   "net": 908.0
+  },
+  "year_ago": {
+   "sales": 31322.0,
+   "op": 269.0,
+   "ord": 378.0,
+   "net": 245.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 40035.0,
+   "op": 1331.0
+  }
+ },
+ "code": "8137",
+ "name": "サンワテクノス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8137（取得 2026-10-05 21:23）。単位：百万円（EPSは円）",
+ "price": 4865.0,
+ "industry_per": null,
+ "market_cap": 78100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

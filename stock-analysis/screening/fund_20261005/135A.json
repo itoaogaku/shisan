@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 4823.0,
+   "op": 1449.0,
+   "ord": 1449.0,
+   "net": 972.0,
+   "eps": 94.8
+  },
+  "forecast_label": "予 2027.02",
+  "prev": {
+   "sales": 3278.0,
+   "op": 914.0,
+   "ord": 912.0,
+   "net": 652.0,
+   "eps": 64.0
+  },
+  "prev_label": "2026.02"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 648.0,
+   "op": -31.0,
+   "ord": -31.0,
+   "net": -20.0
+  },
+  "year_ago": {
+   "sales": 195.0,
+   "op": -228.0,
+   "ord": -228.0,
+   "net": -149.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.03-05",
+  "cumulative": {
+   "sales": 648.0,
+   "op": -31.0
+  }
+ },
+ "code": "135A",
+ "name": "ＶＲＡＩＮ　Ｓｏｌｕｔｉｏｎ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=135A（取得 2026-10-05 21:24）。単位：百万円（EPSは円）",
+ "price": 5330.0,
+ "industry_per": null,
+ "market_cap": 55100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

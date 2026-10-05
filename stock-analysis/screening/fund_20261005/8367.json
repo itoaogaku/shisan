@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 32500.0,
+   "net": 22000.0,
+   "eps": 140.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 115665.0,
+   "op": null,
+   "ord": 24820.0,
+   "net": 17062.0,
+   "eps": 108.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 34031.0,
+   "op": null,
+   "ord": 6542.0,
+   "net": 4850.0
+  },
+  "year_ago": {
+   "sales": 27941.0,
+   "op": null,
+   "ord": 5643.0,
+   "net": 3767.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 34031.0,
+   "op": null
+  }
+ },
+ "code": "8367",
+ "name": "南都銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8367（取得 2026-10-05 21:43）。単位：百万円（EPSは円）",
+ "price": 2031.0,
+ "industry_per": null,
+ "market_cap": 335400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

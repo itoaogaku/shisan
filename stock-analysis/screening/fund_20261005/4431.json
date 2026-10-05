@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 15387.0,
+   "op": 4004.0,
+   "ord": 4004.0,
+   "net": 2781.0,
+   "eps": 144.3
+  },
+  "forecast_label": "連 予 2027.04",
+  "prev": {
+   "sales": 13345.0,
+   "op": 3216.0,
+   "ord": 3186.0,
+   "net": 2228.0,
+   "eps": 115.7
+  },
+  "prev_label": "連 2026.04"
+ },
+ "quarter": {
+  "label": "26.05-07 単独（前年同期 25.05-07）",
+  "current": {
+   "sales": 3608.0,
+   "op": 1027.0,
+   "ord": 1022.0,
+   "net": 683.0
+  },
+  "year_ago": {
+   "sales": 3013.0,
+   "op": 592.0,
+   "ord": 595.0,
+   "net": 385.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.05-07",
+  "cumulative": {
+   "sales": 3608.0,
+   "op": 1027.0
+  }
+ },
+ "code": "4431",
+ "name": "スマレジ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4431（取得 2026-10-05 21:40）。単位：百万円（EPSは円）",
+ "price": 3560.0,
+ "industry_per": null,
+ "market_cap": 70100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

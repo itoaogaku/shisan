@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 56000.0,
+   "op": 8500.0,
+   "ord": 8500.0,
+   "net": 6300.0,
+   "eps": 208.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 52223.0,
+   "op": 7125.0,
+   "ord": 7484.0,
+   "net": 6209.0,
+   "eps": 205.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 13290.0,
+   "op": 1880.0,
+   "ord": 1922.0,
+   "net": 1492.0
+  },
+  "year_ago": {
+   "sales": 15410.0,
+   "op": 2454.0,
+   "ord": 2339.0,
+   "net": 1949.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 13290.0,
+   "op": 1880.0
+  }
+ },
+ "code": "5985",
+ "name": "サンコール",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5985（取得 2026-10-05 21:22）。単位：百万円（EPSは円）",
+ "price": 2546.0,
+ "industry_per": null,
+ "market_cap": 86700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

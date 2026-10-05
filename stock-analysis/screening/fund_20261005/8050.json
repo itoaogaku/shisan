@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 375000.0,
+   "op": 41000.0,
+   "ord": 41500.0,
+   "net": 28000.0,
+   "eps": 342.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 335686.0,
+   "op": 30873.0,
+   "ord": 33119.0,
+   "net": 21980.0,
+   "eps": 268.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 99089.0,
+   "op": 15440.0,
+   "ord": 16491.0,
+   "net": 11197.0
+  },
+  "year_ago": {
+   "sales": 77114.0,
+   "op": 8176.0,
+   "ord": 8488.0,
+   "net": 6352.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 99089.0,
+   "op": 15440.0
+  }
+ },
+ "code": "8050",
+ "name": "セイコーグループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8050（取得 2026-10-05 21:38）。単位：百万円（EPSは円）",
+ "price": 10960.0,
+ "industry_per": null,
+ "market_cap": 907600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

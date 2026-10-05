@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 12834.0,
+   "op": 2057.0,
+   "ord": 2073.0,
+   "net": 1595.0,
+   "eps": 51.2
+  },
+  "forecast_label": "連 予 2026.09",
+  "prev": {
+   "sales": 10924.0,
+   "op": 1793.0,
+   "ord": 1854.0,
+   "net": 1358.0,
+   "eps": 42.4
+  },
+  "prev_label": "連 2025.09"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 3261.0,
+   "op": 586.0,
+   "ord": 589.0,
+   "net": 477.0
+  },
+  "year_ago": {
+   "sales": 2811.0,
+   "op": 461.0,
+   "ord": 444.0,
+   "net": 266.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.10-06",
+  "cumulative": {
+   "sales": 9390.0,
+   "op": 1854.0
+  }
+ },
+ "code": "4475",
+ "name": "ＨＥＮＮＧＥ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4475（取得 2026-10-05 21:41）。単位：百万円（EPSは円）",
+ "price": 1671.0,
+ "industry_per": null,
+ "market_cap": 54300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

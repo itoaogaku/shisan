@@ -22,6 +22,9 @@
   5日線が上向き      10
 ■ 待つ理由: 2週間以内（当日を含む）に決算発表 / --flags で wait=true の銘柄（株式売出しの受渡し前など）。
   待つ理由がある銘柄は --top には入れず、「待ち」として別に出力する。
+■ 適時開示の表題チェック（株探の開示一覧1ページ目。選ぶ候補の分だけ取得）
+  除外：TOB（当社株券等に対する公開買付け・賛同）、上場廃止
+  待ち：直近30日の株式売出し・新株発行、直近90日の不正・特別調査委員会・第三者委員会
 ■ 安全柵（点数に関係なく --top から外し、別に出力する）
   過熱：200日線から+60%超、またはRSI(14)80以上 / 割高：予想PER40倍以上
   過去1年の上昇相場では成績への影響は小さかったが、反転したときに下値の目安が見えない株を避けるため。
@@ -45,6 +48,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from score import load_prices, sma, technical  # noqa: E402
 from screen_views import next_earnings  # noqa: E402
+from screen_fundamental import NEWS_URL, Client, text  # noqa: E402
 
 JST = timezone(timedelta(hours=9))
 SCREEN_DIR = os.path.join(HERE, "screening")
@@ -54,6 +58,33 @@ HOT_DEV200 = .60
 HOT_RSI = 80
 RICH_PER = 40
 MIN_FUND_EVAL = 27
+
+
+EVENT_RULES = [
+    # (正規表現, 日数, 種類, 表示)
+    (r"当社株券等に対する公開買付け|公開買付け.*賛同|ＭＢＯ|MBO", 120, "exclude", "TOB（公開買付け）の対象"),
+    (r"上場廃止", 120, "exclude", "上場廃止に関する開示"),
+    (r"株式の売出し|売出価格|新株式発行", 30, "wait", "株式の売出し・新株発行の直後"),
+    (r"不正|特別調査委員会|第三者委員会", 90, "wait", "不正の疑い・調査委員会の設置"),
+]
+
+
+def disclosure_events(client, code, today):
+    """株探の開示一覧1ページ目の表題から、TOB・売出し・不正などの開示を探す。"""
+    page = client.get(NEWS_URL.format(code=code, page=1))
+    found = []
+    for tr in re.findall(r"<tr>(.*?)</tr>", page, re.S):
+        t = text(tr)
+        m = re.match(r"(\d{2})/(\d{2})/(\d{2}) \d{2}:\d{2}", t)
+        if not m:
+            continue
+        d = datetime(2000 + int(m.group(1)), int(m.group(2)), int(m.group(3))).date()
+        title = t[m.end():].replace("開示", "", 1).strip()
+        for pat, days, kind, label in EVENT_RULES:
+            if (today - d).days <= days and re.search(pat, title):
+                found.append((kind, f"{label}（{d:%m/%d} {title[:40]}）"))
+                break
+    return found
 
 
 def timing(bars):
@@ -119,6 +150,7 @@ def main():
         r["tm"] = timing(load_prices(os.path.join(PRICE_DIR, f"{r['コード']}.csv")))
 
     today = datetime.now(JST).date()
+    client = Client()
     rows, picked, fetched = [], 0, 0
     for r in sorted(pool, key=lambda x: (-x["tm"]["score"], -x["強い株スコア"])):
         code, tm = r["コード"], r["tm"]
@@ -132,6 +164,12 @@ def main():
             guards.append(f"過熱：RSI{tm['rsi']:.0f}")
         if per and per >= RICH_PER:
             guards.append(f"割高：予想PER{per:.0f}倍")
+        if picked < args.top and not guards:
+            try:
+                for kind, msg in disclosure_events(client, code, today):
+                    (guards if kind == "exclude" else waits).append(msg)
+            except Exception as e:  # noqa: BLE001
+                waits.append(f"開示一覧を取得できず（{type(e).__name__}）")
         if picked < args.top and not guards:  # 次回決算日は選ぶ候補の分だけ取得する
             if fetched:
                 time.sleep(1.1)
@@ -146,7 +184,7 @@ def main():
             if fl.get("wait"):
                 waits.append(fl["note"])
         if guards:
-            label = "過熱・割高で除外"
+            label = "過熱・割高・TOBなどで除外"
         elif picked >= args.top:
             label = "対象外（買い時点が下位）"
         elif waits:
@@ -173,9 +211,9 @@ def main():
             "ファンダ内訳": r["ファンダ内訳"], "継続企業": r["継続企業"],
         })
 
-    sel = [x for x in rows if x["区分"] not in ("待ち", "対象外（買い時点が下位）", "過熱・割高で除外")]
+    sel = [x for x in rows if x["区分"] not in ("待ち", "対象外（買い時点が下位）", "過熱・割高・TOBなどで除外")]
     wait = [x for x in rows if x["区分"] == "待ち"]
-    guard = [x for x in rows if x["区分"] == "過熱・割高で除外"]
+    guard = [x for x in rows if x["区分"] == "過熱・割高・TOBなどで除外"]
     for i, x in enumerate(sel, 1):
         x["買い時順"] = i
     out = os.path.join(SCREEN_DIR, f"select_{tag}.csv")
@@ -194,7 +232,7 @@ def main():
     print("\n■ 待ち（買い時点は上位だが待つ理由あり）")
     for x in wait:
         print(f"  {x['コード']} {x['銘柄名']} 買い時{x['買い時点']} 強い株{x['強い株順位']}位：{x['待つ理由']}")
-    print(f"\n■ 過熱・割高で除外（強い株{len(pool)}銘柄中 {len(guard)}銘柄）")
+    print(f"\n■ 過熱・割高・TOBなどで除外（強い株{len(pool)}銘柄中 {len(guard)}銘柄）")
     for x in guard:
         print(f"  {x['コード']} {x['銘柄名']} 買い時{x['買い時点']} 強い株{x['強い株順位']}位：{x['待つ理由']}")
 

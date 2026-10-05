@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 252500.0,
+   "op": 154500.0,
+   "ord": 156500.0,
+   "net": 105000.0,
+   "eps": 103.1
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 198735.0,
+   "op": 116289.0,
+   "ord": 116918.0,
+   "net": 79139.0,
+   "eps": 76.8
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 65515.0,
+   "op": 43716.0,
+   "ord": 44062.0,
+   "net": 29567.0
+  },
+  "year_ago": {
+   "sales": 43451.0,
+   "op": 25233.0,
+   "ord": 25310.0,
+   "net": 17029.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 65515.0,
+   "op": 43716.0
+  }
+ },
+ "code": "8697",
+ "name": "日本取引所グループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8697（取得 2026-10-05 21:50）。単位：百万円（EPSは円）",
+ "price": 2289.0,
+ "industry_per": null,
+ "market_cap": 2361800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

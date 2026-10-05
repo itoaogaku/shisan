@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 96000.0,
+   "op": 8000.0,
+   "ord": 18000.0,
+   "net": 15000.0,
+   "eps": 545.9
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 91834.0,
+   "op": 5862.0,
+   "ord": 14810.0,
+   "net": 13529.0,
+   "eps": 490.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 24364.0,
+   "op": 2012.0,
+   "ord": 4979.0,
+   "net": 4156.0
+  },
+  "year_ago": {
+   "sales": 21625.0,
+   "op": 1095.0,
+   "ord": 3174.0,
+   "net": 2744.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 24364.0,
+   "op": 2012.0
+  }
+ },
+ "code": "5186",
+ "name": "ニッタ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5186（取得 2026-10-05 21:39）。単位：百万円（EPSは円）",
+ "price": 6830.0,
+ "industry_per": null,
+ "market_cap": 199900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

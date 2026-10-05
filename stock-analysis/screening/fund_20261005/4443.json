@@ -1,0 +1,44 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 64512.0,
+   "op": 13489.0,
+   "ord": 13569.0,
+   "net": 9298.0,
+   "eps": 74.1
+  },
+  "forecast_label": "連 予 2027.05",
+  "prev": {
+   "sales": 53761.0,
+   "op": 8185.0,
+   "ord": 8170.0,
+   "net": 6778.0,
+   "eps": 53.6
+  },
+  "prev_label": "連 2026.05"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 14496.0,
+   "op": 2238.0,
+   "ord": 2233.0,
+   "net": 2669.0
+  },
+  "year_ago": {
+   "sales": 12065.0,
+   "op": 910.0,
+   "ord": 889.0,
+   "net": -1273.0
+  },
+  "one_off": null
+ },
+ "progress": {},
+ "code": "4443",
+ "name": "Ｓａｎｓａｎ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4443（取得 2026-10-05 21:52）。単位：百万円（EPSは円）",
+ "price": 2092.0,
+ "industry_per": null,
+ "market_cap": 265500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

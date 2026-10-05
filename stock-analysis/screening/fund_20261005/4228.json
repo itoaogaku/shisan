@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 105000.0,
+   "op": 3100.0,
+   "ord": 2600.0,
+   "net": 2500.0,
+   "eps": 54.7
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 113935.0,
+   "op": 2552.0,
+   "ord": 2249.0,
+   "net": 2147.0,
+   "eps": 47.2
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 25609.0,
+   "op": 1044.0,
+   "ord": 1164.0,
+   "net": 1795.0
+  },
+  "year_ago": {
+   "sales": 31960.0,
+   "op": 262.0,
+   "ord": 221.0,
+   "net": 311.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 25609.0,
+   "op": 1044.0
+  }
+ },
+ "code": "4228",
+ "name": "積水化成品工業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4228（取得 2026-10-05 21:55）。単位：百万円（EPSは円）",
+ "price": 617.0,
+ "industry_per": null,
+ "market_cap": 29000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

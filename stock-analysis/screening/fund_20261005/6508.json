@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 365000.0,
+   "op": 33000.0,
+   "ord": 33500.0,
+   "net": 25000.0,
+   "eps": 551.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 326194.0,
+   "op": 27122.0,
+   "ord": 27889.0,
+   "net": 23625.0,
+   "eps": 520.8
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 73412.0,
+   "op": 4664.0,
+   "ord": 5452.0,
+   "net": 5059.0
+  },
+  "year_ago": {
+   "sales": 58390.0,
+   "op": 348.0,
+   "ord": 573.0,
+   "net": 465.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 73412.0,
+   "op": 4664.0
+  }
+ },
+ "code": "6508",
+ "name": "明電舎",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6508（取得 2026-10-05 21:37）。単位：百万円（EPSは円）",
+ "price": 12060.0,
+ "industry_per": null,
+ "market_cap": 549100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

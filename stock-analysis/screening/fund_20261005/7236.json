@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 165000.0,
+   "op": 12300.0,
+   "ord": 13400.0,
+   "net": 9500.0,
+   "eps": 167.7
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 162278.0,
+   "op": 11249.0,
+   "ord": 12378.0,
+   "net": 8765.0,
+   "eps": 147.8
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 39733.0,
+   "op": 2733.0,
+   "ord": 3011.0,
+   "net": 2138.0
+  },
+  "year_ago": {
+   "sales": 39121.0,
+   "op": 2984.0,
+   "ord": 2998.0,
+   "net": 2137.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 39733.0,
+   "op": 2733.0
+  }
+ },
+ "code": "7236",
+ "name": "ティラド",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7236（取得 2026-10-05 21:35）。単位：百万円（EPSは円）",
+ "price": 1490.0,
+ "industry_per": null,
+ "market_cap": 87900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

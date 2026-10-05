@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 7800000.0,
+   "op": 590000.0,
+   "ord": 590000.0,
+   "net": 450000.0,
+   "eps": 192.7
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 8048722.0,
+   "op": 236407.0,
+   "ord": 263109.0,
+   "net": 189540.0,
+   "eps": 81.2
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 2018914.0,
+   "op": 182455.0,
+   "ord": 188947.0,
+   "net": 135173.0
+  },
+  "year_ago": {
+   "sales": 1896691.0,
+   "op": 86903.0,
+   "ord": 90977.0,
+   "net": 71463.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 2018914.0,
+   "op": 182455.0
+  }
+ },
+ "code": "6752",
+ "name": "パナソニック　ホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6752（取得 2026-10-05 21:30）。単位：百万円（EPSは円）",
+ "price": 4710.0,
+ "industry_per": null,
+ "market_cap": 11561800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

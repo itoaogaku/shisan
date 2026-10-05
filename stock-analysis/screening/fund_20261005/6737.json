@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 85000.0,
+   "op": 3300.0,
+   "ord": 4600.0,
+   "net": 6500.0,
+   "eps": 172.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 81308.0,
+   "op": 2365.0,
+   "ord": 3772.0,
+   "net": 7323.0,
+   "eps": 180.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 20031.0,
+   "op": 807.0,
+   "ord": 1574.0,
+   "net": 1215.0
+  },
+  "year_ago": {
+   "sales": 17338.0,
+   "op": -97.0,
+   "ord": 687.0,
+   "net": 307.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 20031.0,
+   "op": 807.0
+  }
+ },
+ "code": "6737",
+ "name": "ＥＩＺＯ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6737（取得 2026-10-05 21:23）。単位：百万円（EPSは円）",
+ "price": 3200.0,
+ "industry_per": null,
+ "market_cap": 135500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 210000.0,
+   "op": 83000.0,
+   "ord": 83000.0,
+   "net": 58000.0,
+   "eps": 138.7
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 195365.0,
+   "op": 75295.0,
+   "ord": 74134.0,
+   "net": 54587.0,
+   "eps": 130.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 70410.0,
+   "op": 41054.0,
+   "ord": 41452.0,
+   "net": 29159.0
+  },
+  "year_ago": {
+   "sales": 45502.0,
+   "op": 24597.0,
+   "ord": 22883.0,
+   "net": 17238.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 70410.0,
+   "op": 41054.0
+  }
+ },
+ "code": "9697",
+ "name": "カプコン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9697（取得 2026-10-05 21:41）。単位：百万円（EPSは円）",
+ "price": 4415.0,
+ "industry_per": null,
+ "market_cap": 2353200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

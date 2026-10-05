@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 14000.0,
+   "net": 8800.0,
+   "eps": 209.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 69524.0,
+   "op": null,
+   "ord": 14046.0,
+   "net": 17445.0,
+   "eps": 418.1
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 24712.0,
+   "op": null,
+   "ord": 3382.0,
+   "net": 2216.0
+  },
+  "year_ago": {
+   "sales": 14830.0,
+   "op": null,
+   "ord": 3704.0,
+   "net": 2256.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 24712.0,
+   "op": null
+  }
+ },
+ "code": "8387",
+ "name": "四国銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8387（取得 2026-10-05 21:23）。単位：百万円（EPSは円）",
+ "price": 4685.0,
+ "industry_per": null,
+ "market_cap": 198600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

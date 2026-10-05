@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": 123000.0,
+   "eps": 251.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 1457670.0,
+   "op": 148306.0,
+   "ord": 163417.0,
+   "net": 111299.0,
+   "eps": 227.8
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 388407.0,
+   "op": 46303.0,
+   "ord": 51057.0,
+   "net": 35129.0
+  },
+  "year_ago": {
+   "sales": 347586.0,
+   "op": 35312.0,
+   "ord": 37282.0,
+   "net": 22082.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 388407.0,
+   "op": 46303.0
+  }
+ },
+ "code": "8439",
+ "name": "東京センチュリー",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8439（取得 2026-10-05 21:56）。単位：百万円（EPSは円）",
+ "price": 2618.5,
+ "industry_per": null,
+ "market_cap": 1288600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

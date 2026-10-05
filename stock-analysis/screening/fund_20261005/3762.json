@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 81800.0,
+   "op": 8200.0,
+   "ord": 8280.0,
+   "net": 5380.0,
+   "eps": 135.3
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 71733.0,
+   "op": 7760.0,
+   "ord": 7861.0,
+   "net": 5178.0,
+   "eps": 128.9
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 18885.0,
+   "op": 1606.0,
+   "ord": 1622.0,
+   "net": 1060.0
+  },
+  "year_ago": {
+   "sales": 15863.0,
+   "op": 1271.0,
+   "ord": 1278.0,
+   "net": 853.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 18885.0,
+   "op": 1606.0
+  }
+ },
+ "code": "3762",
+ "name": "テクマトリックス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3762（取得 2026-10-05 21:32）。単位：百万円（EPSは円）",
+ "price": 2497.0,
+ "industry_per": null,
+ "market_cap": 111200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 56000.0,
+   "net": 44000.0,
+   "eps": 262.2
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 109912.0,
+   "op": null,
+   "ord": 35518.0,
+   "net": 34728.0,
+   "eps": 198.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 37105.0,
+   "op": null,
+   "ord": 20521.0,
+   "net": 14086.0
+  },
+  "year_ago": {
+   "sales": 26020.0,
+   "op": null,
+   "ord": 6667.0,
+   "net": 5448.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 37105.0,
+   "op": null
+  }
+ },
+ "code": "8358",
+ "name": "スルガ銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8358（取得 2026-10-05 21:35）。単位：百万円（EPSは円）",
+ "price": 2919.0,
+ "industry_per": null,
+ "market_cap": 502500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

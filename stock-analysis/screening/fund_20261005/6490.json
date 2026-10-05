@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 83000.0,
+   "op": 20000.0,
+   "ord": 20400.0,
+   "net": 14000.0,
+   "eps": 612.2
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 59479.0,
+   "op": 12107.0,
+   "ord": 12946.0,
+   "net": 8941.0,
+   "eps": 388.2
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 18304.0,
+   "op": 4963.0,
+   "ord": 5371.0,
+   "net": 3673.0
+  },
+  "year_ago": {
+   "sales": 13499.0,
+   "op": 2705.0,
+   "ord": 2765.0,
+   "net": 1977.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 18304.0,
+   "op": 4963.0
+  }
+ },
+ "code": "6490",
+ "name": "ＰＩＬＬＡＲ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6490（取得 2026-10-05 21:20）。単位：百万円（EPSは円）",
+ "price": 12180.0,
+ "industry_per": null,
+ "market_cap": 305000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

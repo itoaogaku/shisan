@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 205300.0,
+   "op": 22500.0,
+   "ord": 22650.0,
+   "net": 15000.0,
+   "eps": 241.0
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 174142.0,
+   "op": 17455.0,
+   "ord": 17751.0,
+   "net": 13050.0,
+   "eps": 209.7
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 43715.0,
+   "op": 6881.0,
+   "ord": 7074.0,
+   "net": 4740.0
+  },
+  "year_ago": {
+   "sales": 55555.0,
+   "op": 7809.0,
+   "ord": 8001.0,
+   "net": 5575.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 43715.0,
+   "op": 6881.0
+  }
+ },
+ "code": "2767",
+ "name": "円谷フィールズホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2767（取得 2026-10-05 21:47）。単位：百万円（EPSは円）",
+ "price": 2425.0,
+ "industry_per": null,
+ "market_cap": 158700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

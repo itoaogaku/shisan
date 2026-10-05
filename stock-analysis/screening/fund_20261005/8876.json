@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 165000.0,
+   "op": 34000.0,
+   "ord": 33600.0,
+   "net": 22500.0,
+   "eps": 149.2
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 151074.0,
+   "op": 30815.0,
+   "ord": 30943.0,
+   "net": 20665.0,
+   "eps": 137.1
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 38959.0,
+   "op": 7174.0,
+   "ord": 7519.0,
+   "net": 5228.0
+  },
+  "year_ago": {
+   "sales": 35745.0,
+   "op": 6415.0,
+   "ord": 6420.0,
+   "net": 4414.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 38959.0,
+   "op": 7174.0
+  }
+ },
+ "code": "8876",
+ "name": "リログループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8876（取得 2026-10-05 21:49）。単位：百万円（EPSは円）",
+ "price": 2316.0,
+ "industry_per": null,
+ "market_cap": 354400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

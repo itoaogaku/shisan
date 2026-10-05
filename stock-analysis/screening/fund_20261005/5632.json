@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 166000.0,
+   "op": 6400.0,
+   "ord": 5100.0,
+   "net": 3100.0,
+   "eps": 205.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 154557.0,
+   "op": 4788.0,
+   "ord": 4017.0,
+   "net": 3055.0,
+   "eps": 202.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 40567.0,
+   "op": 1400.0,
+   "ord": 1253.0,
+   "net": 730.0
+  },
+  "year_ago": {
+   "sales": 38113.0,
+   "op": 793.0,
+   "ord": 204.0,
+   "net": -115.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 40567.0,
+   "op": 1400.0
+  }
+ },
+ "code": "5632",
+ "name": "三菱製鋼",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5632（取得 2026-10-05 22:02）。単位：百万円（EPSは円）",
+ "price": 2408.0,
+ "industry_per": null,
+ "market_cap": 37800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

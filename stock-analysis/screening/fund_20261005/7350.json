@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 80000.0,
+   "op": null,
+   "ord": 17500.0,
+   "net": 12000.0,
+   "eps": 561.9
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 70417.0,
+   "op": null,
+   "ord": 15799.0,
+   "net": 11292.0,
+   "eps": 529.1
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 19855.0,
+   "op": null,
+   "ord": 5312.0,
+   "net": 3610.0
+  },
+  "year_ago": {
+   "sales": 17034.0,
+   "op": null,
+   "ord": 3799.0,
+   "net": 2562.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 19855.0,
+   "op": null
+  }
+ },
+ "code": "7350",
+ "name": "おきなわフィナンシャルグループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7350（取得 2026-10-05 21:45）。単位：百万円（EPSは円）",
+ "price": 7860.0,
+ "industry_per": null,
+ "market_cap": 180900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

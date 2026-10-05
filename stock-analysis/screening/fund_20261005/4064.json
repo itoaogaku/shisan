@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 52000.0,
+   "op": 4500.0,
+   "ord": 4700.0,
+   "net": 3100.0,
+   "eps": 332.3
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 49909.0,
+   "op": 4095.0,
+   "ord": 4583.0,
+   "net": 2607.0,
+   "eps": 279.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 12458.0,
+   "op": 1039.0,
+   "ord": 1050.0,
+   "net": 518.0
+  },
+  "year_ago": {
+   "sales": 11770.0,
+   "op": 965.0,
+   "ord": 1033.0,
+   "net": 534.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 12458.0,
+   "op": 1039.0
+  }
+ },
+ "code": "4064",
+ "name": "日本カーバイド工業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4064（取得 2026-10-05 21:33）。単位：百万円（EPSは円）",
+ "price": 3805.0,
+ "industry_per": null,
+ "market_cap": 35800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

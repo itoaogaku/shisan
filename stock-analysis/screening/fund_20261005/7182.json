@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 955000.0,
+   "net": 660000.0,
+   "eps": 185.3
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 2852206.0,
+   "op": null,
+   "ord": 759150.0,
+   "net": 525583.0,
+   "eps": 147.1
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 848180.0,
+   "op": null,
+   "ord": 253528.0,
+   "net": 177573.0
+  },
+  "year_ago": {
+   "sales": 667236.0,
+   "op": null,
+   "ord": 153880.0,
+   "net": 104862.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 848180.0,
+   "op": null
+  }
+ },
+ "code": "7182",
+ "name": "ゆうちょ銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7182（取得 2026-10-05 21:42）。単位：百万円（EPSは円）",
+ "price": 3397.0,
+ "industry_per": null,
+ "market_cap": 12147300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

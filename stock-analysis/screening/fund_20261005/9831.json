@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1780000.0,
+   "op": 51500.0,
+   "ord": 52600.0,
+   "net": 27800.0,
+   "eps": 41.8
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 1691808.0,
+   "op": 16166.0,
+   "ord": 20002.0,
+   "net": 14778.0,
+   "eps": 22.0
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 420218.0,
+   "op": 15642.0,
+   "ord": 16774.0,
+   "net": 9984.0
+  },
+  "year_ago": {
+   "sales": 377663.0,
+   "op": 13392.0,
+   "ord": 14644.0,
+   "net": 8852.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 420218.0,
+   "op": 15642.0
+  }
+ },
+ "code": "9831",
+ "name": "ヤマダホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9831（取得 2026-10-05 21:57）。単位：百万円（EPSは円）",
+ "price": 712.2000122070312,
+ "industry_per": null,
+ "market_cap": 688600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

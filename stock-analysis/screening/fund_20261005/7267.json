@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 24150000.0,
+   "op": 650000.0,
+   "ord": 660000.0,
+   "net": 400000.0,
+   "eps": 102.8
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 21796610.0,
+   "op": -414346.0,
+   "ord": -403300.0,
+   "net": -423941.0,
+   "eps": -106.1
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 6061514.0,
+   "op": 530767.0,
+   "ord": 605027.0,
+   "net": 450915.0
+  },
+  "year_ago": {
+   "sales": 5340268.0,
+   "op": 244170.0,
+   "ord": 292334.0,
+   "net": 196670.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 6061514.0,
+   "op": 530767.0
+  }
+ },
+ "code": "7267",
+ "name": "本田技研工業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7267（取得 2026-10-05 21:52）。単位：百万円（EPSは円）",
+ "price": 1676.5,
+ "industry_per": null,
+ "market_cap": 7599600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

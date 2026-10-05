@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 191500.0,
+   "net": 129000.0,
+   "eps": 116.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 490724.0,
+   "op": null,
+   "ord": 155018.0,
+   "net": 106523.0,
+   "eps": 94.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 130998.0,
+   "op": null,
+   "ord": 45462.0,
+   "net": 32028.0
+  },
+  "year_ago": {
+   "sales": 112939.0,
+   "op": null,
+   "ord": 38331.0,
+   "net": 27036.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 130998.0,
+   "op": null
+  }
+ },
+ "code": "7186",
+ "name": "横浜フィナンシャルグループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7186（取得 2026-10-05 21:47）。単位：百万円（EPSは円）",
+ "price": 1893.5,
+ "industry_per": null,
+ "market_cap": 2167300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

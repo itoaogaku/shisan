@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 66000.0,
+   "op": null,
+   "ord": 14700.0,
+   "net": 9300.0,
+   "eps": 550.3
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 71846.0,
+   "op": null,
+   "ord": 12307.0,
+   "net": 8585.0,
+   "eps": 508.1
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 17904.0,
+   "op": null,
+   "ord": 4005.0,
+   "net": 2909.0
+  },
+  "year_ago": {
+   "sales": 13595.0,
+   "op": null,
+   "ord": 1669.0,
+   "net": 1242.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 17904.0,
+   "op": null
+  }
+ },
+ "code": "8395",
+ "name": "佐賀銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8395（取得 2026-10-05 21:28）。単位：百万円（EPSは円）",
+ "price": 7040.0,
+ "industry_per": null,
+ "market_cap": 119200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

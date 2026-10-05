@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 13200.0,
+   "op": 2000.0,
+   "ord": 2100.0,
+   "net": 1500.0,
+   "eps": 69.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 11022.0,
+   "op": 1701.0,
+   "ord": 1794.0,
+   "net": 1441.0,
+   "eps": 65.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 2945.0,
+   "op": 236.0,
+   "ord": 278.0,
+   "net": 149.0
+  },
+  "year_ago": {
+   "sales": 2283.0,
+   "op": 145.0,
+   "ord": 178.0,
+   "net": 105.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 2945.0,
+   "op": 236.0
+  }
+ },
+ "code": "6863",
+ "name": "ニレコ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6863（取得 2026-10-05 21:35）。単位：百万円（EPSは円）",
+ "price": 1088.0,
+ "industry_per": null,
+ "market_cap": 24000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

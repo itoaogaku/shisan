@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 310000.0,
+   "op": 10500.0,
+   "ord": 11500.0,
+   "net": 8200.0,
+   "eps": 173.9
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 289491.0,
+   "op": 8853.0,
+   "ord": 9232.0,
+   "net": 2488.0,
+   "eps": 52.8
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 76697.0,
+   "op": 2889.0,
+   "ord": 3250.0,
+   "net": 2322.0
+  },
+  "year_ago": {
+   "sales": 70333.0,
+   "op": 1934.0,
+   "ord": 2087.0,
+   "net": 1270.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 150733.0,
+   "op": 5576.0
+  }
+ },
+ "code": "7613",
+ "name": "シークス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7613（取得 2026-10-05 21:43）。単位：百万円（EPSは円）",
+ "price": 1627.0,
+ "industry_per": null,
+ "market_cap": 82000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

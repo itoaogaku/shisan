@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 228600.0,
+   "op": 22200.0,
+   "ord": 22400.0,
+   "net": 15300.0,
+   "eps": 286.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 217752.0,
+   "op": 20463.0,
+   "ord": 22009.0,
+   "net": 20655.0,
+   "eps": 387.4
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 60352.0,
+   "op": 6240.0,
+   "ord": 6842.0,
+   "net": 4954.0
+  },
+  "year_ago": {
+   "sales": 54943.0,
+   "op": 6005.0,
+   "ord": 5635.0,
+   "net": 4334.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 60352.0,
+   "op": 6240.0
+  }
+ },
+ "code": "7864",
+ "name": "フジシールインターナショナル",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7864（取得 2026-10-05 21:49）。単位：百万円（EPSは円）",
+ "price": 3340.0,
+ "industry_per": null,
+ "market_cap": 200900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

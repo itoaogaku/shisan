@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1379000.0,
+   "op": 94300.0,
+   "ord": 96100.0,
+   "net": 64900.0,
+   "eps": 171.2
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 1322791.0,
+   "op": 89943.0,
+   "ord": 91525.0,
+   "net": 64303.0,
+   "eps": 169.6
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 412745.0,
+   "op": 29583.0,
+   "ord": 30512.0,
+   "net": 20294.0
+  },
+  "year_ago": {
+   "sales": 379591.0,
+   "op": 27998.0,
+   "ord": 28247.0,
+   "net": 19636.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 757498.0,
+   "op": 53088.0
+  }
+ },
+ "code": "4768",
+ "name": "大塚商会",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4768（取得 2026-10-05 21:48）。単位：百万円（EPSは円）",
+ "price": 3655.0,
+ "industry_per": null,
+ "market_cap": 1388900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

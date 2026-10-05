@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 22300.0,
+   "op": 3900.0,
+   "ord": 3950.0,
+   "net": 2670.0,
+   "eps": 143.9
+  },
+  "forecast_label": "連 予 2026.12",
+  "prev": {
+   "sales": 19762.0,
+   "op": 2844.0,
+   "ord": 2977.0,
+   "net": 2298.0,
+   "eps": 124.0
+  },
+  "prev_label": "連 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 4857.0,
+   "op": 869.0,
+   "ord": 933.0,
+   "net": 762.0
+  },
+  "year_ago": {
+   "sales": 4125.0,
+   "op": 200.0,
+   "ord": 253.0,
+   "net": 177.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 10022.0,
+   "op": 1777.0
+  }
+ },
+ "code": "3040",
+ "name": "ソリトンシステムズ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3040（取得 2026-10-05 21:22）。単位：百万円（EPSは円）",
+ "price": 2742.0,
+ "industry_per": null,
+ "market_cap": 54100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

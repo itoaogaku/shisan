@@ -1,0 +1,44 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 139000.0,
+   "op": 4700.0,
+   "ord": 5000.0,
+   "net": 2800.0,
+   "eps": 159.5
+  },
+  "forecast_label": "予 2027.05",
+  "prev": {
+   "sales": 130123.0,
+   "op": 4405.0,
+   "ord": 4720.0,
+   "net": 2763.0,
+   "eps": 157.5
+  },
+  "prev_label": "2026.05"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 34341.0,
+   "op": 765.0,
+   "ord": 853.0,
+   "net": 426.0
+  },
+  "year_ago": {
+   "sales": 30825.0,
+   "op": 300.0,
+   "ord": 458.0,
+   "net": 127.0
+  },
+  "one_off": null
+ },
+ "progress": {},
+ "code": "9278",
+ "name": "ブックオフグループホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9278（取得 2026-10-05 21:36）。単位：百万円（EPSは円）",
+ "price": 2957.0,
+ "industry_per": null,
+ "market_cap": 60800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

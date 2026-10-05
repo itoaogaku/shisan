@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 137000.0,
+   "op": 4200.0,
+   "ord": 3100.0,
+   "net": 2000.0,
+   "eps": 84.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 132815.0,
+   "op": 4367.0,
+   "ord": 5002.0,
+   "net": 1028.0,
+   "eps": 43.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 21119.0,
+   "op": -652.0,
+   "ord": -261.0,
+   "net": -19.0
+  },
+  "year_ago": {
+   "sales": 30977.0,
+   "op": 922.0,
+   "ord": 1024.0,
+   "net": 866.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 21119.0,
+   "op": -652.0
+  }
+ },
+ "code": "6104",
+ "name": "芝浦機械",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6104（取得 2026-10-05 21:43）。単位：百万円（EPSは円）",
+ "price": 5010.0,
+ "industry_per": null,
+ "market_cap": 124400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

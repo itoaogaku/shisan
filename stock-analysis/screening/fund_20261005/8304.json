@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 37000.0,
+   "net": 27000.0,
+   "eps": 195.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 242314.0,
+   "op": null,
+   "ord": 27183.0,
+   "net": 25705.0,
+   "eps": 185.8
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 67282.0,
+   "op": null,
+   "ord": 13911.0,
+   "net": 11492.0
+  },
+  "year_ago": {
+   "sales": 60745.0,
+   "op": null,
+   "ord": 8007.0,
+   "net": 6326.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 67282.0,
+   "op": null
+  }
+ },
+ "code": "8304",
+ "name": "あおぞら銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8304（取得 2026-10-05 21:52）。単位：百万円（EPSは円）",
+ "price": 3398.0,
+ "industry_per": null,
+ "market_cap": 475000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 167000.0,
+   "net": 115000.0,
+   "eps": 220.2
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 438546.0,
+   "op": null,
+   "ord": 130298.0,
+   "net": 90469.0,
+   "eps": 167.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 136802.0,
+   "op": null,
+   "ord": 46968.0,
+   "net": 32740.0
+  },
+  "year_ago": {
+   "sales": 91838.0,
+   "op": null,
+   "ord": 31099.0,
+   "net": 22582.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 136802.0,
+   "op": null
+  }
+ },
+ "code": "5831",
+ "name": "しずおかフィナンシャルグループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5831（取得 2026-10-05 21:42）。単位：百万円（EPSは円）",
+ "price": 3578.0,
+ "industry_per": null,
+ "market_cap": 2075700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

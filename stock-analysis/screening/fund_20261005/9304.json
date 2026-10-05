@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 90000.0,
+   "op": 5300.0,
+   "ord": 6000.0,
+   "net": 7200.0,
+   "eps": 131.7
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 79740.0,
+   "op": 4097.0,
+   "ord": 4858.0,
+   "net": 6333.0,
+   "eps": 111.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 20930.0,
+   "op": 1195.0,
+   "ord": 1816.0,
+   "net": 2998.0
+  },
+  "year_ago": {
+   "sales": 20022.0,
+   "op": 1011.0,
+   "ord": 1445.0,
+   "net": 1817.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 20930.0,
+   "op": 1195.0
+  }
+ },
+ "code": "9304",
+ "name": "澁澤倉庫",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9304（取得 2026-10-05 21:35）。単位：百万円（EPSは円）",
+ "price": 2138.0,
+ "industry_per": null,
+ "market_cap": 130100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

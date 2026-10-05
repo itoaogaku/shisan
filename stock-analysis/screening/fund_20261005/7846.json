@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 133000.0,
+   "op": 19500.0,
+   "ord": 20000.0,
+   "net": 15000.0,
+   "eps": 142.8
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 126391.0,
+   "op": 16649.0,
+   "ord": 17855.0,
+   "net": 12064.0,
+   "eps": 105.7
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 40734.0,
+   "op": 9716.0,
+   "ord": 10284.0,
+   "net": 7629.0
+  },
+  "year_ago": {
+   "sales": 35846.0,
+   "op": 7136.0,
+   "ord": 7525.0,
+   "net": 5804.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 72260.0,
+   "op": 13870.0
+  }
+ },
+ "code": "7846",
+ "name": "パイロットコーポレーション",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7846（取得 2026-10-05 21:40）。単位：百万円（EPSは円）",
+ "price": 2108.0,
+ "industry_per": null,
+ "market_cap": 236600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

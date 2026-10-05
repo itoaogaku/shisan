@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 95500.0,
+   "op": 11500.0,
+   "ord": 12000.0,
+   "net": 8000.0,
+   "eps": 160.0
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 89814.0,
+   "op": 9692.0,
+   "ord": 10028.0,
+   "net": 6235.0,
+   "eps": 114.3
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 23047.0,
+   "op": 2604.0,
+   "ord": 3101.0,
+   "net": 1795.0
+  },
+  "year_ago": {
+   "sales": 20657.0,
+   "op": 2243.0,
+   "ord": 2617.0,
+   "net": 1685.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 47757.0,
+   "op": 6170.0
+  }
+ },
+ "code": "7976",
+ "name": "三菱鉛筆",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7976（取得 2026-10-05 21:28）。単位：百万円（EPSは円）",
+ "price": 3445.0,
+ "industry_per": null,
+ "market_cap": 206800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 107000.0,
+   "op": 10000.0,
+   "ord": 10000.0,
+   "net": 7100.0,
+   "eps": 278.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 88066.0,
+   "op": 7621.0,
+   "ord": 7959.0,
+   "net": 5920.0,
+   "eps": 232.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 23298.0,
+   "op": 2289.0,
+   "ord": 2237.0,
+   "net": 1502.0
+  },
+  "year_ago": {
+   "sales": 20980.0,
+   "op": 1487.0,
+   "ord": 1483.0,
+   "net": 1172.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 23298.0,
+   "op": 2289.0
+  }
+ },
+ "code": "6023",
+ "name": "ダイハツインフィニアース",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6023（取得 2026-10-05 21:38）。単位：百万円（EPSは円）",
+ "price": 3305.0,
+ "industry_per": null,
+ "market_cap": 90400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

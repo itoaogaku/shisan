@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 19578.0,
+   "op": 9025.0,
+   "ord": 8909.0,
+   "net": 6384.0,
+   "eps": 161.4
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 5606.0,
+   "op": 2754.0,
+   "ord": 2697.0,
+   "net": 2900.0
+  },
+  "year_ago": {
+   "sales": 3981.0,
+   "op": 1523.0,
+   "ord": 1564.0,
+   "net": 1633.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 5606.0,
+   "op": 2754.0
+  }
+ },
+ "code": "8739",
+ "name": "スパークス・グループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8739（取得 2026-10-05 21:34）。単位：百万円（EPSは円）",
+ "price": 2643.0,
+ "industry_per": null,
+ "market_cap": 109700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

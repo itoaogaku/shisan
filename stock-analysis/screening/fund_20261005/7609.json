@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 118000.0,
+   "op": 9000.0,
+   "ord": 9150.0,
+   "net": 6300.0,
+   "eps": 307.1
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 103142.0,
+   "op": 7010.0,
+   "ord": 7156.0,
+   "net": 4923.0,
+   "eps": 232.3
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 29364.0,
+   "op": 2580.0,
+   "ord": 2667.0,
+   "net": 1816.0
+  },
+  "year_ago": {
+   "sales": 25500.0,
+   "op": 2153.0,
+   "ord": 2147.0,
+   "net": 1514.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 59702.0,
+   "op": 5045.0
+  }
+ },
+ "code": "7609",
+ "name": "ダイトロン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7609（取得 2026-10-05 21:46）。単位：百万円（EPSは円）",
+ "price": 4510.0,
+ "industry_per": null,
+ "market_cap": 93300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

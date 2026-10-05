@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 28905.0,
+   "op": 4647.0,
+   "ord": 4523.0,
+   "net": 2523.0,
+   "eps": 66.5
+  },
+  "forecast_label": "連 予 2026.12",
+  "prev": {
+   "sales": 20172.0,
+   "op": 3608.0,
+   "ord": 3471.0,
+   "net": 2077.0,
+   "eps": 54.9
+  },
+  "prev_label": "連 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 6622.0,
+   "op": 907.0,
+   "ord": 870.0,
+   "net": 209.0
+  },
+  "year_ago": {
+   "sales": 4919.0,
+   "op": 787.0,
+   "ord": 781.0,
+   "net": 482.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 14043.0,
+   "op": 2487.0
+  }
+ },
+ "code": "6071",
+ "name": "ＩＢＪ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6071（取得 2026-10-05 22:02）。単位：百万円（EPSは円）",
+ "price": 895.0,
+ "industry_per": null,
+ "market_cap": 37600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

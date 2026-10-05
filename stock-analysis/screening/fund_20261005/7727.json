@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 16000.0,
+   "op": 1800.0,
+   "ord": 1900.0,
+   "net": 1420.0,
+   "eps": 69.7
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 15589.0,
+   "op": 1703.0,
+   "ord": 1771.0,
+   "net": 1400.0,
+   "eps": 64.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 3011.0,
+   "op": 34.0,
+   "ord": 64.0,
+   "net": 19.0
+  },
+  "year_ago": {
+   "sales": 3669.0,
+   "op": 589.0,
+   "ord": 599.0,
+   "net": 352.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 3011.0,
+   "op": 34.0
+  }
+ },
+ "code": "7727",
+ "name": "オーバル",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7727（取得 2026-10-05 21:33）。単位：百万円（EPSは円）",
+ "price": 978.0,
+ "industry_per": null,
+ "market_cap": 20500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

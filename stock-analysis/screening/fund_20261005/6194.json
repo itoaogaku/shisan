@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 8250.0,
+   "op": 1460.0,
+   "ord": 1389.0,
+   "net": 1206.0,
+   "eps": 54.0
+  },
+  "forecast_label": "単 予 2026.09",
+  "prev": {
+   "sales": 7634.0,
+   "op": 1853.0,
+   "ord": 1812.0,
+   "net": 1171.0,
+   "eps": 49.3
+  },
+  "prev_label": "単 2025.09"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 2188.0,
+   "op": 532.0,
+   "ord": 523.0,
+   "net": 362.0
+  },
+  "year_ago": {
+   "sales": 2079.0,
+   "op": 653.0,
+   "ord": 653.0,
+   "net": 431.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.10-06",
+  "cumulative": {
+   "sales": 6009.0,
+   "op": 1100.0
+  }
+ },
+ "code": "6194",
+ "name": "アトラエ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6194（取得 2026-10-05 21:40）。単位：百万円（EPSは円）",
+ "price": 921.0,
+ "industry_per": null,
+ "market_cap": 20600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

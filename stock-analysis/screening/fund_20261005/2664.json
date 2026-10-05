@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 285000.0,
+   "op": 5100.0,
+   "ord": 6000.0,
+   "net": 3000.0,
+   "eps": 137.6
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 284492.0,
+   "op": 6779.0,
+   "ord": 7897.0,
+   "net": 3200.0,
+   "eps": 143.3
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 71981.0,
+   "op": 1447.0,
+   "ord": 1710.0,
+   "net": 1102.0
+  },
+  "year_ago": {
+   "sales": 71025.0,
+   "op": 1249.0,
+   "ord": 1611.0,
+   "net": 1045.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 71981.0,
+   "op": 1447.0
+  }
+ },
+ "code": "2664",
+ "name": "カワチ薬品",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2664（取得 2026-10-05 21:45）。単位：百万円（EPSは円）",
+ "price": 3810.0,
+ "industry_per": null,
+ "market_cap": 93700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

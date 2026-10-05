@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 750000.0,
+   "op": 26500.0,
+   "ord": 21000.0,
+   "net": 13500.0,
+   "eps": 480.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 630905.0,
+   "op": 16739.0,
+   "ord": 13762.0,
+   "net": 7691.0,
+   "eps": 273.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 191420.0,
+   "op": 9640.0,
+   "ord": 8468.0,
+   "net": 5430.0
+  },
+  "year_ago": {
+   "sales": 133529.0,
+   "op": 1641.0,
+   "ord": 490.0,
+   "net": 348.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 191420.0,
+   "op": 9640.0
+  }
+ },
+ "code": "3156",
+ "name": "レスター",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3156（取得 2026-10-05 21:19）。単位：百万円（EPSは円）",
+ "price": 6300.0,
+ "industry_per": null,
+ "market_cap": 189500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

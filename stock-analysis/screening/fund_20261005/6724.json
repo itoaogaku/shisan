@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1510000.0,
+   "op": 101000.0,
+   "ord": 99000.0,
+   "net": 69000.0,
+   "eps": 216.2
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 1413251.0,
+   "op": 49558.0,
+   "ord": 50023.0,
+   "net": 18201.0,
+   "eps": 56.8
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 367241.0,
+   "op": 20601.0,
+   "ord": 20726.0,
+   "net": 12984.0
+  },
+  "year_ago": {
+   "sales": 320879.0,
+   "op": 14136.0,
+   "ord": 12918.0,
+   "net": 6612.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 367241.0,
+   "op": 20601.0
+  }
+ },
+ "code": "6724",
+ "name": "セイコーエプソン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6724（取得 2026-10-05 21:20）。単位：百万円（EPSは円）",
+ "price": 3335.0,
+ "industry_per": null,
+ "market_cap": 1245900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

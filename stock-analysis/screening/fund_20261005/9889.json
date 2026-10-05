@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 79500.0,
+   "op": 8745.0,
+   "ord": 8845.0,
+   "net": 6045.0,
+   "eps": 100.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 76019.0,
+   "op": 7308.0,
+   "ord": 7469.0,
+   "net": 5353.0,
+   "eps": 86.3
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 19539.0,
+   "op": 2156.0,
+   "ord": 2201.0,
+   "net": 1381.0
+  },
+  "year_ago": {
+   "sales": 18361.0,
+   "op": 1783.0,
+   "ord": 1888.0,
+   "net": 1260.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 19539.0,
+   "op": 2156.0
+  }
+ },
+ "code": "9889",
+ "name": "ＪＢＣＣホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9889（取得 2026-10-05 21:50）。単位：百万円（EPSは円）",
+ "price": 1698.0,
+ "industry_per": null,
+ "market_cap": 120700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

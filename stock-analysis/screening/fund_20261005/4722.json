@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 80600.0,
+   "op": 17500.0,
+   "ord": null,
+   "net": 11800.0,
+   "eps": 133.0
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 75993.0,
+   "op": 16176.0,
+   "ord": 16672.0,
+   "net": 11712.0,
+   "eps": 132.1
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 20060.0,
+   "op": 3946.0,
+   "ord": 4168.0,
+   "net": 2808.0
+  },
+  "year_ago": {
+   "sales": 18325.0,
+   "op": 3773.0,
+   "ord": 3953.0,
+   "net": 2574.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 38322.0,
+   "op": 7379.0
+  }
+ },
+ "code": "4722",
+ "name": "フューチャー",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4722（取得 2026-10-05 21:25）。単位：百万円（EPSは円）",
+ "price": 2426.0,
+ "industry_per": null,
+ "market_cap": 231300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

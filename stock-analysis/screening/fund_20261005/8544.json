@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 27900.0,
+   "net": 19000.0,
+   "eps": 163.9
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 108656.0,
+   "op": null,
+   "ord": 22452.0,
+   "net": 15912.0,
+   "eps": 131.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 39900.0,
+   "op": null,
+   "ord": 9176.0,
+   "net": 6315.0
+  },
+  "year_ago": {
+   "sales": 22903.0,
+   "op": null,
+   "ord": 5809.0,
+   "net": 4111.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 39900.0,
+   "op": null
+  }
+ },
+ "code": "8544",
+ "name": "京葉銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8544（取得 2026-10-05 21:32）。単位：百万円（EPSは円）",
+ "price": 2963.0,
+ "industry_per": null,
+ "market_cap": 374600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

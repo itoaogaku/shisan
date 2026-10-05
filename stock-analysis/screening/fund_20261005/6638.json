@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 91000.0,
+   "op": 9500.0,
+   "ord": 8600.0,
+   "net": 6100.0,
+   "eps": 210.5
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 83725.0,
+   "op": 9431.0,
+   "ord": 8907.0,
+   "net": 6741.0,
+   "eps": 233.0
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 20052.0,
+   "op": 2351.0,
+   "ord": 2282.0,
+   "net": 1621.0
+  },
+  "year_ago": {
+   "sales": 19413.0,
+   "op": 1934.0,
+   "ord": 1835.0,
+   "net": 1321.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 20052.0,
+   "op": 2351.0
+  }
+ },
+ "code": "6638",
+ "name": "ミマキエンジニアリング",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6638（取得 2026-10-05 21:29）。単位：百万円（EPSは円）",
+ "price": 2302.0,
+ "industry_per": null,
+ "market_cap": 73800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

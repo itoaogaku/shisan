@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 21348.0,
+   "op": 5000.0,
+   "ord": 4835.0,
+   "net": 3097.0,
+   "eps": 11.6
+  },
+  "forecast_label": "連 予 2026.12",
+  "prev": {
+   "sales": 18817.0,
+   "op": 2863.0,
+   "ord": 2836.0,
+   "net": 1922.0,
+   "eps": 8.5
+  },
+  "prev_label": "連 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 5086.0,
+   "op": 1094.0,
+   "ord": 1045.0,
+   "net": 559.0
+  },
+  "year_ago": {
+   "sales": 4697.0,
+   "op": 841.0,
+   "ord": 835.0,
+   "net": 543.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 9989.0,
+   "op": 2119.0
+  }
+ },
+ "code": "2492",
+ "name": "インフォマート",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2492（取得 2026-10-05 21:25）。単位：百万円（EPSは円）",
+ "price": 733.0,
+ "industry_per": null,
+ "market_cap": 196100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

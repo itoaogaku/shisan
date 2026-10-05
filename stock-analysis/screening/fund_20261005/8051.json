@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 585000.0,
+   "op": 15000.0,
+   "ord": 15400.0,
+   "net": 10000.0,
+   "eps": 117.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 541885.0,
+   "op": 12041.0,
+   "ord": 13010.0,
+   "net": 9330.0,
+   "eps": 109.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 145862.0,
+   "op": 2890.0,
+   "ord": 3160.0,
+   "net": 1913.0
+  },
+  "year_ago": {
+   "sales": 126136.0,
+   "op": 1732.0,
+   "ord": 1790.0,
+   "net": 1823.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 145862.0,
+   "op": 2890.0
+  }
+ },
+ "code": "8051",
+ "name": "山善",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8051（取得 2026-10-05 21:37）。単位：百万円（EPSは円）",
+ "price": 1991.0,
+ "industry_per": null,
+ "market_cap": 189800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 89500.0,
+   "net": 61500.0,
+   "eps": 275.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 211208.0,
+   "op": null,
+   "ord": 78469.0,
+   "net": 54007.0,
+   "eps": 242.2
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 63975.0,
+   "op": null,
+   "ord": 31789.0,
+   "net": 22204.0
+  },
+  "year_ago": {
+   "sales": 45410.0,
+   "op": null,
+   "ord": 17646.0,
+   "net": 12289.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 63975.0,
+   "op": null
+  }
+ },
+ "code": "8341",
+ "name": "七十七銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8341（取得 2026-10-05 21:43）。単位：百万円（EPSは円）",
+ "price": 4120.0,
+ "industry_per": null,
+ "market_cap": 947500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

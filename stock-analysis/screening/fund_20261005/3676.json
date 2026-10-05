@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 41080.0,
+   "op": 2730.0,
+   "ord": 2730.0,
+   "net": 1850.0,
+   "eps": 83.0
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 38928.0,
+   "op": 2626.0,
+   "ord": 2582.0,
+   "net": 1181.0,
+   "eps": 53.0
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 9847.0,
+   "op": 624.0,
+   "ord": 562.0,
+   "net": 358.0
+  },
+  "year_ago": {
+   "sales": 9380.0,
+   "op": 707.0,
+   "ord": 706.0,
+   "net": 463.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 9847.0,
+   "op": 624.0
+  }
+ },
+ "code": "3676",
+ "name": "デジタルハーツホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3676（取得 2026-10-05 21:45）。単位：百万円（EPSは円）",
+ "price": 1050.0,
+ "industry_per": null,
+ "market_cap": 25100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 6695.0,
+   "op": 13.0,
+   "ord": 85.0,
+   "net": 107.0,
+   "eps": 10.1
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 4639.0,
+   "op": -342.0,
+   "ord": -403.0,
+   "net": -334.0,
+   "eps": -31.3
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 2280.0,
+   "op": 97.0,
+   "ord": 228.0,
+   "net": 294.0
+  },
+  "year_ago": {
+   "sales": 811.0,
+   "op": -164.0,
+   "ord": -242.0,
+   "net": -195.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 3229.0,
+   "op": -313.0
+  }
+ },
+ "code": "6769",
+ "name": "ザインエレクトロニクス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6769（取得 2026-10-05 21:34）。単位：百万円（EPSは円）",
+ "price": 1323.0,
+ "industry_per": null,
+ "market_cap": 16300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

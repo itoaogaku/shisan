@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 37000.0,
+   "op": 2200.0,
+   "ord": 1750.0,
+   "net": 1350.0,
+   "eps": 44.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 33942.0,
+   "op": 1439.0,
+   "ord": 1406.0,
+   "net": 1135.0,
+   "eps": 37.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 8848.0,
+   "op": 618.0,
+   "ord": 517.0,
+   "net": 336.0
+  },
+  "year_ago": {
+   "sales": 8547.0,
+   "op": 630.0,
+   "ord": 608.0,
+   "net": 381.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 8848.0,
+   "op": 618.0
+  }
+ },
+ "code": "7743",
+ "name": "シード",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7743（取得 2026-10-05 21:36）。単位：百万円（EPSは円）",
+ "price": 794.0,
+ "industry_per": null,
+ "market_cap": 24000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

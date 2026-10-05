@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1714000.0,
+   "op": 846000.0,
+   "ord": 891000.0,
+   "net": 660000.0,
+   "eps": 914.2
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 1128610.0,
+   "op": 499120.0,
+   "ord": 516720.0,
+   "net": 375353.0,
+   "eps": 515.2
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 367473.0,
+   "op": 189990.0,
+   "ord": 234082.0,
+   "net": 174780.0
+  },
+  "year_ago": {
+   "sales": 263776.0,
+   "op": 123952.0,
+   "ord": 121357.0,
+   "net": 90180.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 367473.0,
+   "op": 189990.0
+  }
+ },
+ "code": "6857",
+ "name": "アドバンテスト",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6857（取得 2026-10-05 21:19）。単位：百万円（EPSは円）",
+ "price": 40300.0,
+ "industry_per": null,
+ "market_cap": 29499600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

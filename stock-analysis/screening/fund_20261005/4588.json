@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 28.0,
+   "op": -2024.0,
+   "ord": -2051.0,
+   "net": -2058.0,
+   "eps": -80.0
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 500.0,
+   "op": -347.0,
+   "ord": -347.0,
+   "net": -348.0
+  },
+  "year_ago": {
+   "sales": 28.0,
+   "op": -482.0,
+   "ord": -501.0,
+   "net": -502.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 503.0,
+   "op": -767.0
+  }
+ },
+ "code": "4588",
+ "name": "オンコリスバイオファーマ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4588（取得 2026-10-05 21:25）。単位：百万円（EPSは円）",
+ "price": 6490.0,
+ "industry_per": null,
+ "market_cap": 191500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

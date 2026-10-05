@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 532000.0,
+   "op": 67000.0,
+   "ord": 67300.0,
+   "net": 44800.0,
+   "eps": 171.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 441383.0,
+   "op": 47613.0,
+   "ord": 49095.0,
+   "net": 40457.0,
+   "eps": 149.3
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 131440.0,
+   "op": 17837.0,
+   "ord": 17830.0,
+   "net": 11703.0
+  },
+  "year_ago": {
+   "sales": 99368.0,
+   "op": 9627.0,
+   "ord": 10272.0,
+   "net": 7219.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 131440.0,
+   "op": 17837.0
+  }
+ },
+ "code": "9962",
+ "name": "ミスミグループ本社",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9962（取得 2026-10-05 21:27）。単位：百万円（EPSは円）",
+ "price": 4093.0,
+ "industry_per": null,
+ "market_cap": 1167800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

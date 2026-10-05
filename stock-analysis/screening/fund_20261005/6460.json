@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 510000.0,
+   "op": 44500.0,
+   "ord": 47500.0,
+   "net": 32500.0,
+   "eps": 160.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 487542.0,
+   "op": 47128.0,
+   "ord": 54205.0,
+   "net": -5756.0,
+   "eps": -27.4
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 95028.0,
+   "op": 2384.0,
+   "ord": 3612.0,
+   "net": 2169.0
+  },
+  "year_ago": {
+   "sales": 81026.0,
+   "op": -519.0,
+   "ord": -2124.0,
+   "net": -3387.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 95028.0,
+   "op": 2384.0
+  }
+ },
+ "code": "6460",
+ "name": "セガサミーホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6460（取得 2026-10-05 21:48）。単位：百万円（EPSは円）",
+ "price": 3252.0,
+ "industry_per": null,
+ "market_cap": 694500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

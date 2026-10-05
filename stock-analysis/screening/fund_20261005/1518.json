@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 71000.0,
+   "op": 10000.0,
+   "ord": 10400.0,
+   "net": 8600.0,
+   "eps": 232.3
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 65468.0,
+   "op": 9573.0,
+   "ord": 9944.0,
+   "net": 6716.0,
+   "eps": 148.3
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 17712.0,
+   "op": 2829.0,
+   "ord": 3285.0,
+   "net": 3378.0
+  },
+  "year_ago": {
+   "sales": 15374.0,
+   "op": 2622.0,
+   "ord": 2774.0,
+   "net": 2863.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 17712.0,
+   "op": 2829.0
+  }
+ },
+ "code": "1518",
+ "name": "三井松島ホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=1518（取得 2026-10-05 21:40）。単位：百万円（EPSは円）",
+ "price": 2231.0,
+ "industry_per": null,
+ "market_cap": 145700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

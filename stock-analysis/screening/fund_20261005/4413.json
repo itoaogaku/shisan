@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 23500.0,
+   "op": 4409.0,
+   "ord": null,
+   "net": 3134.0,
+   "eps": 100.4
+  },
+  "forecast_label": "I 予 2027.02",
+  "prev": {
+   "sales": 17423.0,
+   "op": 3391.0,
+   "ord": 3371.0,
+   "net": 2457.0,
+   "eps": 79.1
+  },
+  "prev_label": "I 2026.02"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 5407.0,
+   "op": 846.0,
+   "ord": 835.0,
+   "net": 588.0
+  },
+  "year_ago": {
+   "sales": 3361.0,
+   "op": 607.0,
+   "ord": 602.0,
+   "net": 437.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.03-05",
+  "cumulative": {
+   "sales": 5407.0,
+   "op": 846.0
+  }
+ },
+ "code": "4413",
+ "name": "ボードルア",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4413（取得 2026-10-05 21:56）。単位：百万円（EPSは円）",
+ "price": 2953.0,
+ "industry_per": null,
+ "market_cap": 95000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

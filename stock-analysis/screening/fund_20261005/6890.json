@@ -1,0 +1,27 @@
+{
+ "annual": {},
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 182437.0,
+   "op": 28071.0,
+   "ord": 27279.0,
+   "net": 21519.0
+  },
+  "year_ago": {
+   "sales": 68899.0,
+   "op": 6672.0,
+   "ord": 5864.0,
+   "net": 2674.0
+  },
+  "one_off": null
+ },
+ "progress": {},
+ "code": "6890",
+ "name": "フェローテック",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6890（取得 2026-10-05 21:18）。単位：百万円（EPSは円）",
+ "price": 12040.0,
+ "industry_per": null,
+ "market_cap": 651000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

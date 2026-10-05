@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 26500.0,
+   "net": 17000.0,
+   "eps": 77.3
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 167102.0,
+   "op": null,
+   "ord": 19756.0,
+   "net": 12632.0,
+   "eps": 56.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 27884.0,
+   "op": null,
+   "ord": 7213.0,
+   "net": 7521.0
+  },
+  "year_ago": {
+   "sales": 25809.0,
+   "op": null,
+   "ord": 8338.0,
+   "net": 5709.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 27884.0,
+   "op": null
+  }
+ },
+ "code": "7381",
+ "name": "ＣＣＩグループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7381（取得 2026-10-05 21:51）。単位：百万円（EPSは円）",
+ "price": 1333.0,
+ "industry_per": null,
+ "market_cap": 305400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 67500.0,
+   "op": 6800.0,
+   "ord": 6400.0,
+   "net": 4300.0,
+   "eps": 231.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 67691.0,
+   "op": 6978.0,
+   "ord": 6862.0,
+   "net": 5397.0,
+   "eps": 285.8
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 17883.0,
+   "op": 2042.0,
+   "ord": 2141.0,
+   "net": 1478.0
+  },
+  "year_ago": {
+   "sales": 15879.0,
+   "op": 1346.0,
+   "ord": 1303.0,
+   "net": 1047.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 17883.0,
+   "op": 2042.0
+  }
+ },
+ "code": "7715",
+ "name": "長野計器",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7715（取得 2026-10-05 21:33）。単位：百万円（EPSは円）",
+ "price": 4565.0,
+ "industry_per": null,
+ "market_cap": 86200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

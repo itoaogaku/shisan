@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 114000.0,
+   "op": 13500.0,
+   "ord": 12600.0,
+   "net": 8700.0,
+   "eps": 248.4
+  },
+  "forecast_label": "連 予 2026.12",
+  "prev": {
+   "sales": 115098.0,
+   "op": 11248.0,
+   "ord": 10793.0,
+   "net": 7799.0,
+   "eps": 218.2
+  },
+  "prev_label": "連 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 27718.0,
+   "op": 5407.0,
+   "ord": 5521.0,
+   "net": 3934.0
+  },
+  "year_ago": {
+   "sales": 29946.0,
+   "op": 3300.0,
+   "ord": 3152.0,
+   "net": 2165.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 53299.0,
+   "op": 7501.0
+  }
+ },
+ "code": "4189",
+ "name": "ＫＨネオケム",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4189（取得 2026-10-05 21:54）。単位：百万円（EPSは円）",
+ "price": 3425.0,
+ "industry_per": null,
+ "market_cap": 127200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

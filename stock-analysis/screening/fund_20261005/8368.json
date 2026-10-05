@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 41200.0,
+   "net": 28900.0,
+   "eps": 119.7
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 162399.0,
+   "op": null,
+   "ord": 37032.0,
+   "net": 26839.0,
+   "eps": 110.3
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 50443.0,
+   "op": null,
+   "ord": 11306.0,
+   "net": 8077.0
+  },
+  "year_ago": {
+   "sales": 34140.0,
+   "op": null,
+   "ord": 5117.0,
+   "net": 3790.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 50443.0,
+   "op": null
+  }
+ },
+ "code": "8368",
+ "name": "百五銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8368（取得 2026-10-05 21:21）。単位：百万円（EPSは円）",
+ "price": 2623.0,
+ "industry_per": null,
+ "market_cap": 666600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

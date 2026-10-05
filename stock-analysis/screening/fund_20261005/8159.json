@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 255000.0,
+   "op": 9500.0,
+   "ord": 9900.0,
+   "net": 7000.0,
+   "eps": 318.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 227511.0,
+   "op": 7511.0,
+   "ord": 9117.0,
+   "net": 7422.0,
+   "eps": 329.8
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 57753.0,
+   "op": 2194.0,
+   "ord": 2633.0,
+   "net": 1899.0
+  },
+  "year_ago": {
+   "sales": 48157.0,
+   "op": 1008.0,
+   "ord": 1072.0,
+   "net": 722.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 57753.0,
+   "op": 2194.0
+  }
+ },
+ "code": "8159",
+ "name": "立花エレテック",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8159（取得 2026-10-05 21:31）。単位：百万円（EPSは円）",
+ "price": 4325.0,
+ "industry_per": null,
+ "market_cap": 108200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

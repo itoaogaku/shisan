@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 235500.0,
+   "op": null,
+   "ord": 33500.0,
+   "net": 20000.0,
+   "eps": 17.1
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 220025.0,
+   "op": null,
+   "ord": 30165.0,
+   "net": 13476.0,
+   "eps": 12.1
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 56851.0,
+   "op": null,
+   "ord": 10802.0,
+   "net": 6582.0
+  },
+  "year_ago": {
+   "sales": 53323.0,
+   "op": null,
+   "ord": 6607.0,
+   "net": 4188.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 56851.0,
+   "op": null
+  }
+ },
+ "code": "8410",
+ "name": "セブン銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8410（取得 2026-10-05 21:54）。単位：百万円（EPSは円）",
+ "price": 336.79998779296875,
+ "industry_per": null,
+ "market_cap": 397200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

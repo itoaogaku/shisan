@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 2750000.0,
+   "op": 120000.0,
+   "ord": 105000.0,
+   "net": 70000.0,
+   "eps": 298.2
+  },
+  "forecast_label": "I 予 2026.12",
+  "prev": {
+   "sales": 2574826.0,
+   "op": 51481.0,
+   "ord": 41768.0,
+   "net": 2693.0,
+   "eps": 10.8
+  },
+  "prev_label": "I 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 704277.0,
+   "op": 29829.0,
+   "ord": 25499.0,
+   "net": 19714.0
+  },
+  "year_ago": {
+   "sales": 626709.0,
+   "op": 17273.0,
+   "ord": 14247.0,
+   "net": 7288.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 1356614.0,
+   "op": 44796.0
+  }
+ },
+ "code": "9147",
+ "name": "ＮＩＰＰＯＮ　ＥＸＰＲＥＳＳホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9147（取得 2026-10-05 21:23）。単位：百万円（EPSは円）",
+ "price": 5744.0,
+ "industry_per": null,
+ "market_cap": 1395800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

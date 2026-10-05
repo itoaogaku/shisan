@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 106000.0,
+   "net": 73000.0,
+   "eps": 160.7
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 305443.0,
+   "op": null,
+   "ord": 81533.0,
+   "net": 64572.0,
+   "eps": 141.2
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 90605.0,
+   "op": null,
+   "ord": 36681.0,
+   "net": 23719.0
+  },
+  "year_ago": {
+   "sales": 72632.0,
+   "op": null,
+   "ord": 23140.0,
+   "net": 16422.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 90605.0,
+   "op": null
+  }
+ },
+ "code": "8359",
+ "name": "八十二長野銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8359（取得 2026-10-05 21:35）。単位：百万円（EPSは円）",
+ "price": 2799.5,
+ "industry_per": null,
+ "market_cap": 1382300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

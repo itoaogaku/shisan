@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 6000.0,
+   "op": 1200.0,
+   "ord": 1200.0,
+   "net": 865.0,
+   "eps": 86.1
+  },
+  "forecast_label": "連 予 2026.12",
+  "prev": {
+   "sales": 5084.0,
+   "op": 1102.0,
+   "ord": 1092.0,
+   "net": 821.0,
+   "eps": 81.8
+  },
+  "prev_label": "連 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 1378.0,
+   "op": 257.0,
+   "ord": 267.0,
+   "net": 186.0
+  },
+  "year_ago": {
+   "sales": 1232.0,
+   "op": 236.0,
+   "ord": 218.0,
+   "net": 149.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 2771.0,
+   "op": 619.0
+  }
+ },
+ "code": "4493",
+ "name": "サイバーセキュリティクラウド",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4493（取得 2026-10-05 21:43）。単位：百万円（EPSは円）",
+ "price": 2118.0,
+ "industry_per": null,
+ "market_cap": 22000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

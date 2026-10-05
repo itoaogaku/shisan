@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 360000.0,
+   "op": 23000.0,
+   "ord": 22500.0,
+   "net": 21000.0,
+   "eps": 447.8
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 349979.0,
+   "op": 20765.0,
+   "ord": 20888.0,
+   "net": 10340.0,
+   "eps": 210.5
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 101328.0,
+   "op": 7373.0,
+   "ord": 8511.0,
+   "net": 7162.0
+  },
+  "year_ago": {
+   "sales": 86599.0,
+   "op": 4894.0,
+   "ord": 4428.0,
+   "net": 2528.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 189653.0,
+   "op": 12573.0
+  }
+ },
+ "code": "4634",
+ "name": "ａｒｔｉｅｎｃｅ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4634（取得 2026-10-05 21:39）。単位：百万円（EPSは円）",
+ "price": 5090.0,
+ "industry_per": null,
+ "market_cap": 240700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

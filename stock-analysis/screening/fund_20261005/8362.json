@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 10200.0,
+   "net": 9000.0,
+   "eps": 380.3
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 79101.0,
+   "op": null,
+   "ord": 13434.0,
+   "net": 8601.0,
+   "eps": 363.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 25814.0,
+   "op": null,
+   "ord": 2575.0,
+   "net": 5784.0
+  },
+  "year_ago": {
+   "sales": 19532.0,
+   "op": null,
+   "ord": 4584.0,
+   "net": 3002.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 25814.0,
+   "op": null
+  }
+ },
+ "code": "8362",
+ "name": "福井銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8362（取得 2026-10-05 21:17）。単位：百万円（EPSは円）",
+ "price": 8440.0,
+ "industry_per": null,
+ "market_cap": 203800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

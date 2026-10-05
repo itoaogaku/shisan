@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 25856.0,
+   "op": 7444.0,
+   "ord": 7618.0,
+   "net": 5652.0,
+   "eps": 130.7
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 5126.0,
+   "op": 693.0,
+   "ord": 652.0,
+   "net": 787.0
+  },
+  "year_ago": {
+   "sales": 2313.0,
+   "op": -1698.0,
+   "ord": -1907.0,
+   "net": -1167.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 5126.0,
+   "op": 693.0
+  }
+ },
+ "code": "3932",
+ "name": "アカツキ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3932（取得 2026-10-05 21:28）。単位：百万円（EPSは円）",
+ "price": 1322.0,
+ "industry_per": null,
+ "market_cap": 57600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

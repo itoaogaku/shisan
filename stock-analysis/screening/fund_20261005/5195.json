@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 120000.0,
+   "op": 11000.0,
+   "ord": null,
+   "net": 8000.0,
+   "eps": 198.0
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 119257.0,
+   "op": 12073.0,
+   "ord": 12646.0,
+   "net": 10568.0,
+   "eps": 256.5
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 32209.0,
+   "op": 3382.0,
+   "ord": 3697.0,
+   "net": 2749.0
+  },
+  "year_ago": {
+   "sales": 29092.0,
+   "op": 3818.0,
+   "ord": 3636.0,
+   "net": 2652.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 32209.0,
+   "op": 3382.0
+  }
+ },
+ "code": "5195",
+ "name": "バンドー化学",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5195（取得 2026-10-05 21:54）。単位：百万円（EPSは円）",
+ "price": 2484.0,
+ "industry_per": null,
+ "market_cap": 109800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

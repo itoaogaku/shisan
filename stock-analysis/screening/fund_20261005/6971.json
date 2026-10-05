@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 2080000.0,
+   "op": 160000.0,
+   "ord": 200000.0,
+   "net": 160000.0,
+   "eps": 125.2
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 2070203.0,
+   "op": 118138.0,
+   "ord": 168994.0,
+   "net": 140969.0,
+   "eps": 102.7
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 525383.0,
+   "op": 49101.0,
+   "ord": 74891.0,
+   "net": 60576.0
+  },
+  "year_ago": {
+   "sales": 478038.0,
+   "op": 18550.0,
+   "ord": 44563.0,
+   "net": 37143.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 525383.0,
+   "op": 49101.0
+  }
+ },
+ "code": "6971",
+ "name": "京セラ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6971（取得 2026-10-05 21:30）。単位：百万円（EPSは円）",
+ "price": 3855.0,
+ "industry_per": null,
+ "market_cap": 5470600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

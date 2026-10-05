@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 120000.0,
+   "op": 16000.0,
+   "ord": 16000.0,
+   "net": 10500.0,
+   "eps": 130.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 115116.0,
+   "op": 14040.0,
+   "ord": 14008.0,
+   "net": 9899.0,
+   "eps": 123.2
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 30585.0,
+   "op": 4148.0,
+   "ord": 4125.0,
+   "net": 2415.0
+  },
+  "year_ago": {
+   "sales": 27977.0,
+   "op": 3820.0,
+   "ord": 3985.0,
+   "net": 3109.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 30585.0,
+   "op": 4148.0
+  }
+ },
+ "code": "7970",
+ "name": "信越ポリマー",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7970（取得 2026-10-05 21:51）。単位：百万円（EPSは円）",
+ "price": 2459.0,
+ "industry_per": null,
+ "market_cap": 203200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

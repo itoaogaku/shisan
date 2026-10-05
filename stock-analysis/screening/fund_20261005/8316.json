@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": 1700000.0,
+   "eps": 224.3
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 10790853.0,
+   "op": null,
+   "ord": 2303350.0,
+   "net": 1582973.0,
+   "eps": 206.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 2850426.0,
+   "op": null,
+   "ord": 693136.0,
+   "net": 501372.0
+  },
+  "year_ago": {
+   "sales": 2444404.0,
+   "op": null,
+   "ord": 483337.0,
+   "net": 376898.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 2850426.0,
+   "op": null
+  }
+ },
+ "code": "8316",
+ "name": "三井住友フィナンシャルグループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8316（取得 2026-10-05 21:57）。単位：百万円（EPSは円）",
+ "price": 3374.0,
+ "industry_per": null,
+ "market_cap": 25650000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

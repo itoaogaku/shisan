@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 760000.0,
+   "op": 32000.0,
+   "ord": 32000.0,
+   "net": 29000.0,
+   "eps": 608.3
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 658941.0,
+   "op": 27824.0,
+   "ord": 29930.0,
+   "net": 31099.0,
+   "eps": 627.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 170450.0,
+   "op": 8460.0,
+   "ord": 8864.0,
+   "net": 6874.0
+  },
+  "year_ago": {
+   "sales": 138086.0,
+   "op": 6484.0,
+   "ord": 6242.0,
+   "net": 4614.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 170450.0,
+   "op": 8460.0
+  }
+ },
+ "code": "8154",
+ "name": "加賀電子",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8154（取得 2026-10-05 21:38）。単位：百万円（EPSは円）",
+ "price": 5510.0,
+ "industry_per": null,
+ "market_cap": 289200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

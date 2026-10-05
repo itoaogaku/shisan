@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 252000.0,
+   "op": 7500.0,
+   "ord": 7500.0,
+   "net": 6000.0,
+   "eps": 140.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 212772.0,
+   "op": 5244.0,
+   "ord": 5767.0,
+   "net": 5275.0,
+   "eps": 122.4
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 61051.0,
+   "op": 2042.0,
+   "ord": 2167.0,
+   "net": 1424.0
+  },
+  "year_ago": {
+   "sales": 49422.0,
+   "op": 877.0,
+   "ord": 996.0,
+   "net": 1004.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 61051.0,
+   "op": 2042.0
+  }
+ },
+ "code": "8084",
+ "name": "ＲＹＯＤＥＮ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8084（取得 2026-10-05 21:26）。単位：百万円（EPSは円）",
+ "price": 2481.0,
+ "industry_per": null,
+ "market_cap": 107200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

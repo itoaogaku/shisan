@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 2900000.0,
+   "op": 260000.0,
+   "ord": null,
+   "net": 170000.0,
+   "eps": 175.2
+  },
+  "forecast_label": "I 予 2026.12",
+  "prev": {
+   "sales": 2534203.0,
+   "op": 126373.0,
+   "ord": 133196.0,
+   "net": 16109.0,
+   "eps": 16.6
+  },
+  "prev_label": "I 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 767868.0,
+   "op": 95841.0,
+   "ord": 97549.0,
+   "net": 72640.0
+  },
+  "year_ago": {
+   "sales": 651873.0,
+   "op": 40463.0,
+   "ord": 37452.0,
+   "net": 22389.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 1497989.0,
+   "op": 158476.0
+  }
+ },
+ "code": "7272",
+ "name": "ヤマハ発動機",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7272（取得 2026-10-05 21:50）。単位：百万円（EPSは円）",
+ "price": 1805.0,
+ "industry_per": null,
+ "market_cap": 1837700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

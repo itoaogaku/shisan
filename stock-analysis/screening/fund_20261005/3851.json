@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 5411.0,
+   "op": 715.0,
+   "ord": 906.0,
+   "net": 718.0,
+   "eps": 141.9
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 3606.0,
+   "op": -409.0,
+   "ord": -55.0,
+   "net": -255.0,
+   "eps": -50.5
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 847.0,
+   "op": -145.0,
+   "ord": -69.0,
+   "net": -61.0
+  },
+  "year_ago": {
+   "sales": 480.0,
+   "op": -174.0,
+   "ord": -135.0,
+   "net": -169.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 847.0,
+   "op": -145.0
+  }
+ },
+ "code": "3851",
+ "name": "日本一ソフトウェア",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3851（取得 2026-10-05 21:53）。単位：百万円（EPSは円）",
+ "price": 1399.0,
+ "industry_per": null,
+ "market_cap": 7209999999.999999,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

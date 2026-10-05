@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 78000.0,
+   "net": 53000.0,
+   "eps": 201.4
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 260253.0,
+   "op": null,
+   "ord": 61115.0,
+   "net": 42103.0,
+   "eps": 160.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 69662.0,
+   "op": null,
+   "ord": 25237.0,
+   "net": 17685.0
+  },
+  "year_ago": {
+   "sales": 57738.0,
+   "op": null,
+   "ord": 17506.0,
+   "net": 12786.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 69662.0,
+   "op": null
+  }
+ },
+ "code": "7327",
+ "name": "第四北越フィナンシャルグループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7327（取得 2026-10-05 21:51）。単位：百万円（EPSは円）",
+ "price": 2701.0,
+ "industry_per": null,
+ "market_cap": 744600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

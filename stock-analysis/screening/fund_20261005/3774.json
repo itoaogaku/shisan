@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 385000.0,
+   "op": 38500.0,
+   "ord": 37000.0,
+   "net": 25000.0,
+   "eps": 140.9
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 345395.0,
+   "op": 34835.0,
+   "ord": 35242.0,
+   "net": 24188.0,
+   "eps": 136.5
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 97604.0,
+   "op": 6588.0,
+   "ord": 6712.0,
+   "net": 4395.0
+  },
+  "year_ago": {
+   "sales": 76821.0,
+   "op": 6031.0,
+   "ord": 5737.0,
+   "net": 3777.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 97604.0,
+   "op": 6588.0
+  }
+ },
+ "code": "3774",
+ "name": "インターネットイニシアティブ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3774（取得 2026-10-05 21:43）。単位：百万円（EPSは円）",
+ "price": 3469.0,
+ "industry_per": null,
+ "market_cap": 636500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

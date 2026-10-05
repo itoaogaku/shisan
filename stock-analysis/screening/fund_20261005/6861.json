@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 1169289.0,
+   "op": 595759.0,
+   "ord": 635756.0,
+   "net": 445185.0,
+   "eps": 1835.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 346621.0,
+   "op": 187076.0,
+   "ord": 196793.0,
+   "net": 139133.0
+  },
+  "year_ago": {
+   "sales": 261076.0,
+   "op": 129301.0,
+   "ord": 131532.0,
+   "net": 92116.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 346621.0,
+   "op": 187076.0
+  }
+ },
+ "code": "6861",
+ "name": "キーエンス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6861（取得 2026-10-05 21:48）。単位：百万円（EPSは円）",
+ "price": 81680.0,
+ "industry_per": null,
+ "market_cap": 19865200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

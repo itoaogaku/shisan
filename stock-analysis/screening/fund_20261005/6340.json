@@ -1,0 +1,44 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 150000.0,
+   "op": 16000.0,
+   "ord": 16200.0,
+   "net": 11000.0,
+   "eps": 397.6
+  },
+  "forecast_label": "予 2027.06",
+  "prev": {
+   "sales": 135613.0,
+   "op": 13081.0,
+   "ord": 13560.0,
+   "net": 10223.0,
+   "eps": 369.5
+  },
+  "prev_label": "2026.06"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 39092.0,
+   "op": 4866.0,
+   "ord": 5004.0,
+   "net": 3774.0
+  },
+  "year_ago": {
+   "sales": 35045.0,
+   "op": 3082.0,
+   "ord": 3129.0,
+   "net": 2440.0
+  },
+  "one_off": null
+ },
+ "progress": {},
+ "code": "6340",
+ "name": "澁谷工業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6340（取得 2026-10-05 21:19）。単位：百万円（EPSは円）",
+ "price": 5740.0,
+ "industry_per": null,
+ "market_cap": 161600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

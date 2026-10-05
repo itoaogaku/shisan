@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 4302000.0,
+   "op": 555000.0,
+   "ord": 508000.0,
+   "net": 349000.0,
+   "eps": 394.0
+  },
+  "forecast_label": "U 予 2027.03",
+  "prev": {
+   "sales": 4132751.0,
+   "op": 567323.0,
+   "ord": 537258.0,
+   "net": 376391.0,
+   "eps": 413.9
+  },
+  "prev_label": "U 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 1043143.0,
+   "op": 151553.0,
+   "ord": 140036.0,
+   "net": 96153.0
+  },
+  "year_ago": {
+   "sales": 909524.0,
+   "op": 140391.0,
+   "ord": 131295.0,
+   "net": 91194.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 1043143.0,
+   "op": 151553.0
+  }
+ },
+ "code": "6301",
+ "name": "小松製作所",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6301（取得 2026-10-05 21:45）。単位：百万円（EPSは円）",
+ "price": 7777.0,
+ "industry_per": null,
+ "market_cap": 7235300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

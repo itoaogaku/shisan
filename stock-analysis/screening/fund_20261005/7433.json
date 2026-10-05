@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 227500.0,
+   "op": 9600.0,
+   "ord": 8600.0,
+   "net": 6400.0,
+   "eps": 113.3
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 181178.0,
+   "op": 6080.0,
+   "ord": 5579.0,
+   "net": 5009.0,
+   "eps": 88.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 54537.0,
+   "op": 2323.0,
+   "ord": 2295.0,
+   "net": 1462.0
+  },
+  "year_ago": {
+   "sales": 40337.0,
+   "op": 869.0,
+   "ord": 719.0,
+   "net": 659.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 54537.0,
+   "op": 2323.0
+  }
+ },
+ "code": "7433",
+ "name": "伯東",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7433（取得 2026-10-05 21:45）。単位：百万円（EPSは円）",
+ "price": 1860.0,
+ "industry_per": null,
+ "market_cap": 117900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

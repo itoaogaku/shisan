@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 359700.0,
+   "op": 27000.0,
+   "ord": 22000.0,
+   "net": 15400.0,
+   "eps": 121.2
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 364403.0,
+   "op": 22688.0,
+   "ord": 6390.0,
+   "net": 492.0,
+   "eps": 3.9
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 90672.0,
+   "op": 10413.0,
+   "ord": 8133.0,
+   "net": 6338.0
+  },
+  "year_ago": {
+   "sales": 83856.0,
+   "op": 3843.0,
+   "ord": -1990.0,
+   "net": -2341.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 90672.0,
+   "op": 10413.0
+  }
+ },
+ "code": "6523",
+ "name": "ＰＨＣホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6523（取得 2026-10-05 21:44）。単位：百万円（EPSは円）",
+ "price": 1603.0,
+ "industry_per": null,
+ "market_cap": 204100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

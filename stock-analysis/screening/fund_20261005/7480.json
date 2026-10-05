@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 64500.0,
+   "op": 3960.0,
+   "ord": 4260.0,
+   "net": 2780.0,
+   "eps": 219.2
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 45902.0,
+   "op": 2072.0,
+   "ord": 2339.0,
+   "net": 1722.0,
+   "eps": 129.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 15197.0,
+   "op": 971.0,
+   "ord": 1067.0,
+   "net": 715.0
+  },
+  "year_ago": {
+   "sales": 10288.0,
+   "op": 381.0,
+   "ord": 453.0,
+   "net": 303.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 15197.0,
+   "op": 971.0
+  }
+ },
+ "code": "7480",
+ "name": "スズデン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7480（取得 2026-10-05 21:22）。単位：百万円（EPSは円）",
+ "price": 3795.0,
+ "industry_per": null,
+ "market_cap": 50400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

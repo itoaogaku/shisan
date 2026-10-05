@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 79000.0,
+   "op": 4000.0,
+   "ord": 3000.0,
+   "net": 2000.0,
+   "eps": 1061.1
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 42812.0,
+   "op": 1066.0,
+   "ord": 523.0,
+   "net": 351.0,
+   "eps": 186.7
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 19560.0,
+   "op": 1239.0,
+   "ord": 921.0,
+   "net": 635.0
+  },
+  "year_ago": {
+   "sales": 9762.0,
+   "op": 247.0,
+   "ord": 145.0,
+   "net": 103.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 19560.0,
+   "op": 1239.0
+  }
+ },
+ "code": "3131",
+ "name": "シンデン・ハイテックス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3131（取得 2026-10-05 21:18）。単位：百万円（EPSは円）",
+ "price": 8150.0,
+ "industry_per": null,
+ "market_cap": 17200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 33700.0,
+   "op": 2100.0,
+   "ord": 2500.0,
+   "net": 1600.0,
+   "eps": 67.4
+  },
+  "forecast_label": "予 2026.10",
+  "prev": {
+   "sales": 28895.0,
+   "op": 1794.0,
+   "ord": 2289.0,
+   "net": 1730.0,
+   "eps": 71.0
+  },
+  "prev_label": "2025.10"
+ },
+ "quarter": {
+  "label": "26.05-07 単独（前年同期 25.05-07）",
+  "current": {
+   "sales": 9099.0,
+   "op": 862.0,
+   "ord": 975.0,
+   "net": 696.0
+  },
+  "year_ago": {
+   "sales": 7266.0,
+   "op": 520.0,
+   "ord": 664.0,
+   "net": 374.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.11-07",
+  "cumulative": {
+   "sales": 24230.0,
+   "op": 1395.0
+  }
+ },
+ "code": "5218",
+ "name": "オハラ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5218（取得 2026-10-05 21:33）。単位：百万円（EPSは円）",
+ "price": 1684.0,
+ "industry_per": null,
+ "market_cap": 42900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

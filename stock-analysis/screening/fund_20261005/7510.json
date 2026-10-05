@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 118700.0,
+   "op": 4850.0,
+   "ord": 5170.0,
+   "net": 3460.0,
+   "eps": 215.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 109862.0,
+   "op": 4084.0,
+   "ord": 4453.0,
+   "net": 2957.0,
+   "eps": 184.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 29438.0,
+   "op": 1447.0,
+   "ord": 1576.0,
+   "net": 1056.0
+  },
+  "year_ago": {
+   "sales": 25542.0,
+   "op": 973.0,
+   "ord": 1122.0,
+   "net": 770.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 29438.0,
+   "op": 1447.0
+  }
+ },
+ "code": "7510",
+ "name": "たけびし",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7510（取得 2026-10-05 21:57）。単位：百万円（EPSは円）",
+ "price": 2878.0,
+ "industry_per": null,
+ "market_cap": 46200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

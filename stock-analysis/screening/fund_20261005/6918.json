@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 12500.0,
+   "op": 1720.0,
+   "ord": 1800.0,
+   "net": 1900.0,
+   "eps": 325.5
+  },
+  "forecast_label": "単 予 2027.03",
+  "prev": {
+   "sales": 8830.0,
+   "op": 690.0,
+   "ord": 772.0,
+   "net": 554.0,
+   "eps": 91.4
+  },
+  "prev_label": "単 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 3214.0,
+   "op": 415.0,
+   "ord": 463.0,
+   "net": 316.0
+  },
+  "year_ago": {
+   "sales": 1833.0,
+   "op": 94.0,
+   "ord": 135.0,
+   "net": 90.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 3214.0,
+   "op": 415.0
+  }
+ },
+ "code": "6918",
+ "name": "アバールデータ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6918（取得 2026-10-05 21:22）。単位：百万円（EPSは円）",
+ "price": 4460.0,
+ "industry_per": null,
+ "market_cap": 26800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

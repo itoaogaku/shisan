@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 18300.0,
+   "net": 12500.0,
+   "eps": 81.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 86104.0,
+   "op": null,
+   "ord": 13832.0,
+   "net": 9987.0,
+   "eps": 65.2
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 24483.0,
+   "op": null,
+   "ord": 6868.0,
+   "net": 4753.0
+  },
+  "year_ago": {
+   "sales": 17987.0,
+   "op": null,
+   "ord": 4723.0,
+   "net": 3201.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 24483.0,
+   "op": null
+  }
+ },
+ "code": "8360",
+ "name": "山梨中央銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8360（取得 2026-10-05 21:32）。単位：百万円（EPSは円）",
+ "price": 1517.0,
+ "industry_per": null,
+ "market_cap": 248700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

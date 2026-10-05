@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 706000.0,
+   "op": 13500.0,
+   "ord": 12500.0,
+   "net": 9500.0,
+   "eps": 359.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 608142.0,
+   "op": 11577.0,
+   "ord": 11022.0,
+   "net": 8286.0,
+   "eps": 313.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 176886.0,
+   "op": 4094.0,
+   "ord": 3771.0,
+   "net": 2510.0
+  },
+  "year_ago": {
+   "sales": 147677.0,
+   "op": 2224.0,
+   "ord": 2938.0,
+   "net": 1982.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 176886.0,
+   "op": 4094.0
+  }
+ },
+ "code": "8075",
+ "name": "神鋼商事",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8075（取得 2026-10-05 21:50）。単位：百万円（EPSは円）",
+ "price": 3075.0,
+ "industry_per": null,
+ "market_cap": 81700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

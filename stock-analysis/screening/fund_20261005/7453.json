@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 907000.0,
+   "op": 98000.0,
+   "ord": 99000.0,
+   "net": 67000.0,
+   "eps": 126.2
+  },
+  "forecast_label": "予 2026.08",
+  "prev": {
+   "sales": 784629.0,
+   "op": 73840.0,
+   "ord": 72301.0,
+   "net": 50846.0,
+   "eps": 95.9
+  },
+  "prev_label": "2025.08"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 252239.0,
+   "op": 35777.0,
+   "ord": 35523.0,
+   "net": 24291.0
+  },
+  "year_ago": {
+   "sales": 209070.0,
+   "op": 23301.0,
+   "ord": 23239.0,
+   "net": 18109.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.09-05",
+  "cumulative": {
+   "sales": 690788.0,
+   "op": 80822.0
+  }
+ },
+ "code": "7453",
+ "name": "良品計画",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7453（取得 2026-10-05 21:59）。単位：百万円（EPSは円）",
+ "price": 4312.0,
+ "industry_per": null,
+ "market_cap": 2421400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

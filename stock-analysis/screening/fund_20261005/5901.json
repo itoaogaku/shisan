@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1040000.0,
+   "op": 38000.0,
+   "ord": 40500.0,
+   "net": 31500.0,
+   "eps": 210.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 963213.0,
+   "op": 52005.0,
+   "ord": 58270.0,
+   "net": 54983.0,
+   "eps": 361.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 267626.0,
+   "op": 20335.0,
+   "ord": 21905.0,
+   "net": 15334.0
+  },
+  "year_ago": {
+   "sales": 240137.0,
+   "op": 15081.0,
+   "ord": 16568.0,
+   "net": 16517.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 267626.0,
+   "op": 20335.0
+  }
+ },
+ "code": "5901",
+ "name": "東洋製罐グループホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5901（取得 2026-10-05 21:56）。単位：百万円（EPSは円）",
+ "price": 4446.0,
+ "industry_per": null,
+ "market_cap": 681000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

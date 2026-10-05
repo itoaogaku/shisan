@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 59500.0,
+   "op": 2500.0,
+   "ord": 2900.0,
+   "net": 1800.0,
+   "eps": 80.2
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 57373.0,
+   "op": 2176.0,
+   "ord": 2672.0,
+   "net": -878.0,
+   "eps": -38.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 16170.0,
+   "op": 1306.0,
+   "ord": 1737.0,
+   "net": 1225.0
+  },
+  "year_ago": {
+   "sales": 13681.0,
+   "op": 957.0,
+   "ord": 1091.0,
+   "net": 748.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 16170.0,
+   "op": 1306.0
+  }
+ },
+ "code": "4027",
+ "name": "テイカ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4027（取得 2026-10-05 21:54）。単位：百万円（EPSは円）",
+ "price": 2339.0,
+ "industry_per": null,
+ "market_cap": 53600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

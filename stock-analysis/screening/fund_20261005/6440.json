@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 90000.0,
+   "op": 4500.0,
+   "ord": 2000.0,
+   "net": 1500.0,
+   "eps": 50.8
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 88761.0,
+   "op": 2662.0,
+   "ord": 1412.0,
+   "net": 1399.0,
+   "eps": 47.0
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 23164.0,
+   "op": 1770.0,
+   "ord": 1144.0,
+   "net": 457.0
+  },
+  "year_ago": {
+   "sales": 21415.0,
+   "op": 424.0,
+   "ord": 21.0,
+   "net": 90.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 43846.0,
+   "op": 2169.0
+  }
+ },
+ "code": "6440",
+ "name": "ＪＵＫＩ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6440（取得 2026-10-05 21:48）。単位：百万円（EPSは円）",
+ "price": 846.0,
+ "industry_per": null,
+ "market_cap": 25300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

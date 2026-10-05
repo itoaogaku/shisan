@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 142000.0,
+   "op": 16000.0,
+   "ord": 16000.0,
+   "net": 11000.0,
+   "eps": 279.0
+  },
+  "forecast_label": "連 予 2026.09",
+  "prev": {
+   "sales": 98810.0,
+   "op": 10665.0,
+   "ord": 10731.0,
+   "net": 7934.0,
+   "eps": 201.7
+  },
+  "prev_label": "連 2025.09"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 35963.0,
+   "op": 2645.0,
+   "ord": 2614.0,
+   "net": 1914.0
+  },
+  "year_ago": {
+   "sales": 23362.0,
+   "op": 1958.0,
+   "ord": 1917.0,
+   "net": 1152.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.10-06",
+  "cumulative": {
+   "sales": 102486.0,
+   "op": 12667.0
+  }
+ },
+ "code": "7806",
+ "name": "ＭＴＧ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7806（取得 2026-10-05 21:27）。単位：百万円（EPSは円）",
+ "price": 9240.0,
+ "industry_per": null,
+ "market_cap": 372100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

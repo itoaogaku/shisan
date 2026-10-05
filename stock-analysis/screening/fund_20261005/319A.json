@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 23000.0,
+   "op": null,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "連 予 2026.12",
+  "prev": {
+   "sales": 14961.0,
+   "op": 1432.0,
+   "ord": 1416.0,
+   "net": 3091.0,
+   "eps": 353.8
+  },
+  "prev_label": "連 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 7211.0,
+   "op": 1234.0,
+   "ord": 1199.0,
+   "net": 492.0
+  },
+  "year_ago": {
+   "sales": 2960.0,
+   "op": 222.0,
+   "ord": 272.0,
+   "net": 106.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 13486.0,
+   "op": 2140.0
+  }
+ },
+ "code": "319A",
+ "name": "技術承継機構",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=319A（取得 2026-10-05 21:21）。単位：百万円（EPSは円）",
+ "price": 22540.0,
+ "industry_per": null,
+ "market_cap": 199400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

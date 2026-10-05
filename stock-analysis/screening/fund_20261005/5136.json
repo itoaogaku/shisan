@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 3608.0,
+   "op": 1029.0,
+   "ord": 1171.0,
+   "net": 766.0,
+   "eps": 129.0
+  },
+  "forecast_label": "連 予 2026.10",
+  "prev": {
+   "sales": 2573.0,
+   "op": 519.0,
+   "ord": 583.0,
+   "net": 501.0,
+   "eps": 85.3
+  },
+  "prev_label": "連 2025.10"
+ },
+ "quarter": {
+  "label": "26.05-07 単独（前年同期 25.05-07）",
+  "current": {
+   "sales": 951.0,
+   "op": 291.0,
+   "ord": 337.0,
+   "net": 217.0
+  },
+  "year_ago": {
+   "sales": 594.0,
+   "op": 86.0,
+   "ord": 96.0,
+   "net": 76.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.11-07",
+  "cumulative": {
+   "sales": 2613.0,
+   "op": 758.0
+  }
+ },
+ "code": "5136",
+ "name": "ｔｒｉｐｌａ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5136（取得 2026-10-05 21:27）。単位：百万円（EPSは円）",
+ "price": 2465.0,
+ "industry_per": null,
+ "market_cap": 14600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

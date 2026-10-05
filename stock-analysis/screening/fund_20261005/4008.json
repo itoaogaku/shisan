@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 165000.0,
+   "op": 11000.0,
+   "ord": 11200.0,
+   "net": 8000.0,
+   "eps": 125.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 148354.0,
+   "op": 14464.0,
+   "ord": 15249.0,
+   "net": 7677.0,
+   "eps": 117.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 40397.0,
+   "op": 3452.0,
+   "ord": 4315.0,
+   "net": 3263.0
+  },
+  "year_ago": {
+   "sales": 35569.0,
+   "op": 2340.0,
+   "ord": 1607.0,
+   "net": 1045.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 40397.0,
+   "op": 3452.0
+  }
+ },
+ "code": "4008",
+ "name": "住友精化",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4008（取得 2026-10-05 21:59）。単位：百万円（EPSは円）",
+ "price": 1510.0,
+ "industry_per": null,
+ "market_cap": 97700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

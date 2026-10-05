@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 41000.0,
+   "op": 12000.0,
+   "ord": 12100.0,
+   "net": 9200.0,
+   "eps": 205.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 30087.0,
+   "op": 7733.0,
+   "ord": 8139.0,
+   "net": 6210.0,
+   "eps": 139.1
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 8608.0,
+   "op": 2721.0,
+   "ord": 2822.0,
+   "net": 2207.0
+  },
+  "year_ago": {
+   "sales": 5536.0,
+   "op": 1176.0,
+   "ord": 1190.0,
+   "net": 946.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 8608.0,
+   "op": 2721.0
+  }
+ },
+ "code": "6834",
+ "name": "精工技研",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6834（取得 2026-10-05 21:52）。単位：百万円（EPSは円）",
+ "price": 6920.0,
+ "industry_per": null,
+ "market_cap": 322900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

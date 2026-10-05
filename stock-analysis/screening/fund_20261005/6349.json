@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 124000.0,
+   "op": 9500.0,
+   "ord": 9200.0,
+   "net": 7200.0,
+   "eps": 138.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 118611.0,
+   "op": 9404.0,
+   "ord": 10718.0,
+   "net": 7371.0,
+   "eps": 138.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 23098.0,
+   "op": 537.0,
+   "ord": 906.0,
+   "net": 526.0
+  },
+  "year_ago": {
+   "sales": 22538.0,
+   "op": 504.0,
+   "ord": 624.0,
+   "net": 427.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 23098.0,
+   "op": 537.0
+  }
+ },
+ "code": "6349",
+ "name": "小森コーポレーション",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6349（取得 2026-10-05 21:56）。単位：百万円（EPSは円）",
+ "price": 1963.0,
+ "industry_per": null,
+ "market_cap": 105000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

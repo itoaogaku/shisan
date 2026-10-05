@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": 7700.0,
+   "net": 6700.0,
+   "eps": 80.3
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 50273.0,
+   "op": null,
+   "ord": 7457.0,
+   "net": 6670.0,
+   "eps": 80.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 14986.0,
+   "op": null,
+   "ord": 2513.0,
+   "net": 2064.0
+  },
+  "year_ago": {
+   "sales": 11552.0,
+   "op": null,
+   "ord": 2005.0,
+   "net": 1728.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 14986.0,
+   "op": null
+  }
+ },
+ "code": "8338",
+ "name": "筑波銀行",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8338（取得 2026-10-05 21:34）。単位：百万円（EPSは円）",
+ "price": 827.0,
+ "industry_per": null,
+ "market_cap": 68300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

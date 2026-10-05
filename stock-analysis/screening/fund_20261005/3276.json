@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 59500.0,
+   "op": 2900.0,
+   "ord": 2910.0,
+   "net": 1980.0,
+   "eps": 118.3
+  },
+  "forecast_label": "連 予 2026.12",
+  "prev": {
+   "sales": 58498.0,
+   "op": 2635.0,
+   "ord": 2645.0,
+   "net": 1800.0,
+   "eps": 107.2
+  },
+  "prev_label": "連 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 15083.0,
+   "op": 680.0,
+   "ord": 679.0,
+   "net": 448.0
+  },
+  "year_ago": {
+   "sales": 14756.0,
+   "op": 728.0,
+   "ord": 726.0,
+   "net": 452.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 30030.0,
+   "op": 1512.0
+  }
+ },
+ "code": "3276",
+ "name": "ＪＰＭＣ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3276（取得 2026-10-05 21:27）。単位：百万円（EPSは円）",
+ "price": 2247.0,
+ "industry_per": null,
+ "market_cap": 39800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

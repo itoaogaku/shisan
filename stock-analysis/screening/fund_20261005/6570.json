@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 26870.0,
+   "op": 2000.0,
+   "ord": 1992.0,
+   "net": 1219.0,
+   "eps": 203.8
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 20729.0,
+   "op": 1757.0,
+   "ord": 1741.0,
+   "net": 1122.0,
+   "eps": 188.1
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 7383.0,
+   "op": 756.0,
+   "ord": 788.0,
+   "net": 459.0
+  },
+  "year_ago": {
+   "sales": 4357.0,
+   "op": 238.0,
+   "ord": 234.0,
+   "net": 142.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 7383.0,
+   "op": 756.0
+  }
+ },
+ "code": "6570",
+ "name": "共和コーポレーション",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6570（取得 2026-10-05 21:28）。単位：百万円（EPSは円）",
+ "price": 4200.0,
+ "industry_per": null,
+ "market_cap": 25500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

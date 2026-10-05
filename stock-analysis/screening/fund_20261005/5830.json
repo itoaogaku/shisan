@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 270000.0,
+   "op": null,
+   "ord": 111000.0,
+   "net": 77000.0,
+   "eps": 269.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 266118.0,
+   "op": null,
+   "ord": 99206.0,
+   "net": 74253.0,
+   "eps": 254.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 80832.0,
+   "op": null,
+   "ord": 34416.0,
+   "net": 24350.0
+  },
+  "year_ago": {
+   "sales": 79708.0,
+   "op": null,
+   "ord": 43585.0,
+   "net": 30842.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 80832.0,
+   "op": null
+  }
+ },
+ "code": "5830",
+ "name": "いよぎんホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5830（取得 2026-10-05 21:53）。単位：百万円（EPSは円）",
+ "price": 3870.0,
+ "industry_per": null,
+ "market_cap": 1212900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

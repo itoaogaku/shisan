@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 190000.0,
+   "op": 23000.0,
+   "ord": 23000.0,
+   "net": 16500.0,
+   "eps": 403.1
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 174020.0,
+   "op": 19722.0,
+   "ord": 19537.0,
+   "net": 14444.0,
+   "eps": 352.9
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 54431.0,
+   "op": 9586.0,
+   "ord": 9888.0,
+   "net": 7083.0
+  },
+  "year_ago": {
+   "sales": 47503.0,
+   "op": 6168.0,
+   "ord": 5840.0,
+   "net": 4445.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 103782.0,
+   "op": 16086.0
+  }
+ },
+ "code": "6250",
+ "name": "やまびこ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6250（取得 2026-10-05 21:57）。単位：百万円（EPSは円）",
+ "price": 4375.0,
+ "industry_per": null,
+ "market_cap": 193000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

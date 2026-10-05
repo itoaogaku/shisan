@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 59100.0,
+   "op": 16300.0,
+   "ord": 16100.0,
+   "net": 6000.0,
+   "eps": 131.9
+  },
+  "forecast_label": "連 予 2026.12",
+  "prev": {
+   "sales": 41746.0,
+   "op": 8893.0,
+   "ord": 8750.0,
+   "net": 3367.0,
+   "eps": 74.1
+  },
+  "prev_label": "連 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 14588.0,
+   "op": 3998.0,
+   "ord": 3925.0,
+   "net": 1555.0
+  },
+  "year_ago": {
+   "sales": 9768.0,
+   "op": 1967.0,
+   "ord": 1777.0,
+   "net": 579.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 27310.0,
+   "op": 7209.0
+  }
+ },
+ "code": "6627",
+ "name": "テラプローブ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6627（取得 2026-10-05 21:59）。単位：百万円（EPSは円）",
+ "price": 2639.0,
+ "industry_per": null,
+ "market_cap": 122500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

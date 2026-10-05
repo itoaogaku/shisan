@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1165000.0,
+   "op": 160000.0,
+   "ord": 158000.0,
+   "net": 112500.0,
+   "eps": 593.0
+  },
+  "forecast_label": "I 予 2026.12",
+  "prev": {
+   "sales": 1347125.0,
+   "op": 46676.0,
+   "ord": 45042.0,
+   "net": 29031.0,
+   "eps": 160.5
+  },
+  "prev_label": "I 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 368960.0,
+   "op": 51166.0,
+   "ord": 50154.0,
+   "net": 33168.0
+  },
+  "year_ago": {
+   "sales": 320932.0,
+   "op": 18629.0,
+   "ord": 17911.0,
+   "net": 10900.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 676852.0,
+   "op": 73310.0
+  }
+ },
+ "code": "4004",
+ "name": "レゾナック・ホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4004（取得 2026-10-05 21:58）。単位：百万円（EPSは円）",
+ "price": 18000.0,
+ "industry_per": null,
+ "market_cap": 3440800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

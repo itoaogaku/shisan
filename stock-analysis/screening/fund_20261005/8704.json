@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 15700.0,
+   "op": 7000.0,
+   "ord": 7000.0,
+   "net": 4800.0,
+   "eps": 180.7
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 13218.0,
+   "op": 6161.0,
+   "ord": 6161.0,
+   "net": 4244.0,
+   "eps": 159.1
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 3974.0,
+   "op": 2097.0,
+   "ord": 2080.0,
+   "net": 1426.0
+  },
+  "year_ago": {
+   "sales": 3018.0,
+   "op": 1395.0,
+   "ord": 1413.0,
+   "net": 1079.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 3974.0,
+   "op": 2097.0
+  }
+ },
+ "code": "8704",
+ "name": "トレイダーズホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8704（取得 2026-10-05 21:53）。単位：百万円（EPSは円）",
+ "price": 1383.0,
+ "industry_per": null,
+ "market_cap": 40900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

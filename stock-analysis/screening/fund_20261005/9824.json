@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 160000.0,
+   "op": 12550.0,
+   "ord": 13000.0,
+   "net": 9150.0,
+   "eps": 537.7
+  },
+  "forecast_label": "予 2026.10",
+  "prev": {
+   "sales": 135591.0,
+   "op": 8952.0,
+   "ord": 9272.0,
+   "net": 6717.0,
+   "eps": 387.6
+  },
+  "prev_label": "2025.10"
+ },
+ "quarter": {
+  "label": "26.05-07 単独（前年同期 25.05-07）",
+  "current": {
+   "sales": 44769.0,
+   "op": 3906.0,
+   "ord": 4030.0,
+   "net": 2780.0
+  },
+  "year_ago": {
+   "sales": 32419.0,
+   "op": 1946.0,
+   "ord": 2014.0,
+   "net": 1549.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.11-07",
+  "cumulative": {
+   "sales": 121548.0,
+   "op": 9500.0
+  }
+ },
+ "code": "9824",
+ "name": "泉州電業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9824（取得 2026-10-05 21:31）。単位：百万円（EPSは円）",
+ "price": 8260.0,
+ "industry_per": null,
+ "market_cap": 148700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

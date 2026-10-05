@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 289700.0,
+   "op": 66800.0,
+   "ord": 68800.0,
+   "net": 51500.0,
+   "eps": 386.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 279586.0,
+   "op": 63552.0,
+   "ord": 65897.0,
+   "net": 49707.0,
+   "eps": 368.3
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 78792.0,
+   "op": 21907.0,
+   "ord": 23644.0,
+   "net": 16844.0
+  },
+  "year_ago": {
+   "sales": 69871.0,
+   "op": 18097.0,
+   "ord": 18139.0,
+   "net": 13892.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 78792.0,
+   "op": 21907.0
+  }
+ },
+ "code": "4021",
+ "name": "日産化学",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4021（取得 2026-10-05 21:27）。単位：百万円（EPSは円）",
+ "price": 8734.0,
+ "industry_per": null,
+ "market_cap": 1177300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

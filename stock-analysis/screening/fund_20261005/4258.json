@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 7002.0,
+   "op": 1200.0,
+   "ord": 1188.0,
+   "net": 850.0,
+   "eps": 105.5
+  },
+  "forecast_label": "連 予 2026.12",
+  "prev": {
+   "sales": 5936.0,
+   "op": 1051.0,
+   "ord": 1048.0,
+   "net": 751.0,
+   "eps": 90.8
+  },
+  "prev_label": "連 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 1635.0,
+   "op": 291.0,
+   "ord": 302.0,
+   "net": 208.0
+  },
+  "year_ago": {
+   "sales": 1357.0,
+   "op": 204.0,
+   "ord": 200.0,
+   "net": 126.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 3397.0,
+   "op": 638.0
+  }
+ },
+ "code": "4258",
+ "name": "網屋",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4258（取得 2026-10-05 21:18）。単位：百万円（EPSは円）",
+ "price": 5880.0,
+ "industry_per": null,
+ "market_cap": 51900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 44000.0,
+   "op": 5500.0,
+   "ord": null,
+   "net": 3300.0,
+   "eps": 96.7
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 38247.0,
+   "op": 4576.0,
+   "ord": 4233.0,
+   "net": 2738.0,
+   "eps": 77.5
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 10844.0,
+   "op": 1434.0,
+   "ord": 1316.0,
+   "net": 892.0
+  },
+  "year_ago": {
+   "sales": 9017.0,
+   "op": 939.0,
+   "ord": 849.0,
+   "net": 564.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 10844.0,
+   "op": 1434.0
+  }
+ },
+ "code": "7366",
+ "name": "ＬＩＴＡＬＩＣＯ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7366（取得 2026-10-05 21:20）。単位：百万円（EPSは円）",
+ "price": 1975.0,
+ "industry_per": null,
+ "market_cap": 70600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

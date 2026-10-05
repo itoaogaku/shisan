@@ -1,0 +1,36 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 33081.0,
+   "op": 3804.0,
+   "ord": 3791.0,
+   "net": 2551.0,
+   "eps": 113.8
+  },
+  "forecast_label": "予 2026.08",
+  "prev": {
+   "sales": 11134.0,
+   "op": 1167.0,
+   "ord": 1157.0,
+   "net": 817.0,
+   "eps": 37.1
+  },
+  "prev_label": "変 2025.08"
+ },
+ "quarter": {},
+ "progress": {
+  "quarter": 3,
+  "label": "25.09-05",
+  "cumulative": {
+   "sales": 24566.0,
+   "op": 2691.0
+  }
+ },
+ "code": "325A",
+ "name": "ＴＥＮＴＩＡＬ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=325A（取得 2026-10-05 21:30）。単位：百万円（EPSは円）",
+ "price": 2058.0,
+ "industry_per": null,
+ "market_cap": 47900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

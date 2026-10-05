@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 40800.0,
+   "op": 5400.0,
+   "ord": 5500.0,
+   "net": 3800.0,
+   "eps": 207.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 40238.0,
+   "op": 4838.0,
+   "ord": 5104.0,
+   "net": 3987.0,
+   "eps": 208.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 10687.0,
+   "op": 1700.0,
+   "ord": 1795.0,
+   "net": 1305.0
+  },
+  "year_ago": {
+   "sales": 10365.0,
+   "op": 1507.0,
+   "ord": 1663.0,
+   "net": 1226.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 10687.0,
+   "op": 1700.0
+  }
+ },
+ "code": "5121",
+ "name": "藤倉コンポジット",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5121（取得 2026-10-05 21:42）。単位：百万円（EPSは円）",
+ "price": 3075.0,
+ "industry_per": null,
+ "market_cap": 61700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}
