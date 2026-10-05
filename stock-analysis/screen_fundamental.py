@@ -3,6 +3,7 @@
 
 使い方:
   python3 stock-analysis/screen_fundamental.py [--stage1 screening/stage1_YYYYMMDD.csv] [--limit 10]
+  python3 stock-analysis/screen_fundamental.py --stage1 screening/strength_YYYYMMDD.csv --out strong   # 新方式
 
 - 株探の決算ページ（https://kabutan.jp/stock/finance?code=XXXX）から
   時価総額・通期実績と会社予想・単独四半期・累計実績を取得する。
@@ -228,6 +229,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--stage1", help="stage1 CSV（省略時は最新のもの）")
     ap.add_argument("--limit", type=int, help="先頭N銘柄だけ処理する（動作確認用）")
+    ap.add_argument("--out", default="ranking", help="出力ファイル名の頭（既定 ranking。新方式は strong）")
     args = ap.parse_args()
 
     path = args.stage1 or max(glob.glob(os.path.join(SCREEN_DIR, "stage1_*[0-9].csv")))
@@ -235,7 +237,7 @@ def main():
         stage1 = list(csv.DictReader(f))
     if args.limit:
         stage1 = stage1[:args.limit]
-    tag = re.search(r"stage1_(\d{8})", path).group(1)
+    tag = re.search(r"_(\d{8})\.csv$", path).group(1)
     fund_dir = os.path.join(SCREEN_DIR, f"fund_{tag}")
     os.makedirs(fund_dir, exist_ok=True)
 
@@ -325,14 +327,14 @@ def main():
         print(f"  [{n}/{len(stage1)}] {code} {s['銘柄名']} 総合{pts}（F{f_got} T{t_got}）", flush=True)
 
     ranked.sort(key=lambda r: (-r["総合点"], -r["得点率"], -float(r["出来高倍率"])))
-    out = os.path.join(SCREEN_DIR, f"ranking_{tag}.csv")
+    out = os.path.join(SCREEN_DIR, f"{args.out}_{tag}.csv")
     with open(out, "w", newline="", encoding="utf-8") as f:
         fields = ["順位"] + (list(ranked[0].keys()) if ranked else [])
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
         for i, r in enumerate(ranked, 1):
             w.writerow({"順位": i, **r})
-    with open(os.path.join(SCREEN_DIR, f"ranking_{tag}_log.json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(SCREEN_DIR, f"{args.out}_{tag}_log.json"), "w", encoding="utf-8") as f:
         json.dump({"stage1": os.path.basename(path), "処理銘柄数": len(stage1), "ランキング銘柄数": len(ranked),
                    "除外": excluded, "取得できなかった項目の件数": unknown_count},
                   f, ensure_ascii=False, indent=1)

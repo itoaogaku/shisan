@@ -51,6 +51,17 @@ python3 stock-analysis/score.py --csv stock-analysis/data/7203.csv --fund stock-
 
 東証の全銘柄（プライム・スタンダード・グロースの国内普通株）を同じ採点基準で絞り込みます。設計は [`SCREENING_PLAN.md`](SCREENING_PLAN.md) にあります。
 
+新方式（強い株を選んでから買い時で並べる。2026-10-05〜）:
+
+```
+python3 stock-analysis/screen_universe.py                                   # ⓪ 銘柄一覧
+python3 stock-analysis/screen_strength.py                                   # ① 日足取得・株価の強さで上位300
+python3 stock-analysis/screen_fundamental.py --stage1 stock-analysis/screening/strength_<日付>.csv --out strong   # ② 業績
+python3 stock-analysis/screen_select.py --flags stock-analysis/screening/flags_<日付>.json                         # ③ 強い株20・買い時順
+```
+
+旧方式（テクニカル点で絞る。比較用）:
+
 ```
 python3 stock-analysis/screen_universe.py      # ⓪ JPXの銘柄一覧 → screening/universe.csv
 python3 stock-analysis/screen_technical.py     # ① 全銘柄の日足取得・テクニカル採点 → screening/stage1_<日付>.csv
