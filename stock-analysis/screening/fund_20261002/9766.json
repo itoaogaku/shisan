@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 505000.0,
+   "op": 143000.0,
+   "ord": 143000.0,
+   "net": 101000.0,
+   "eps": 745.1
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 493677.0,
+   "op": 135891.0,
+   "ord": 140667.0,
+   "net": 100013.0,
+   "eps": 737.8
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 129524.0,
+   "op": 45285.0,
+   "ord": 46453.0,
+   "net": 32574.0
+  },
+  "year_ago": {
+   "sales": 96964.0,
+   "op": 27732.0,
+   "ord": 27890.0,
+   "net": 19834.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 129524.0,
+   "op": 45285.0
+  }
+ },
+ "code": "9766",
+ "name": "コナミグループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9766（取得 2026-10-05 08:40）。単位：百万円（EPSは円）",
+ "price": 22350.0,
+ "industry_per": null,
+ "market_cap": 3207200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 400000.0,
+   "op": 80000.0,
+   "ord": 81000.0,
+   "net": 53000.0,
+   "eps": 79.6
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 351363.0,
+   "op": 73547.0,
+   "ord": 76276.0,
+   "net": 49100.0,
+   "eps": 72.5
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 90105.0,
+   "op": 18077.0,
+   "ord": 18641.0,
+   "net": 9074.0
+  },
+  "year_ago": {
+   "sales": 86200.0,
+   "op": 19777.0,
+   "ord": 19683.0,
+   "net": 11840.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 90105.0,
+   "op": 18077.0
+  }
+ },
+ "code": "2413",
+ "name": "エムスリー",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2413（取得 2026-10-05 08:45）。単位：百万円（EPSは円）",
+ "price": 1753.0,
+ "industry_per": null,
+ "market_cap": 1190500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

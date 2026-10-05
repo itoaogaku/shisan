@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 2298.0,
+   "op": -110.0,
+   "ord": -120.0,
+   "net": -45.0,
+   "eps": -7.4
+  },
+  "forecast_label": "連 予 2026.08",
+  "prev": {
+   "sales": 1854.0,
+   "op": 90.0,
+   "ord": 81.0,
+   "net": 90.0,
+   "eps": 15.3
+  },
+  "prev_label": "連 2025.08"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 557.0,
+   "op": -4.0,
+   "ord": -8.0,
+   "net": 3.0
+  },
+  "year_ago": {
+   "sales": 469.0,
+   "op": 31.0,
+   "ord": 30.0,
+   "net": 37.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.09-05",
+  "cumulative": {
+   "sales": 1565.0,
+   "op": -77.0
+  }
+ },
+ "code": "4370",
+ "name": "モビルス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4370（取得 2026-10-05 09:00）。単位：百万円（EPSは円）",
+ "price": 412.0,
+ "industry_per": null,
+ "market_cap": 2530000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

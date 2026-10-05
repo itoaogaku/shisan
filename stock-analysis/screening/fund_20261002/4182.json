@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 860000.0,
+   "op": 71000.0,
+   "ord": 79000.0,
+   "net": 55000.0,
+   "eps": 282.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 738243.0,
+   "op": 45293.0,
+   "ord": 51947.0,
+   "net": -40318.0,
+   "eps": -207.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 223704.0,
+   "op": 27845.0,
+   "ord": 29187.0,
+   "net": 18329.0
+  },
+  "year_ago": {
+   "sales": 177977.0,
+   "op": 10982.0,
+   "ord": 13830.0,
+   "net": 8405.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 223704.0,
+   "op": 27845.0
+  }
+ },
+ "code": "4182",
+ "name": "三菱瓦斯化学",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4182（取得 2026-10-05 08:39）。単位：百万円（EPSは円）",
+ "price": 3915.0,
+ "industry_per": null,
+ "market_cap": 828800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

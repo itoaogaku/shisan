@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1110000.0,
+   "op": 200000.0,
+   "ord": 200000.0,
+   "net": 142000.0,
+   "eps": 215.8
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 1028171.0,
+   "op": 183615.0,
+   "ord": 184976.0,
+   "net": 133498.0,
+   "eps": 197.2
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 271672.0,
+   "op": 49210.0,
+   "ord": 49581.0,
+   "net": 33872.0
+  },
+  "year_ago": {
+   "sales": 246192.0,
+   "op": 42645.0,
+   "ord": 43307.0,
+   "net": 31303.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 271672.0,
+   "op": 49210.0
+  }
+ },
+ "code": "6988",
+ "name": "日東電工",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6988（取得 2026-10-05 08:45）。単位：百万円（EPSは円）",
+ "price": 3506.0,
+ "industry_per": null,
+ "market_cap": 2379400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

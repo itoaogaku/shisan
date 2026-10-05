@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 10500.0,
+   "op": -415.0,
+   "ord": -500.0,
+   "net": -670.0,
+   "eps": -19.6
+  },
+  "forecast_label": "連 予 2026.12",
+  "prev": {
+   "sales": 10031.0,
+   "op": 133.0,
+   "ord": 49.0,
+   "net": 46.0,
+   "eps": 1.5
+  },
+  "prev_label": "連 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 2980.0,
+   "op": 40.0,
+   "ord": 20.0,
+   "net": -57.0
+  },
+  "year_ago": {
+   "sales": 2603.0,
+   "op": 41.0,
+   "ord": -9.0,
+   "net": -73.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 4837.0,
+   "op": -375.0
+  }
+ },
+ "code": "4935",
+ "name": "リベルタ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4935（取得 2026-10-05 08:41）。単位：百万円（EPSは円）",
+ "price": 240.0,
+ "industry_per": null,
+ "market_cap": 8250000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

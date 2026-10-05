@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1530000.0,
+   "op": 123000.0,
+   "ord": 143000.0,
+   "net": 105000.0,
+   "eps": 149.3
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 1307560.0,
+   "op": 63856.0,
+   "ord": 75858.0,
+   "net": 72514.0,
+   "eps": 103.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 365221.0,
+   "op": 25457.0,
+   "ord": 30953.0,
+   "net": 22229.0
+  },
+  "year_ago": {
+   "sales": 293715.0,
+   "op": 8335.0,
+   "ord": 7662.0,
+   "net": 5109.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 365221.0,
+   "op": 25457.0
+  }
+ },
+ "code": "5801",
+ "name": "古河電気工業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5801（取得 2026-10-05 08:40）。単位：百万円（EPSは円）",
+ "price": 4429.0,
+ "industry_per": null,
+ "market_cap": 3129800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1265000.0,
+   "op": 121700.0,
+   "ord": 114000.0,
+   "net": 79000.0,
+   "eps": 342.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 1203506.0,
+   "op": 127136.0,
+   "ord": 124548.0,
+   "net": 78538.0,
+   "eps": 330.4
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 339048.0,
+   "op": 49505.0,
+   "ord": 52303.0,
+   "net": 36800.0
+  },
+  "year_ago": {
+   "sales": 309759.0,
+   "op": 48104.0,
+   "ord": 48843.0,
+   "net": 34205.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 339048.0,
+   "op": 49505.0
+  }
+ },
+ "code": "9042",
+ "name": "阪急阪神ホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9042（取得 2026-10-05 08:58）。単位：百万円（EPSは円）",
+ "price": 4421.0,
+ "industry_per": null,
+ "market_cap": 1111900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

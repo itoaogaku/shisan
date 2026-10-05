@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 948100.0,
+   "op": 218000.0,
+   "ord": 271200.0,
+   "net": 198000.0,
+   "eps": 214.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 857831.0,
+   "op": 183763.0,
+   "ord": 227485.0,
+   "net": 166543.0,
+   "eps": 178.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 231035.0,
+   "op": 53492.0,
+   "ord": 68193.0,
+   "net": 50981.0
+  },
+  "year_ago": {
+   "sales": 196363.0,
+   "op": 42428.0,
+   "ord": 51552.0,
+   "net": 37844.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 231035.0,
+   "op": 53492.0
+  }
+ },
+ "code": "6954",
+ "name": "ファナック",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6954（取得 2026-10-05 08:46）。単位：百万円（EPSは円）",
+ "price": 6075.0,
+ "industry_per": null,
+ "market_cap": 5967300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

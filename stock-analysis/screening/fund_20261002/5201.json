@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 2200000.0,
+   "op": 150000.0,
+   "ord": 124000.0,
+   "net": 77000.0,
+   "eps": 362.5
+  },
+  "forecast_label": "I 予 2026.12",
+  "prev": {
+   "sales": 2058832.0,
+   "op": 127465.0,
+   "ord": 124758.0,
+   "net": 69162.0,
+   "eps": 326.2
+  },
+  "prev_label": "I 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 562644.0,
+   "op": 26189.0,
+   "ord": 25367.0,
+   "net": 12668.0
+  },
+  "year_ago": {
+   "sales": 495890.0,
+   "op": 28182.0,
+   "ord": 16794.0,
+   "net": 7260.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 1100609.0,
+   "op": 64661.0
+  }
+ },
+ "code": "5201",
+ "name": "ＡＧＣ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5201（取得 2026-10-05 08:53）。単位：百万円（EPSは円）",
+ "price": 5749.0,
+ "industry_per": null,
+ "market_cap": 1250000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 122986.0,
+   "op": 24611.0,
+   "ord": 22000.0,
+   "net": 15157.0,
+   "eps": 155.9
+  },
+  "forecast_label": "I 予 2026.11",
+  "prev": {
+   "sales": 94688.0,
+   "op": 22336.0,
+   "ord": 20631.0,
+   "net": 14754.0,
+   "eps": 152.2
+  },
+  "prev_label": "I 2025.11"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 25458.0,
+   "op": 5715.0,
+   "ord": 5261.0,
+   "net": 3625.0
+  },
+  "year_ago": {
+   "sales": 19992.0,
+   "op": 5278.0,
+   "ord": 4974.0,
+   "net": 4050.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "25.12-05",
+  "cumulative": {
+   "sales": 85956.0,
+   "op": 21214.0
+  }
+ },
+ "code": "8923",
+ "name": "トーセイ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8923（取得 2026-10-05 08:52）。単位：百万円（EPSは円）",
+ "price": 1731.0,
+ "industry_per": null,
+ "market_cap": 168900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

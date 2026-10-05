@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 640000.0,
+   "op": 32000.0,
+   "ord": 30800.0,
+   "net": 19000.0,
+   "eps": 200.1
+  },
+  "forecast_label": "連 予 2027.05",
+  "prev": {
+   "sales": 566865.0,
+   "op": 27096.0,
+   "ord": 27722.0,
+   "net": 17133.0,
+   "eps": 177.0
+  },
+  "prev_label": "連 2026.05"
+ },
+ "quarter": {
+  "label": "26.06-08 単独（前年同期 25.06-08）",
+  "current": {
+   "sales": 159042.0,
+   "op": 8424.0,
+   "ord": 8568.0,
+   "net": 6866.0
+  },
+  "year_ago": {
+   "sales": 139735.0,
+   "op": 7263.0,
+   "ord": 7284.0,
+   "net": 5033.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.06-08",
+  "cumulative": {
+   "sales": 159042.0,
+   "op": 8424.0
+  }
+ },
+ "code": "3549",
+ "name": "クスリのアオキホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3549（取得 2026-10-05 08:44）。単位：百万円（EPSは円）",
+ "price": 4411.0,
+ "industry_per": null,
+ "market_cap": 421800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

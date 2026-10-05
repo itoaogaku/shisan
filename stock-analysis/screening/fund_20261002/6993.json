@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 22251.0,
+   "op": 1315.0,
+   "ord": 1137.0,
+   "net": 625.0,
+   "eps": 0.8
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 11472.0,
+   "op": -652.0,
+   "ord": -881.0,
+   "net": -2053.0,
+   "eps": -5.6
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 3651.0,
+   "op": 133.0,
+   "ord": 103.0,
+   "net": 121.0
+  },
+  "year_ago": {
+   "sales": 2459.0,
+   "op": -283.0,
+   "ord": -310.0,
+   "net": -262.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 3651.0,
+   "op": 133.0
+  }
+ },
+ "code": "6993",
+ "name": "大黒屋ホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6993（取得 2026-10-05 08:57）。単位：百万円（EPSは円）",
+ "price": 90.0,
+ "industry_per": null,
+ "market_cap": 66800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

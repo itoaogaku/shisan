@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 60500.0,
+   "op": 11500.0,
+   "ord": 11000.0,
+   "net": 7100.0,
+   "eps": 108.5
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 50462.0,
+   "op": 10521.0,
+   "ord": 9964.0,
+   "net": 6765.0,
+   "eps": 103.4
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 12605.0,
+   "op": 1823.0,
+   "ord": 1688.0,
+   "net": 1131.0
+  },
+  "year_ago": {
+   "sales": 10725.0,
+   "op": 1552.0,
+   "ord": 1441.0,
+   "net": 966.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 12605.0,
+   "op": 1823.0
+  }
+ },
+ "code": "4483",
+ "name": "ＪＭＤＣ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4483（取得 2026-10-05 08:53）。単位：百万円（EPSは円）",
+ "price": 3625.0,
+ "industry_per": null,
+ "market_cap": 237200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

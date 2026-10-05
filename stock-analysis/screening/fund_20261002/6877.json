@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 71500.0,
+   "op": 11480.0,
+   "ord": 11800.0,
+   "net": 7600.0,
+   "eps": 527.3
+  },
+  "forecast_label": "予 2026.09",
+  "prev": {
+   "sales": 61682.0,
+   "op": 9699.0,
+   "ord": 10176.0,
+   "net": 6762.0,
+   "eps": 424.9
+  },
+  "prev_label": "2025.09"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 18626.0,
+   "op": 3323.0,
+   "ord": 3499.0,
+   "net": 2400.0
+  },
+  "year_ago": {
+   "sales": 16963.0,
+   "op": 2961.0,
+   "ord": 3053.0,
+   "net": 2029.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.10-06",
+  "cumulative": {
+   "sales": 54693.0,
+   "op": 9356.0
+  }
+ },
+ "code": "6877",
+ "name": "ＯＢＡＲＡ　ＧＲＯＵＰ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6877（取得 2026-10-05 08:52）。単位：百万円（EPSは円）",
+ "price": 5900.0,
+ "industry_per": null,
+ "market_cap": 123100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

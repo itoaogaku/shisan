@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 50000.0,
+   "op": 5800.0,
+   "ord": 5500.0,
+   "net": 3800.0,
+   "eps": 478.8
+  },
+  "forecast_label": "単 予 2027.03",
+  "prev": {
+   "sales": 41956.0,
+   "op": 3668.0,
+   "ord": 3592.0,
+   "net": 2692.0,
+   "eps": 339.3
+  },
+  "prev_label": "単 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 12086.0,
+   "op": 1932.0,
+   "ord": 1886.0,
+   "net": 1290.0
+  },
+  "year_ago": {
+   "sales": 9128.0,
+   "op": 397.0,
+   "ord": 293.0,
+   "net": 201.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 12086.0,
+   "op": 1932.0
+  }
+ },
+ "code": "4970",
+ "name": "東洋合成工業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4970（取得 2026-10-05 08:46）。単位：百万円（EPSは円）",
+ "price": 10780.0,
+ "industry_per": null,
+ "market_cap": 87800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

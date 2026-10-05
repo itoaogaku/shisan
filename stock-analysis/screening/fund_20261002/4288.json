@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 3500.0,
+   "op": 50.0,
+   "ord": 50.0,
+   "net": 50.0,
+   "eps": 13.1
+  },
+  "forecast_label": "単 予 2027.03",
+  "prev": {
+   "sales": 3434.0,
+   "op": 146.0,
+   "ord": 135.0,
+   "net": 168.0,
+   "eps": 44.0
+  },
+  "prev_label": "単 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 796.0,
+   "op": -53.0,
+   "ord": -53.0,
+   "net": -59.0
+  },
+  "year_ago": {
+   "sales": 729.0,
+   "op": -21.0,
+   "ord": -12.0,
+   "net": -12.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 796.0,
+   "op": -53.0
+  }
+ },
+ "code": "4288",
+ "name": "アズジェント",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4288（取得 2026-10-05 08:43）。単位：百万円（EPSは円）",
+ "price": 581.0,
+ "industry_per": null,
+ "market_cap": 2220000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

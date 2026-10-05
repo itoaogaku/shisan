@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 33400.0,
+   "op": 12300.0,
+   "ord": 12500.0,
+   "net": 8800.0,
+   "eps": 357.4
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 29672.0,
+   "op": 12156.0,
+   "ord": 12447.0,
+   "net": 9074.0,
+   "eps": 365.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 7492.0,
+   "op": 2737.0,
+   "ord": 2907.0,
+   "net": 2075.0
+  },
+  "year_ago": {
+   "sales": 7037.0,
+   "op": 2802.0,
+   "ord": 2845.0,
+   "net": 2024.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 7492.0,
+   "op": 2737.0
+  }
+ },
+ "code": "4975",
+ "name": "ＪＣＵ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4975（取得 2026-10-05 08:47）。単位：百万円（EPSは円）",
+ "price": 5950.0,
+ "industry_per": null,
+ "market_cap": 156000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

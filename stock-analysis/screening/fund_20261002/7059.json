@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 57650.0,
+   "op": 3875.0,
+   "ord": 3426.0,
+   "net": 1660.0,
+   "eps": 43.3
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 36661.0,
+   "op": 3632.0,
+   "ord": 3665.0,
+   "net": 2880.0,
+   "eps": 75.4
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 13939.0,
+   "op": 960.0,
+   "ord": 840.0,
+   "net": 362.0
+  },
+  "year_ago": {
+   "sales": 8297.0,
+   "op": 619.0,
+   "ord": 614.0,
+   "net": 379.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 13939.0,
+   "op": 960.0
+  }
+ },
+ "code": "7059",
+ "name": "コプロ・ホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7059（取得 2026-10-05 08:49）。単位：百万円（EPSは円）",
+ "price": 953.0,
+ "industry_per": null,
+ "market_cap": 38100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

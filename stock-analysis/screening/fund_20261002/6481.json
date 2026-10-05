@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 310000.0,
+   "op": 48000.0,
+   "ord": 47100.0,
+   "net": 54800.0,
+   "eps": 489.0
+  },
+  "forecast_label": "I 予 2026.12",
+  "prev": {
+   "sales": 240444.0,
+   "op": 14436.0,
+   "ord": 15746.0,
+   "net": -69891.0,
+   "eps": -618.7
+  },
+  "prev_label": "I 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 82024.0,
+   "op": 14863.0,
+   "ord": 15390.0,
+   "net": 29253.0
+  },
+  "year_ago": {
+   "sales": 29191.0,
+   "op": 4393.0,
+   "ord": 5306.0,
+   "net": 3408.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 151067.0,
+   "op": 22483.0
+  }
+ },
+ "code": "6481",
+ "name": "ＴＨＫ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6481（取得 2026-10-05 08:49）。単位：百万円（EPSは円）",
+ "price": 6517.0,
+ "industry_per": null,
+ "market_cap": 776200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

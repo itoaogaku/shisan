@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 400000.0,
+   "op": 20000.0,
+   "ord": 19500.0,
+   "net": 12500.0,
+   "eps": 359.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 357675.0,
+   "op": 17897.0,
+   "ord": 17512.0,
+   "net": 11426.0,
+   "eps": 328.2
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 88449.0,
+   "op": 5461.0,
+   "ord": 5320.0,
+   "net": 3292.0
+  },
+  "year_ago": {
+   "sales": 79081.0,
+   "op": 1997.0,
+   "ord": 1866.0,
+   "net": 804.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 88449.0,
+   "op": 5461.0
+  }
+ },
+ "code": "1762",
+ "name": "高松コンストラクショングループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=1762（取得 2026-10-05 08:54）。単位：百万円（EPSは円）",
+ "price": 4040.0,
+ "industry_per": null,
+ "market_cap": 140700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 123000.0,
+   "op": 38500.0,
+   "ord": 38500.0,
+   "net": 27500.0,
+   "eps": 164.2
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 113832.0,
+   "op": 38097.0,
+   "ord": 38388.0,
+   "net": 28009.0,
+   "eps": 166.5
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 27182.0,
+   "op": 8588.0,
+   "ord": 8705.0,
+   "net": 6241.0
+  },
+  "year_ago": {
+   "sales": 26140.0,
+   "op": 7985.0,
+   "ord": 7709.0,
+   "net": 5565.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 27182.0,
+   "op": 8588.0
+  }
+ },
+ "code": "4980",
+ "name": "デクセリアルズ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4980（取得 2026-10-05 08:40）。単位：百万円（EPSは円）",
+ "price": 3389.0,
+ "industry_per": null,
+ "market_cap": 592200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

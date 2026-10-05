@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 70000.0,
+   "op": 7000.0,
+   "ord": 7070.0,
+   "net": 5400.0,
+   "eps": 328.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 61186.0,
+   "op": 5362.0,
+   "ord": 5492.0,
+   "net": 4005.0,
+   "eps": 243.8
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 11594.0,
+   "op": -248.0,
+   "ord": -53.0,
+   "net": 31.0
+  },
+  "year_ago": {
+   "sales": 10548.0,
+   "op": -326.0,
+   "ord": -297.0,
+   "net": -177.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 11594.0,
+   "op": -248.0
+  }
+ },
+ "code": "7721",
+ "name": "東京計器",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7721（取得 2026-10-05 08:43）。単位：百万円（EPSは円）",
+ "price": 7520.0,
+ "industry_per": null,
+ "market_cap": 128400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

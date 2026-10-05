@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 148500.0,
+   "op": 17000.0,
+   "ord": 17000.0,
+   "net": 13000.0,
+   "eps": 411.2
+  },
+  "forecast_label": "予 2027.02",
+  "prev": {
+   "sales": 140616.0,
+   "op": 16246.0,
+   "ord": 18291.0,
+   "net": 16735.0,
+   "eps": 529.5
+  },
+  "prev_label": "2026.02"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 38115.0,
+   "op": 5681.0,
+   "ord": 6334.0,
+   "net": 4881.0
+  },
+  "year_ago": {
+   "sales": 31296.0,
+   "op": 3438.0,
+   "ord": 3918.0,
+   "net": 3531.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.03-05",
+  "cumulative": {
+   "sales": 38115.0,
+   "op": 5681.0
+  }
+ },
+ "code": "6814",
+ "name": "古野電気",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6814（取得 2026-10-05 08:48）。単位：百万円（EPSは円）",
+ "price": 7900.0,
+ "industry_per": null,
+ "market_cap": 252000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

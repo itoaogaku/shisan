@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 860000.0,
+   "op": 59000.0,
+   "ord": 64000.0,
+   "net": 45000.0,
+   "eps": 222.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 816879.0,
+   "op": 45784.0,
+   "ord": 52189.0,
+   "net": 27862.0,
+   "eps": 137.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 216159.0,
+   "op": 14356.0,
+   "ord": 20644.0,
+   "net": 15726.0
+  },
+  "year_ago": {
+   "sales": 199953.0,
+   "op": 11047.0,
+   "ord": 12022.0,
+   "net": 8976.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 216159.0,
+   "op": 14356.0
+  }
+ },
+ "code": "5991",
+ "name": "日本発條",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5991（取得 2026-10-05 08:53）。単位：百万円（EPSは円）",
+ "price": 3461.0,
+ "industry_per": null,
+ "market_cap": 799700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

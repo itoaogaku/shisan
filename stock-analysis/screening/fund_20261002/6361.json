@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1053000.0,
+   "op": 125000.0,
+   "ord": 142000.0,
+   "net": 99500.0,
+   "eps": 218.5
+  },
+  "forecast_label": "I 予 2026.12",
+  "prev": {
+   "sales": 958285.0,
+   "op": 113802.0,
+   "ord": 110977.0,
+   "net": 76633.0,
+   "eps": 166.3
+  },
+  "prev_label": "I 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 244449.0,
+   "op": 23928.0,
+   "ord": 22819.0,
+   "net": 15252.0
+  },
+  "year_ago": {
+   "sales": 236118.0,
+   "op": 27461.0,
+   "ord": 23046.0,
+   "net": 15552.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 490760.0,
+   "op": 50677.0
+  }
+ },
+ "code": "6361",
+ "name": "荏原製作所",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6361（取得 2026-10-05 08:56）。単位：百万円（EPSは円）",
+ "price": 4701.0,
+ "industry_per": null,
+ "market_cap": 2150500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

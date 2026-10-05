@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 133000.0,
+   "op": 11000.0,
+   "ord": 10500.0,
+   "net": 6500.0,
+   "eps": 87.5
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 125605.0,
+   "op": 10236.0,
+   "ord": 11021.0,
+   "net": 5916.0,
+   "eps": 79.1
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 32376.0,
+   "op": 3429.0,
+   "ord": 3361.0,
+   "net": 2230.0
+  },
+  "year_ago": {
+   "sales": 30251.0,
+   "op": 1961.0,
+   "ord": 1768.0,
+   "net": 991.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 32376.0,
+   "op": 3429.0
+  }
+ },
+ "code": "7780",
+ "name": "メニコン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7780（取得 2026-10-05 08:52）。単位：百万円（EPSは円）",
+ "price": 1786.0,
+ "industry_per": null,
+ "market_cap": 137100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

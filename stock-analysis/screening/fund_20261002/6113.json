@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 460000.0,
+   "op": 48000.0,
+   "ord": null,
+   "net": 34000.0,
+   "eps": 111.2
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 437372.0,
+   "op": 44798.0,
+   "ord": 45706.0,
+   "net": 30554.0,
+   "eps": 96.7
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 100210.0,
+   "op": 7430.0,
+   "ord": 7668.0,
+   "net": 5473.0
+  },
+  "year_ago": {
+   "sales": 77273.0,
+   "op": 4037.0,
+   "ord": 3877.0,
+   "net": 2719.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 100210.0,
+   "op": 7430.0
+  }
+ },
+ "code": "6113",
+ "name": "アマダ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6113（取得 2026-10-05 08:45）。単位：百万円（EPSは円）",
+ "price": 2626.5,
+ "industry_per": null,
+ "market_cap": 833800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

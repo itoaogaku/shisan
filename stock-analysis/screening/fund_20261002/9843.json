@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 957000.0,
+   "op": 130300.0,
+   "ord": 131000.0,
+   "net": 91000.0,
+   "eps": 161.1
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 912248.0,
+   "op": 125526.0,
+   "ord": 127357.0,
+   "net": 89270.0,
+   "eps": 158.0
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 226259.0,
+   "op": 36545.0,
+   "ord": 37183.0,
+   "net": 25757.0
+  },
+  "year_ago": {
+   "sales": 231694.0,
+   "op": 36942.0,
+   "ord": 37132.0,
+   "net": 26154.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 226259.0,
+   "op": 36545.0
+  }
+ },
+ "code": "9843",
+ "name": "ニトリホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9843（取得 2026-10-05 08:56）。単位：百万円（EPSは円）",
+ "price": 3009.0,
+ "industry_per": null,
+ "market_cap": 1721800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

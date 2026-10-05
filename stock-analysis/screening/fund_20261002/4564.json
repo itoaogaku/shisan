@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 808.0,
+   "op": -810.0,
+   "ord": -845.0,
+   "net": -910.0,
+   "eps": -2.8
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 170.0,
+   "op": -285.0,
+   "ord": -287.0,
+   "net": -288.0
+  },
+  "year_ago": {
+   "sales": 201.0,
+   "op": -303.0,
+   "ord": -313.0,
+   "net": -314.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 170.0,
+   "op": -285.0
+  }
+ },
+ "code": "4564",
+ "name": "オンコセラピー・サイエンス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4564（取得 2026-10-05 08:58）。単位：百万円（EPSは円）",
+ "price": 21.0,
+ "industry_per": null,
+ "market_cap": 8570000000.0,
+ "going_concern": "解消済み：2025-11-07 「継続企業の前提に関する注記」の記載解消に関するお知らせ"
+}

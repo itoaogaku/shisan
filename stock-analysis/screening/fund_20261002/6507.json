@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 140000.0,
+   "op": 21000.0,
+   "ord": 21000.0,
+   "net": 15000.0,
+   "eps": 531.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 128197.0,
+   "op": 18464.0,
+   "ord": 18793.0,
+   "net": 14498.0,
+   "eps": 513.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 26335.0,
+   "op": 2928.0,
+   "ord": 3242.0,
+   "net": 2122.0
+  },
+  "year_ago": {
+   "sales": 23002.0,
+   "op": 2253.0,
+   "ord": 2493.0,
+   "net": 1654.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 26335.0,
+   "op": 2928.0
+  }
+ },
+ "code": "6507",
+ "name": "シンフォニアテクノロジー",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6507（取得 2026-10-05 08:40）。単位：百万円（EPSは円）",
+ "price": 14400.0,
+ "industry_per": null,
+ "market_cap": 429000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 6177.0,
+   "op": 177.0,
+   "ord": 227.0,
+   "net": 137.0,
+   "eps": 11.3
+  },
+  "forecast_label": "連 予 2027.04",
+  "prev": {
+   "sales": 6093.0,
+   "op": -248.0,
+   "ord": -113.0,
+   "net": 103.0,
+   "eps": 8.5
+  },
+  "prev_label": "連 2026.04"
+ },
+ "quarter": {
+  "label": "26.05-07 単独（前年同期 25.05-07）",
+  "current": {
+   "sales": 1367.0,
+   "op": -152.0,
+   "ord": -145.0,
+   "net": -49.0
+  },
+  "year_ago": {
+   "sales": 1191.0,
+   "op": -315.0,
+   "ord": -229.0,
+   "net": -183.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.05-07",
+  "cumulative": {
+   "sales": 1367.0,
+   "op": -152.0
+  }
+ },
+ "code": "3444",
+ "name": "菊池製作所",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3444（取得 2026-10-05 08:58）。単位：百万円（EPSは円）",
+ "price": 1119.0,
+ "industry_per": null,
+ "market_cap": 13800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

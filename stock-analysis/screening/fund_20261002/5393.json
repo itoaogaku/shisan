@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 288000.0,
+   "op": 49000.0,
+   "ord": 50500.0,
+   "net": 35000.0,
+   "eps": 186.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 251910.0,
+   "op": 37014.0,
+   "ord": 39377.0,
+   "net": 31634.0,
+   "eps": 165.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 71954.0,
+   "op": 11136.0,
+   "ord": 11850.0,
+   "net": 8231.0
+  },
+  "year_ago": {
+   "sales": 62044.0,
+   "op": 9229.0,
+   "ord": 9233.0,
+   "net": 6569.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 71954.0,
+   "op": 11136.0
+  }
+ },
+ "code": "5393",
+ "name": "ニチアス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5393（取得 2026-10-05 08:52）。単位：百万円（EPSは円）",
+ "price": 3553.0,
+ "industry_per": null,
+ "market_cap": 678600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

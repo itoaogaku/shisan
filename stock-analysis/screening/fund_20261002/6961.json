@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 48000.0,
+   "op": 6400.0,
+   "ord": 6500.0,
+   "net": 5000.0,
+   "eps": 552.9
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 42540.0,
+   "op": 6164.0,
+   "ord": 6482.0,
+   "net": 5233.0,
+   "eps": 587.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 12572.0,
+   "op": 2329.0,
+   "ord": 2404.0,
+   "net": 1782.0
+  },
+  "year_ago": {
+   "sales": 8999.0,
+   "op": 905.0,
+   "ord": 825.0,
+   "net": 362.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 12572.0,
+   "op": 2329.0
+  }
+ },
+ "code": "6961",
+ "name": "エンプラス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6961（取得 2026-10-05 08:46）。単位：百万円（EPSは円）",
+ "price": 10740.0,
+ "industry_per": null,
+ "market_cap": 104500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

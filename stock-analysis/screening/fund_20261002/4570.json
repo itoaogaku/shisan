@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1087.0,
+   "op": 322.0,
+   "ord": 322.0,
+   "net": 347.0,
+   "eps": 37.3
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 1004.0,
+   "op": 281.0,
+   "ord": 300.0,
+   "net": 329.0,
+   "eps": 35.3
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 286.0,
+   "op": 117.0,
+   "ord": 120.0,
+   "net": 100.0
+  },
+  "year_ago": {
+   "sales": 211.0,
+   "op": 54.0,
+   "ord": 57.0,
+   "net": 60.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 286.0,
+   "op": 117.0
+  }
+ },
+ "code": "4570",
+ "name": "免疫生物研究所",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4570（取得 2026-10-05 08:56）。単位：百万円（EPSは円）",
+ "price": 1145.0,
+ "industry_per": null,
+ "market_cap": 10700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

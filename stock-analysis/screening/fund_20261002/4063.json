@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 2700000.0,
+   "op": 700000.0,
+   "ord": 770000.0,
+   "net": 525000.0,
+   "eps": 289.3
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 2573969.0,
+   "op": 635204.0,
+   "ord": 708281.0,
+   "net": 474459.0,
+   "eps": 252.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 662424.0,
+   "op": 173798.0,
+   "ord": 192129.0,
+   "net": 130829.0
+  },
+  "year_ago": {
+   "sales": 628549.0,
+   "op": 166803.0,
+   "ord": 181621.0,
+   "net": 126428.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 662424.0,
+   "op": 173798.0
+  }
+ },
+ "code": "4063",
+ "name": "信越化学工業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4063（取得 2026-10-05 08:39）。単位：百万円（EPSは円）",
+ "price": 6030.0,
+ "industry_per": null,
+ "market_cap": 11969500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

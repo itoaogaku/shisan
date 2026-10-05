@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 85800.0,
+   "op": 24300.0,
+   "ord": 24500.0,
+   "net": 19200.0,
+   "eps": 181.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 76926.0,
+   "op": 18850.0,
+   "ord": 19573.0,
+   "net": 14311.0,
+   "eps": 135.3
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 22819.0,
+   "op": 6172.0,
+   "ord": 6363.0,
+   "net": 6688.0
+  },
+  "year_ago": {
+   "sales": 18658.0,
+   "op": 4694.0,
+   "ord": 4532.0,
+   "net": 3105.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 22819.0,
+   "op": 6172.0
+  }
+ },
+ "code": "4368",
+ "name": "扶桑化学工業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4368（取得 2026-10-05 08:56）。単位：百万円（EPSは円）",
+ "price": 3350.0,
+ "industry_per": null,
+ "market_cap": 356900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

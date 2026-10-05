@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 3540000.0,
+   "op": null,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 3582733.0,
+   "op": 359913.0,
+   "ord": 398175.0,
+   "net": 270228.0,
+   "eps": 203.0
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 819774.0,
+   "op": 58770.0,
+   "ord": 56529.0,
+   "net": 49698.0
+  },
+  "year_ago": {
+   "sales": 715658.0,
+   "op": 35389.0,
+   "ord": 32103.0,
+   "net": 19310.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 819774.0,
+   "op": 58770.0
+  }
+ },
+ "code": "6701",
+ "name": "日本電気",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6701（取得 2026-10-05 08:53）。単位：百万円（EPSは円）",
+ "price": 4913.0,
+ "industry_per": null,
+ "market_cap": 6702600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

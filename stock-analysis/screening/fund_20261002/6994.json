@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 31200.0,
+   "op": 3000.0,
+   "ord": 3200.0,
+   "net": 2200.0,
+   "eps": 87.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 27995.0,
+   "op": 2529.0,
+   "ord": 2961.0,
+   "net": 1990.0,
+   "eps": 78.8
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 7364.0,
+   "op": 628.0,
+   "ord": 718.0,
+   "net": 424.0
+  },
+  "year_ago": {
+   "sales": 6085.0,
+   "op": 301.0,
+   "ord": 399.0,
+   "net": 264.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 7364.0,
+   "op": 628.0
+  }
+ },
+ "code": "6994",
+ "name": "指月電機製作所",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6994（取得 2026-10-05 08:51）。単位：百万円（EPSは円）",
+ "price": 1360.0,
+ "industry_per": null,
+ "market_cap": 45000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

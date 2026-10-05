@@ -1,0 +1,44 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 49250.0,
+   "op": 4050.0,
+   "ord": 3750.0,
+   "net": 2450.0,
+   "eps": 260.2
+  },
+  "forecast_label": "連 予 2027.07",
+  "prev": {
+   "sales": 40399.0,
+   "op": 1337.0,
+   "ord": 1366.0,
+   "net": 514.0,
+   "eps": 54.8
+  },
+  "prev_label": "連 2026.07"
+ },
+ "quarter": {
+  "label": "26.05-07 単独（前年同期 25.05-07）",
+  "current": {
+   "sales": 10454.0,
+   "op": 727.0,
+   "ord": 736.0,
+   "net": 364.0
+  },
+  "year_ago": {
+   "sales": 8764.0,
+   "op": 672.0,
+   "ord": 666.0,
+   "net": 515.0
+  },
+  "one_off": null
+ },
+ "progress": {},
+ "code": "9556",
+ "name": "ＩＮＴＬＯＯＰ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9556（取得 2026-10-05 08:41）。単位：百万円（EPSは円）",
+ "price": 2386.0,
+ "industry_per": null,
+ "market_cap": 22500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

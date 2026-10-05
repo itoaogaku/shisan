@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 580000.0,
+   "op": 60000.0,
+   "ord": 65000.0,
+   "net": 47000.0,
+   "eps": 181.2
+  },
+  "forecast_label": "I 予 2027.02",
+  "prev": {
+   "sales": 542122.0,
+   "op": 47307.0,
+   "ord": 49563.0,
+   "net": 35240.0,
+   "eps": 135.9
+  },
+  "prev_label": "I 2026.02"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 138982.0,
+   "op": 8486.0,
+   "ord": 8506.0,
+   "net": 5445.0
+  },
+  "year_ago": {
+   "sales": 125642.0,
+   "op": 10503.0,
+   "ord": 9849.0,
+   "net": 6952.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.03-05",
+  "cumulative": {
+   "sales": 138982.0,
+   "op": 8486.0
+  }
+ },
+ "code": "6506",
+ "name": "安川電機",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6506（取得 2026-10-05 08:41）。単位：百万円（EPSは円）",
+ "price": 4806.0,
+ "industry_per": null,
+ "market_cap": 1281700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 540.0,
+   "op": -1030.0,
+   "ord": -580.0,
+   "net": -570.0,
+   "eps": -64.2
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 212.0,
+   "op": -1081.0,
+   "ord": -1028.0,
+   "net": -1022.0,
+   "eps": -124.5
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 1.0,
+   "op": -333.0,
+   "ord": -321.0,
+   "net": -317.0
+  },
+  "year_ago": {
+   "sales": 85.0,
+   "op": -196.0,
+   "ord": -199.0,
+   "net": -200.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 1.0,
+   "op": -333.0
+  }
+ },
+ "code": "4894",
+ "name": "クオリプス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4894（取得 2026-10-05 08:41）。単位：百万円（EPSは円）",
+ "price": 6260.0,
+ "industry_per": null,
+ "market_cap": 55700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

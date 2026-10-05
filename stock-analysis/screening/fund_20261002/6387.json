@@ -1,0 +1,44 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 14500.0,
+   "op": 3880.0,
+   "ord": 3840.0,
+   "net": 2740.0,
+   "eps": 341.1
+  },
+  "forecast_label": "予 2027.07",
+  "prev": {
+   "sales": 10800.0,
+   "op": 3004.0,
+   "ord": 3110.0,
+   "net": 2230.0,
+   "eps": 277.7
+  },
+  "prev_label": "2026.07"
+ },
+ "quarter": {
+  "label": "26.05-07 単独（前年同期 25.05-07）",
+  "current": {
+   "sales": 3386.0,
+   "op": 1141.0,
+   "ord": 1145.0,
+   "net": 854.0
+  },
+  "year_ago": {
+   "sales": 3101.0,
+   "op": 949.0,
+   "ord": 1003.0,
+   "net": 729.0
+  },
+  "one_off": null
+ },
+ "progress": {},
+ "code": "6387",
+ "name": "サムコ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6387（取得 2026-10-05 08:44）。単位：百万円（EPSは円）",
+ "price": 9200.0,
+ "industry_per": null,
+ "market_cap": 74000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

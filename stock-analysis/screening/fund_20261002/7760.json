@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 20000.0,
+   "op": 2400.0,
+   "ord": 2400.0,
+   "net": 1850.0,
+   "eps": 116.0
+  },
+  "forecast_label": "連 予 2026.09",
+  "prev": {
+   "sales": 17941.0,
+   "op": 2315.0,
+   "ord": 2569.0,
+   "net": 1935.0,
+   "eps": 121.7
+  },
+  "prev_label": "連 2025.09"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 3999.0,
+   "op": 116.0,
+   "ord": 139.0,
+   "net": 83.0
+  },
+  "year_ago": {
+   "sales": 3212.0,
+   "op": 139.0,
+   "ord": 212.0,
+   "net": 186.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.10-06",
+  "cumulative": {
+   "sales": 15510.0,
+   "op": 1989.0
+  }
+ },
+ "code": "7760",
+ "name": "ＩＭＶ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7760（取得 2026-10-05 08:58）。単位：百万円（EPSは円）",
+ "price": 2125.0,
+ "industry_per": null,
+ "market_cap": 36000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

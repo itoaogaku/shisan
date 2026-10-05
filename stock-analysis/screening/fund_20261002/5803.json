@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1755000.0,
+   "op": 432000.0,
+   "ord": 453000.0,
+   "net": 326000.0,
+   "eps": 196.9
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 1182358.0,
+   "op": 188707.0,
+   "ord": 199481.0,
+   "net": 157163.0,
+   "eps": 94.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 402009.0,
+   "op": 104828.0,
+   "ord": 111456.0,
+   "net": 80434.0
+  },
+  "year_ago": {
+   "sales": 267908.0,
+   "op": 41086.0,
+   "ord": 41775.0,
+   "net": 31318.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 402009.0,
+   "op": 104828.0
+  }
+ },
+ "code": "5803",
+ "name": "フジクラ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5803（取得 2026-10-05 08:42）。単位：百万円（EPSは円）",
+ "price": 5598.0,
+ "industry_per": null,
+ "market_cap": 9937500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

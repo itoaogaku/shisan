@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 39000.0,
+   "op": 7500.0,
+   "ord": 7700.0,
+   "net": 5200.0,
+   "eps": 255.7
+  },
+  "forecast_label": "予 2026.11",
+  "prev": {
+   "sales": 36265.0,
+   "op": 6187.0,
+   "ord": 6557.0,
+   "net": 6887.0,
+   "eps": 336.7
+  },
+  "prev_label": "2025.11"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 10962.0,
+   "op": 2592.0,
+   "ord": 2693.0,
+   "net": 1801.0
+  },
+  "year_ago": {
+   "sales": 8884.0,
+   "op": 1557.0,
+   "ord": 1560.0,
+   "net": 1097.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "25.12-05",
+  "cumulative": {
+   "sales": 20034.0,
+   "op": 4424.0
+  }
+ },
+ "code": "4187",
+ "name": "大阪有機化学工業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4187（取得 2026-10-05 08:51）。単位：百万円（EPSは円）",
+ "price": 4500.0,
+ "industry_per": null,
+ "market_cap": 100800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

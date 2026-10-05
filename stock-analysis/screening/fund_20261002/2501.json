@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 505000.0,
+   "op": 6000.0,
+   "ord": null,
+   "net": 296000.0,
+   "eps": 759.0
+  },
+  "forecast_label": "I 予 2026.12",
+  "prev": {
+   "sales": 506861.0,
+   "op": 24437.0,
+   "ord": 22704.0,
+   "net": 19498.0,
+   "eps": 50.0
+  },
+  "prev_label": "I 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 126958.0,
+   "op": -3772.0,
+   "ord": -2611.0,
+   "net": 296325.0
+  },
+  "year_ago": {
+   "sales": 116636.0,
+   "op": 7425.0,
+   "ord": 6508.0,
+   "net": 6009.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 235937.0,
+   "op": -5880.0
+  }
+ },
+ "code": "2501",
+ "name": "サッポロビール",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2501（取得 2026-10-05 08:51）。単位：百万円（EPSは円）",
+ "price": 1839.0,
+ "industry_per": null,
+ "market_cap": 724500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

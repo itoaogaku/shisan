@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 132000.0,
+   "op": 6700.0,
+   "ord": 7300.0,
+   "net": 5300.0,
+   "eps": 288.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 131032.0,
+   "op": 6513.0,
+   "ord": 7094.0,
+   "net": 5023.0,
+   "eps": 273.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 29419.0,
+   "op": 1327.0,
+   "ord": 1596.0,
+   "net": 1083.0
+  },
+  "year_ago": {
+   "sales": 30502.0,
+   "op": 1520.0,
+   "ord": 1753.0,
+   "net": 1205.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 29419.0,
+   "op": 1327.0
+  }
+ },
+ "code": "8052",
+ "name": "椿本興業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8052（取得 2026-10-05 08:49）。単位：百万円（EPSは円）",
+ "price": 2993.0,
+ "industry_per": null,
+ "market_cap": 58300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

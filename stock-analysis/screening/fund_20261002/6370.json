@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 425000.0,
+   "op": 65500.0,
+   "ord": 65000.0,
+   "net": 50700.0,
+   "eps": 482.0
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 402889.0,
+   "op": 58290.0,
+   "ord": 58160.0,
+   "net": 15957.0,
+   "eps": 145.3
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 99899.0,
+   "op": 14293.0,
+   "ord": 14619.0,
+   "net": 14346.0
+  },
+  "year_ago": {
+   "sales": 91926.0,
+   "op": 8803.0,
+   "ord": 8638.0,
+   "net": 5639.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 99899.0,
+   "op": 14293.0
+  }
+ },
+ "code": "6370",
+ "name": "栗田工業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6370（取得 2026-10-05 08:53）。単位：百万円（EPSは円）",
+ "price": 7825.0,
+ "industry_per": null,
+ "market_cap": 909300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

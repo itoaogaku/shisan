@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 260000.0,
+   "op": 19000.0,
+   "ord": 19200.0,
+   "net": 11000.0,
+   "eps": 86.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 244838.0,
+   "op": 18699.0,
+   "ord": 19152.0,
+   "net": 10749.0,
+   "eps": 82.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 59993.0,
+   "op": 4524.0,
+   "ord": 4878.0,
+   "net": 3005.0
+  },
+  "year_ago": {
+   "sales": 58128.0,
+   "op": 3941.0,
+   "ord": 4112.0,
+   "net": 2469.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 59993.0,
+   "op": 4524.0
+  }
+ },
+ "code": "3167",
+ "name": "ＴＯＫＡＩホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3167（取得 2026-10-05 08:50）。単位：百万円（EPSは円）",
+ "price": 1332.0,
+ "industry_per": null,
+ "market_cap": 183600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

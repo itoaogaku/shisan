@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 947749.0,
+   "op": null,
+   "ord": 327668.0,
+   "net": 253085.0,
+   "eps": 743.9
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 255742.0,
+   "op": 82626.0,
+   "ord": 85994.0,
+   "net": 65791.0
+  },
+  "year_ago": {
+   "sales": 220406.0,
+   "op": 63559.0,
+   "ord": 67363.0,
+   "net": 51840.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 255742.0,
+   "op": 82626.0
+  }
+ },
+ "code": "7741",
+ "name": "ＨＯＹＡ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7741（取得 2026-10-05 08:46）。単位：百万円（EPSは円）",
+ "price": 24180.0,
+ "industry_per": null,
+ "market_cap": 8096400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

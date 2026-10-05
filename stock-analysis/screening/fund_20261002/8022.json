@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 280000.0,
+   "op": 25500.0,
+   "ord": 26500.0,
+   "net": 19000.0,
+   "eps": 249.7
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 259045.0,
+   "op": 22603.0,
+   "ord": 23985.0,
+   "net": 18376.0,
+   "eps": 239.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 71505.0,
+   "op": 8360.0,
+   "ord": 8671.0,
+   "net": 6028.0
+  },
+  "year_ago": {
+   "sales": 63528.0,
+   "op": 6281.0,
+   "ord": 6762.0,
+   "net": 4880.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 71505.0,
+   "op": 8360.0
+  }
+ },
+ "code": "8022",
+ "name": "美津濃",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8022（取得 2026-10-05 08:48）。単位：百万円（EPSは円）",
+ "price": 4210.0,
+ "industry_per": null,
+ "market_cap": 335700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

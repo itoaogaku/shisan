@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 67000.0,
+   "op": 6800.0,
+   "ord": 6800.0,
+   "net": 4500.0,
+   "eps": 124.9
+  },
+  "forecast_label": "予 2027.02",
+  "prev": {
+   "sales": 62252.0,
+   "op": 6584.0,
+   "ord": 6587.0,
+   "net": 4731.0,
+   "eps": 130.7
+  },
+  "prev_label": "2026.02"
+ },
+ "quarter": {
+  "label": "26.06-08 単独（前年同期 25.06-08）",
+  "current": {
+   "sales": 17069.0,
+   "op": 1953.0,
+   "ord": 1979.0,
+   "net": 1338.0
+  },
+  "year_ago": {
+   "sales": 15493.0,
+   "op": 1792.0,
+   "ord": 1810.0,
+   "net": 1224.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.03-08",
+  "cumulative": {
+   "sales": 34063.0,
+   "op": 4067.0
+  }
+ },
+ "code": "7611",
+ "name": "ハイデイ日高",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7611（取得 2026-10-05 08:51）。単位：百万円（EPSは円）",
+ "price": 2971.0,
+ "industry_per": null,
+ "market_cap": 113300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

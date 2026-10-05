@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 615000.0,
+   "op": 85000.0,
+   "ord": 85000.0,
+   "net": 58500.0,
+   "eps": 235.2
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 604829.0,
+   "op": 82555.0,
+   "ord": 84259.0,
+   "net": 58113.0,
+   "eps": 227.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 141348.0,
+   "op": 16491.0,
+   "ord": 16878.0,
+   "net": 12217.0
+  },
+  "year_ago": {
+   "sales": 130211.0,
+   "op": 16202.0,
+   "ord": 15609.0,
+   "net": 15153.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 141348.0,
+   "op": 16491.0
+  }
+ },
+ "code": "6841",
+ "name": "横河電機",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6841（取得 2026-10-05 08:54）。単位：百万円（EPSは円）",
+ "price": 4707.0,
+ "industry_per": null,
+ "market_cap": 1210600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

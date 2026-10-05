@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1460.0,
+   "op": -25.0,
+   "ord": 1342.0,
+   "net": 1340.0,
+   "eps": 18.5
+  },
+  "forecast_label": "単 予 2027.03",
+  "prev": {
+   "sales": 854.0,
+   "op": -419.0,
+   "ord": -2151.0,
+   "net": -2154.0,
+   "eps": -40.8
+  },
+  "prev_label": "単 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 224.0,
+   "op": -148.0,
+   "ord": -514.0,
+   "net": -511.0
+  },
+  "year_ago": {
+   "sales": 183.0,
+   "op": -131.0,
+   "ord": -145.0,
+   "net": -144.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 224.0,
+   "op": -148.0
+  }
+ },
+ "code": "4833",
+ "name": "Ｄｅｆ　ｃｏｎｓｕｌｔｉｎｇ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4833（取得 2026-10-05 08:57）。単位：百万円（EPSは円）",
+ "price": 59.0,
+ "industry_per": null,
+ "market_cap": 4279999999.9999995,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 15000.0,
+   "op": 1000.0,
+   "ord": 500.0,
+   "net": 3700.0,
+   "eps": 483.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 15509.0,
+   "op": 1243.0,
+   "ord": 886.0,
+   "net": 414.0,
+   "eps": 54.2
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 3750.0,
+   "op": 237.0,
+   "ord": 141.0,
+   "net": 1784.0
+  },
+  "year_ago": {
+   "sales": 3856.0,
+   "op": 537.0,
+   "ord": 427.0,
+   "net": 371.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 3750.0,
+   "op": 237.0
+  }
+ },
+ "code": "9130",
+ "name": "共栄タンカー",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9130（取得 2026-10-05 08:44）。単位：百万円（EPSは円）",
+ "price": 1711.0,
+ "industry_per": null,
+ "market_cap": 13100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

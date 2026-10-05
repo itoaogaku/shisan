@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 54000.0,
+   "op": 6200.0,
+   "ord": 6300.0,
+   "net": 4300.0,
+   "eps": 110.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 47727.0,
+   "op": 6012.0,
+   "ord": 6191.0,
+   "net": 4359.0,
+   "eps": 111.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 13709.0,
+   "op": 1805.0,
+   "ord": 1863.0,
+   "net": 1312.0
+  },
+  "year_ago": {
+   "sales": 10472.0,
+   "op": 1317.0,
+   "ord": 1454.0,
+   "net": 1089.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 13709.0,
+   "op": 1805.0
+  }
+ },
+ "code": "4022",
+ "name": "ラサ工業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4022（取得 2026-10-05 08:49）。単位：百万円（EPSは円）",
+ "price": 2064.0,
+ "industry_per": null,
+ "market_cap": 82000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

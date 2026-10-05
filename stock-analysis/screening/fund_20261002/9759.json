@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 128000.0,
+   "op": 20100.0,
+   "ord": 20400.0,
+   "net": 13300.0,
+   "eps": 176.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 117813.0,
+   "op": 19073.0,
+   "ord": 19326.0,
+   "net": 13009.0,
+   "eps": 170.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 29930.0,
+   "op": 4175.0,
+   "ord": 4263.0,
+   "net": 2514.0
+  },
+  "year_ago": {
+   "sales": 27298.0,
+   "op": 3557.0,
+   "ord": 3635.0,
+   "net": 2182.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 29930.0,
+   "op": 4175.0
+  }
+ },
+ "code": "9759",
+ "name": "ＮＳＤ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9759（取得 2026-10-05 08:55）。単位：百万円（EPSは円）",
+ "price": 2980.5,
+ "industry_per": null,
+ "market_cap": 256300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

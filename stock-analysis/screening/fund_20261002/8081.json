@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 150000.0,
+   "op": 5900.0,
+   "ord": 6000.0,
+   "net": 4000.0,
+   "eps": 179.4
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 145614.0,
+   "op": 5332.0,
+   "ord": 5784.0,
+   "net": 3966.0,
+   "eps": 177.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 30736.0,
+   "op": 516.0,
+   "ord": 707.0,
+   "net": 457.0
+  },
+  "year_ago": {
+   "sales": 29609.0,
+   "op": 469.0,
+   "ord": 483.0,
+   "net": 311.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 30736.0,
+   "op": 516.0
+  }
+ },
+ "code": "8081",
+ "name": "カナデン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8081（取得 2026-10-05 08:43）。単位：百万円（EPSは円）",
+ "price": 2640.0,
+ "industry_per": null,
+ "market_cap": 59400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

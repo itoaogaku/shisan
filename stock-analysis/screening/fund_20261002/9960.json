@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 180000.0,
+   "op": 18000.0,
+   "ord": 18500.0,
+   "net": 13700.0,
+   "eps": 334.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 170013.0,
+   "op": 17125.0,
+   "ord": 17983.0,
+   "net": 13133.0,
+   "eps": 319.2
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 36691.0,
+   "op": 2601.0,
+   "ord": 2977.0,
+   "net": 1978.0
+  },
+  "year_ago": {
+   "sales": 36161.0,
+   "op": 2968.0,
+   "ord": 3290.0,
+   "net": 2207.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 36691.0,
+   "op": 2601.0
+  }
+ },
+ "code": "9960",
+ "name": "東テク",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9960（取得 2026-10-05 08:59）。単位：百万円（EPSは円）",
+ "price": 4190.0,
+ "industry_per": null,
+ "market_cap": 175800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

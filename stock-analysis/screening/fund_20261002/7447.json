@@ -1,0 +1,44 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 17500.0,
+   "op": 3602.0,
+   "ord": 3893.0,
+   "net": 2660.0,
+   "eps": 90.5
+  },
+  "forecast_label": "予 2027.08",
+  "prev": {
+   "sales": 17205.0,
+   "op": 3625.0,
+   "ord": 3835.0,
+   "net": 2650.0,
+   "eps": 88.2
+  },
+  "prev_label": "2026.08"
+ },
+ "quarter": {
+  "label": "26.06-08 単独（前年同期 25.06-08）",
+  "current": {
+   "sales": 3938.0,
+   "op": 812.0,
+   "ord": 877.0,
+   "net": 604.0
+  },
+  "year_ago": {
+   "sales": 3617.0,
+   "op": 668.0,
+   "ord": 711.0,
+   "net": 507.0
+  },
+  "one_off": null
+ },
+ "progress": {},
+ "code": "7447",
+ "name": "ナガイレーベン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7447（取得 2026-10-05 08:41）。単位：百万円（EPSは円）",
+ "price": 1704.0,
+ "industry_per": null,
+ "market_cap": 52400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

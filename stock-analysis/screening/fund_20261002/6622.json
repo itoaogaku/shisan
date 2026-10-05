@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 280000.0,
+   "op": 25000.0,
+   "ord": 25500.0,
+   "net": 16500.0,
+   "eps": 139.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 237735.0,
+   "op": 18778.0,
+   "ord": 20100.0,
+   "net": 14108.0,
+   "eps": 118.3
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 55507.0,
+   "op": 4079.0,
+   "ord": 4733.0,
+   "net": 2779.0
+  },
+  "year_ago": {
+   "sales": 49063.0,
+   "op": 3163.0,
+   "ord": 3776.0,
+   "net": 1972.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 55507.0,
+   "op": 4079.0
+  }
+ },
+ "code": "6622",
+ "name": "ダイヘン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6622（取得 2026-10-05 08:40）。単位：百万円（EPSは円）",
+ "price": 2776.0,
+ "industry_per": null,
+ "market_cap": 345700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

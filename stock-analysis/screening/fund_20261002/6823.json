@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 29700.0,
+   "op": 4700.0,
+   "ord": 4750.0,
+   "net": 3450.0,
+   "eps": 279.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 28501.0,
+   "op": 4361.0,
+   "ord": 4443.0,
+   "net": 3345.0,
+   "eps": 271.4
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 6885.0,
+   "op": 988.0,
+   "ord": 1001.0,
+   "net": 687.0
+  },
+  "year_ago": {
+   "sales": 6629.0,
+   "op": 829.0,
+   "ord": 853.0,
+   "net": 595.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 6885.0,
+   "op": 988.0
+  }
+ },
+ "code": "6823",
+ "name": "リオン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6823（取得 2026-10-05 08:48）。単位：百万円（EPSは円）",
+ "price": 3375.0,
+ "industry_per": null,
+ "market_cap": 41700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

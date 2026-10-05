@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 5400000.0,
+   "op": 450000.0,
+   "ord": 460000.0,
+   "net": 340000.0,
+   "eps": 109.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 5110171.0,
+   "op": 418173.0,
+   "ord": 431274.0,
+   "net": 369508.0,
+   "eps": 118.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 1330591.0,
+   "op": 97059.0,
+   "ord": 103039.0,
+   "net": 66414.0
+  },
+  "year_ago": {
+   "sales": 1148436.0,
+   "op": 60301.0,
+   "ord": 61837.0,
+   "net": 35119.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 1330591.0,
+   "op": 97059.0
+  }
+ },
+ "code": "5802",
+ "name": "住友電気工業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5802（取得 2026-10-05 08:42）。単位：百万円（EPSは円）",
+ "price": 2452.0,
+ "industry_per": null,
+ "market_cap": 7787000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

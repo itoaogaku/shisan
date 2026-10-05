@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 566500.0,
+   "op": 43000.0,
+   "ord": 43700.0,
+   "net": 29500.0,
+   "eps": 137.2
+  },
+  "forecast_label": "連 予 2026.10",
+  "prev": {
+   "sales": 551701.0,
+   "op": 39878.0,
+   "ord": 48081.0,
+   "net": 31878.0,
+   "eps": 144.0
+  },
+  "prev_label": "連 2025.10"
+ },
+ "quarter": {
+  "label": "26.05-07 単独（前年同期 25.05-07）",
+  "current": {
+   "sales": 146761.0,
+   "op": 10279.0,
+   "ord": 10131.0,
+   "net": 6853.0
+  },
+  "year_ago": {
+   "sales": 139247.0,
+   "op": 11253.0,
+   "ord": 17320.0,
+   "net": 11932.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.11-07",
+  "cumulative": {
+   "sales": 432933.0,
+   "op": 31316.0
+  }
+ },
+ "code": "3038",
+ "name": "神戸物産",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3038（取得 2026-10-05 08:50）。単位：百万円（EPSは円）",
+ "price": 2995.0,
+ "industry_per": null,
+ "market_cap": 819400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 436889.0,
+   "op": 184989.0,
+   "ord": 184936.0,
+   "net": 135521.0,
+   "eps": 1249.8
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 114308.0,
+   "op": 49033.0,
+   "ord": 48441.0,
+   "net": 34221.0
+  },
+  "year_ago": {
+   "sales": 89914.0,
+   "op": 34480.0,
+   "ord": 33999.0,
+   "net": 23767.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 114308.0,
+   "op": 49033.0
+  }
+ },
+ "code": "6146",
+ "name": "ディスコ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6146（取得 2026-10-05 08:55）。単位：百万円（EPSは円）",
+ "price": 60290.0,
+ "industry_per": null,
+ "market_cap": 6542900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

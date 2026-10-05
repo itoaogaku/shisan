@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 300326.0,
+   "op": 12500.0,
+   "ord": 11799.0,
+   "net": 6966.0,
+   "eps": 394.7
+  },
+  "forecast_label": "連 予 2026.12",
+  "prev": {
+   "sales": 284350.0,
+   "op": 10820.0,
+   "ord": 10867.0,
+   "net": 6620.0,
+   "eps": 370.0
+  },
+  "prev_label": "連 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 71946.0,
+   "op": 2365.0,
+   "ord": 2224.0,
+   "net": 1217.0
+  },
+  "year_ago": {
+   "sales": 68292.0,
+   "op": 2476.0,
+   "ord": 2416.0,
+   "net": 1443.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 138366.0,
+   "op": 4249.0
+  }
+ },
+ "code": "2429",
+ "name": "ワールドホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2429（取得 2026-10-05 08:52）。単位：百万円（EPSは円）",
+ "price": 2851.0,
+ "industry_per": null,
+ "market_cap": 51400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

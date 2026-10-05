@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 28000.0,
+   "op": 3600.0,
+   "ord": 3700.0,
+   "net": 2450.0,
+   "eps": 257.3
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 24854.0,
+   "op": 3268.0,
+   "ord": 3386.0,
+   "net": 2182.0,
+   "eps": 229.2
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 6164.0,
+   "op": 876.0,
+   "ord": 961.0,
+   "net": 710.0
+  },
+  "year_ago": {
+   "sales": 5445.0,
+   "op": 646.0,
+   "ord": 681.0,
+   "net": 423.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 16790.0,
+   "op": 4966.0
+  }
+ },
+ "code": "2325",
+ "name": "ＮＪＳ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2325（取得 2026-10-05 08:44）。単位：百万円（EPSは円）",
+ "price": 4625.0,
+ "industry_per": null,
+ "market_cap": 46500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 13422.0,
+   "op": 1652.0,
+   "ord": 1640.0,
+   "net": 1590.0,
+   "eps": 12.4
+  },
+  "forecast_label": "連 予 2027.04",
+  "prev": {
+   "sales": 10886.0,
+   "op": 1335.0,
+   "ord": 3971.0,
+   "net": 4155.0,
+   "eps": 34.9
+  },
+  "prev_label": "連 2026.04"
+ },
+ "quarter": {
+  "label": "26.05-07 単独（前年同期 25.05-07）",
+  "current": {
+   "sales": 3225.0,
+   "op": 494.0,
+   "ord": 342.0,
+   "net": 302.0
+  },
+  "year_ago": {
+   "sales": 2194.0,
+   "op": 9.0,
+   "ord": 938.0,
+   "net": 765.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.05-07",
+  "cumulative": {
+   "sales": 3225.0,
+   "op": 494.0
+  }
+ },
+ "code": "7777",
+ "name": "スリー・ディー・マトリックス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7777（取得 2026-10-05 08:57）。単位：百万円（EPSは円）",
+ "price": 420.0,
+ "industry_per": null,
+ "market_cap": 53800000000.0,
+ "going_concern": "解消済み：2026-06-11 「継続企業の前提に関する注記」の記載解消に関するお知らせ"
+}

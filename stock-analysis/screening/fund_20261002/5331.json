@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 157500.0,
+   "op": 13000.0,
+   "ord": 16500.0,
+   "net": 17000.0,
+   "eps": 309.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 142908.0,
+   "op": 11114.0,
+   "ord": 15194.0,
+   "net": 14178.0,
+   "eps": 254.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 39676.0,
+   "op": 4040.0,
+   "ord": 5406.0,
+   "net": 3910.0
+  },
+  "year_ago": {
+   "sales": 33443.0,
+   "op": 2188.0,
+   "ord": 3312.0,
+   "net": 2466.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 39676.0,
+   "op": 4040.0
+  }
+ },
+ "code": "5331",
+ "name": "ノリタケ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5331（取得 2026-10-05 08:59）。単位：百万円（EPSは円）",
+ "price": 3695.0,
+ "industry_per": null,
+ "market_cap": 207700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

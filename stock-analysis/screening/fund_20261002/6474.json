@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 255000.0,
+   "op": 15300.0,
+   "ord": 13300.0,
+   "net": 7500.0,
+   "eps": 344.1
+  },
+  "forecast_label": "予 2026.11",
+  "prev": {
+   "sales": 235903.0,
+   "op": 9773.0,
+   "ord": 8370.0,
+   "net": 5250.0,
+   "eps": 233.5
+  },
+  "prev_label": "2025.11"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 64625.0,
+   "op": 4044.0,
+   "ord": 3993.0,
+   "net": 2274.0
+  },
+  "year_ago": {
+   "sales": 59177.0,
+   "op": 2065.0,
+   "ord": 1491.0,
+   "net": 443.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "25.12-05",
+  "cumulative": {
+   "sales": 124832.0,
+   "op": 6769.0
+  }
+ },
+ "code": "6474",
+ "name": "不二越",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6474（取得 2026-10-05 08:59）。単位：百万円（EPSは円）",
+ "price": 5630.0,
+ "industry_per": null,
+ "market_cap": 140300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

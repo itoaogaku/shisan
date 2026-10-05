@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 101000.0,
+   "op": 19400.0,
+   "ord": 18400.0,
+   "net": 12500.0,
+   "eps": 55.2
+  },
+  "forecast_label": "I 予 2026.12",
+  "prev": {
+   "sales": 94193.0,
+   "op": 16709.0,
+   "ord": 15971.0,
+   "net": 11401.0,
+   "eps": 50.2
+  },
+  "prev_label": "I 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 21632.0,
+   "op": 1949.0,
+   "ord": 1633.0,
+   "net": 1299.0
+  },
+  "year_ago": {
+   "sales": 20142.0,
+   "op": 2882.0,
+   "ord": 2705.0,
+   "net": 1861.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 39565.0,
+   "op": 2579.0
+  }
+ },
+ "code": "268A",
+ "name": "リガク・ホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=268A（取得 2026-10-05 08:56）。単位：百万円（EPSは円）",
+ "price": 1795.0,
+ "industry_per": null,
+ "market_cap": 406700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

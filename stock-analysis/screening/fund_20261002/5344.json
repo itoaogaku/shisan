@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 93300.0,
+   "op": 33700.0,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 74476.0,
+   "op": 24976.0,
+   "ord": 26321.0,
+   "net": 18163.0,
+   "eps": 1472.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 19267.0,
+   "op": 6348.0,
+   "ord": 6574.0,
+   "net": 4466.0
+  },
+  "year_ago": {
+   "sales": 17256.0,
+   "op": 6002.0,
+   "ord": 5722.0,
+   "net": 3878.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 19267.0,
+   "op": 6348.0
+  }
+ },
+ "code": "5344",
+ "name": "ＭＡＲＵＷＡ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5344（取得 2026-10-05 08:47）。単位：百万円（EPSは円）",
+ "price": 58350.0,
+ "industry_per": null,
+ "market_cap": 721900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

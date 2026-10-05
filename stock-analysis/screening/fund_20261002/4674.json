@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 71500.0,
+   "op": 8000.0,
+   "ord": 8200.0,
+   "net": 5530.0,
+   "eps": 140.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 64676.0,
+   "op": 6605.0,
+   "ord": 6980.0,
+   "net": 5279.0,
+   "eps": 129.8
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 16682.0,
+   "op": 1149.0,
+   "ord": 1254.0,
+   "net": 864.0
+  },
+  "year_ago": {
+   "sales": 15080.0,
+   "op": 1014.0,
+   "ord": 1095.0,
+   "net": 754.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 16682.0,
+   "op": 1149.0
+  }
+ },
+ "code": "4674",
+ "name": "クレスコ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4674（取得 2026-10-05 08:57）。単位：百万円（EPSは円）",
+ "price": 1950.0,
+ "industry_per": null,
+ "market_cap": 81900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

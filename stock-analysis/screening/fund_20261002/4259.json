@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 15600.0,
+   "op": 2300.0,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 11996.0,
+   "op": 1594.0,
+   "ord": 1566.0,
+   "net": 1533.0,
+   "eps": 18.1
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 3448.0,
+   "op": 200.0,
+   "ord": 168.0,
+   "net": 87.0
+  },
+  "year_ago": {
+   "sales": 2446.0,
+   "op": 144.0,
+   "ord": 139.0,
+   "net": 66.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 3448.0,
+   "op": 200.0
+  }
+ },
+ "code": "4259",
+ "name": "エクサウィザーズ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4259（取得 2026-10-05 08:50）。単位：百万円（EPSは円）",
+ "price": 853.0,
+ "industry_per": null,
+ "market_cap": 82800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 46000.0,
+   "op": 1600.0,
+   "ord": 1500.0,
+   "net": 1000.0,
+   "eps": 590.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 47016.0,
+   "op": 3075.0,
+   "ord": 3002.0,
+   "net": 2299.0,
+   "eps": 1356.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 12586.0,
+   "op": 1295.0,
+   "ord": 1311.0,
+   "net": 886.0
+  },
+  "year_ago": {
+   "sales": 10192.0,
+   "op": 426.0,
+   "ord": 410.0,
+   "net": 395.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 12586.0,
+   "op": 1295.0
+  }
+ },
+ "code": "7018",
+ "name": "内海造船",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7018（取得 2026-10-05 08:44）。単位：百万円（EPSは円）",
+ "price": 13360.0,
+ "industry_per": null,
+ "market_cap": 30100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

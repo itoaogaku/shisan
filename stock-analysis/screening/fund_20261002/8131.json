@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 385000.0,
+   "op": 8500.0,
+   "ord": 9000.0,
+   "net": 6000.0,
+   "eps": 110.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 339498.0,
+   "op": 12368.0,
+   "ord": 13676.0,
+   "net": 9197.0,
+   "eps": 164.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 82331.0,
+   "op": 3173.0,
+   "ord": 3666.0,
+   "net": 2723.0
+  },
+  "year_ago": {
+   "sales": 78430.0,
+   "op": 3559.0,
+   "ord": 4123.0,
+   "net": 2937.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 82331.0,
+   "op": 3173.0
+  }
+ },
+ "code": "8131",
+ "name": "ミツウロコグループホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8131（取得 2026-10-05 08:56）。単位：百万円（EPSは円）",
+ "price": 2454.0,
+ "industry_per": null,
+ "market_cap": 140000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

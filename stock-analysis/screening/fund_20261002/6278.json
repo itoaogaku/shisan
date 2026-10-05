@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 56100.0,
+   "op": 16800.0,
+   "ord": 17400.0,
+   "net": 12300.0,
+   "eps": 631.3
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 40165.0,
+   "op": 8728.0,
+   "ord": 8136.0,
+   "net": 6114.0,
+   "eps": 353.9
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 14504.0,
+   "op": 4051.0,
+   "ord": 4122.0,
+   "net": 3110.0
+  },
+  "year_ago": {
+   "sales": 9445.0,
+   "op": 1977.0,
+   "ord": 1689.0,
+   "net": 1265.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 27055.0,
+   "op": 7595.0
+  }
+ },
+ "code": "6278",
+ "name": "ユニオンツール",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6278（取得 2026-10-05 08:52）。単位：百万円（EPSは円）",
+ "price": 16370.0,
+ "industry_per": null,
+ "market_cap": 323800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

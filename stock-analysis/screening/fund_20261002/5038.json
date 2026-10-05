@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 4277.0,
+   "op": 1927.0,
+   "ord": 1937.0,
+   "net": 1329.0,
+   "eps": 87.8
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 3392.0,
+   "op": 1537.0,
+   "ord": 1546.0,
+   "net": 1088.0,
+   "eps": 71.8
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 1038.0,
+   "op": 512.0,
+   "ord": 517.0,
+   "net": 358.0
+  },
+  "year_ago": {
+   "sales": 849.0,
+   "op": 412.0,
+   "ord": 413.0,
+   "net": 287.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 1991.0,
+   "op": 946.0
+  }
+ },
+ "code": "5038",
+ "name": "ｅＷｅＬＬ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5038（取得 2026-10-05 08:57）。単位：百万円（EPSは円）",
+ "price": 2283.0,
+ "industry_per": null,
+ "market_cap": 34900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

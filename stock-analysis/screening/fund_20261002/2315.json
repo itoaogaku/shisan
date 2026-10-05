@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 6166.0,
+   "op": 107.0,
+   "ord": 107.0,
+   "net": 91.0,
+   "eps": 0.5
+  },
+  "forecast_label": "予 2026.10",
+  "prev": {
+   "sales": 5195.0,
+   "op": 70.0,
+   "ord": 76.0,
+   "net": 166.0,
+   "eps": 1.2
+  },
+  "prev_label": "2025.10"
+ },
+ "quarter": {
+  "label": "26.05-07 単独（前年同期 25.05-07）",
+  "current": {
+   "sales": 1704.0,
+   "op": 59.0,
+   "ord": -83.0,
+   "net": -178.0
+  },
+  "year_ago": {
+   "sales": 1297.0,
+   "op": 41.0,
+   "ord": 42.0,
+   "net": 37.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.11-07",
+  "cumulative": {
+   "sales": 4693.0,
+   "op": 111.0
+  }
+ },
+ "code": "2315",
+ "name": "ＣＡＩＣＡ　ＤＩＧＩＴＡＬ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2315（取得 2026-10-05 09:00）。単位：百万円（EPSは円）",
+ "price": 68.0,
+ "industry_per": null,
+ "market_cap": 12300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

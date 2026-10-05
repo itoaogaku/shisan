@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 27800.0,
+   "op": 2900.0,
+   "ord": 3050.0,
+   "net": 2200.0,
+   "eps": 86.7
+  },
+  "forecast_label": "予 2026.08",
+  "prev": {
+   "sales": 26337.0,
+   "op": 2566.0,
+   "ord": 2732.0,
+   "net": 1487.0,
+   "eps": 55.7
+  },
+  "prev_label": "2025.08"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 5414.0,
+   "op": 306.0,
+   "ord": 425.0,
+   "net": 286.0
+  },
+  "year_ago": {
+   "sales": 5600.0,
+   "op": 76.0,
+   "ord": 93.0,
+   "net": -477.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.09-05",
+  "cumulative": {
+   "sales": 19508.0,
+   "op": 1779.0
+  }
+ },
+ "code": "6289",
+ "name": "技研製作所",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6289（取得 2026-10-05 08:42）。単位：百万円（EPSは円）",
+ "price": 2031.0,
+ "industry_per": null,
+ "market_cap": 52700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "I 予 2026.12",
+  "prev": {
+   "sales": 1321212.0,
+   "op": 201166.0,
+   "ord": -30275.0,
+   "net": -51763.0,
+   "eps": -28.7
+  },
+  "prev_label": "I 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 418449.0,
+   "op": 102116.0,
+   "ord": 170267.0,
+   "net": 149184.0
+  },
+  "year_ago": {
+   "sales": 325534.0,
+   "op": 39776.0,
+   "ord": -196057.0,
+   "net": -201348.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 798742.0,
+   "op": 192680.0
+  }
+ },
+ "code": "6723",
+ "name": "ルネサスエレクトロニクス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6723（取得 2026-10-05 08:46）。単位：百万円（EPSは円）",
+ "price": 3575.0,
+ "industry_per": null,
+ "market_cap": 6687400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1438.0,
+   "op": 138.0,
+   "ord": 138.0,
+   "net": 95.0,
+   "eps": 12.5
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 1279.0,
+   "op": 112.0,
+   "ord": 115.0,
+   "net": 105.0,
+   "eps": 13.8
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 260.0,
+   "op": -52.0,
+   "ord": -51.0,
+   "net": -53.0
+  },
+  "year_ago": {
+   "sales": 315.0,
+   "op": 39.0,
+   "ord": 39.0,
+   "net": 28.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 260.0,
+   "op": -52.0
+  }
+ },
+ "code": "3042",
+ "name": "セキュアヴェイル",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3042（取得 2026-10-05 08:40）。単位：百万円（EPSは円）",
+ "price": 338.0,
+ "industry_per": null,
+ "market_cap": 2600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

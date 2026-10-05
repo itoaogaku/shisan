@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1690000.0,
+   "op": 120000.0,
+   "ord": null,
+   "net": 87000.0,
+   "eps": 216.6
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 1664387.0,
+   "op": 103979.0,
+   "ord": 133779.0,
+   "net": 99034.0,
+   "eps": 246.6
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 426567.0,
+   "op": 26313.0,
+   "ord": 29812.0,
+   "net": 21298.0
+  },
+  "year_ago": {
+   "sales": 366925.0,
+   "op": 17432.0,
+   "ord": 15589.0,
+   "net": 10889.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 426567.0,
+   "op": 26313.0
+  }
+ },
+ "code": "6479",
+ "name": "ミネベアミツミ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6479（取得 2026-10-05 08:55）。単位：百万円（EPSは円）",
+ "price": 3835.0,
+ "industry_per": null,
+ "market_cap": 1637900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

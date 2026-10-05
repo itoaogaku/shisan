@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 11700000.0,
+   "op": 1408000.0,
+   "ord": 1335000.0,
+   "net": 900000.0,
+   "eps": 202.5
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 10586781.0,
+   "op": 1199275.0,
+   "ord": 1273109.0,
+   "net": 802368.0,
+   "eps": 176.8
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 2709586.0,
+   "op": 294287.0,
+   "ord": 295109.0,
+   "net": 189450.0
+  },
+  "year_ago": {
+   "sales": 2258325.0,
+   "op": 211016.0,
+   "ord": 272043.0,
+   "net": 192204.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 2709586.0,
+   "op": 294287.0
+  }
+ },
+ "code": "6501",
+ "name": "日立製作所",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6501（取得 2026-10-05 08:39）。単位：百万円（EPSは円）",
+ "price": 5522.0,
+ "industry_per": null,
+ "market_cap": 25045400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

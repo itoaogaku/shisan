@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 4230000.0,
+   "op": 945000.0,
+   "ord": null,
+   "net": 755000.0,
+   "eps": 546.0
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 3697351.0,
+   "op": 630567.0,
+   "ord": 644618.0,
+   "net": 496912.0,
+   "eps": 349.8
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 1045350.0,
+   "op": 255413.0,
+   "ord": 263535.0,
+   "net": 202618.0
+  },
+  "year_ago": {
+   "sales": 878839.0,
+   "op": 153734.0,
+   "ord": 158946.0,
+   "net": 120936.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 1045350.0,
+   "op": 255413.0
+  }
+ },
+ "code": "6098",
+ "name": "リクルートホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6098（取得 2026-10-05 08:50）。単位：百万円（EPSは円）",
+ "price": 16685.0,
+ "industry_per": null,
+ "market_cap": 24568700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

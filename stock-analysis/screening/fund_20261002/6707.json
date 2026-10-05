@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 86500.0,
+   "op": 1400.0,
+   "ord": 100.0,
+   "net": 1000.0,
+   "eps": 50.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 80175.0,
+   "op": -4728.0,
+   "ord": -8839.0,
+   "net": -9798.0,
+   "eps": -472.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 18680.0,
+   "op": -2082.0,
+   "ord": -1763.0,
+   "net": -1866.0
+  },
+  "year_ago": {
+   "sales": 22238.0,
+   "op": -387.0,
+   "ord": -940.0,
+   "net": -864.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 18680.0,
+   "op": -2082.0
+  }
+ },
+ "code": "6707",
+ "name": "サンケン電気",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6707（取得 2026-10-05 08:52）。単位：百万円（EPSは円）",
+ "price": 6948.0,
+ "industry_per": null,
+ "market_cap": 145400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}
