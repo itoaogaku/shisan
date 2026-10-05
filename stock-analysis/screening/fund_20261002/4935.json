@@ -43,9 +43,9 @@
  },
  "code": "4935",
  "name": "リベルタ",
- "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4935（取得 2026-10-05 08:41）。単位：百万円（EPSは円）",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4935（取得 2026-10-05 13:58）。単位：百万円（EPSは円）",
  "price": 240.0,
  "industry_per": null,
- "market_cap": 8250000000.0,
+ "market_cap": 7759999999.999999,
  "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
 }
