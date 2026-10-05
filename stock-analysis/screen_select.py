@@ -22,6 +22,9 @@
   5日線が上向き      10
 ■ 待つ理由: 2週間以内（当日を含む）に決算発表 / --flags で wait=true の銘柄（株式売出しの受渡し前など）。
   待つ理由がある銘柄は --top には入れず、「待ち」として別に出力する。
+■ 安全柵（点数に関係なく --top から外し、別に出力する）
+  過熱：200日線から+60%超、またはRSI(14)80以上 / 割高：予想PER40倍以上
+  過去1年の上昇相場では成績への影響は小さかったが、反転したときに下値の目安が見えない株を避けるため。
 
 --flags の形式: {"コード": "注意点"} または {"コード": {"note": "注意点", "wait": true}}
 次回決算日は IRBank（https://irbank.net/<コード>）から取得する。結果は screening/select_<日付>.csv。
@@ -47,6 +50,9 @@ JST = timezone(timedelta(hours=9))
 SCREEN_DIR = os.path.join(HERE, "screening")
 PRICE_DIR = os.path.join(HERE, "data", "prices")
 EVENT_DAYS = 14
+HOT_DEV200 = .60
+HOT_RSI = 80
+RICH_PER = 40
 MIN_FUND_EVAL = 27
 
 
@@ -69,7 +75,7 @@ def timing(bars):
     }
     return {
         "r20": r20, "dev25": dev25, "high52": high52, "ma5_up": ma5_up, "pts": pts, "score": sum(pts.values()),
-        "rsi": t["rsi"], "ma25": t["ma"]["ma25"], "ma200": t["ma"]["ma200"],
+        "rsi": t["rsi"], "ma25": t["ma"]["ma25"], "ma200": t["ma"]["ma200"], "dev200": closes[-1] / t["ma"]["ma200"] - 1,
         "resist": items["レジスタンスライン"]["data"],
     }
 
@@ -118,7 +124,15 @@ def main():
         code, tm = r["コード"], r["tm"]
         fl = flags.get(code, {})
         ne, waits = None, []
-        if picked < args.top:  # 次回決算日は選ぶ候補の分だけ取得する
+        per = float(r["予想PER"]) if r["予想PER"] else None
+        guards = []
+        if tm["dev200"] > HOT_DEV200:
+            guards.append(f"過熱：200日線から{tm['dev200'] * 100:+.0f}%")
+        if tm["rsi"] >= HOT_RSI:
+            guards.append(f"過熱：RSI{tm['rsi']:.0f}")
+        if per and per >= RICH_PER:
+            guards.append(f"割高：予想PER{per:.0f}倍")
+        if picked < args.top and not guards:  # 次回決算日は選ぶ候補の分だけ取得する
             if fetched:
                 time.sleep(1.1)
             fetched += 1
@@ -131,7 +145,9 @@ def main():
                 waits.append("決算発表済み・反応待ち" if days == 0 else f"決算まであと{days}日")
             if fl.get("wait"):
                 waits.append(fl["note"])
-        if picked >= args.top:
+        if guards:
+            label = "過熱・割高で除外"
+        elif picked >= args.top:
             label = "対象外（買い時点が下位）"
         elif waits:
             label = "待ち"
@@ -148,7 +164,7 @@ def main():
             "強い株スコア": r["強い株スコア"], "強さ点": r["強さ点"], "ファンダ点": int(r["ファンダ点"]),
             "継続": r["継続"], "6か月上昇率%": r["6か月上昇率%"], "52週高値比%": r["52週高値比%"],
             "買い時点": tm["score"], "買い時内訳": " ".join(f"{k}{v}" for k, v in tm["pts"].items()),
-            "区分": label, "待つ理由": " / ".join(waits),
+            "区分": label, "待つ理由": " / ".join(waits + guards), "200日線乖離%": round(tm["dev200"] * 100, 1),
             "直近20日%": round(tm["r20"] * 100, 1), "25日線乖離%": round(tm["dev25"] * 100, 1),
             "RSI": round(tm["rsi"], 1), "25日線": round(tm["ma25"], 1), "200日線": round(tm["ma200"], 1),
             "最も近い抵抗線": tm["resist"], "次回決算": ne.isoformat() if ne else "",
@@ -157,15 +173,16 @@ def main():
             "ファンダ内訳": r["ファンダ内訳"], "継続企業": r["継続企業"],
         })
 
-    sel = [x for x in rows if x["区分"] not in ("待ち", "対象外（買い時点が下位）")]
+    sel = [x for x in rows if x["区分"] not in ("待ち", "対象外（買い時点が下位）", "過熱・割高で除外")]
     wait = [x for x in rows if x["区分"] == "待ち"]
+    guard = [x for x in rows if x["区分"] == "過熱・割高で除外"]
     for i, x in enumerate(sel, 1):
         x["買い時順"] = i
     out = os.path.join(SCREEN_DIR, f"select_{tag}.csv")
     with open(out, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["買い時順"] + list(rows[0].keys()))
         w.writeheader()
-        w.writerows(sel + wait + [x for x in rows if x not in sel and x not in wait])
+        w.writerows(sel + wait + guard + [x for x in rows if x not in sel and x not in wait and x not in guard])
 
     print(f"{out} に保存しました（候補 {len(cands)}・強い株 {len(pool)}・業績データ不足で対象外 {len(skipped)}）")
     for s_ in skipped:
@@ -176,6 +193,9 @@ def main():
               f"（強さ{x['強さ点']}・ファンダ{x['ファンダ点']}）20日{x['直近20日%']:+}% 25日線{x['25日線乖離%']:+}% 高値比{x['52週高値比%']}%")
     print("\n■ 待ち（買い時点は上位だが待つ理由あり）")
     for x in wait:
+        print(f"  {x['コード']} {x['銘柄名']} 買い時{x['買い時点']} 強い株{x['強い株順位']}位：{x['待つ理由']}")
+    print(f"\n■ 過熱・割高で除外（強い株{len(pool)}銘柄中 {len(guard)}銘柄）")
+    for x in guard:
         print(f"  {x['コード']} {x['銘柄名']} 買い時{x['買い時点']} 強い株{x['強い株順位']}位：{x['待つ理由']}")
 
 
