@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "I 予 2026.12",
+  "prev": {
+   "sales": 104.0,
+   "op": -3340.0,
+   "ord": -2126.0,
+   "net": -2217.0,
+   "eps": -20.6
+  },
+  "prev_label": "I 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 7.0,
+   "op": -1274.0,
+   "ord": 1186.0,
+   "net": 1192.0
+  },
+  "year_ago": {
+   "sales": 22.0,
+   "op": -829.0,
+   "ord": -2125.0,
+   "net": -2148.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 15.0,
+   "op": -2404.0
+  }
+ },
+ "code": "4593",
+ "name": "ヘリオス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4593（取得 2026-10-05 17:14）。単位：百万円（EPSは円）",
+ "price": 290.0,
+ "industry_per": null,
+ "market_cap": 39300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 816000.0,
+   "op": 27000.0,
+   "ord": 27000.0,
+   "net": 15700.0,
+   "eps": 148.4
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 793746.0,
+   "op": 25782.0,
+   "ord": 26640.0,
+   "net": 15453.0,
+   "eps": 146.4
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 201494.0,
+   "op": 11077.0,
+   "ord": 11236.0,
+   "net": 7573.0
+  },
+  "year_ago": {
+   "sales": 183395.0,
+   "op": 4734.0,
+   "ord": 4938.0,
+   "net": 3202.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 201494.0,
+   "op": 11077.0
+  }
+ },
+ "code": "2730",
+ "name": "エディオン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2730（取得 2026-10-05 17:12）。単位：百万円（EPSは円）",
+ "price": 2403.0,
+ "industry_per": null,
+ "market_cap": 269200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

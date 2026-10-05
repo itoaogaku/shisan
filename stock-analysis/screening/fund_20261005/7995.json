@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 69000.0,
+   "op": 11000.0,
+   "ord": 10800.0,
+   "net": 8700.0,
+   "eps": 493.4
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 58556.0,
+   "op": 7100.0,
+   "ord": 7012.0,
+   "net": 5128.0,
+   "eps": 291.2
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 17191.0,
+   "op": 2902.0,
+   "ord": 2978.0,
+   "net": 3280.0
+  },
+  "year_ago": {
+   "sales": 13949.0,
+   "op": 1802.0,
+   "ord": 1803.0,
+   "net": 1261.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 17191.0,
+   "op": 2902.0
+  }
+ },
+ "code": "7995",
+ "name": "バルカー",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7995（取得 2026-10-05 16:59）。単位：百万円（EPSは円）",
+ "price": 7250.0,
+ "industry_per": null,
+ "market_cap": 135500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

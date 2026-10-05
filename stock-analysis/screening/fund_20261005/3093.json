@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 54975.0,
+   "op": 5333.0,
+   "ord": 5332.0,
+   "net": 3551.0,
+   "eps": 151.4
+  },
+  "forecast_label": "連 予 2027.02",
+  "prev": {
+   "sales": 48597.0,
+   "op": 4777.0,
+   "ord": 4857.0,
+   "net": 3171.0,
+   "eps": 135.3
+  },
+  "prev_label": "連 2026.02"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 13782.0,
+   "op": 1855.0,
+   "ord": 1855.0,
+   "net": 1224.0
+  },
+  "year_ago": {
+   "sales": 11843.0,
+   "op": 1496.0,
+   "ord": 1534.0,
+   "net": 998.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.03-05",
+  "cumulative": {
+   "sales": 13782.0,
+   "op": 1855.0
+  }
+ },
+ "code": "3093",
+ "name": "トレジャー・ファクトリー",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3093（取得 2026-10-05 17:05）。単位：百万円（EPSは円）",
+ "price": 1975.0,
+ "industry_per": null,
+ "market_cap": 48100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

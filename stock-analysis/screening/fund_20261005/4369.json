@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 29500.0,
+   "op": 7450.0,
+   "ord": 8720.0,
+   "net": 6570.0,
+   "eps": 202.2
+  },
+  "forecast_label": "連 予 2027.01",
+  "prev": {
+   "sales": 23883.0,
+   "op": 5902.0,
+   "ord": 7090.0,
+   "net": 5515.0,
+   "eps": 169.7
+  },
+  "prev_label": "連 2026.01"
+ },
+ "quarter": {
+  "label": "26.05-07 単独（前年同期 25.05-07）",
+  "current": {
+   "sales": 7217.0,
+   "op": 1769.0,
+   "ord": 2041.0,
+   "net": 1518.0
+  },
+  "year_ago": {
+   "sales": 5806.0,
+   "op": 1465.0,
+   "ord": 2160.0,
+   "net": 1569.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.02-07",
+  "cumulative": {
+   "sales": 14705.0,
+   "op": 3838.0
+  }
+ },
+ "code": "4369",
+ "name": "トリケミカル研究所",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4369（取得 2026-10-05 17:17）。単位：百万円（EPSは円）",
+ "price": 3360.0,
+ "industry_per": null,
+ "market_cap": 109200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 405000.0,
+   "op": 38000.0,
+   "ord": 37000.0,
+   "net": 36000.0,
+   "eps": 188.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 411966.0,
+   "op": 36377.0,
+   "ord": 40038.0,
+   "net": 36226.0,
+   "eps": 186.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 109466.0,
+   "op": 16300.0,
+   "ord": 18849.0,
+   "net": 12711.0
+  },
+  "year_ago": {
+   "sales": 103083.0,
+   "op": 12129.0,
+   "ord": 11973.0,
+   "net": 7506.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 109466.0,
+   "op": 16300.0
+  }
+ },
+ "code": "4205",
+ "name": "日本ゼオン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4205（取得 2026-10-05 17:03）。単位：百万円（EPSは円）",
+ "price": 2444.0,
+ "industry_per": null,
+ "market_cap": 511400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

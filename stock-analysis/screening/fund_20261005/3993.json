@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 35000.0,
+   "op": null,
+   "ord": null,
+   "net": 2850.0,
+   "eps": 92.9
+  },
+  "forecast_label": "I 予 2026.09",
+  "prev": {
+   "sales": 21771.0,
+   "op": 3922.0,
+   "ord": 4675.0,
+   "net": 2683.0,
+   "eps": 86.5
+  },
+  "prev_label": "I 2025.09"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 9625.0,
+   "op": 1331.0,
+   "ord": 1280.0,
+   "net": 767.0
+  },
+  "year_ago": {
+   "sales": 5316.0,
+   "op": 1077.0,
+   "ord": 1037.0,
+   "net": 584.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.10-06",
+  "cumulative": {
+   "sales": 28337.0,
+   "op": 4678.0
+  }
+ },
+ "code": "3993",
+ "name": "ＰＫＳＨＡ　Ｔｅｃｈｎｏｌｏｇｙ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3993（取得 2026-10-05 17:08）。単位：百万円（EPSは円）",
+ "price": 3325.0,
+ "industry_per": null,
+ "market_cap": 106200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 272000.0,
+   "op": 19500.0,
+   "ord": 20000.0,
+   "net": 14500.0,
+   "eps": 79.3
+  },
+  "forecast_label": "予 2027.01",
+  "prev": {
+   "sales": 218329.0,
+   "op": 12651.0,
+   "ord": 13815.0,
+   "net": 3151.0,
+   "eps": 17.3
+  },
+  "prev_label": "2026.01"
+ },
+ "quarter": {
+  "label": "26.05-07 単独（前年同期 25.05-07）",
+  "current": {
+   "sales": 68786.0,
+   "op": 7385.0,
+   "ord": 7428.0,
+   "net": 5359.0
+  },
+  "year_ago": {
+   "sales": 53657.0,
+   "op": 2878.0,
+   "ord": 4498.0,
+   "net": 3221.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.02-07",
+  "cumulative": {
+   "sales": 130672.0,
+   "op": 11818.0
+  }
+ },
+ "code": "6966",
+ "name": "三井ハイテック",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6966（取得 2026-10-05 17:20）。単位：百万円（EPSは円）",
+ "price": 938.0,
+ "industry_per": null,
+ "market_cap": 185100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

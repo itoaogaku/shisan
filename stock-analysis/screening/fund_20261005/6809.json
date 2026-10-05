@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 56500.0,
+   "op": 4700.0,
+   "ord": 5100.0,
+   "net": 3400.0,
+   "eps": 97.9
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 55386.0,
+   "op": 4656.0,
+   "ord": 5236.0,
+   "net": 3313.0,
+   "eps": 105.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 12569.0,
+   "op": 963.0,
+   "ord": 1162.0,
+   "net": 608.0
+  },
+  "year_ago": {
+   "sales": 11179.0,
+   "op": 365.0,
+   "ord": 433.0,
+   "net": 23.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 12569.0,
+   "op": 963.0
+  }
+ },
+ "code": "6809",
+ "name": "ＴＯＡ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6809（取得 2026-10-05 17:11）。単位：百万円（EPSは円）",
+ "price": 1719.0,
+ "industry_per": null,
+ "market_cap": 59700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

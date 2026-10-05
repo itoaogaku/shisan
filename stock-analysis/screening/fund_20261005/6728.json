@@ -1,0 +1,44 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 255000.0,
+   "op": 28000.0,
+   "ord": 28000.0,
+   "net": 19000.0,
+   "eps": 386.4
+  },
+  "forecast_label": "予 2027.06",
+  "prev": {
+   "sales": 269130.0,
+   "op": 19598.0,
+   "ord": 19908.0,
+   "net": 17092.0,
+   "eps": 347.4
+  },
+  "prev_label": "2026.06"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 77499.0,
+   "op": 4879.0,
+   "ord": 5374.0,
+   "net": 7981.0
+  },
+  "year_ago": {
+   "sales": 63458.0,
+   "op": 5771.0,
+   "ord": 6471.0,
+   "net": 3579.0
+  },
+  "one_off": null
+ },
+ "progress": {},
+ "code": "6728",
+ "name": "アルバック",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6728（取得 2026-10-05 17:07）。単位：百万円（EPSは円）",
+ "price": 8419.0,
+ "industry_per": null,
+ "market_cap": 415500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

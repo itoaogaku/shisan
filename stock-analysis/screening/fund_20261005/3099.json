@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 562000.0,
+   "op": 84000.0,
+   "ord": 83000.0,
+   "net": 63000.0,
+   "eps": 90.9
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 545626.0,
+   "op": 80020.0,
+   "ord": 86587.0,
+   "net": 76096.0,
+   "eps": 107.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 128912.0,
+   "op": 18877.0,
+   "ord": 19927.0,
+   "net": 22316.0
+  },
+  "year_ago": {
+   "sales": 124193.0,
+   "op": 15650.0,
+   "ord": 17079.0,
+   "net": 18838.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 128912.0,
+   "op": 18877.0
+  }
+ },
+ "code": "3099",
+ "name": "三越伊勢丹ホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3099（取得 2026-10-05 17:13）。単位：百万円（EPSは円）",
+ "price": 1659.5,
+ "industry_per": null,
+ "market_cap": 1219600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

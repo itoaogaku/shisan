@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 140000.0,
+   "op": 20000.0,
+   "ord": 20000.0,
+   "net": 15000.0,
+   "eps": 117.2
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 117462.0,
+   "op": 14828.0,
+   "ord": 16147.0,
+   "net": 11677.0,
+   "eps": 91.2
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 32584.0,
+   "op": 4278.0,
+   "ord": 4635.0,
+   "net": 3286.0
+  },
+  "year_ago": {
+   "sales": 23620.0,
+   "op": 1339.0,
+   "ord": 1351.0,
+   "net": 583.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 32584.0,
+   "op": 4278.0
+  }
+ },
+ "code": "6754",
+ "name": "アンリツ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6754（取得 2026-10-05 17:11）。単位：百万円（EPSは円）",
+ "price": 3685.0,
+ "industry_per": null,
+ "market_cap": 500700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

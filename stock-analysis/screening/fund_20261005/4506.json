@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 540000.0,
+   "op": 90000.0,
+   "ord": null,
+   "net": 77000.0,
+   "eps": 171.7
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 453294.0,
+   "op": 107338.0,
+   "ord": 100344.0,
+   "net": 106865.0,
+   "eps": 269.0
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 129495.0,
+   "op": 18188.0,
+   "ord": 18295.0,
+   "net": 16997.0
+  },
+  "year_ago": {
+   "sales": 108002.0,
+   "op": 20400.0,
+   "ord": 11932.0,
+   "net": 11206.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 129495.0,
+   "op": 18188.0
+  }
+ },
+ "code": "4506",
+ "name": "住友ファーマ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4506（取得 2026-10-05 17:21）。単位：百万円（EPSは円）",
+ "price": 1579.0,
+ "industry_per": null,
+ "market_cap": 709300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

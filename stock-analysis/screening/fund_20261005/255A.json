@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 50000.0,
+   "op": 7740.0,
+   "ord": 7800.0,
+   "net": 5460.0,
+   "eps": 424.7
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 47189.0,
+   "op": 7111.0,
+   "ord": 7721.0,
+   "net": 5358.0,
+   "eps": 410.4
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 12043.0,
+   "op": 1964.0,
+   "ord": 1994.0,
+   "net": 1345.0
+  },
+  "year_ago": {
+   "sales": 10454.0,
+   "op": 1288.0,
+   "ord": 1349.0,
+   "net": 948.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 12043.0,
+   "op": 1964.0
+  }
+ },
+ "code": "255A",
+ "name": "ジーエルテクノホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=255A（取得 2026-10-05 17:12）。単位：百万円（EPSは円）",
+ "price": 5670.0,
+ "industry_per": null,
+ "market_cap": 77600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

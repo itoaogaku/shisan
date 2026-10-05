@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 68000.0,
+   "op": 7000.0,
+   "ord": 6900.0,
+   "net": 4500.0,
+   "eps": 164.3
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 69326.0,
+   "op": 9209.0,
+   "ord": 9470.0,
+   "net": 5923.0,
+   "eps": 216.3
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 14382.0,
+   "op": 622.0,
+   "ord": 784.0,
+   "net": 432.0
+  },
+  "year_ago": {
+   "sales": 14555.0,
+   "op": 1332.0,
+   "ord": 1432.0,
+   "net": 795.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 14382.0,
+   "op": 622.0
+  }
+ },
+ "code": "7745",
+ "name": "Ａ＆Ｄホロンホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7745（取得 2026-10-05 17:09）。単位：百万円（EPSは円）",
+ "price": 3010.0,
+ "industry_per": null,
+ "market_cap": 83800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

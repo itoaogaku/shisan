@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 785000.0,
+   "op": 60000.0,
+   "ord": 58500.0,
+   "net": 46000.0,
+   "eps": 279.7
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 737441.0,
+   "op": 53759.0,
+   "ord": 60689.0,
+   "net": 40257.0,
+   "eps": 243.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 168611.0,
+   "op": 8073.0,
+   "ord": 9372.0,
+   "net": 6905.0
+  },
+  "year_ago": {
+   "sales": 165747.0,
+   "op": 8207.0,
+   "ord": 8738.0,
+   "net": 6306.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 168611.0,
+   "op": 8073.0
+  }
+ },
+ "code": "5332",
+ "name": "ＴＯＴＯ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5332（取得 2026-10-05 17:04）。単位：百万円（EPSは円）",
+ "price": 6235.0,
+ "industry_per": null,
+ "market_cap": 1037200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

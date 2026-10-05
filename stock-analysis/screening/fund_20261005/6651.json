@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 210000.0,
+   "op": 16700.0,
+   "ord": 17000.0,
+   "net": 11600.0,
+   "eps": 305.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 195783.0,
+   "op": 15446.0,
+   "ord": 16260.0,
+   "net": 11493.0,
+   "eps": 303.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 45536.0,
+   "op": 2979.0,
+   "ord": 3178.0,
+   "net": 1554.0
+  },
+  "year_ago": {
+   "sales": 41842.0,
+   "op": 1854.0,
+   "ord": 2033.0,
+   "net": 929.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 45536.0,
+   "op": 2979.0
+  }
+ },
+ "code": "6651",
+ "name": "日東工業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6651（取得 2026-10-05 17:19）。単位：百万円（EPSは円）",
+ "price": 4470.0,
+ "industry_per": null,
+ "market_cap": 180800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

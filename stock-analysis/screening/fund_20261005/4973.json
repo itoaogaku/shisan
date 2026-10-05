@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 24000.0,
+   "op": 610.0,
+   "ord": 800.0,
+   "net": 2170.0,
+   "eps": 373.2
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 18073.0,
+   "op": 576.0,
+   "ord": 776.0,
+   "net": 1803.0,
+   "eps": 311.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 6152.0,
+   "op": 31.0,
+   "ord": 122.0,
+   "net": 88.0
+  },
+  "year_ago": {
+   "sales": 3406.0,
+   "op": 92.0,
+   "ord": 184.0,
+   "net": 135.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 6152.0,
+   "op": 31.0
+  }
+ },
+ "code": "4973",
+ "name": "日本高純度化学",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4973（取得 2026-10-05 16:59）。単位：百万円（EPSは円）",
+ "price": 5100.0,
+ "industry_per": null,
+ "market_cap": 30900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

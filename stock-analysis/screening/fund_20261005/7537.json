@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 225000.0,
+   "op": 7800.0,
+   "ord": 6000.0,
+   "net": 4000.0,
+   "eps": 152.4
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 213425.0,
+   "op": 7763.0,
+   "ord": 4218.0,
+   "net": 3303.0,
+   "eps": 126.1
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 52277.0,
+   "op": 1804.0,
+   "ord": 1014.0,
+   "net": 500.0
+  },
+  "year_ago": {
+   "sales": 49884.0,
+   "op": 757.0,
+   "ord": 1235.0,
+   "net": 625.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 52277.0,
+   "op": 1804.0
+  }
+ },
+ "code": "7537",
+ "name": "丸文",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7537（取得 2026-10-05 17:15）。単位：百万円（EPSは円）",
+ "price": 1925.0,
+ "industry_per": null,
+ "market_cap": 54000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

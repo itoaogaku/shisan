@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 41000.0,
+   "op": 4300.0,
+   "ord": 4600.0,
+   "net": 2700.0,
+   "eps": 256.3
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 37735.0,
+   "op": 4809.0,
+   "ord": 5103.0,
+   "net": 4830.0,
+   "eps": 436.9
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 10166.0,
+   "op": 1418.0,
+   "ord": 1509.0,
+   "net": 884.0
+  },
+  "year_ago": {
+   "sales": 10347.0,
+   "op": 1320.0,
+   "ord": 1513.0,
+   "net": 1622.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 19023.0,
+   "op": 2475.0
+  }
+ },
+ "code": "5302",
+ "name": "日本カーボン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5302（取得 2026-10-05 17:19）。単位：百万円（EPSは円）",
+ "price": 5230.0,
+ "industry_per": null,
+ "market_cap": 61900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

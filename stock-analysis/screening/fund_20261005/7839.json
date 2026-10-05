@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 33950.0,
+   "op": 8370.0,
+   "ord": 8380.0,
+   "net": 5940.0,
+   "eps": 116.0
+  },
+  "forecast_label": "連 予 2026.09",
+  "prev": {
+   "sales": 32363.0,
+   "op": 8899.0,
+   "ord": 8900.0,
+   "net": 6318.0,
+   "eps": 120.2
+  },
+  "prev_label": "連 2025.09"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 9346.0,
+   "op": 2899.0,
+   "ord": 3015.0,
+   "net": 2055.0
+  },
+  "year_ago": {
+   "sales": 8371.0,
+   "op": 2331.0,
+   "ord": 2285.0,
+   "net": 1587.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.10-06",
+  "cumulative": {
+   "sales": 24348.0,
+   "op": 7329.0
+  }
+ },
+ "code": "7839",
+ "name": "ＳＨＯＥＩ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7839（取得 2026-10-05 17:21）。単位：百万円（EPSは円）",
+ "price": 2207.0,
+ "industry_per": null,
+ "market_cap": 115500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

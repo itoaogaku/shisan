@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 9394.0,
+   "op": -2792.0,
+   "ord": -2827.0,
+   "net": -3808.0,
+   "eps": -322.9
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 2311.0,
+   "op": -310.0,
+   "ord": -305.0,
+   "net": -178.0
+  },
+  "year_ago": {
+   "sales": 2620.0,
+   "op": 122.0,
+   "ord": 24.0,
+   "net": -1277.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 2311.0,
+   "op": -310.0
+  }
+ },
+ "code": "8746",
+ "name": "ｕｎｂａｎｋｅｄ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8746（取得 2026-10-05 16:59）。単位：百万円（EPSは円）",
+ "price": 125.0,
+ "industry_per": null,
+ "market_cap": 2270000000.0,
+ "going_concern": "注記あり：2026-07-29 継続企業の前提に関する事項の注記に関するお知らせ"
+}

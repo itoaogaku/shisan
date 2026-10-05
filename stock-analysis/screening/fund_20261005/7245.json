@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 145000.0,
+   "op": 9500.0,
+   "ord": 9000.0,
+   "net": 5000.0,
+   "eps": 108.7
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 142009.0,
+   "op": 8371.0,
+   "ord": 7402.0,
+   "net": 4396.0,
+   "eps": 93.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 35333.0,
+   "op": 2017.0,
+   "ord": 1786.0,
+   "net": 1020.0
+  },
+  "year_ago": {
+   "sales": 33516.0,
+   "op": 1832.0,
+   "ord": 1467.0,
+   "net": 592.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 35333.0,
+   "op": 2017.0
+  }
+ },
+ "code": "7245",
+ "name": "大同メタル工業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7245（取得 2026-10-05 17:01）。単位：百万円（EPSは円）",
+ "price": 1268.0,
+ "industry_per": null,
+ "market_cap": 60300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

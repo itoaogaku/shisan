@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 13494.0,
+   "op": 5489.0,
+   "ord": 5268.0,
+   "net": 3340.0,
+   "eps": 120.7
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 11844.0,
+   "op": 4723.0,
+   "ord": 4649.0,
+   "net": 2888.0,
+   "eps": 104.4
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 3278.0,
+   "op": 1360.0,
+   "ord": 1306.0,
+   "net": 796.0
+  },
+  "year_ago": {
+   "sales": 2704.0,
+   "op": 1151.0,
+   "ord": 1116.0,
+   "net": 697.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 3278.0,
+   "op": 1360.0
+  }
+ },
+ "code": "6564",
+ "name": "ミダックホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6564（取得 2026-10-05 17:18）。単位：百万円（EPSは円）",
+ "price": 1970.0,
+ "industry_per": null,
+ "market_cap": 54700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 164000.0,
+   "op": 26500.0,
+   "ord": 26200.0,
+   "net": 21300.0,
+   "eps": 437.3
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 179353.0,
+   "op": 26017.0,
+   "ord": 28610.0,
+   "net": 22097.0,
+   "eps": 432.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 24465.0,
+   "op": -1961.0,
+   "ord": -1362.0,
+   "net": -1710.0
+  },
+  "year_ago": {
+   "sales": 40145.0,
+   "op": 5792.0,
+   "ord": 5782.0,
+   "net": 4669.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 24465.0,
+   "op": -1961.0
+  }
+ },
+ "code": "6951",
+ "name": "日本電子",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6951（取得 2026-10-05 17:12）。単位：百万円（EPSは円）",
+ "price": 7992.0,
+ "industry_per": null,
+ "market_cap": 411900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

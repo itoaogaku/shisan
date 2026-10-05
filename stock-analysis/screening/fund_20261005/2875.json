@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 560000.0,
+   "op": 82000.0,
+   "ord": 88500.0,
+   "net": 65600.0,
+   "eps": 692.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 536636.0,
+   "op": 85799.0,
+   "ord": 94050.0,
+   "net": 70188.0,
+   "eps": 713.3
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 135667.0,
+   "op": 22573.0,
+   "ord": 25090.0,
+   "net": 18230.0
+  },
+  "year_ago": {
+   "sales": 125803.0,
+   "op": 18300.0,
+   "ord": 20565.0,
+   "net": 15251.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 135667.0,
+   "op": 22573.0
+  }
+ },
+ "code": "2875",
+ "name": "東洋水産",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2875（取得 2026-10-05 17:08）。単位：百万円（EPSは円）",
+ "price": 9919.0,
+ "industry_per": null,
+ "market_cap": 1099800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

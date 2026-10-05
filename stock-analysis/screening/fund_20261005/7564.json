@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 183376.0,
+   "op": 32112.0,
+   "ord": 33418.0,
+   "net": 22329.0,
+   "eps": 273.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 160852.0,
+   "op": 29676.0,
+   "ord": 30567.0,
+   "net": 20618.0,
+   "eps": 252.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 51812.0,
+   "op": 12031.0,
+   "ord": 12431.0,
+   "net": 7792.0
+  },
+  "year_ago": {
+   "sales": 41560.0,
+   "op": 9028.0,
+   "ord": 9235.0,
+   "net": 5817.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 51812.0,
+   "op": 12031.0
+  }
+ },
+ "code": "7564",
+ "name": "ワークマン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7564（取得 2026-10-05 17:18）。単位：百万円（EPSは円）",
+ "price": 5210.0,
+ "industry_per": null,
+ "market_cap": 426400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

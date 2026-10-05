@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 291000.0,
+   "op": 60600.0,
+   "ord": 63000.0,
+   "net": 42600.0,
+   "eps": 355.1
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 237029.0,
+   "op": 47386.0,
+   "ord": 49274.0,
+   "net": 33345.0,
+   "eps": 278.4
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 72591.0,
+   "op": 13780.0,
+   "ord": 14898.0,
+   "net": 8684.0
+  },
+  "year_ago": {
+   "sales": 57351.0,
+   "op": 10045.0,
+   "ord": 10538.0,
+   "net": 6093.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 139668.0,
+   "op": 28854.0
+  }
+ },
+ "code": "4186",
+ "name": "東京応化工業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4186（取得 2026-10-05 17:16）。単位：百万円（EPSは円）",
+ "price": 9212.0,
+ "industry_per": null,
+ "market_cap": 1177300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 239000.0,
+   "op": 22000.0,
+   "ord": 25500.0,
+   "net": 17500.0,
+   "eps": 60.7
+  },
+  "forecast_label": "予 2026.09",
+  "prev": {
+   "sales": 212051.0,
+   "op": 16163.0,
+   "ord": 18802.0,
+   "net": 14203.0,
+   "eps": 47.3
+  },
+  "prev_label": "2025.09"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 60551.0,
+   "op": 6331.0,
+   "ord": 6879.0,
+   "net": 3395.0
+  },
+  "year_ago": {
+   "sales": 48722.0,
+   "op": 1509.0,
+   "ord": 1856.0,
+   "net": -327.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.10-06",
+  "cumulative": {
+   "sales": 173047.0,
+   "op": 16354.0
+  }
+ },
+ "code": "6965",
+ "name": "浜松ホトニクス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6965（取得 2026-10-05 17:02）。単位：百万円（EPSは円）",
+ "price": 2487.5,
+ "industry_per": null,
+ "market_cap": 794200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

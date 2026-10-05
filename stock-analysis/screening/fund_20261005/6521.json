@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 9828.0,
+   "op": 933.0,
+   "ord": 788.0,
+   "net": 597.0,
+   "eps": 51.3
+  },
+  "forecast_label": "連 予 2027.02",
+  "prev": {
+   "sales": 10040.0,
+   "op": 542.0,
+   "ord": 674.0,
+   "net": -538.0,
+   "eps": -47.0
+  },
+  "prev_label": "連 2026.02"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 2192.0,
+   "op": 199.0,
+   "ord": 145.0,
+   "net": 70.0
+  },
+  "year_ago": {
+   "sales": 1787.0,
+   "op": -72.0,
+   "ord": -266.0,
+   "net": -274.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.03-05",
+  "cumulative": {
+   "sales": 2192.0,
+   "op": 199.0
+  }
+ },
+ "code": "6521",
+ "name": "オキサイド",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6521（取得 2026-10-05 17:06）。単位：百万円（EPSは円）",
+ "price": 3425.0,
+ "industry_per": null,
+ "market_cap": 39800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

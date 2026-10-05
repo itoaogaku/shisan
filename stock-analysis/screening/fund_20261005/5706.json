@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 850000.0,
+   "op": 94000.0,
+   "ord": 100000.0,
+   "net": 80000.0,
+   "eps": 139.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 758532.0,
+   "op": 130912.0,
+   "ord": 136736.0,
+   "net": 91263.0,
+   "eps": 159.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 201597.0,
+   "op": 21027.0,
+   "ord": 23474.0,
+   "net": 16824.0
+  },
+  "year_ago": {
+   "sales": 169040.0,
+   "op": 11424.0,
+   "ord": 10019.0,
+   "net": -5970.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 201597.0,
+   "op": 21027.0
+  }
+ },
+ "code": "5706",
+ "name": "三井金属",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5706（取得 2026-10-05 17:11）。単位：百万円（EPSは円）",
+ "price": 2647.5,
+ "industry_per": null,
+ "market_cap": 1520200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

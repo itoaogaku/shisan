@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 135.0,
+   "op": -744.0,
+   "ord": -678.0,
+   "net": -718.0,
+   "eps": -48.2
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 35.0,
+   "op": -204.0,
+   "ord": -201.0,
+   "net": -202.0
+  },
+  "year_ago": {
+   "sales": 23.0,
+   "op": -218.0,
+   "ord": -171.0,
+   "net": -176.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 35.0,
+   "op": -204.0
+  }
+ },
+ "code": "4882",
+ "name": "ペルセウスプロテオミクス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4882（取得 2026-10-05 17:15）。単位：百万円（EPSは円）",
+ "price": 166.0,
+ "industry_per": null,
+ "market_cap": 3060000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

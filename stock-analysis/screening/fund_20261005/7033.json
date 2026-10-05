@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 26000.0,
+   "op": 3000.0,
+   "ord": 3000.0,
+   "net": 2040.0,
+   "eps": 129.5
+  },
+  "forecast_label": "連 予 2026.12",
+  "prev": {
+   "sales": 23066.0,
+   "op": 2742.0,
+   "ord": 2741.0,
+   "net": 1798.0,
+   "eps": 111.9
+  },
+  "prev_label": "連 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 6316.0,
+   "op": 611.0,
+   "ord": 596.0,
+   "net": 480.0
+  },
+  "year_ago": {
+   "sales": 5546.0,
+   "op": 305.0,
+   "ord": 308.0,
+   "net": 171.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 12540.0,
+   "op": 1566.0
+  }
+ },
+ "code": "7033",
+ "name": "マネジメントソリューションズ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7033（取得 2026-10-05 17:09）。単位：百万円（EPSは円）",
+ "price": 1564.0,
+ "industry_per": null,
+ "market_cap": 26400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

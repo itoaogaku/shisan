@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 462000.0,
+   "op": 50000.0,
+   "ord": 50000.0,
+   "net": 32000.0,
+   "eps": 329.7
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 416563.0,
+   "op": 41614.0,
+   "ord": 42772.0,
+   "net": 27866.0,
+   "eps": 278.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 117043.0,
+   "op": 15690.0,
+   "ord": 16620.0,
+   "net": 10710.0
+  },
+  "year_ago": {
+   "sales": 101600.0,
+   "op": 10996.0,
+   "ord": 11064.0,
+   "net": 7245.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 117043.0,
+   "op": 15690.0
+  }
+ },
+ "code": "4401",
+ "name": "ＡＤＥＫＡ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4401（取得 2026-10-05 17:16）。単位：百万円（EPSは円）",
+ "price": 4733.0,
+ "industry_per": null,
+ "market_cap": 468300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

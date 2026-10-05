@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 110000.0,
+   "op": 12300.0,
+   "ord": 12500.0,
+   "net": 9000.0,
+   "eps": 120.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 105855.0,
+   "op": 12066.0,
+   "ord": 12344.0,
+   "net": 9377.0,
+   "eps": 125.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 23833.0,
+   "op": 1519.0,
+   "ord": 1652.0,
+   "net": 1180.0
+  },
+  "year_ago": {
+   "sales": 22362.0,
+   "op": 1074.0,
+   "ord": 1069.0,
+   "net": 800.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 23833.0,
+   "op": 1519.0
+  }
+ },
+ "code": "6745",
+ "name": "ホーチキ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6745（取得 2026-10-05 17:13）。単位：百万円（EPSは円）",
+ "price": 1969.0,
+ "industry_per": null,
+ "market_cap": 155900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

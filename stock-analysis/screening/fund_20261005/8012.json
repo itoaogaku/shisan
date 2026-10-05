@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1000000.0,
+   "op": 45000.0,
+   "ord": 45000.0,
+   "net": 34500.0,
+   "eps": 85.1
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 972783.0,
+   "op": 44727.0,
+   "ord": 44096.0,
+   "net": 33119.0,
+   "eps": 78.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 279718.0,
+   "op": 17008.0,
+   "ord": 18054.0,
+   "net": 14655.0
+  },
+  "year_ago": {
+   "sales": 237314.0,
+   "op": 10249.0,
+   "ord": 10662.0,
+   "net": 7507.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 279718.0,
+   "op": 17008.0
+  }
+ },
+ "code": "8012",
+ "name": "長瀬産業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8012（取得 2026-10-05 17:11）。単位：百万円（EPSは円）",
+ "price": 1181.5,
+ "industry_per": null,
+ "market_cap": 519400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

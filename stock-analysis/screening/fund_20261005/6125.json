@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 50000.0,
+   "op": 3000.0,
+   "ord": 2900.0,
+   "net": 2000.0,
+   "eps": 302.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 42513.0,
+   "op": 1518.0,
+   "ord": 1535.0,
+   "net": 1234.0,
+   "eps": 186.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 8244.0,
+   "op": -365.0,
+   "ord": -292.0,
+   "net": -287.0
+  },
+  "year_ago": {
+   "sales": 8795.0,
+   "op": 153.0,
+   "ord": 136.0,
+   "net": 16.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 8244.0,
+   "op": -365.0
+  }
+ },
+ "code": "6125",
+ "name": "岡本工作機械製作所",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6125（取得 2026-10-05 17:16）。単位：百万円（EPSは円）",
+ "price": 5220.0,
+ "industry_per": null,
+ "market_cap": 35000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 3254000.0,
+   "op": 248000.0,
+   "ord": 247500.0,
+   "net": 160000.0,
+   "eps": 120.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 3074505.0,
+   "op": 231200.0,
+   "ord": 230419.0,
+   "net": 158793.0,
+   "eps": 117.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 826157.0,
+   "op": 81305.0,
+   "ord": 85330.0,
+   "net": 53766.0
+  },
+  "year_ago": {
+   "sales": 738321.0,
+   "op": 53653.0,
+   "ord": 49957.0,
+   "net": 19716.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 826157.0,
+   "op": 81305.0
+  }
+ },
+ "code": "3407",
+ "name": "旭化成",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3407（取得 2026-10-05 17:14）。単位：百万円（EPSは円）",
+ "price": 1646.5,
+ "industry_per": null,
+ "market_cap": 2248700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

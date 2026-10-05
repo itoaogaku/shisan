@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 51500.0,
+   "op": 12500.0,
+   "ord": 12700.0,
+   "net": 8700.0,
+   "eps": 136.5
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 46371.0,
+   "op": 11821.0,
+   "ord": 12126.0,
+   "net": 8442.0,
+   "eps": 132.5
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 8696.0,
+   "op": 1756.0,
+   "ord": 1911.0,
+   "net": 1298.0
+  },
+  "year_ago": {
+   "sales": 8424.0,
+   "op": 1259.0,
+   "ord": 1353.0,
+   "net": 931.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 8696.0,
+   "op": 1756.0
+  }
+ },
+ "code": "1723",
+ "name": "日本電技",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=1723（取得 2026-10-05 17:18）。単位：百万円（EPSは円）",
+ "price": 2223.0,
+ "industry_per": null,
+ "market_cap": 145100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

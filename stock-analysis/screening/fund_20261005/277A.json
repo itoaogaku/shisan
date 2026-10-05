@@ -1,0 +1,44 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 16100.0,
+   "op": 4830.0,
+   "ord": 4830.0,
+   "net": 3381.0,
+   "eps": 118.6
+  },
+  "forecast_label": "I 予 2027.05",
+  "prev": {
+   "sales": 11512.0,
+   "op": 4003.0,
+   "ord": 3952.0,
+   "net": 2875.0,
+   "eps": 101.0
+  },
+  "prev_label": "I 2026.05"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 2759.0,
+   "op": 588.0,
+   "ord": 545.0,
+   "net": 370.0
+  },
+  "year_ago": {
+   "sales": 2302.0,
+   "op": 682.0,
+   "ord": 678.0,
+   "net": 542.0
+  },
+  "one_off": null
+ },
+ "progress": {},
+ "code": "277A",
+ "name": "グロービング",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=277A（取得 2026-10-05 17:14）。単位：百万円（EPSは円）",
+ "price": 1854.0,
+ "industry_per": null,
+ "market_cap": 53300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

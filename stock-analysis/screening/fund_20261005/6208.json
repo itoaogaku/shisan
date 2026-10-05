@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 19000.0,
+   "op": 1000.0,
+   "ord": 900.0,
+   "net": 640.0,
+   "eps": 102.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 18473.0,
+   "op": 1306.0,
+   "ord": 1186.0,
+   "net": 637.0,
+   "eps": 101.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 3784.0,
+   "op": 316.0,
+   "ord": 296.0,
+   "net": 228.0
+  },
+  "year_ago": {
+   "sales": 3611.0,
+   "op": 234.0,
+   "ord": 226.0,
+   "net": 160.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 3784.0,
+   "op": 316.0
+  }
+ },
+ "code": "6208",
+ "name": "石川製作所",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6208（取得 2026-10-05 17:15）。単位：百万円（EPSは円）",
+ "price": 1750.0,
+ "industry_per": null,
+ "market_cap": 11200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

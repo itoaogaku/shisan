@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 735000.0,
+   "op": 113000.0,
+   "ord": 116500.0,
+   "net": 86500.0,
+   "eps": 232.4
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 660724.0,
+   "op": 100816.0,
+   "ord": 104649.0,
+   "net": 78096.0,
+   "eps": 212.4
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 182803.0,
+   "op": 30389.0,
+   "ord": 32152.0,
+   "net": 23645.0
+  },
+  "year_ago": {
+   "sales": 166233.0,
+   "op": 27877.0,
+   "ord": 28847.0,
+   "net": 20761.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 355513.0,
+   "op": 56680.0
+  }
+ },
+ "code": "6383",
+ "name": "ダイフク",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6383（取得 2026-10-05 17:09）。単位：百万円（EPSは円）",
+ "price": 5874.0,
+ "industry_per": null,
+ "market_cap": 2231100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

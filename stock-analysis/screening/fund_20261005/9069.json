@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1020000.0,
+   "op": 43000.0,
+   "ord": 39300.0,
+   "net": 23400.0,
+   "eps": 139.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 899620.0,
+   "op": 36996.0,
+   "ord": 35242.0,
+   "net": 19320.0,
+   "eps": 113.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 248714.0,
+   "op": 10676.0,
+   "ord": 10239.0,
+   "net": 6415.0
+  },
+  "year_ago": {
+   "sales": 217409.0,
+   "op": 8689.0,
+   "ord": 8657.0,
+   "net": 5010.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 248714.0,
+   "op": 10676.0
+  }
+ },
+ "code": "9069",
+ "name": "センコーグループホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9069（取得 2026-10-05 17:19）。単位：百万円（EPSは円）",
+ "price": 2307.5,
+ "industry_per": null,
+ "market_cap": 405400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 620000.0,
+   "op": 80000.0,
+   "ord": 81000.0,
+   "net": 59000.0,
+   "eps": 204.2
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 560728.0,
+   "op": 73702.0,
+   "ord": 82753.0,
+   "net": 60499.0,
+   "eps": 209.4
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 130596.0,
+   "op": 14264.0,
+   "ord": 18486.0,
+   "net": 13333.0
+  },
+  "year_ago": {
+   "sales": 118370.0,
+   "op": 12184.0,
+   "ord": 11323.0,
+   "net": 7921.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 130596.0,
+   "op": 14264.0
+  }
+ },
+ "code": "7701",
+ "name": "島津製作所",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7701（取得 2026-10-05 17:05）。単位：百万円（EPSは円）",
+ "price": 4026.0,
+ "industry_per": null,
+ "market_cap": 1192000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

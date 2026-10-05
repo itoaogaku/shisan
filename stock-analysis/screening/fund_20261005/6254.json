@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 97000.0,
+   "op": 16000.0,
+   "ord": 15000.0,
+   "net": 11100.0,
+   "eps": 289.1
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 56245.0,
+   "op": 6667.0,
+   "ord": 5629.0,
+   "net": 3818.0,
+   "eps": 100.4
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 9202.0,
+   "op": 628.0,
+   "ord": 342.0,
+   "net": 239.0
+  },
+  "year_ago": {
+   "sales": 12403.0,
+   "op": 1378.0,
+   "ord": 782.0,
+   "net": 464.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 9202.0,
+   "op": 628.0
+  }
+ },
+ "code": "6254",
+ "name": "野村マイクロ・サイエンス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6254（取得 2026-10-05 17:08）。単位：百万円（EPSは円）",
+ "price": 3665.0,
+ "industry_per": null,
+ "market_cap": 148800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

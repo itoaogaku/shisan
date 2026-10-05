@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 94000.0,
+   "op": 18000.0,
+   "ord": 18400.0,
+   "net": 12600.0,
+   "eps": 145.8
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 70705.0,
+   "op": 10869.0,
+   "ord": 11921.0,
+   "net": 8459.0,
+   "eps": 96.6
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 25973.0,
+   "op": 5199.0,
+   "ord": 5172.0,
+   "net": 3622.0
+  },
+  "year_ago": {
+   "sales": 17363.0,
+   "op": 2216.0,
+   "ord": 2394.0,
+   "net": 1804.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 45841.0,
+   "op": 9439.0
+  }
+ },
+ "code": "4099",
+ "name": "四国化成ホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4099（取得 2026-10-05 17:00）。単位：百万円（EPSは円）",
+ "price": 2519.0,
+ "industry_per": null,
+ "market_cap": 226100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

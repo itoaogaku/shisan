@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 5135.0,
+   "op": 1452.0,
+   "ord": 1509.0,
+   "net": 1133.0,
+   "eps": 143.3
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 4348.0,
+   "op": 1364.0,
+   "ord": 1458.0,
+   "net": 1099.0,
+   "eps": 139.1
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 907.0,
+   "op": 185.0,
+   "ord": 173.0,
+   "net": 121.0
+  },
+  "year_ago": {
+   "sales": 896.0,
+   "op": 264.0,
+   "ord": 260.0,
+   "net": 196.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 907.0,
+   "op": 185.0
+  }
+ },
+ "code": "3692",
+ "name": "ＦＦＲＩセキュリティ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3692（取得 2026-10-05 17:08）。単位：百万円（EPSは円）",
+ "price": 8150.0,
+ "industry_per": null,
+ "market_cap": 66700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

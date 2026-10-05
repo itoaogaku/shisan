@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 746000.0,
+   "op": 27600.0,
+   "ord": 25500.0,
+   "net": 17100.0,
+   "eps": 218.1
+  },
+  "forecast_label": "連 予 2026.11",
+  "prev": {
+   "sales": 652072.0,
+   "op": 19597.0,
+   "ord": 18485.0,
+   "net": 12811.0,
+   "eps": 161.7
+  },
+  "prev_label": "連 2025.11"
+ },
+ "quarter": {
+  "label": "26.06-08 単独（前年同期 25.06-08）",
+  "current": {
+   "sales": 209210.0,
+   "op": 7536.0,
+   "ord": 6989.0,
+   "net": 4963.0
+  },
+  "year_ago": {
+   "sales": 167724.0,
+   "op": 5906.0,
+   "ord": 5750.0,
+   "net": 3650.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.12-08",
+  "cumulative": {
+   "sales": 600422.0,
+   "op": 21624.0
+  }
+ },
+ "code": "3186",
+ "name": "ネクステージ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3186（取得 2026-10-05 17:17）。単位：百万円（EPSは円）",
+ "price": 2839.0,
+ "industry_per": null,
+ "market_cap": 229700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

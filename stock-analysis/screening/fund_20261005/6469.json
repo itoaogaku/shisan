@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 16719.0,
+   "op": 1436.0,
+   "ord": 1317.0,
+   "net": 866.0,
+   "eps": 81.1
+  },
+  "forecast_label": "予 2027.02",
+  "prev": {
+   "sales": 14312.0,
+   "op": 1122.0,
+   "ord": 1038.0,
+   "net": 823.0,
+   "eps": 77.1
+  },
+  "prev_label": "2026.02"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 4317.0,
+   "op": 561.0,
+   "ord": 532.0,
+   "net": 361.0
+  },
+  "year_ago": {
+   "sales": 3574.0,
+   "op": 380.0,
+   "ord": 353.0,
+   "net": 201.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.03-05",
+  "cumulative": {
+   "sales": 4317.0,
+   "op": 561.0
+  }
+ },
+ "code": "6469",
+ "name": "放電精密加工研究所",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6469（取得 2026-10-05 17:10）。単位：百万円（EPSは円）",
+ "price": 2934.0,
+ "industry_per": null,
+ "market_cap": 32100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

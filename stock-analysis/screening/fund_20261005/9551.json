@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 240000.0,
+   "op": 15000.0,
+   "ord": 14500.0,
+   "net": 10000.0,
+   "eps": 228.9
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 209844.0,
+   "op": 12879.0,
+   "ord": 13175.0,
+   "net": 9136.0,
+   "eps": 209.3
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 37677.0,
+   "op": -910.0,
+   "ord": -861.0,
+   "net": -711.0
+  },
+  "year_ago": {
+   "sales": 33054.0,
+   "op": -603.0,
+   "ord": -665.0,
+   "net": -1003.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 37677.0,
+   "op": -910.0
+  }
+ },
+ "code": "9551",
+ "name": "メタウォーター",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9551（取得 2026-10-05 17:11）。単位：百万円（EPSは円）",
+ "price": 3145.0,
+ "industry_per": null,
+ "market_cap": 139200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 100000.0,
+   "op": 16000.0,
+   "ord": 16500.0,
+   "net": 11800.0,
+   "eps": 191.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 98681.0,
+   "op": 15760.0,
+   "ord": 16493.0,
+   "net": 11797.0,
+   "eps": 190.3
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 22351.0,
+   "op": 2834.0,
+   "ord": 3010.0,
+   "net": 2071.0
+  },
+  "year_ago": {
+   "sales": 20479.0,
+   "op": 2340.0,
+   "ord": 2499.0,
+   "net": 1694.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 22351.0,
+   "op": 2834.0
+  }
+ },
+ "code": "1965",
+ "name": "テクノ菱和",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=1965（取得 2026-10-05 17:12）。単位：百万円（EPSは円）",
+ "price": 2373.0,
+ "industry_per": null,
+ "market_cap": 150400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

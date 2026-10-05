@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 134000.0,
+   "op": 15000.0,
+   "ord": 19000.0,
+   "net": 14000.0,
+   "eps": 133.4
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 138155.0,
+   "op": 14814.0,
+   "ord": 19667.0,
+   "net": 12940.0,
+   "eps": 117.2
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 33670.0,
+   "op": 4737.0,
+   "ord": 5986.0,
+   "net": 3671.0
+  },
+  "year_ago": {
+   "sales": 31876.0,
+   "op": 3413.0,
+   "ord": 4033.0,
+   "net": 2810.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 33670.0,
+   "op": 4737.0
+  }
+ },
+ "code": "4095",
+ "name": "日本パーカライジング",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4095（取得 2026-10-05 17:09）。単位：百万円（EPSは円）",
+ "price": 1790.0,
+ "industry_per": null,
+ "market_cap": 237400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

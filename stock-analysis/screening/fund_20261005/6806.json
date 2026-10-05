@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 250000.0,
+   "op": 50000.0,
+   "ord": 53000.0,
+   "net": 35000.0,
+   "eps": 1088.6
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 211264.0,
+   "op": 42995.0,
+   "ord": 46626.0,
+   "net": 33142.0,
+   "eps": 991.9
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 62085.0,
+   "op": 13338.0,
+   "ord": 14466.0,
+   "net": 7331.0
+  },
+  "year_ago": {
+   "sales": 48972.0,
+   "op": 9833.0,
+   "ord": 10238.0,
+   "net": 7227.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 62085.0,
+   "op": 13338.0
+  }
+ },
+ "code": "6806",
+ "name": "ヒロセ電機",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6806（取得 2026-10-05 17:09）。単位：百万円（EPSは円）",
+ "price": 25740.0,
+ "industry_per": null,
+ "market_cap": 888800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

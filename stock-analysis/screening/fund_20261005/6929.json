@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 28000.0,
+   "op": 6500.0,
+   "ord": 6700.0,
+   "net": 4700.0,
+   "eps": 232.3
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 27325.0,
+   "op": 6228.0,
+   "ord": 7047.0,
+   "net": 7004.0,
+   "eps": 324.6
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 7126.0,
+   "op": 1550.0,
+   "ord": 1810.0,
+   "net": 1313.0
+  },
+  "year_ago": {
+   "sales": 7038.0,
+   "op": 1641.0,
+   "ord": 1654.0,
+   "net": 3113.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 13692.0,
+   "op": 3147.0
+  }
+ },
+ "code": "6929",
+ "name": "日本セラミック",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6929（取得 2026-10-05 17:02）。単位：百万円（EPSは円）",
+ "price": 3750.0,
+ "industry_per": null,
+ "market_cap": 102100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

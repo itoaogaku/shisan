@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 6800.0,
+   "op": 800.0,
+   "ord": 700.0,
+   "net": 300.0,
+   "eps": 16.8
+  },
+  "forecast_label": "連 予 2027.04",
+  "prev": {
+   "sales": 6424.0,
+   "op": 523.0,
+   "ord": 408.0,
+   "net": 376.0,
+   "eps": 24.8
+  },
+  "prev_label": "連 2026.04"
+ },
+ "quarter": {
+  "label": "26.05-07 単独（前年同期 25.05-07）",
+  "current": {
+   "sales": 1643.0,
+   "op": 180.0,
+   "ord": 138.0,
+   "net": 32.0
+  },
+  "year_ago": {
+   "sales": 1514.0,
+   "op": 117.0,
+   "ord": 94.0,
+   "net": -11.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.05-07",
+  "cumulative": {
+   "sales": 1643.0,
+   "op": 180.0
+  }
+ },
+ "code": "4382",
+ "name": "ＨＥＲＯＺ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4382（取得 2026-10-05 17:07）。単位：百万円（EPSは円）",
+ "price": 893.0,
+ "industry_per": null,
+ "market_cap": 15900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 630000.0,
+   "op": 40000.0,
+   "ord": 42000.0,
+   "net": 27500.0,
+   "eps": 137.6
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 578129.0,
+   "op": 42081.0,
+   "ord": 44756.0,
+   "net": 32605.0,
+   "eps": 161.7
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 163530.0,
+   "op": 13112.0,
+   "ord": 14279.0,
+   "net": 9061.0
+  },
+  "year_ago": {
+   "sales": 142352.0,
+   "op": 8658.0,
+   "ord": 9721.0,
+   "net": 6416.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 163530.0,
+   "op": 13112.0
+  }
+ },
+ "code": "5471",
+ "name": "大同特殊鋼",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5471（取得 2026-10-05 17:04）。単位：百万円（EPSは円）",
+ "price": 2548.5,
+ "industry_per": null,
+ "market_cap": 553600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

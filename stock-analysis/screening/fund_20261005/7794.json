@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1100.0,
+   "op": -283.0,
+   "ord": -189.0,
+   "net": -195.0,
+   "eps": -10.4
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 516.0,
+   "op": -1360.0,
+   "ord": -1341.0,
+   "net": -2415.0,
+   "eps": -164.9
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 245.0,
+   "op": -227.0,
+   "ord": -237.0,
+   "net": -238.0
+  },
+  "year_ago": {
+   "sales": 32.0,
+   "op": -263.0,
+   "ord": -275.0,
+   "net": -276.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 245.0,
+   "op": -227.0
+  }
+ },
+ "code": "7794",
+ "name": "イーディーピー",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7794（取得 2026-10-05 17:03）。単位：百万円（EPSは円）",
+ "price": 1064.0,
+ "industry_per": null,
+ "market_cap": 19900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

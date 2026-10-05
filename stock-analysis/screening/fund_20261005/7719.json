@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 5392.0,
+   "op": 336.0,
+   "ord": 352.0,
+   "net": 235.0,
+   "eps": 32.8
+  },
+  "forecast_label": "連 予 2027.02",
+  "prev": {
+   "sales": 4473.0,
+   "op": 152.0,
+   "ord": 157.0,
+   "net": 133.0,
+   "eps": 18.7
+  },
+  "prev_label": "連 2026.02"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 1227.0,
+   "op": 141.0,
+   "ord": 131.0,
+   "net": 57.0
+  },
+  "year_ago": {
+   "sales": 833.0,
+   "op": 26.0,
+   "ord": 16.0,
+   "net": 8.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.03-05",
+  "cumulative": {
+   "sales": 1227.0,
+   "op": 141.0
+  }
+ },
+ "code": "7719",
+ "name": "東京衡機",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7719（取得 2026-10-05 17:15）。単位：百万円（EPSは円）",
+ "price": 509.0,
+ "industry_per": null,
+ "market_cap": 3650000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

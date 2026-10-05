@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 43253.0,
+   "op": 5649.0,
+   "ord": 5726.0,
+   "net": 3822.0,
+   "eps": 151.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 33636.0,
+   "op": 2158.0,
+   "ord": 1956.0,
+   "net": 833.0,
+   "eps": 33.1
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 10786.0,
+   "op": 1249.0,
+   "ord": 1289.0,
+   "net": 710.0
+  },
+  "year_ago": {
+   "sales": 7357.0,
+   "op": 121.0,
+   "ord": 53.0,
+   "net": 269.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 10786.0,
+   "op": 1249.0
+  }
+ },
+ "code": "9308",
+ "name": "乾汽船",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9308（取得 2026-10-05 17:06）。単位：百万円（EPSは円）",
+ "price": 2200.0,
+ "industry_per": null,
+ "market_cap": 57400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

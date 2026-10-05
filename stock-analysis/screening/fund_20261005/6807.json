@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 240000.0,
+   "op": 9500.0,
+   "ord": 8500.0,
+   "net": 6000.0,
+   "eps": 89.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 227872.0,
+   "op": 8937.0,
+   "ord": 8248.0,
+   "net": 7069.0,
+   "eps": 104.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 58250.0,
+   "op": 327.0,
+   "ord": 345.0,
+   "net": 333.0
+  },
+  "year_ago": {
+   "sales": 51605.0,
+   "op": 1480.0,
+   "ord": 1091.0,
+   "net": 856.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 58250.0,
+   "op": 327.0
+  }
+ },
+ "code": "6807",
+ "name": "日本航空電子工業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6807（取得 2026-10-05 17:00）。単位：百万円（EPSは円）",
+ "price": 2705.0,
+ "industry_per": null,
+ "market_cap": 190200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

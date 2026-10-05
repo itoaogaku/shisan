@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 300000.0,
+   "op": 20000.0,
+   "ord": 25000.0,
+   "net": 15000.0,
+   "eps": 207.0
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 311402.0,
+   "op": 34131.0,
+   "ord": 37740.0,
+   "net": 29616.0,
+   "eps": 382.3
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 81305.0,
+   "op": 4892.0,
+   "ord": 7322.0,
+   "net": -1919.0
+  },
+  "year_ago": {
+   "sales": 78941.0,
+   "op": 8771.0,
+   "ord": 8100.0,
+   "net": 5085.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 156406.0,
+   "op": 11373.0
+  }
+ },
+ "code": "5214",
+ "name": "日本電気硝子",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5214（取得 2026-10-05 17:07）。単位：百万円（EPSは円）",
+ "price": 5158.0,
+ "industry_per": null,
+ "market_cap": 461800000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

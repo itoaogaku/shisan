@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 43600.0,
+   "op": 3430.0,
+   "ord": 4290.0,
+   "net": 2848.0,
+   "eps": 87.8
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 42100.0,
+   "op": 3262.0,
+   "ord": 4156.0,
+   "net": 2987.0,
+   "eps": 92.0
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 10516.0,
+   "op": 299.0,
+   "ord": 488.0,
+   "net": 213.0
+  },
+  "year_ago": {
+   "sales": 10052.0,
+   "op": 653.0,
+   "ord": 972.0,
+   "net": 559.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 10516.0,
+   "op": 299.0
+  }
+ },
+ "code": "9658",
+ "name": "ビジネスブレイン太田昭和",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9658（取得 2026-10-05 17:14）。単位：百万円（EPSは円）",
+ "price": 1132.0,
+ "industry_per": null,
+ "market_cap": 39400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

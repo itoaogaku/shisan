@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 270900.0,
+   "op": 27300.0,
+   "ord": 27000.0,
+   "net": 22900.0,
+   "eps": 158.9
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 241851.0,
+   "op": 22454.0,
+   "ord": 25478.0,
+   "net": 24641.0,
+   "eps": 161.2
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 67402.0,
+   "op": 6740.0,
+   "ord": 7390.0,
+   "net": 6081.0
+  },
+  "year_ago": {
+   "sales": 54758.0,
+   "op": 4367.0,
+   "ord": 4067.0,
+   "net": 4292.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 67402.0,
+   "op": 6740.0
+  }
+ },
+ "code": "4272",
+ "name": "日本化薬",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4272（取得 2026-10-05 17:02）。単位：百万円（EPSは円）",
+ "price": 2108.5,
+ "industry_per": null,
+ "market_cap": 313500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

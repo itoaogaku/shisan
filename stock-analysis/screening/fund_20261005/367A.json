@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 30000.0,
+   "op": 3650.0,
+   "ord": 3200.0,
+   "net": 2170.0,
+   "eps": 245.8
+  },
+  "forecast_label": "I 予 2026.08",
+  "prev": {
+   "sales": 28002.0,
+   "op": 3132.0,
+   "ord": 2732.0,
+   "net": 1786.0,
+   "eps": 204.3
+  },
+  "prev_label": "I 2025.08"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05*）",
+  "current": {
+   "sales": 7876.0,
+   "op": 670.0,
+   "ord": 532.0,
+   "net": 292.0
+  },
+  "year_ago": {
+   "sales": 7073.0,
+   "op": 869.0,
+   "ord": 812.0,
+   "net": 594.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.09-05",
+  "cumulative": {
+   "sales": 23267.0,
+   "op": 2906.0
+  }
+ },
+ "code": "367A",
+ "name": "プリモグローバルホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=367A（取得 2026-10-05 17:10）。単位：百万円（EPSは円）",
+ "price": 2902.0,
+ "industry_per": null,
+ "market_cap": 26100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

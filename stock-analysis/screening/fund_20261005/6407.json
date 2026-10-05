@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 193000.0,
+   "op": 28500.0,
+   "ord": 28500.0,
+   "net": 19000.0,
+   "eps": 284.3
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 157886.0,
+   "op": 19640.0,
+   "ord": 19867.0,
+   "net": 13578.0,
+   "eps": 203.2
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 49108.0,
+   "op": 8032.0,
+   "ord": 8242.0,
+   "net": 5686.0
+  },
+  "year_ago": {
+   "sales": 36253.0,
+   "op": 3772.0,
+   "ord": 3704.0,
+   "net": 2477.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 49108.0,
+   "op": 8032.0
+  }
+ },
+ "code": "6407",
+ "name": "ＣＫＤ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6407（取得 2026-10-05 17:10）。単位：百万円（EPSは円）",
+ "price": 6040.0,
+ "industry_per": null,
+ "market_cap": 410200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

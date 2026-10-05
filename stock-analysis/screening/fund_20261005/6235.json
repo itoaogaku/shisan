@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 38200.0,
+   "op": 6200.0,
+   "ord": 7400.0,
+   "net": 5600.0,
+   "eps": 140.4
+  },
+  "forecast_label": "連 予 2026.12",
+  "prev": {
+   "sales": 33861.0,
+   "op": 3334.0,
+   "ord": 3202.0,
+   "net": 2959.0,
+   "eps": 73.3
+  },
+  "prev_label": "連 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 8885.0,
+   "op": 576.0,
+   "ord": 431.0,
+   "net": 65.0
+  },
+  "year_ago": {
+   "sales": 5945.0,
+   "op": 352.0,
+   "ord": 372.0,
+   "net": 296.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 15853.0,
+   "op": 1087.0
+  }
+ },
+ "code": "6235",
+ "name": "オプトラン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6235（取得 2026-10-05 17:08）。単位：百万円（EPSは円）",
+ "price": 2823.0,
+ "industry_per": null,
+ "market_cap": 125200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

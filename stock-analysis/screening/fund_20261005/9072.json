@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 285000.0,
+   "op": 26700.0,
+   "ord": 27500.0,
+   "net": 22300.0,
+   "eps": 179.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 269862.0,
+   "op": 23818.0,
+   "ord": 24853.0,
+   "net": 17493.0,
+   "eps": 146.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 68510.0,
+   "op": 4981.0,
+   "ord": 5242.0,
+   "net": 1348.0
+  },
+  "year_ago": {
+   "sales": 65826.0,
+   "op": 4991.0,
+   "ord": 5522.0,
+   "net": 2721.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 68510.0,
+   "op": 4981.0
+  }
+ },
+ "code": "9072",
+ "name": "ニッコンホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9072（取得 2026-10-05 17:19）。単位：百万円（EPSは円）",
+ "price": 4572.0,
+ "industry_per": null,
+ "market_cap": 578300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

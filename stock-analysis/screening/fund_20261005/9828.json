@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 103000.0,
+   "op": 6000.0,
+   "ord": 5900.0,
+   "net": 3300.0,
+   "eps": 186.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 73711.0,
+   "op": 4797.0,
+   "ord": 5242.0,
+   "net": 3492.0,
+   "eps": 197.8
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 23699.0,
+   "op": 1639.0,
+   "ord": 1630.0,
+   "net": 1021.0
+  },
+  "year_ago": {
+   "sales": 17242.0,
+   "op": 1483.0,
+   "ord": 1590.0,
+   "net": 1044.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 23699.0,
+   "op": 1639.0
+  }
+ },
+ "code": "9828",
+ "name": "Ｇｅｎｋｉ　Ｇｌｏｂａｌ　Ｄｉｎｉｎｇ　Ｃｏｎｃｅｐｔｓ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9828（取得 2026-10-05 17:21）。単位：百万円（EPSは円）",
+ "price": 3330.0,
+ "industry_per": null,
+ "market_cap": 59200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

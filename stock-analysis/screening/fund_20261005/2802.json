@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1732000.0,
+   "op": null,
+   "ord": null,
+   "net": 123500.0,
+   "eps": 129.9
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 1583719.0,
+   "op": 199412.0,
+   "ord": 196115.0,
+   "net": 134675.0,
+   "eps": 138.4
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 412105.0,
+   "op": 55895.0,
+   "ord": 54994.0,
+   "net": 36452.0
+  },
+  "year_ago": {
+   "sales": 364008.0,
+   "op": 49380.0,
+   "ord": 48072.0,
+   "net": 32218.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 412105.0,
+   "op": 55895.0
+  }
+ },
+ "code": "2802",
+ "name": "味の素",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2802（取得 2026-10-05 17:08）。単位：百万円（EPSは円）",
+ "price": 5321.0,
+ "industry_per": null,
+ "market_cap": 5202500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

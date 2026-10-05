@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 37500.0,
+   "op": null,
+   "ord": null,
+   "net": 8200.0,
+   "eps": 102.0
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 34388.0,
+   "op": null,
+   "ord": 11389.0,
+   "net": 8041.0,
+   "eps": 100.1
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 9030.0,
+   "op": null,
+   "ord": 2303.0,
+   "net": 1637.0
+  },
+  "year_ago": {
+   "sales": 8222.0,
+   "op": null,
+   "ord": 3063.0,
+   "net": 2177.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 9030.0,
+   "op": null
+  }
+ },
+ "code": "7157",
+ "name": "ライフネット生命保険",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7157（取得 2026-10-05 17:02）。単位：百万円（EPSは円）",
+ "price": 1496.0,
+ "industry_per": null,
+ "market_cap": 120200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

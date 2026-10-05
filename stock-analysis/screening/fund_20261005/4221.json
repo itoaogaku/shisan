@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 103000.0,
+   "op": 8500.0,
+   "ord": 8700.0,
+   "net": 5750.0,
+   "eps": 508.6
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 86658.0,
+   "op": 6185.0,
+   "ord": 6428.0,
+   "net": 3815.0,
+   "eps": 335.3
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 28473.0,
+   "op": 3073.0,
+   "ord": 3232.0,
+   "net": 2260.0
+  },
+  "year_ago": {
+   "sales": 21865.0,
+   "op": 1849.0,
+   "ord": 1811.0,
+   "net": 1301.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 52499.0,
+   "op": 5318.0
+  }
+ },
+ "code": "4221",
+ "name": "大倉工業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4221（取得 2026-10-05 17:01）。単位：百万円（EPSは円）",
+ "price": 5400.0,
+ "industry_per": null,
+ "market_cap": 67000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

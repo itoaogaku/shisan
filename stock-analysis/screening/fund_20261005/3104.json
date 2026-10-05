@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 54900.0,
+   "op": 9900.0,
+   "ord": 10100.0,
+   "net": 6800.0,
+   "eps": 201.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 45929.0,
+   "op": 8143.0,
+   "ord": 8356.0,
+   "net": 5612.0,
+   "eps": 165.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 13172.0,
+   "op": 2481.0,
+   "ord": 2598.0,
+   "net": 1744.0
+  },
+  "year_ago": {
+   "sales": 11253.0,
+   "op": 1935.0,
+   "ord": 2052.0,
+   "net": 1482.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 13172.0,
+   "op": 2481.0
+  }
+ },
+ "code": "3104",
+ "name": "富士紡ホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3104（取得 2026-10-05 17:19）。単位：百万円（EPSは円）",
+ "price": 3530.0,
+ "industry_per": null,
+ "market_cap": 120200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

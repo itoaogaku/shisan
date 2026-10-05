@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 44000.0,
+   "op": 5100.0,
+   "ord": 5100.0,
+   "net": 3300.0,
+   "eps": 195.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 42412.0,
+   "op": 5439.0,
+   "ord": 5492.0,
+   "net": 3439.0,
+   "eps": 203.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 6437.0,
+   "op": 72.0,
+   "ord": 75.0,
+   "net": 300.0
+  },
+  "year_ago": {
+   "sales": 6337.0,
+   "op": 338.0,
+   "ord": 385.0,
+   "net": 243.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 6437.0,
+   "op": 72.0
+  }
+ },
+ "code": "6145",
+ "name": "ＮＩＴＴＯＫＵ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6145（取得 2026-10-05 17:18）。単位：百万円（EPSは円）",
+ "price": 2900.0,
+ "industry_per": null,
+ "market_cap": 52500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 933000.0,
+   "op": 60000.0,
+   "ord": 65500.0,
+   "net": 39500.0,
+   "eps": 154.2
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 947610.0,
+   "op": 51438.0,
+   "ord": 58791.0,
+   "net": 16539.0,
+   "eps": 60.2
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 240883.0,
+   "op": 16557.0,
+   "ord": 18475.0,
+   "net": 14657.0
+  },
+  "year_ago": {
+   "sales": 219725.0,
+   "op": 11907.0,
+   "ord": 12605.0,
+   "net": 10120.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 240883.0,
+   "op": 16557.0
+  }
+ },
+ "code": "7276",
+ "name": "小糸製作所",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=7276（取得 2026-10-05 17:05）。単位：百万円（EPSは円）",
+ "price": 2715.5,
+ "industry_per": null,
+ "market_cap": 835900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

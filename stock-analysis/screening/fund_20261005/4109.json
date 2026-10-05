@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 39100.0,
+   "op": 4800.0,
+   "ord": 4900.0,
+   "net": 3400.0,
+   "eps": 284.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 36799.0,
+   "op": 4644.0,
+   "ord": 4424.0,
+   "net": 3058.0,
+   "eps": 258.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 9754.0,
+   "op": 1242.0,
+   "ord": 1176.0,
+   "net": 1094.0
+  },
+  "year_ago": {
+   "sales": 8795.0,
+   "op": 1222.0,
+   "ord": 1148.0,
+   "net": 828.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 9754.0,
+   "op": 1242.0
+  }
+ },
+ "code": "4109",
+ "name": "ステラ　ケミファ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4109（取得 2026-10-05 17:00）。単位：百万円（EPSは円）",
+ "price": 5550.0,
+ "industry_per": null,
+ "market_cap": 72000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

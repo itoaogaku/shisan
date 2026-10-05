@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 2580000.0,
+   "op": 295000.0,
+   "ord": 300000.0,
+   "net": 225000.0,
+   "eps": 118.5
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 2504820.0,
+   "op": 272415.0,
+   "ord": 276810.0,
+   "net": 195663.0,
+   "eps": 103.1
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 741005.0,
+   "op": 86310.0,
+   "ord": 94500.0,
+   "net": 80581.0
+  },
+  "year_ago": {
+   "sales": 535753.0,
+   "op": 56419.0,
+   "ord": 57630.0,
+   "net": 41462.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 741005.0,
+   "op": 86310.0
+  }
+ },
+ "code": "6762",
+ "name": "ＴＤＫ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6762（取得 2026-10-05 17:17）。単位：百万円（EPSは円）",
+ "price": 3447.0,
+ "industry_per": null,
+ "market_cap": 6700500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

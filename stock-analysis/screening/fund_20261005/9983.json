@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 3970000.0,
+   "op": 730000.0,
+   "ord": 780000.0,
+   "net": 500000.0,
+   "eps": 1629.5
+  },
+  "forecast_label": "I 予 2026.08",
+  "prev": {
+   "sales": 3400539.0,
+   "op": 564265.0,
+   "ord": 650574.0,
+   "net": 433009.0,
+   "eps": 1411.4
+  },
+  "prev_label": "I 2025.08"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 1009955.0,
+   "op": 213723.0,
+   "ord": 229432.0,
+   "net": 146787.0
+  },
+  "year_ago": {
+   "sales": 826510.0,
+   "op": 146735.0,
+   "ord": 156782.0,
+   "net": 105533.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.09-05",
+  "cumulative": {
+   "sales": 3065182.0,
+   "op": 614389.0
+  }
+ },
+ "code": "9983",
+ "name": "ファーストリテイリング",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9983（取得 2026-10-05 17:06）。単位：百万円（EPSは円）",
+ "price": 74690.0,
+ "industry_per": null,
+ "market_cap": 23767900000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

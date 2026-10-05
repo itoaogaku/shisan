@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1040000.0,
+   "op": 50000.0,
+   "ord": 48000.0,
+   "net": 29000.0,
+   "eps": 59.3
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 911644.0,
+   "op": 38812.0,
+   "ord": 38039.0,
+   "net": 22867.0,
+   "eps": 46.8
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 255638.0,
+   "op": 14961.0,
+   "ord": 14653.0,
+   "net": 9701.0
+  },
+  "year_ago": {
+   "sales": 195760.0,
+   "op": 4790.0,
+   "ord": 4894.0,
+   "net": 1083.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 255638.0,
+   "op": 14961.0
+  }
+ },
+ "code": "6471",
+ "name": "日本精工",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6471（取得 2026-10-05 17:13）。単位：百万円（EPSは円）",
+ "price": 1126.0,
+ "industry_per": null,
+ "market_cap": 563000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

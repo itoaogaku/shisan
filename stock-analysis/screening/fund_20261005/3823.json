@@ -1,0 +1,36 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 6259.0,
+   "op": 165.0,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "連 予 2027.04",
+  "prev": {
+   "sales": 2332.0,
+   "op": -502.0,
+   "ord": -897.0,
+   "net": -929.0,
+   "eps": -7.1
+  },
+  "prev_label": "連 変 2026.04"
+ },
+ "quarter": {},
+ "progress": {
+  "quarter": 1,
+  "label": "26.05-07",
+  "cumulative": {
+   "sales": 1674.0,
+   "op": 91.0
+  }
+ },
+ "code": "3823",
+ "name": "ＴＨＥ　ＷＨＹ　ＨＯＷ　ＤＯ　ＣＯＭＰＡＮＹ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3823（取得 2026-10-05 17:04）。単位：百万円（EPSは円）",
+ "price": 40.0,
+ "industry_per": null,
+ "market_cap": 6090000000.0,
+ "going_concern": "解消済み：2026-09-14 「継続企業の前提に関する重要事象等」の記載解消に関するお知らせ"
+}

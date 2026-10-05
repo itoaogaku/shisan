@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 107000.0,
+   "op": 8700.0,
+   "ord": 8700.0,
+   "net": 5750.0,
+   "eps": 315.6
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 103728.0,
+   "op": 8178.0,
+   "ord": 8320.0,
+   "net": 6472.0,
+   "eps": 355.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 22014.0,
+   "op": -123.0,
+   "ord": -111.0,
+   "net": -111.0
+  },
+  "year_ago": {
+   "sales": 18833.0,
+   "op": 301.0,
+   "ord": 359.0,
+   "net": 272.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 22014.0,
+   "op": -123.0
+  }
+ },
+ "code": "8157",
+ "name": "都築電気",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8157（取得 2026-10-05 17:09）。単位：百万円（EPSは円）",
+ "price": 4320.0,
+ "industry_per": null,
+ "market_cap": 82000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 436000.0,
+   "op": 32900.0,
+   "ord": 34400.0,
+   "net": 23700.0,
+   "eps": 210.8
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 417023.0,
+   "op": 29711.0,
+   "ord": 31756.0,
+   "net": 23420.0,
+   "eps": 208.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 113108.0,
+   "op": 10810.0,
+   "ord": 11752.0,
+   "net": 8115.0
+  },
+  "year_ago": {
+   "sales": 87501.0,
+   "op": 5679.0,
+   "ord": 6622.0,
+   "net": 4713.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 113108.0,
+   "op": 10810.0
+  }
+ },
+ "code": "9934",
+ "name": "因幡電機産業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9934（取得 2026-10-05 17:17）。単位：百万円（EPSは円）",
+ "price": 3163.0,
+ "industry_per": null,
+ "market_cap": 359500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

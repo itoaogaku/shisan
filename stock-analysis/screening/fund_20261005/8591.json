@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": 530000.0,
+   "eps": 489.1
+  },
+  "forecast_label": "U 予 2027.03",
+  "prev": {
+   "sales": 3330831.0,
+   "op": 456248.0,
+   "ord": 691431.0,
+   "net": 447265.0,
+   "eps": 400.3
+  },
+  "prev_label": "U 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 876628.0,
+   "op": 133919.0,
+   "ord": 406150.0,
+   "net": 280832.0
+  },
+  "year_ago": {
+   "sales": 746973.0,
+   "op": 119918.0,
+   "ord": 145666.0,
+   "net": 107288.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 876628.0,
+   "op": 133919.0
+  }
+ },
+ "code": "8591",
+ "name": "オリックス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8591（取得 2026-10-05 17:19）。単位：百万円（EPSは円）",
+ "price": 5850.0,
+ "industry_per": null,
+ "market_cap": 6576000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

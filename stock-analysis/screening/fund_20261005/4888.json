@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1038.0,
+   "op": -696.0,
+   "ord": -625.0,
+   "net": -628.0,
+   "eps": -17.0
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 323.0,
+   "op": -748.0,
+   "ord": -778.0,
+   "net": -780.0,
+   "eps": -23.0
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 92.0,
+   "op": -245.0,
+   "ord": -228.0,
+   "net": -228.0
+  },
+  "year_ago": {
+   "sales": 92.0,
+   "op": -151.0,
+   "ord": -155.0,
+   "net": -156.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 92.0,
+   "op": -245.0
+  }
+ },
+ "code": "4888",
+ "name": "ステラファーマ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4888（取得 2026-10-05 17:18）。単位：百万円（EPSは円）",
+ "price": 452.0,
+ "industry_per": null,
+ "market_cap": 16700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

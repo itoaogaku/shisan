@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 392000.0,
+   "op": 34000.0,
+   "ord": 34000.0,
+   "net": 26000.0,
+   "eps": 361.4
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 349476.0,
+   "op": 37071.0,
+   "ord": 38256.0,
+   "net": 22207.0,
+   "eps": 308.7
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 85654.0,
+   "op": 6076.0,
+   "ord": 6708.0,
+   "net": 5204.0
+  },
+  "year_ago": {
+   "sales": 81828.0,
+   "op": 7884.0,
+   "ord": 7602.0,
+   "net": 4911.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 85654.0,
+   "op": 6076.0
+  }
+ },
+ "code": "4043",
+ "name": "トクヤマ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4043（取得 2026-10-05 17:02）。単位：百万円（EPSは円）",
+ "price": 4166.0,
+ "industry_per": null,
+ "market_cap": 300300000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

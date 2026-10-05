@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 334600.0,
+   "op": 12500.0,
+   "ord": 13700.0,
+   "net": 17000.0,
+   "eps": 482.7
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 318582.0,
+   "op": 9347.0,
+   "ord": 11475.0,
+   "net": 13696.0,
+   "eps": 369.5
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 84279.0,
+   "op": 5527.0,
+   "ord": 6005.0,
+   "net": 4448.0
+  },
+  "year_ago": {
+   "sales": 77454.0,
+   "op": 2548.0,
+   "ord": 3336.0,
+   "net": 2719.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 84279.0,
+   "op": 5527.0
+  }
+ },
+ "code": "9075",
+ "name": "福山通運",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9075（取得 2026-10-05 17:17）。単位：百万円（EPSは円）",
+ "price": 6090.0,
+ "industry_per": null,
+ "market_cap": 238700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

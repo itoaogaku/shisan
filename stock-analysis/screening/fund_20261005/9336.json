@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 93900.0,
+   "op": 24300.0,
+   "ord": 23100.0,
+   "net": 16400.0,
+   "eps": 164.2
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 87855.0,
+   "op": 22189.0,
+   "ord": 22427.0,
+   "net": 15845.0,
+   "eps": 159.9
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 24136.0,
+   "op": 5598.0,
+   "ord": 5580.0,
+   "net": 3548.0
+  },
+  "year_ago": {
+   "sales": 20020.0,
+   "op": 4260.0,
+   "ord": 4271.0,
+   "net": 2906.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 24136.0,
+   "op": 5598.0
+  }
+ },
+ "code": "9336",
+ "name": "大栄環境",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9336（取得 2026-10-05 17:17）。単位：百万円（EPSは円）",
+ "price": 3595.0,
+ "industry_per": null,
+ "market_cap": 359100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

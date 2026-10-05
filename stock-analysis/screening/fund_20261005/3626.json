@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 620000.0,
+   "op": 81000.0,
+   "ord": 81000.0,
+   "net": 57000.0,
+   "eps": 271.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 596479.0,
+   "op": 76229.0,
+   "ord": 76511.0,
+   "net": 46624.0,
+   "eps": 204.9
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 150111.0,
+   "op": 18347.0,
+   "ord": 18424.0,
+   "net": 14409.0
+  },
+  "year_ago": {
+   "sales": 140316.0,
+   "op": 16353.0,
+   "ord": 17064.0,
+   "net": 12520.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 150111.0,
+   "op": 18347.0
+  }
+ },
+ "code": "3626",
+ "name": "ＴＩＳＩ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3626（取得 2026-10-05 17:14）。単位：百万円（EPSは円）",
+ "price": 4016.0,
+ "industry_per": null,
+ "market_cap": 862200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

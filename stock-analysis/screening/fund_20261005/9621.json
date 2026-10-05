@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 105000.0,
+   "op": 10500.0,
+   "ord": 10500.0,
+   "net": 7000.0,
+   "eps": 258.2
+  },
+  "forecast_label": "予 2026.12",
+  "prev": {
+   "sales": 101038.0,
+   "op": 9136.0,
+   "ord": 9350.0,
+   "net": 5952.0,
+   "eps": 214.5
+  },
+  "prev_label": "2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 23026.0,
+   "op": 46.0,
+   "ord": 80.0,
+   "net": -33.0
+  },
+  "year_ago": {
+   "sales": 20684.0,
+   "op": 117.0,
+   "ord": 197.0,
+   "net": -112.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 55003.0,
+   "op": 6617.0
+  }
+ },
+ "code": "9621",
+ "name": "建設技術研究所",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9621（取得 2026-10-05 17:19）。単位：百万円（EPSは円）",
+ "price": 3305.0,
+ "industry_per": null,
+ "market_cap": 93600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

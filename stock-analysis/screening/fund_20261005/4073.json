@@ -1,0 +1,44 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 2751.0,
+   "op": 109.0,
+   "ord": 69.0,
+   "net": 67.0,
+   "eps": 26.2
+  },
+  "forecast_label": "予 2027.06",
+  "prev": {
+   "sales": 2252.0,
+   "op": 69.0,
+   "ord": 33.0,
+   "net": 70.0,
+   "eps": 27.8
+  },
+  "prev_label": "2026.06"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 759.0,
+   "op": 147.0,
+   "ord": 131.0,
+   "net": 168.0
+  },
+  "year_ago": {
+   "sales": 565.0,
+   "op": 61.0,
+   "ord": 46.0,
+   "net": 21.0
+  },
+  "one_off": null
+ },
+ "progress": {},
+ "code": "4073",
+ "name": "ジィ・シィ企画",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4073（取得 2026-10-05 17:07）。単位：百万円（EPSは円）",
+ "price": 780.0,
+ "industry_per": null,
+ "market_cap": 2000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

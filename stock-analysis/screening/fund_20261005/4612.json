@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 2000000.0,
+   "op": 283000.0,
+   "ord": 265000.0,
+   "net": 189000.0,
+   "eps": 81.5
+  },
+  "forecast_label": "I 予 2026.12",
+  "prev": {
+   "sales": 1774231.0,
+   "op": 257104.0,
+   "ord": 250565.0,
+   "net": 179800.0,
+   "eps": 76.7
+  },
+  "prev_label": "I 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 533405.0,
+   "op": 81367.0,
+   "ord": 76385.0,
+   "net": 53626.0
+  },
+  "year_ago": {
+   "sales": 446704.0,
+   "op": 67584.0,
+   "ord": 65692.0,
+   "net": 48804.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 1023683.0,
+   "op": 152315.0
+  }
+ },
+ "code": "4612",
+ "name": "日本ペイントホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=4612（取得 2026-10-05 17:03）。単位：百万円（EPSは円）",
+ "price": 1198.5,
+ "industry_per": null,
+ "market_cap": 2841100000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

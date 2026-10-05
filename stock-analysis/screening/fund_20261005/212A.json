@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 14322.0,
+   "op": 3506.0,
+   "ord": 3558.0,
+   "net": 2473.0,
+   "eps": 148.1
+  },
+  "forecast_label": "予 2026.10",
+  "prev": {
+   "sales": 9731.0,
+   "op": 2311.0,
+   "ord": 2318.0,
+   "net": 1528.0,
+   "eps": 96.1
+  },
+  "prev_label": "2025.10"
+ },
+ "quarter": {
+  "label": "26.05-07 単独（前年同期 25.05-07）",
+  "current": {
+   "sales": 3918.0,
+   "op": 900.0,
+   "ord": 910.0,
+   "net": 620.0
+  },
+  "year_ago": {
+   "sales": 2642.0,
+   "op": 690.0,
+   "ord": 691.0,
+   "net": 461.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.11-07",
+  "cumulative": {
+   "sales": 10623.0,
+   "op": 2507.0
+  }
+ },
+ "code": "212A",
+ "name": "フィットイージー",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=212A（取得 2026-10-05 17:10）。単位：百万円（EPSは円）",
+ "price": 2773.0,
+ "industry_per": null,
+ "market_cap": 46400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

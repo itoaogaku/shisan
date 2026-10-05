@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 28000.0,
+   "op": 1500.0,
+   "ord": 1600.0,
+   "net": 1600.0,
+   "eps": 151.1
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 25073.0,
+   "op": 1085.0,
+   "ord": 1268.0,
+   "net": 1159.0,
+   "eps": 109.4
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 6564.0,
+   "op": 885.0,
+   "ord": 1113.0,
+   "net": 911.0
+  },
+  "year_ago": {
+   "sales": 5865.0,
+   "op": 165.0,
+   "ord": 64.0,
+   "net": 35.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 6564.0,
+   "op": 885.0
+  }
+ },
+ "code": "6616",
+ "name": "トレックス・セミコンダクター",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6616（取得 2026-10-05 17:10）。単位：百万円（EPSは円）",
+ "price": 2042.0,
+ "industry_per": null,
+ "market_cap": 23600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1500000.0,
+   "op": 180000.0,
+   "ord": 170000.0,
+   "net": 118500.0,
+   "eps": 1079.0
+  },
+  "forecast_label": "予 2026.09",
+  "prev": {
+   "sales": 1336468.0,
+   "op": 145933.0,
+   "ord": 139491.0,
+   "net": 100670.0,
+   "eps": 875.2
+  },
+  "prev_label": "2025.09"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 334226.0,
+   "op": 36561.0,
+   "ord": 34609.0,
+   "net": 24243.0
+  },
+  "year_ago": {
+   "sales": 296292.0,
+   "op": 28471.0,
+   "ord": 26656.0,
+   "net": 24013.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.10-06",
+  "cumulative": {
+   "sales": 1023402.0,
+   "op": 120959.0
+  }
+ },
+ "code": "3288",
+ "name": "オープンハウスグループ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3288（取得 2026-10-05 17:20）。単位：百万円（EPSは円）",
+ "price": 7353.0,
+ "industry_per": null,
+ "market_cap": 858600000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

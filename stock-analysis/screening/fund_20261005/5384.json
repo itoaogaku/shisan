@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 74800.0,
+   "op": 14500.0,
+   "ord": 14500.0,
+   "net": 10400.0,
+   "eps": 140.2
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 69404.0,
+   "op": 13826.0,
+   "ord": 14169.0,
+   "net": 9059.0,
+   "eps": 122.1
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 19520.0,
+   "op": 4607.0,
+   "ord": 4831.0,
+   "net": 3371.0
+  },
+  "year_ago": {
+   "sales": 16394.0,
+   "op": 3257.0,
+   "ord": 2750.0,
+   "net": 1862.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 19520.0,
+   "op": 4607.0
+  }
+ },
+ "code": "5384",
+ "name": "フジミインコーポレーテッド",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=5384（取得 2026-10-05 17:12）。単位：百万円（EPSは円）",
+ "price": 3710.0,
+ "industry_per": null,
+ "market_cap": 297200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

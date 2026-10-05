@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 3885000.0,
+   "op": 1008000.0,
+   "ord": null,
+   "net": 644000.0,
+   "eps": 362.7
+  },
+  "forecast_label": "I 予 2026.12",
+  "prev": {
+   "sales": 3467675.0,
+   "op": 867038.0,
+   "ord": 739786.0,
+   "net": 510175.0,
+   "eps": 287.4
+  },
+  "prev_label": "I 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 1062107.0,
+   "op": 340386.0,
+   "ord": 318339.0,
+   "net": 234788.0
+  },
+  "year_ago": {
+   "sales": 884917.0,
+   "op": 255811.0,
+   "ord": 236304.0,
+   "net": 162425.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 1986070.0,
+   "op": 644940.0
+  }
+ },
+ "code": "2914",
+ "name": "日本たばこ産業",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2914（取得 2026-10-05 17:20）。単位：百万円（EPSは円）",
+ "price": 6930.0,
+ "industry_per": null,
+ "market_cap": 13860000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

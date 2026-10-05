@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 2066.0,
+   "op": 101.0,
+   "ord": 98.0,
+   "net": 92.0,
+   "eps": 14.8
+  },
+  "forecast_label": "連 予 2027.03",
+  "prev": {
+   "sales": 1636.0,
+   "op": -262.0,
+   "ord": -299.0,
+   "net": -718.0,
+   "eps": -115.2
+  },
+  "prev_label": "連 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 598.0,
+   "op": -5.0,
+   "ord": -4.0,
+   "net": -6.0
+  },
+  "year_ago": {
+   "sales": 464.0,
+   "op": -49.0,
+   "ord": -58.0,
+   "net": -45.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 598.0,
+   "op": -5.0
+  }
+ },
+ "code": "6433",
+ "name": "ヒーハイスト",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6433（取得 2026-10-05 17:03）。単位：百万円（EPSは円）",
+ "price": 1266.0,
+ "industry_per": null,
+ "market_cap": 8000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

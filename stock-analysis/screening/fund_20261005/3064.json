@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 381379.0,
+   "op": 53069.0,
+   "ord": 52789.0,
+   "net": 36180.0,
+   "eps": 73.6
+  },
+  "forecast_label": "連 予 2026.12",
+  "prev": {
+   "sales": 333880.0,
+   "op": 46192.0,
+   "ord": 46057.0,
+   "net": 32434.0,
+   "eps": 65.3
+  },
+  "prev_label": "連 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 97679.0,
+   "op": 14172.0,
+   "ord": 14094.0,
+   "net": 9666.0
+  },
+  "year_ago": {
+   "sales": 81126.0,
+   "op": 11143.0,
+   "ord": 11126.0,
+   "net": 7880.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 193261.0,
+   "op": 27342.0
+  }
+ },
+ "code": "3064",
+ "name": "ＭｏｎｏｔａＲＯ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=3064（取得 2026-10-05 17:01）。単位：百万円（EPSは円）",
+ "price": 2089.5,
+ "industry_per": null,
+ "market_cap": 1036700000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1880000.0,
+   "op": 75000.0,
+   "ord": 70000.0,
+   "net": 50000.0,
+   "eps": 157.1
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 1924950.0,
+   "op": 24847.0,
+   "ord": 27377.0,
+   "net": 11974.0,
+   "eps": 37.6
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 491973.0,
+   "op": 22811.0,
+   "ord": 21560.0,
+   "net": 13833.0
+  },
+  "year_ago": {
+   "sales": 454794.0,
+   "op": 13526.0,
+   "ord": 10323.0,
+   "net": 6510.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 491973.0,
+   "op": 22811.0
+  }
+ },
+ "code": "6473",
+ "name": "ジェイテクト",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6473（取得 2026-10-05 17:09）。単位：百万円（EPSは円）",
+ "price": 2172.0,
+ "industry_per": null,
+ "market_cap": 692000000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": null,
+   "op": null,
+   "ord": null,
+   "net": null,
+   "eps": null
+  },
+  "forecast_label": "U 予 2027.03",
+  "prev": {
+   "sales": 4758486.0,
+   "op": null,
+   "ord": 539821.0,
+   "net": 362129.0,
+   "eps": 123.1
+  },
+  "prev_label": "U 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 1371708.0,
+   "op": null,
+   "ord": 211539.0,
+   "net": 145561.0
+  },
+  "year_ago": {
+   "sales": 1156588.0,
+   "op": null,
+   "ord": 160282.0,
+   "net": 104565.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 1371708.0,
+   "op": null
+  }
+ },
+ "code": "8604",
+ "name": "野村ホールディングス",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=8604（取得 2026-10-05 17:20）。単位：百万円（EPSは円）",
+ "price": 1527.0,
+ "industry_per": null,
+ "market_cap": 4716200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

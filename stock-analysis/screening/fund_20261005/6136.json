@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 185000.0,
+   "op": 30000.0,
+   "ord": 32000.0,
+   "net": 21000.0,
+   "eps": 255.6
+  },
+  "forecast_label": "予 2026.11",
+  "prev": {
+   "sales": 160619.0,
+   "op": 20330.0,
+   "ord": 22354.0,
+   "net": 14334.0,
+   "eps": 172.1
+  },
+  "prev_label": "2025.11"
+ },
+ "quarter": {
+  "label": "26.03-05 単独（前年同期 25.03-05）",
+  "current": {
+   "sales": 49466.0,
+   "op": 9527.0,
+   "ord": 10446.0,
+   "net": 7461.0
+  },
+  "year_ago": {
+   "sales": 39602.0,
+   "op": 5600.0,
+   "ord": 5760.0,
+   "net": 3874.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "25.12-05",
+  "cumulative": {
+   "sales": 92093.0,
+   "op": 15661.0
+  }
+ },
+ "code": "6136",
+ "name": "オーエスジー",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6136（取得 2026-10-05 17:06）。単位：百万円（EPSは円）",
+ "price": 3750.0,
+ "industry_per": null,
+ "market_cap": 360500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

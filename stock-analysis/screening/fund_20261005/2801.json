@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 799100.0,
+   "op": 78800.0,
+   "ord": 84400.0,
+   "net": 61300.0,
+   "eps": 66.2
+  },
+  "forecast_label": "I 予 2027.03",
+  "prev": {
+   "sales": 745539.0,
+   "op": 75940.0,
+   "ord": 84069.0,
+   "net": 61615.0,
+   "eps": 66.0
+  },
+  "prev_label": "I 2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 202032.0,
+   "op": 24627.0,
+   "ord": 26166.0,
+   "net": 19017.0
+  },
+  "year_ago": {
+   "sales": 175660.0,
+   "op": 19091.0,
+   "ord": 21084.0,
+   "net": 15293.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 202032.0,
+   "op": 24627.0
+  }
+ },
+ "code": "2801",
+ "name": "キッコーマン",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=2801（取得 2026-10-05 17:15）。単位：百万円（EPSは円）",
+ "price": 1710.5,
+ "industry_per": null,
+ "market_cap": 1658200000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

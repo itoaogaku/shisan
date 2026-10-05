@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 200000.0,
+   "op": 40000.0,
+   "ord": 40000.0,
+   "net": 30000.0,
+   "eps": 130.5
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 177654.0,
+   "op": 37648.0,
+   "ord": 38130.0,
+   "net": 28401.0,
+   "eps": 123.6
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 42183.0,
+   "op": 6612.0,
+   "ord": 6762.0,
+   "net": 3436.0
+  },
+  "year_ago": {
+   "sales": 38110.0,
+   "op": 6953.0,
+   "ord": 6471.0,
+   "net": 3642.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 42183.0,
+   "op": 6612.0
+  }
+ },
+ "code": "6368",
+ "name": "オルガノ",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=6368（取得 2026-10-05 17:12）。単位：百万円（EPSは円）",
+ "price": 2646.5,
+ "industry_per": null,
+ "market_cap": 613500000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}

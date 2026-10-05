@@ -1,0 +1,51 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 205000.0,
+   "op": 5700.0,
+   "ord": 4400.0,
+   "net": 2100.0,
+   "eps": 84.5
+  },
+  "forecast_label": "予 2026.11",
+  "prev": {
+   "sales": 202602.0,
+   "op": 5644.0,
+   "ord": 4820.0,
+   "net": 2648.0,
+   "eps": 106.5
+  },
+  "prev_label": "2025.11"
+ },
+ "quarter": {
+  "label": "26.06-08 単独（前年同期 25.06-08）",
+  "current": {
+   "sales": 53510.0,
+   "op": 1447.0,
+   "ord": 1109.0,
+   "net": 570.0
+  },
+  "year_ago": {
+   "sales": 51035.0,
+   "op": 1380.0,
+   "ord": 1138.0,
+   "net": 614.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 3,
+  "label": "25.12-08",
+  "cumulative": {
+   "sales": 156245.0,
+   "op": 4407.0
+  }
+ },
+ "code": "9369",
+ "name": "キユーソー流通システム",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9369（取得 2026-10-05 17:18）。単位：百万円（EPSは円）",
+ "price": 2893.0,
+ "industry_per": null,
+ "market_cap": 73400000000.0,
+ "going_concern": "開示表題に該当なし（決算短信本文は未確認）"
+}
