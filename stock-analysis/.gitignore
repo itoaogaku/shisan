@@ -1,5 +1,7 @@
 __pycache__/
 # 全銘柄の日足（約90MB）。screen_technical.py で再取得できるためコミットしない
 data/prices/
+# 過去検証用の5年分の日足（backtest_strength.py で再取得できる）
+data/prices5y/
 # JPXの元ファイル。結果は screening/universe.csv に保存
 screening/data_j.xls*

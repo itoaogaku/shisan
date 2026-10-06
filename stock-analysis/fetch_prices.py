@@ -15,13 +15,13 @@ import sys
 import urllib.request
 from datetime import datetime, timedelta, timezone
 
-URL = "https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=2y&interval=1d"
+URL = "https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range={rng}&interval=1d"
 
 
-def download(code):
+def download(code, rng="2y"):
     """Yahoo! Finance から日足を取得し、[日付, 始値, 高値, 安値, 終値, 出来高] の行リストを返す。"""
     sym = code if "." in code else f"{code}.T"
-    req = urllib.request.Request(URL.format(sym=sym), headers={"User-Agent": "Mozilla/5.0"})
+    req = urllib.request.Request(URL.format(sym=sym, rng=rng), headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=20) as r:
         data = json.load(r)
     result = data["chart"]["result"][0]
