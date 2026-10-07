@@ -7,3 +7,5 @@ data/prices5y/
 screening/data_j.xls*
 # 過去検証の中間データ（backtest_features.py で再作成できる）
 data/backtest_features.pkl
+# 過去検証用の四半期業績（fetch_quarterly.py で再取得できる）
+data/quarterly/
