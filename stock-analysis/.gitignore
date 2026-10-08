@@ -9,3 +9,5 @@ screening/data_j.xls*
 data/backtest_features.pkl
 # 過去検証用の四半期業績（fetch_quarterly.py で再取得できる）
 data/quarterly/
+# 個人の売買履歴（trade_tracker.py の入力・出力）。コミットしない
+private/
