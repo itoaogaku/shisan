@@ -41,9 +41,32 @@ PRE = 20           # 暴落前とみなす日数（営業日）
 TOP = 20
 
 
+def clean_rows(rows):
+    """前後の日と比べて1日だけ値が飛んでいる行（データの誤り。例：2026-03-30〜31の1306は1/10の値）を取り除く。"""
+    out = []
+    for i, r in enumerate(rows):
+        if out and i + 1 < len(rows):
+            prev, nxt = out[-1][4], rows[i + 1][4]
+            if not 0.5 < r[4] / prev < 2:
+                if 0.8 < nxt / prev < 1.25:
+                    continue
+                j = i + 1  # 2日以上続く飛び：元の水準に戻るまでの行を飛ばす
+                while j < len(rows) and not 0.8 < rows[j][4] / prev < 1.25 and j - i < 5:
+                    j += 1
+                if j < len(rows) and j - i < 5:
+                    continue
+        out.append(r)
+    return out
+
+
+def topix_rows(rng="5y"):
+    rows, _ = fetch_prices.download(TOPIX, rng)
+    return clean_rows(rows)
+
+
 def market_status(asof=None):
     """TOPIX連動ETFの直近60営業日高値からの下落率を返す。"""
-    rows, _ = fetch_prices.download(TOPIX, "5y" if asof else "1y")
+    rows = topix_rows("5y" if asof else "1y")
     if asof:
         rows = [r for r in rows if r[0] <= asof]
     closes = [r[4] for r in rows]
@@ -107,8 +130,7 @@ def main():
     ranking = strength_ranking(args.price_dir, universe, pre)
     print(f"  暴落前の基準日 {pre}（{PRE}営業日前）・強さ点の対象 {len(ranking)}銘柄")
 
-    topix_rows, _ = fetch_prices.download(TOPIX, "5y")
-    tmap = {r[0]: r[4] for r in topix_rows}
+    tmap = {r[0]: r[4] for r in topix_rows()}
     t_drop = tmap[m["date"]] / tmap[pre] - 1 if pre in tmap and m["date"] in tmap else None
 
     picks, dropped, last = [], [], 0.0
