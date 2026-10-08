@@ -9,6 +9,9 @@
 ■ 強い株スコア（0〜100）= 強さ点（株価の強さ 0〜100）× 0.5 + ファンダ点（0〜45）÷ 45 × 50
   - ②で除外された銘柄（時価総額50億円未満・赤字予想・継続企業の注記あり）は対象外。
   - ファンダ5項目のうち評価できた満点が27点未満（業績データ不足）の銘柄は対象外。
+  - 業績フィルター：直近2四半期の営業利益が、どちらも前年同期より増えていない銘柄は外す
+    （IRBank の四半期業績。データがない銘柄は残す。--no-growth-filter で無効）。
+    2023-09〜2026-03の65時点の検証で、6か月後の市場平均との差が +5.0% → +6.2% に改善した（backtest_fundamental.py）。
   - 上位 --pool 銘柄（既定100）を「強い株」の候補とする。
   - その中から買い時点の高い順に --top 銘柄（既定20）を選ぶ（同点は強い株スコア順）。
     過去1年の日足での検証（2週間おき17時点）では、強さ上位20をそのまま買い時で並べるより、
@@ -49,6 +52,7 @@ sys.path.insert(0, HERE)
 from score import load_prices, sma, technical  # noqa: E402
 from screen_views import next_earnings  # noqa: E402
 from screen_fundamental import NEWS_URL, Client, text  # noqa: E402
+import fetch_quarterly  # noqa: E402
 
 JST = timezone(timedelta(hours=9))
 SCREEN_DIR = os.path.join(HERE, "screening")
@@ -87,6 +91,10 @@ def disclosure_events(client, code, today):
     return found
 
 
+def _pct(v):
+    return "" if v is None else round(v * 100, 1)
+
+
 def timing(bars):
     closes = [b["close"] for b in bars]
     i = len(closes) - 1
@@ -115,6 +123,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--date", help="YYYYMMDD（省略時は最新の strong_*.csv）")
     ap.add_argument("--pool", type=int, default=100, help="強い株の候補数（既定100）")
+    ap.add_argument("--no-growth-filter", action="store_true", help="直近2四半期の営業増益フィルターを使わない")
     ap.add_argument("--top", type=int, default=20, help="選ぶ銘柄数（既定20）")
     ap.add_argument("--flags", help="注意点・待ち理由の JSON")
     args = ap.parse_args()
@@ -144,7 +153,29 @@ def main():
         cands.append({**r, "強さ点": float(s["強さ点"]), "継続": s["継続"], "6か月上昇率%": s["6か月上昇率%"],
                       "52週高値比%": s["52週高値比%"], "強い株スコア": round(score, 1)})
     cands.sort(key=lambda x: -x["強い株スコア"])
-    pool = cands[:args.pool]
+    pool, dropped, last_fetch = [], [], 0.0
+    for r in cands:
+        if len(pool) >= args.pool:
+            break
+        g = None
+        if not args.no_growth_filter:
+            try:
+                wait = 1.1 - (time.time() - last_fetch)
+                data, fetched_now = fetch_quarterly.load(r["コード"])
+                if fetched_now:
+                    if wait > 0:
+                        time.sleep(wait)
+                    last_fetch = time.time()
+                g = fetch_quarterly.growth(data)
+            except Exception:  # noqa: BLE001
+                g = None
+        ok = fetch_quarterly.two_quarter_growth(g)
+        r["growth"] = g
+        r["業績判定"] = "不明（残す）" if ok is None else "2四半期連続増益" if ok else "減益あり（除外）"
+        if ok is False:
+            dropped.append(r)
+            continue
+        pool.append(r)
     for n, r in enumerate(pool, 1):
         r["強い株順位"] = n
         r["tm"] = timing(load_prices(os.path.join(PRICE_DIR, f"{r['コード']}.csv")))
@@ -209,6 +240,9 @@ def main():
             "予想PER": r["予想PER"], "時価総額_億円": r["時価総額_億円"], "終値": r["終値"],
             "注意": " / ".join(x for x in (fl.get("note", ""), r["注意"]) if x),
             "ファンダ内訳": r["ファンダ内訳"], "継続企業": r["継続企業"],
+            "業績判定": r["業績判定"], "直近四半期": (r["growth"] or {}).get("四半期末", ""),
+            "直近四半期の営業増益率%": _pct((r["growth"] or {}).get("営業増益率")),
+            "前四半期の営業増益率%": _pct((r["growth"] or {}).get("前四半期の営業増益率")),
         })
 
     sel = [x for x in rows if x["区分"] not in ("待ち", "対象外（買い時点が下位）", "過熱・割高・TOBなどで除外")]
@@ -232,6 +266,16 @@ def main():
     print("\n■ 待ち（買い時点は上位だが待つ理由あり）")
     for x in wait:
         print(f"  {x['コード']} {x['銘柄名']} 買い時{x['買い時点']} 強い株{x['強い株順位']}位：{x['待つ理由']}")
+    print(f"\n■ 業績フィルターで外した銘柄（強い株スコア上位から {len(dropped)}銘柄）")
+    for r in dropped:
+        g = r["growth"]
+        print(f"  {r['コード']} {r['銘柄名']} 強い株スコア{r['強い株スコア']}：直近{g['四半期末']}の営業増益率{_pct(g['営業増益率'])}%・前四半期{_pct(g['前四半期の営業増益率'])}%")
+    with open(os.path.join(SCREEN_DIR, f"select_{tag}_growth_dropped.csv"), "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["コード", "銘柄名", "強い株スコア", "直近四半期", "営業増益率%", "前四半期の営業増益率%"])
+        for r in dropped:
+            g = r["growth"]
+            w.writerow([r["コード"], r["銘柄名"], r["強い株スコア"], g["四半期末"], _pct(g["営業増益率"]), _pct(g["前四半期の営業増益率"])])
     print(f"\n■ 過熱・割高・TOBなどで除外（強い株{len(pool)}銘柄中 {len(guard)}銘柄）")
     for x in guard:
         print(f"  {x['コード']} {x['銘柄名']} 買い時{x['買い時点']} 強い株{x['強い株順位']}位：{x['待つ理由']}")
