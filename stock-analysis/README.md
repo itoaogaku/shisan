@@ -58,6 +58,7 @@ python3 stock-analysis/screen_universe.py                                   # �
 python3 stock-analysis/screen_strength.py                                   # ① 日足取得・株価の強さで上位300
 python3 stock-analysis/screen_fundamental.py --stage1 stock-analysis/screening/strength_<日付>.csv --out strong   # ② 業績
 python3 stock-analysis/screen_select.py --flags stock-analysis/screening/flags_<日付>.json                         # ③ 強い株20・買い時順
+python3 stock-analysis/screen_crash.py                                       # 暴落時ルール：TOPIXが60日高値から−10%以下なら暴落前の強い株を一覧に
 ```
 
 旧方式（テクニカル点で絞る。比較用）:

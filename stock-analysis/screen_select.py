@@ -280,6 +280,14 @@ def main():
     for x in guard:
         print(f"  {x['コード']} {x['銘柄名']} 買い時{x['買い時点']} 強い株{x['強い株順位']}位：{x['待つ理由']}")
 
+    try:  # 暴落時ルールの確認（screen_crash.py）
+        from screen_crash import CRASH, market_status
+        m = market_status()
+        msg = "暴落です。screen_crash.py で暴落前の強い株を確認してください" if m["crash"] else "暴落ではありません"
+        print(f"\n■ 相場の確認：TOPIX連動ETFは直近60営業日の高値から{m['drawdown'] * 100:+.1f}%（暴落の目安 {CRASH * 100:.0f}%）→ {msg}")
+    except Exception as e:  # noqa: BLE001
+        print(f"\n■ 相場の確認：取得できませんでした（{type(e).__name__}）")
+
 
 if __name__ == "__main__":
     main()
