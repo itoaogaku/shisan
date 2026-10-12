@@ -1,0 +1,47 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 580000.0,
+   "op": 30000.0,
+   "ord": null,
+   "net": 15500.0,
+   "eps": 99.3
+  },
+  "forecast_label": "I 予 2026.12",
+  "prev": {
+   "sales": 514976.0,
+   "op": 18974.0,
+   "ord": 28158.0,
+   "net": 24033.0,
+   "eps": 155.6
+  },
+  "prev_label": "I 2025.12"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 141198.0,
+   "op": 5894.0,
+   "ord": 3965.0,
+   "net": 2890.0
+  },
+  "year_ago": {
+   "sales": 113477.0,
+   "op": 4692.0,
+   "ord": 2895.0,
+   "net": 1892.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 2,
+  "label": "26.01-06",
+  "cumulative": {
+   "sales": 276729.0,
+   "op": 9311.0
+  }
+ },
+ "code": "6141",
+ "source": "株探 決算ページ（2026-10-12取得）",
+ "market_cap": 437500000000.0
+}
