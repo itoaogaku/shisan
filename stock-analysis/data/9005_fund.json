@@ -1,0 +1,48 @@
+{
+ "annual": {
+  "forecast": {
+   "sales": 1140000.0,
+   "op": 110000.0,
+   "ord": 111400.0,
+   "net": 90000.0,
+   "eps": 161.3
+  },
+  "forecast_label": "予 2027.03",
+  "prev": {
+   "sales": 1086179.0,
+   "op": 103193.0,
+   "ord": 116132.0,
+   "net": 87071.0,
+   "eps": 152.3
+  },
+  "prev_label": "2026.03"
+ },
+ "quarter": {
+  "label": "26.04-06 単独（前年同期 25.04-06）",
+  "current": {
+   "sales": 273467.0,
+   "op": 31394.0,
+   "ord": 33369.0,
+   "net": 36260.0
+  },
+  "year_ago": {
+   "sales": 261358.0,
+   "op": 32306.0,
+   "ord": 35583.0,
+   "net": 25291.0
+  },
+  "one_off": null
+ },
+ "progress": {
+  "quarter": 1,
+  "label": "26.04-06",
+  "cumulative": {
+   "sales": 273467.0,
+   "op": 31394.0
+  }
+ },
+ "code": "9005",
+ "name": "東急",
+ "source": "株探 決算ページ https://kabutan.jp/stock/finance?code=9005（2026-10-12取得、元データは東急の決算短信）",
+ "market_cap": 985700000000.0
+}
